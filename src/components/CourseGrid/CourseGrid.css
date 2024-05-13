@@ -1,0 +1,26 @@
+.input-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap; /* Permitir que os elementos sejam distribuídos em várias linhas */
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+}
+
+.letter-blocks {
+  border-radius: 8px;
+  border-style: none;
+  height: 14vh;
+  width: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #791D1F;
+  cursor: pointer;
+  transition: border-bottom 0.2s ease-in-out;
+  caret-color: transparent;
+  margin: 0 1em;
+}

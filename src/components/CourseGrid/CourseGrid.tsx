@@ -1,17 +1,16 @@
-import React, { useEffect, useRef } from 'react';
-import * as d3 from 'd3';
+import React, { Fragment } from "react";
+import "./CourseGrid.css";
 
 interface CourseData {
   CodDisciplina: string;
+  NomeDisciplina: string;
   Tipo: string;
   Turma: string;
   Horarios: string;
   Sala: string;
   Periodo: number;
-  NomeDisciplina: string;
   CargaSemanal: string;
   CargaTotal: number;
-  Dependencias: string;
   Oferecida: string;
   CodDisc: string;
   Depen: string;
@@ -21,49 +20,28 @@ interface CourseGridProps {
   data: CourseData[][];
 }
 
-const CourseGrid: React.FC<CourseGridProps> = ({ data }) => {
-  const chartRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (chartRef.current && data) {
-      const svg = d3.select(chartRef.current)
-        .append('svg')
-        .attr('width', 800)
-        .attr('height', 600);
-
-      const cellSize = 50;
-      const padding = 10;
-
-      svg.selectAll('g.row')
-        .data<CourseData[]>(data)
-        .enter()
-        .append('g')
-        .attr('class', 'row')
-        .attr('transform', (_, i) => `translate(0, ${i * (cellSize + padding)})`)
-        .selectAll('rect')
-        .data<CourseData>(d => d)
-        .enter()
-        .append('rect')
-        .attr('x', (_, i) => i * (cellSize + padding))
-        .attr('width', cellSize)
-        .attr('height', cellSize)
-        .attr('fill', 'lightblue')
-        .style('stroke', 'white');
-
-      svg.selectAll('g.row')
-        .selectAll('text')
-        .data<CourseData>(d => d)
-        .enter()
-        .append('text')
-        .attr('x', (_, i) => i * (cellSize + padding) + cellSize / 2)
-        .attr('y', cellSize / 2)
-        .attr('dy', '.35em')
-        .attr('text-anchor', 'middle')
-        .text(d => d.CodDisciplina);
-    }
-  }, [data]);
-
-  return <div ref={chartRef}></div>;
-};
+const CourseGrid: React.FC = () => {
+  const createArray = () => Array.from(Array(5))
+  return (
+    <Fragment>
+    <div className="input-container">
+      {/* Renders 6 lines of LetterBlocks */}
+      {createArray().map((_, rowIndex) => (
+        <div key={`row-${rowIndex}`} className="row"> 
+          {/* Renders 5 LetterBlocks per line */}
+          {Array.from(Array(6)).map((_, colIndex) => (
+            <input
+              key={`row-${rowIndex}-col-${colIndex}`}
+              type="text"
+              readOnly
+              className="letter-blocks"
+            />
+          ))}
+        </div>
+      ))}
+    </div>
+  </Fragment>
+  );
+}
 
 export default CourseGrid;
