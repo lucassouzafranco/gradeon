@@ -24,4 +24,5 @@
   transition: border-bottom 0.2s ease-in-out;
   caret-color: transparent;
   margin: 0 1em;
+  opacity: 0.92;
 }
