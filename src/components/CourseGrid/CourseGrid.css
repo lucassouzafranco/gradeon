@@ -1,16 +1,17 @@
-.input-container {
+.inputContainer {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-wrap: wrap; /* Permitir que os elementos sejam distribuídos em várias linhas */
   justify-content: space-between;
+  margin-top: 2em;
 }
 
 .row {
   display: flex;
 }
 
-.letter-blocks {
+.letterBlocks {
   border-radius: 8px;
   border-style: none;
   height: 14vh;

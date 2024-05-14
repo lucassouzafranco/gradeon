@@ -24,7 +24,7 @@ const CourseGrid: React.FC = () => {
   const createArray = () => Array.from(Array(5))
   return (
     <Fragment>
-    <div className="input-container">
+    <div className="inputContainer">
       {/* Renders 6 lines of LetterBlocks */}
       {createArray().map((_, rowIndex) => (
         <div key={`row-${rowIndex}`} className="row"> 
@@ -34,7 +34,7 @@ const CourseGrid: React.FC = () => {
               key={`row-${rowIndex}-col-${colIndex}`}
               type="text"
               readOnly
-              className="letter-blocks"
+              className="letterBlocks"
             />
           ))}
         </div>
