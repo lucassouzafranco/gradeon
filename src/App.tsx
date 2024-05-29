@@ -5,9 +5,11 @@ import "./App.css";
 
 function App() {
   return (
-    <div id="appContainer"> {/* Adicione uma div para envolver todo o conteúdo */}
+    <div className="appContainer">
       <Menu />
-      <CourseGrid />
+      <div className="courseGridContainer">
+        <CourseGrid />
+      </div>
       <img src={Background} alt="background" className="backgroundImage" />
     </div>
   );
