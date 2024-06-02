@@ -1,0 +1,10 @@
+.dinamycAreaContainer {
+  display: flex;
+  align-items: center;
+  width: 98.5vw;
+  margin-left: 0.3%;
+  margin-top: 7%;
+  height: 19%;
+  padding-left: 1em;
+  background-color: #791D1F;
+}

@@ -1,0 +1,13 @@
+.overviewContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 76%;
+  width: 55%;
+  margin-left: 1%;
+  margin-right: 1%;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
