@@ -1,11 +1,74 @@
 .selectedCardContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
   width: 45%;
-  height: 76%;
+  height: 85%;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.15);
+}
+
+.disciplineTitle {
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.leftAndRightSide {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.9em;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+}
+
+.dataRow {
+  display: flex;
+  align-items: center;
+  margin-top: 0.6em;
+}
+
+.label {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Novas classes para os tons de vermelho */
+.redLight {
+  background-color: #FF090E;
+  color: #fff;
+}
+
+.redMedium {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+.redDark {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.dataBox {
+  height: 2.2vh;
+  width: auto;
+  padding: 0.1em 1.1em;
+  margin-left: 1em;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  font-weight: 600; 
+}
+
+.dataBox-variant {
+  padding: 0.1em 1.1em;
 }
