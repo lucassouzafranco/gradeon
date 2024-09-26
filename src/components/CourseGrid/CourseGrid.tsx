@@ -1,34 +1,38 @@
 import React, { useState, useEffect } from 'react';
-import { Disciplina } from '../../types/types';
+import { Discipline } from '../../types/types';
 import { courseData } from '../../data/courseData';
 import './CourseGrid.css';
 
-const CourseGrid: React.FC = () => {
-  const [disciplinas, setDisciplinas] = useState<Record<string, Disciplina[]>>({});
+interface CourseGridProps {
+  setSelectedDiscipline: React.Dispatch<React.SetStateAction<Discipline | null>>;
+}
+
+const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline }) => {
+  const [disciplinas, setDisciplinas] = useState<Record<string, Discipline[]>>({});
   const [highlighted, setHighlighted] = useState<string[]>([]);
 
   useEffect(() => {
     setDisciplinas(courseData);
   }, []);
 
-  const handleMouseEnter = (dependencias: string) => {
-    if (dependencias) {
-      const depsArray = dependencias.split('|');
-      setHighlighted(depsArray);
-    } else {
-      setHighlighted([]);
-    }
+  // lida com o evento de entrada do mouse, recebendo dependências e uma disciplina
+  const handleMouseEnter = (dependencias: string, disciplina: Discipline) => {
+    // divide a string de dependências em um array ou inicializa como vazio.
+    const depsArray = dependencias ? dependencias.split('|') : []; 
+    setHighlighted(depsArray);  // atualiza o estado para destacar disciplinas dependentes.
+    setSelectedDiscipline(disciplina); 
   };
 
   const handleMouseLeave = () => {
     setHighlighted([]);
+    setSelectedDiscipline(null);
   };
 
-  const uniqueDisciplinas = (disciplines: Disciplina[]): Disciplina[] => {
-    const uniqueMap: { [key: string]: Disciplina } = {};
-    disciplines.forEach(disciplina => {
-      if (!uniqueMap[disciplina.NomeDisciplina]) {
-        uniqueMap[disciplina.NomeDisciplina] = disciplina;
+  const uniqueDisciplinas = (disciplines: Discipline[]): Discipline[] => {
+    const uniqueMap: { [key: string]: Discipline } = {};
+    disciplines.forEach(discipline => {
+      if (!uniqueMap[discipline.NomeDisciplina]) {
+        uniqueMap[discipline.NomeDisciplina] = discipline;
       }
     });
     return Object.values(uniqueMap);
@@ -42,10 +46,10 @@ const CourseGrid: React.FC = () => {
             <div
               key={index}
               className={`disciplineCard ${highlighted.includes(disciplina.CodDisc) ? 'highlight' : ''}`}
-              onMouseEnter={() => handleMouseEnter(disciplina.Depen)}
+              onMouseEnter={() => handleMouseEnter(disciplina.Depen, disciplina)}
               onMouseLeave={handleMouseLeave}
             >
-              <h5 className='disciplineCode'>{disciplina.CodDisciplina}</h5>
+              <h5 className='disciplineCode'>{disciplina.CodDisc}</h5>
               <h5 className='disciplineName'>{disciplina.NomeDisciplina}</h5>
             </div>
           ))}

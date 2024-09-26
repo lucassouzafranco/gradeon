@@ -1,12 +1,14 @@
 .selectedCardContainer {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: space-between;
   width: 45%;
-  height: 85%;
-  border-radius: 6px;
+  height: 80%;
+  border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.15);
+  padding-bottom: 0.9em;
+
 }
 
 .disciplineTitle {
@@ -18,7 +20,8 @@
 .leftAndRightSide {
   display: flex;
   justify-content: space-between;
-  margin: 0 0.9em;
+  align-items: center;
+  margin: 0 0.7em;
 }
 
 .leftSide {
@@ -29,12 +32,12 @@
 .dataRow {
   display: flex;
   align-items: center;
-  margin-top: 0.6em;
+  margin-top: 1em;
 }
 
 .label {
-  font-size: 0.9em;
-  font-weight: 600;
+  font-size: 1em;
+  font-weight: 700;
   color: #fff;
 }
 
@@ -45,19 +48,19 @@
 }
 
 .redMedium {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.23);
   color: #fff;
 }
 
 .redDark {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
 }
 
 .dataBox {
   height: 2.2vh;
   width: auto;
-  padding: 0.1em 1.1em;
+  padding: 0.09em 0.9em;
   margin-left: 1em;
   border-radius: 5px;
   font-weight: 600;
