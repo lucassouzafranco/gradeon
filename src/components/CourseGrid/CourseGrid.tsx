@@ -10,17 +10,34 @@ interface CourseGridProps {
 const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline }) => {
   const [disciplinas, setDisciplinas] = useState<Record<string, Discipline[]>>({});
   const [highlighted, setHighlighted] = useState<string[]>([]);
+  const [draggedDiscipline, setDraggedDiscipline] = useState<Discipline | null>(null); // Armazena disciplina sendo arrastada
 
   useEffect(() => {
     setDisciplinas(courseData);
   }, []);
 
-  // lida com o evento de entrada do mouse, recebendo dependências e uma disciplina
+  // Lida com o evento de arrastar
+  const handleDragStart = (disciplina: Discipline) => {
+    setDraggedDiscipline(disciplina); // Armazena disciplina arrastada
+  };
+
+  // Permite que o drop ocorra
+  const handleDragOver = (event: React.DragEvent<HTMLDivElement>) => {
+    event.preventDefault(); // Necessário para permitir o drop
+  };
+
+  // Lida com o drop
+  const handleDrop = () => {
+    if (draggedDiscipline) {
+      setSelectedDiscipline(draggedDiscipline); // Define disciplina arrastada como selecionada
+      setDraggedDiscipline(null); // Reseta disciplina arrastada
+    }
+  };
+
   const handleMouseEnter = (dependencias: string, disciplina: Discipline) => {
-    // divide a string de dependências em um array ou inicializa como vazio.
-    const depsArray = dependencias ? dependencias.split('|') : []; 
-    setHighlighted(depsArray);  // atualiza o estado para destacar disciplinas dependentes.
-    setSelectedDiscipline(disciplina); 
+    const depsArray = dependencias ? dependencias.split('|') : [];
+    setHighlighted(depsArray);
+    setSelectedDiscipline(disciplina);
   };
 
   const handleMouseLeave = () => {
@@ -39,18 +56,22 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline }) => {
   };
 
   return (
-    <div className="grid">
+    <div className="grid" onDragOver={handleDragOver} onDrop={handleDrop}>
       {Object.keys(disciplinas).map(period => (
         <div key={period} className="column">
           {uniqueDisciplinas(disciplinas[period]).map((disciplina, index) => (
             <div
               key={index}
-              className={`disciplineCard ${highlighted.includes(disciplina.CodDisc) ? 'highlight' : ''}`}
+              className={`disciplineCard ${
+                highlighted.includes(disciplina.CodDisc) ? 'highlight' : ''
+              } ${draggedDiscipline && draggedDiscipline !== disciplina ? 'faded' : ''}`} // Adiciona a classe 'faded' para cards que não estão sendo arrastados
+              draggable
+              onDragStart={() => handleDragStart(disciplina)}
               onMouseEnter={() => handleMouseEnter(disciplina.Depen, disciplina)}
               onMouseLeave={handleMouseLeave}
             >
-              <h5 className='disciplineCode'>{disciplina.CodDisc}</h5>
-              <h5 className='disciplineName'>{disciplina.NomeDisciplina}</h5>
+              <h5 className="disciplineCode">{disciplina.CodDisc}</h5>
+              <h5 className="disciplineName">{disciplina.NomeDisciplina}</h5>
             </div>
           ))}
         </div>
