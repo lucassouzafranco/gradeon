@@ -70,7 +70,7 @@ async function main() {
 			Sala: fields[4],
 			Periodo: isNaN(parseInt(fields[5])) ? fields[5] : parseInt(fields[5]),
 			NomeDisciplina: fields[6],
-			CargaSemanal: fields[7],
+			CargaSemanal: fields[7].charAt(0),
 			CargaTotal: parseInt(fields[8]),
 			Dependencias: fields[9],
 			Oferecida: fields[10],

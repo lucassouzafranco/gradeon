@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; 
-  width: 79%;
+  width: 72%;
   opacity: 0.88;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
@@ -36,7 +36,7 @@
 
 .disciplineCard:hover,
 .disciplineCard.highlight {
-  transform: scale(1.08); /* Efeito de zoom */
+  transform: scale(1.21); /* Efeito de zoom */
   background-color: #791D1F;
   opacity: 1.0;
 }
