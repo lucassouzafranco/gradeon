@@ -19,6 +19,8 @@ SIN 130,T,1,3=14|5=16,PVA232|PVA232,1,Introdução à Lógica,4(4-0),60,,S,SIN13
 SIN 130,T,2,3=21|6=19,PVA232|PVA232,1,Introdução à Lógica,4(4-0),60,,S,SIN130,
 SIN 222,T,1,2=16|5=14,PVA107|PVA232,1,Fundamentos de Sistemas de Informação,4(4-0),60,,S,SIN222,
 SIN 222,T,2,2=19|4=21,PVA202|PVA202,1,Fundamentos de Sistemas de Informação,4(4-0),60,,S,SIN222,
+SIN 101,T,1,4=14-16,PVA107,1,Informática e Sociedade,4(4-0),50,,S,SIN101,
+SIN 101,T,2,4=19:00-20:40,,2,Informática e Sociedade,4(4-0),50,,S,SIN101,
 ADE 104,T,1,3=14|5=16,PVA108|PVA103,2,Teoria Geral da Administração,4(4-0),60,,S,ADE104,
 ADE 104,T,2,3=19|5=21,PVA214|PVA214,2,Teoria Geral da Administração,4(4-0),60,,S,ADE104,
 ADE 104,T,3,2=16|5=14,PVA101|PVA101,2,Teoria Geral da Administração,4(4-0),60,,S,ADE104,

@@ -10,10 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "cz-emoji-conventional": "^1.0.2",
+    "cz-emoji-conventional": "^1.1.0",
     "d3": "^7.9.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.4.0"
   },
   "devDependencies": {
     "@types/d3": "^7.4.3",
@@ -27,5 +28,10 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "typescript": "^5.2.2",
     "vite": "^5.1.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji-conventional"
+    }
   }
 }
