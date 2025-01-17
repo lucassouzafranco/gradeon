@@ -7,26 +7,34 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start:dev": "concurrently \"vite\" \"ts-node src/server/index.ts\"",
+    "parse:csv": "tsc src/scripts/csv_parser.ts --outDir dist/scripts && node dist/scripts/csv_parser.js"
   },
   "dependencies": {
+    "@types/express": "^5.0.0",
+    "csv-parser": "^3.1.0",
     "cz-emoji-conventional": "^1.1.0",
     "d3": "^7.9.0",
+    "express": "^4.21.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.4.0"
   },
   "devDependencies": {
     "@types/d3": "^7.4.3",
+    "@types/node": "^22.10.7",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
     "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^9.1.2",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "typescript": "^5.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
     "vite": "^5.1.6"
   },
   "config": {
