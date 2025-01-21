@@ -17,14 +17,19 @@
   color: #fff;
 }
 
-.leftAndRightSide {
+.leftandRightSide {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 0.7em;
 }
 
-.leftSide {
+.theLeftSide {
+  display: flex;
+  flex-direction: column;
+}
+
+.theRightSide {
   display: flex;
   flex-direction: column;
 }

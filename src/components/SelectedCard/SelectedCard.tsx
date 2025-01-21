@@ -19,8 +19,8 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
             {loading ? (
                 <div>Carregando...</div> // Mensagem durante o carregamento
             ) : discipline ? (
-                <div className="leftAndRightSide">
-                    <div className="leftSide">
+                <div className="leftandRightSide">
+                    <div className="theLeftSide">
                         <div className="dataRow">
                             <span className="label">Créditos:</span>
                             <div className="dataBox redMedium">{discipline.CargaSemanal[0]}</div>
@@ -36,7 +36,7 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                         </div>
                     </div>
 
-                    <div className="rightSide">
+                    <div className="theRightSide">
                         <div className="dataRow">
                             <span className="label">Reprovação:</span>
                             <div className="dataBox redMedium">34%</div>
@@ -53,7 +53,7 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                 </div>
 
             ) : (
-                <div>Nenhuma disciplina selecionada.</div> // Mensagem se disciplina for null
+                <div>passe o mouse sobre as disciplinas e veja as informações aqui.</div> 
             )}
         </div>
     );

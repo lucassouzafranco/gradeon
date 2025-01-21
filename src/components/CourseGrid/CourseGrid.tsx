@@ -5,32 +5,31 @@ import './CourseGrid.css';
 
 interface CourseGridProps {
   setSelectedDiscipline: React.Dispatch<React.SetStateAction<Discipline | null>>;
+  selectedCards: Discipline[];
+  setSelectedCards: React.Dispatch<React.SetStateAction<Discipline[]>>;
 }
 
-const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline }) => {
+const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selectedCards, setSelectedCards }) => {
   const [disciplinas, setDisciplinas] = useState<Record<string, Discipline[]>>({});
   const [highlighted, setHighlighted] = useState<string[]>([]);
-  const [draggedDiscipline, setDraggedDiscipline] = useState<Discipline | null>(null); // Armazena disciplina sendo arrastada
+  const [draggedDiscipline, setDraggedDiscipline] = useState<Discipline | null>(null);
 
   useEffect(() => {
     setDisciplinas(courseData);
   }, []);
 
-  // Lida com o evento de arrastar
   const handleDragStart = (disciplina: Discipline) => {
-    setDraggedDiscipline(disciplina); // Armazena disciplina arrastada
+    setDraggedDiscipline(disciplina);
   };
 
-  // Permite que o drop ocorra
   const handleDragOver = (event: React.DragEvent<HTMLDivElement>) => {
-    event.preventDefault(); // Necessário para permitir o drop
+    event.preventDefault();
   };
 
-  // Lida com o drop
   const handleDrop = () => {
     if (draggedDiscipline) {
-      setSelectedDiscipline(draggedDiscipline); // Define disciplina arrastada como selecionada
-      setDraggedDiscipline(null); // Reseta disciplina arrastada
+      setSelectedDiscipline(draggedDiscipline);
+      setDraggedDiscipline(null);
     }
   };
 
@@ -43,6 +42,17 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline }) => {
   const handleMouseLeave = () => {
     setHighlighted([]);
     setSelectedDiscipline(null);
+  };
+
+  const handleCardClick = (disciplina: Discipline) => {
+    setSelectedCards(prevSelected => {
+      const isSelected = prevSelected.some(d => d.CodDisciplina === disciplina.CodDisciplina);
+      const newSelected = isSelected
+        ? prevSelected.filter(d => d.CodDisciplina !== disciplina.CodDisciplina)
+        : [...prevSelected, disciplina];
+      console.log('Updated Selected Cards:', newSelected);
+      return newSelected;
+    });
   };
 
   const uniqueDisciplinas = (disciplines: Discipline[]): Discipline[] => {
@@ -64,11 +74,14 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline }) => {
               key={index}
               className={`disciplineCard ${
                 highlighted.includes(disciplina.CodDisc) ? 'highlight' : ''
-              } ${draggedDiscipline && draggedDiscipline !== disciplina ? 'faded' : ''}`} // Adiciona a classe 'faded' para cards que não estão sendo arrastados
+              } ${draggedDiscipline && draggedDiscipline !== disciplina ? 'faded' : ''} ${
+                selectedCards.some(d => d.CodDisciplina === disciplina.CodDisciplina) ? 'selected' : ''
+              }`}
               draggable
               onDragStart={() => handleDragStart(disciplina)}
               onMouseEnter={() => handleMouseEnter(disciplina.Depen, disciplina)}
               onMouseLeave={handleMouseLeave}
+              onClick={() => handleCardClick(disciplina)}
             >
               <h5 className="disciplineCode">{disciplina.CodDisc}</h5>
               <h5 className="disciplineName">{disciplina.NomeDisciplina}</h5>

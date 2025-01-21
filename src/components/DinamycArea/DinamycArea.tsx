@@ -6,13 +6,14 @@ import { Discipline } from "../../types/types";
 
 interface DinamycAreaProps {
   selectedDiscipline: Discipline | null;
+  selectedCards: Discipline[];
 }
 
-const DinamycArea: React.FC<DinamycAreaProps> = ({ selectedDiscipline }) => {
+const DinamycArea: React.FC<DinamycAreaProps> = ({ selectedDiscipline, selectedCards }) => {
   return (
     <div className="dinamycAreaContainer">
       <SelectedCard discipline={selectedDiscipline} />
-      <Overview />
+      <Overview selectedCards={selectedCards} />
     </div>
   );
 }

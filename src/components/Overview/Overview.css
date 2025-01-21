@@ -1,13 +1,107 @@
 .overviewContainer {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  text-align: center;
-  height: 76%;
-  width: 55%;
-  margin-left: 1%;
-  margin-right: 1%;
-  border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.15);
+  justify-content: space-between;
+  width: 53%;
+  height: 80%;
+  border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.15);
+  padding-bottom: 0.9em;
+  margin-left: 0.8em;
+}
+
+.overviewDetails {
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.leftAndRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 0.7em;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column; 
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+}
+
+.dataRow {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.label {
+  font-size: 1em;
+  font-weight: 700;
+  color: #fff;
+}
+
+.redLight {
+  background-color: #FF090E;
+  color: #fff;
+}
+
+.redMedium {
+  background-color: rgba(0, 0, 0, 0.23);
+  color: #fff;
+}
+
+.redDark {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.dataBox {
+  height: 2.2vh;
+  width: auto;
+  padding: 0.09em 0.9em;
+  margin-left: 1em;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.narrowBox {
+  width: 9em;
+}
+
+.dataBox:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.Balanceada:hover {
+  background-color: rgba(0, 255, 0, 0.7);
+}
+
+.LevementeDesbalanceada:hover {
+  background-color: rgba(255, 165, 0, 0.7);
+}
+
+.Desbalanceada:hover {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.difficultyRow {
+  padding: 0.1em 1.1em;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.23);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 1em;
 }
