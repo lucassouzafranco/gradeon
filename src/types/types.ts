@@ -4,7 +4,7 @@ export interface Discipline {
   Turma: string;
   Horarios: string;
   Sala: string;
-  Periodo: number | string; // Union type
+  Periodo: number | string;
   NomeDisciplina: string;
   CargaSemanal: string;
   CargaTotal: number;
@@ -12,4 +12,33 @@ export interface Discipline {
   Oferecida: string;
   CodDisc: string;
   Depen: string;
+  reprovaPercentual?: number;
+}
+
+// Tipos internos para processamento de dados
+export interface RawOffer {
+  cod: string;
+  nome: string;
+  tipo: 'P' | 'T';
+  turma: string;
+  horarios: string;
+  sala: string;
+  cargaSemanal: string;
+  cargaTotal: number;
+  oferecida: 'S' | 'N';
+}
+
+export interface CurriculumDiscipline {
+  cod: string;
+  periodo: number;
+  prerequisitos: string[];
+  obrigatoria: boolean;
+}
+
+export interface NormalizedDiscipline {
+  cod: string;
+  nome: string;
+  periodo: number;
+  prerequisitos: string[];
+  ofertas: RawOffer[];
 }

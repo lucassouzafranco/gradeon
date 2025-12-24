@@ -1,0 +1,79 @@
+import { Discipline, NormalizedDiscipline } from '../types/types';
+
+export function toLegacyCourseData(
+  normalized: NormalizedDiscipline[]
+): Record<string, Discipline[]> {
+  const result: Record<string, Discipline[]> = {};
+
+  for (const norm of normalized) {
+    const periodKey = String(norm.periodo);
+    
+    if (!result[periodKey]) {
+      result[periodKey] = [];
+    }
+
+    for (const offer of norm.ofertas) {
+      const codDisc = offer.cod.replace(/\s/g, '');
+      const depen = norm.prerequisitos
+        .map(prereq => prereq.replace(/\s/g, ''))
+        .join('|');
+
+      const legacyDiscipline: Discipline = {
+        CodDisciplina: offer.cod,
+        Tipo: offer.tipo,
+        Turma: offer.turma,
+        Horarios: offer.horarios,
+        Sala: offer.sala,
+        Periodo: norm.periodo,
+        NomeDisciplina: offer.nome,
+        CargaSemanal: offer.cargaSemanal,
+        CargaTotal: offer.cargaTotal,
+        Dependencias: norm.prerequisitos.join('|'), // With spaces
+        Oferecida: offer.oferecida,
+        CodDisc: codDisc,
+        Depen: depen
+      };
+
+      result[periodKey].push(legacyDiscipline);
+    }
+  }
+
+  return result;
+}
+
+export function validateLegacyFormat(data: Record<string, Discipline[]>): boolean {
+  if (typeof data !== 'object' || data === null) {
+    console.error('Validation failed: data is not an object');
+    return false;
+  }
+
+  for (const key of Object.keys(data)) {
+    if (!/^\d+$/.test(key)) {
+      console.error(`Validation failed: key "${key}" is not a numeric string`);
+      return false;
+    }
+
+    const disciplines = data[key];
+    if (!Array.isArray(disciplines)) {
+      console.error(`Validation failed: value for key "${key}" is not an array`);
+      return false;
+    }
+
+    for (const disc of disciplines) {
+      const requiredFields = [
+        'CodDisciplina', 'Tipo', 'Turma', 'Horarios', 'Sala',
+        'Periodo', 'NomeDisciplina', 'CargaSemanal', 'CargaTotal',
+        'Dependencias', 'Oferecida', 'CodDisc', 'Depen'
+      ];
+
+      for (const field of requiredFields) {
+        if (!(field in disc)) {
+          console.error(`Validation failed: missing field "${field}" in discipline`);
+          return false;
+        }
+      }
+    }
+  }
+
+  return true;
+}
