@@ -23,11 +23,15 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                     <div className="theLeftSide">
                         <div className="dataRow">
                             <span className="label">Créditos:</span>
-                            <div className="dataBox redMedium">{discipline.CargaSemanal[0]}</div>
+                            <div className="dataBox redMedium">{discipline.Creditos ?? discipline.CargaSemanal?.[0] ?? '-'}</div>
                         </div>
                         <div className="dataRow">
                             <span className="label">Pré-requisitos:</span>
-                            <div className="dataBox redMedium">{discipline.Dependencias}</div>
+                            <div className="dataBox redMedium">
+                                {discipline.Prerequisitos && discipline.Prerequisitos.length > 0 
+                                    ? discipline.Prerequisitos.join(', ') 
+                                    : 'Nenhum'}
+                            </div>
                         </div>
                         <div className="dataRow">
                             <span className="label">Turmas:</span>
@@ -47,7 +51,11 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                         </div>
                         <div className="dataRow">
                             <span className="label">Dependentes:</span>
-                            <div className="dataBox redMedium">{discipline.Dependencias}</div>
+                            <div className="dataBox redMedium">
+                                {discipline.Dependentes && discipline.Dependentes.length > 0 
+                                    ? discipline.Dependentes.join(', ') 
+                                    : 'Nenhum'}
+                            </div>
                         </div>
                     </div>
                 </div>

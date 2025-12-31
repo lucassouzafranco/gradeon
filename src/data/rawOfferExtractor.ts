@@ -1,5 +1,6 @@
 import { RawOffer, Discipline } from '../types/types';
 import { courseData as legacyCourseData } from './courseData';
+import { getSINOffers } from './scraper';
 
 export function extractRawOffers(
   legacyData: Record<string, Discipline[]>
@@ -31,4 +32,14 @@ export function extractRawOffers(
 
 export function getCurrentRawOffers(): RawOffer[] {
   return extractRawOffers(legacyCourseData);
+}
+
+export async function getScrapedOffers(): Promise<RawOffer[]> {
+  try {
+    const scrapedData = await getSINOffers();
+    return scrapedData;
+  } catch (error) {
+    console.warn('Falha ao fazer scraping, usando dados estáticos:', error);
+    return getCurrentRawOffers();
+  }
 }

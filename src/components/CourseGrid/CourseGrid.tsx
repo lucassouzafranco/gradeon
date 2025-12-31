@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Discipline } from '../../types/types';
-import { courseData } from '../../data/courseData';
+import { getCourseData, getUnifiedCourseData } from '../../data';
 import './CourseGrid.css';
 
 interface CourseGridProps {
@@ -13,9 +13,25 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selected
   const [disciplinas, setDisciplinas] = useState<Record<string, Discipline[]>>({});
   const [highlighted, setHighlighted] = useState<string[]>([]);
   const [draggedDiscipline, setDraggedDiscipline] = useState<Discipline | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setDisciplinas(courseData);
+    async function loadData() {
+      try {
+        const result = await getUnifiedCourseData();
+        setDisciplinas(result.courseData);
+      } catch (error) {
+        try {
+          const data = await getCourseData();
+          setDisciplinas(data);
+        } catch (fallbackError) {
+          // Sem logs no browser; falha total permanece silenciosa.
+        }
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadData();
   }, []);
 
   const handleDragStart = (disciplina: Discipline) => {
@@ -64,6 +80,10 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selected
     });
     return Object.values(uniqueMap);
   };
+
+  if (loading) {
+    return <div className="grid">Carregando dados...</div>;
+  }
 
   return (
     <div className="grid" onDragOver={handleDragOver} onDrop={handleDrop}>
