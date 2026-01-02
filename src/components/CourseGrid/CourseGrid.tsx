@@ -137,8 +137,33 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selected
           <button 
             className="gridActionButton" 
             onClick={() => {
-              // Preparado para passar selectedCards para outro componente/página
-              console.log('Disciplinas selecionadas:', selectedCards);
+              // Preparar dados para Grade de Horários
+              const scheduleData = selectedCards.map(disc => ({
+                codigo: disc.CodDisc,
+                codigoCompleto: disc.CodDisciplina,
+                nome: disc.NomeDisciplina,
+                periodo: disc.Periodo,
+                creditos: disc.Creditos,
+                horarios: disc.Horarios?.split('\n') || [],
+                salas: disc.Sala?.split('\n') || [],
+                turmasDisponiveis: disc.TurmasDisponiveis || { teoricas: [], praticas: [] }
+              }));
+              
+              // Log estruturado para debug
+              console.log('=== DADOS PARA GRADE DE HORÁRIOS ===');
+              console.log('Total de disciplinas:', scheduleData.length);
+              console.log('Dados:', scheduleData);
+              
+              // TODO: Implementar navegação para página de visualização
+              // Opção 1: React Router
+              // navigate('/grade-horarios', { state: { schedules: scheduleData } });
+              
+              // Opção 2: Context API / Global State
+              // setGlobalSchedule(scheduleData);
+              
+              // Opção 3: LocalStorage (temporário)
+              localStorage.setItem('gradeon:schedules', JSON.stringify(scheduleData));
+              alert(`Dados salvos! ${scheduleData.length} disciplinas prontas para visualização.`);
             }}
           >
             Grade de Horários ({selectedCards.length})
