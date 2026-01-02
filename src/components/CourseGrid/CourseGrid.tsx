@@ -132,6 +132,19 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selected
           ))}
         </div>
       ))}
+      {selectedCards.length >= 2 && (
+        <div className="gridActionArea">
+          <button 
+            className="gridActionButton" 
+            onClick={() => {
+              // Preparado para passar selectedCards para outro componente/página
+              console.log('Disciplinas selecionadas:', selectedCards);
+            }}
+          >
+            Grade de Horários ({selectedCards.length})
+          </button>
+        </div>
+      )}
     </div>
   );
 };

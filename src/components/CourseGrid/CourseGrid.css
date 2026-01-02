@@ -4,11 +4,12 @@
   border-radius: 8px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
   width: 100vw;
-  height: 70vh;
+  height: 72vh;
   margin-top: 1.5em;
   margin-left: 0.8em;
   background-color: rgba(0, 0, 0, 0.10); /* 10% de opacidade para #000000 */
   overflow: hidden;
+  position: relative;
 }
 
 .column {
@@ -77,6 +78,50 @@
 }
 .weeklyDisciplineLoad {
   border: 1px solid white;
+}
+
+.gridActionArea {
+  position: absolute;
+  bottom: 0.9em;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  animation: slideUpFade 0.3s ease-out;
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gridActionButton {
+  pointer-events: auto;
+  background-color: #791D1F;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 26px;
+  padding: 0.9em 2em;
+  font-size: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 0.88;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.gridActionButton:hover {
+  transform: scale(1.08);
+  opacity: 1.0;
+  border: 2px solid white;
+  box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 768px) {
