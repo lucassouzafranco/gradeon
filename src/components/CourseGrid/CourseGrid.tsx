@@ -12,6 +12,7 @@ interface CourseGridProps {
 const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selectedCards, setSelectedCards }) => {
   const [disciplinas, setDisciplinas] = useState<Record<string, Discipline[]>>({});
   const [highlighted, setHighlighted] = useState<string[]>([]);
+  const [hoveredCode, setHoveredCode] = useState<string | null>(null);
   const [draggedDiscipline, setDraggedDiscipline] = useState<Discipline | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -49,13 +50,33 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selected
     }
   };
 
-  const handleMouseEnter = (dependencias: string, disciplina: Discipline) => {
-    const depsArray = dependencias ? dependencias.split('|') : [];
-    setHighlighted(depsArray);
+  const handleMouseEnter = (disciplina: Discipline) => {
+    // Marcar a disciplina atual como hovered
+    setHoveredCode(disciplina.CodDisc);
+    
+    // Coletar códigos de pré-requisitos e dependentes para destacar
+    const codesToHighlight: string[] = [];
+    
+    // Adicionar pré-requisitos (normalizar removendo espaços)
+    if (disciplina.Prerequisitos && disciplina.Prerequisitos.length > 0) {
+      disciplina.Prerequisitos.forEach(prereq => {
+        codesToHighlight.push(prereq.replace(/\s+/g, ''));
+      });
+    }
+    
+    // Adicionar dependentes (normalizar removendo espaços)
+    if (disciplina.Dependentes && disciplina.Dependentes.length > 0) {
+      disciplina.Dependentes.forEach(dep => {
+        codesToHighlight.push(dep.replace(/\s+/g, ''));
+      });
+    }
+    
+    setHighlighted(codesToHighlight);
     setSelectedDiscipline(disciplina);
   };
 
   const handleMouseLeave = () => {
+    setHoveredCode(null);
     setHighlighted([]);
     setSelectedDiscipline(null);
   };
@@ -93,13 +114,15 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selected
             <div
               key={index}
               className={`disciplineCard ${
-                highlighted.includes(disciplina.CodDisc) ? 'highlight' : ''
+                hoveredCode === disciplina.CodDisc ? 'hovered' : ''
+              } ${
+                hoveredCode !== disciplina.CodDisc && highlighted.includes(disciplina.CodDisc) ? 'highlight' : ''
               } ${draggedDiscipline && draggedDiscipline !== disciplina ? 'faded' : ''} ${
                 selectedCards.some(d => d.CodDisciplina === disciplina.CodDisciplina) ? 'selected' : ''
               }`}
               draggable
               onDragStart={() => handleDragStart(disciplina)}
-              onMouseEnter={() => handleMouseEnter(disciplina.Depen, disciplina)}
+              onMouseEnter={() => handleMouseEnter(disciplina)}
               onMouseLeave={handleMouseLeave}
               onClick={() => handleCardClick(disciplina)}
             >

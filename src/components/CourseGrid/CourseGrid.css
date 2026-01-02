@@ -33,12 +33,20 @@
 }
 
 .disciplineCard:hover,
-.disciplineCard.highlight {
+.disciplineCard.hovered {
   transform: scale(1.13); /* Efeito de zoom */
   background-color: #791D1F;
   opacity: 1.0;
   border: 2px solid white;
   box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.6); /* Efeito de luz */
+}
+
+.disciplineCard.highlight {
+  transform: scale(1.06); /* Zoom menor que o hover */
+  background-color: #791D1F;
+  opacity: 1.0;
+  border: 2px solid white;
+  box-shadow: 0 0 10px 8px rgba(255, 255, 255, 0.4); /* Brilho mais sutil */
 }
 
 .column h2 {
