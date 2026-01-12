@@ -23,16 +23,24 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                     <div className="theLeftSide">
                         <div className="dataRow">
                             <span className="label">Créditos:</span>
-                            <div className="dataBox redMedium">{discipline.CargaSemanal[0]}</div>
+                            <div className={`dataBox ${
+                                discipline.CargaSemanal[0] === 2 ? 'redLight' :
+                                discipline.CargaSemanal[0] === 4 ? 'redMedium' :
+                                'redDark'
+                            }`}>{discipline.CargaSemanal[0]}</div>
                         </div>
                         <div className="dataRow">
                             <span className="label">Pré-requisitos:</span>
-                            <div className="dataBox redMedium">{discipline.Dependencias}</div>
+                            {discipline.Dependencias && discipline.Dependencias !== "não possui" ? (
+                                <div className="dataBox dark">{discipline.Dependencias}</div>
+                            ) : (
+                                <span className="plainText">não possui</span>
+                            )}
                         </div>
                         <div className="dataRow">
                             <span className="label">Turmas:</span>
-                            <div className="dataBox redMedium">T1</div>
-                            <div className="dataBox redMedium">T2</div>
+                            <div className="dataBox dark">T1</div>
+                            <div className="dataBox dark">T2</div>
                         </div>
                     </div>
 
@@ -43,11 +51,15 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                         </div>
                         <div className="dataRow">
                             <span className="label">Oferta:</span>
-                            <div className="dataBox redMedium">{discipline.Oferecida}</div>
+                            <div className="dataBox dark">{discipline.Oferecida}</div>
                         </div>
                         <div className="dataRow">
                             <span className="label">Dependentes:</span>
-                            <div className="dataBox redMedium">{discipline.Dependencias}</div>
+                            {discipline.Dependencias && discipline.Dependencias !== "não possui" ? (
+                                <div className="dataBox dark">{discipline.Dependencias}</div>
+                            ) : (
+                                <span className="plainText">não possui</span>
+                            )}
                         </div>
                     </div>
                 </div>

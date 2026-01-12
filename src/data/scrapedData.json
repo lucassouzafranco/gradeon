@@ -1,0 +1,814 @@
+{
+  "metadata": {
+    "generatedAt": "2026-01-12T21:33:22.939Z",
+    "ano": 2025,
+    "totalDisciplinas": 38,
+    "periodos": 8,
+    "source": "prebuild-scraping"
+  },
+  "courseData": {
+    "1": [
+      {
+        "CodDisciplina": "MAP 199",
+        "NomeDisciplina": "Cálculo I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "6(4+2)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "MAP199",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "MAP 298",
+          "ESP 105",
+          "SIN 392"
+        ]
+      },
+      {
+        "CodDisciplina": "SIN 110",
+        "NomeDisciplina": "Programação",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "6(4+2)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN110",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "SIN 211",
+          "SIN 251",
+          "SIN 141",
+          "SIN 220",
+          "SIN 221",
+          "SIN 480",
+          "SIN 323",
+          "SIN 392"
+        ]
+      },
+      {
+        "CodDisciplina": "SIN 130",
+        "NomeDisciplina": "Introdução à Lógica",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN130",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "SIN 132"
+        ]
+      },
+      {
+        "CodDisciplina": "SIN 222",
+        "NomeDisciplina": "Fundamentos de Sistemas de Informação",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN222",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": []
+      }
+    ],
+    "2": [
+      {
+        "CodDisciplina": "ADE 104",
+        "NomeDisciplina": "Teoria Geral da Administração",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ADE104",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "ESP 105",
+        "NomeDisciplina": "Iniciação à Estatística",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "MAP 191 | MAP 195 | MAP 199",
+        "Oferecida": "S",
+        "CodDisc": "ESP105",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 191",
+          "MAP 195",
+          "MAP 199"
+        ],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "MAP 298",
+        "NomeDisciplina": "Geometria Analítica e Álgebra Linear",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "MAP 100 | MAP 191 | MAP 199 | MAP 195",
+        "Oferecida": "S",
+        "CodDisc": "MAP298",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 100",
+          "MAP 191",
+          "MAP 199",
+          "MAP 195"
+        ],
+        "Dependentes": [
+          "SIN 480"
+        ]
+      },
+      {
+        "CodDisciplina": "SIN 101",
+        "NomeDisciplina": "Informática e Sociedade",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN101",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 211",
+        "NomeDisciplina": "Algoritmos e Estruturas de Dados",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "6(4+2)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "SIN 110",
+        "Oferecida": "S",
+        "CodDisc": "SIN211",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 110"
+        ],
+        "Dependentes": [
+          "SIN 213",
+          "SIN 351"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "CodDisciplina": "ADE 190",
+        "NomeDisciplina": "Introdução à Economia",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ADE190",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "CRP 297",
+        "NomeDisciplina": "Sociologia Geral",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CRP297",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 132",
+        "NomeDisciplina": "Matemática Discreta",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 130",
+        "Oferecida": "S",
+        "CodDisc": "SIN132",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 130"
+        ],
+        "Dependentes": [
+          "SIN 213",
+          "SIN 131",
+          "SIN 323"
+        ]
+      },
+      {
+        "CodDisciplina": "SIN 141",
+        "NomeDisciplina": "Computação Orientada a Objetos",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 110",
+        "Oferecida": "S",
+        "CodDisc": "SIN141",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 110"
+        ],
+        "Dependentes": [
+          "SIN 143"
+        ]
+      },
+      {
+        "CodDisciplina": "SIN 251",
+        "NomeDisciplina": "Organização de Computadores",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 110",
+        "Oferecida": "S",
+        "CodDisc": "SIN251",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 110"
+        ],
+        "Dependentes": [
+          "SIN 252"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "CodDisciplina": "SIN 213",
+        "NomeDisciplina": "Projeto de Algoritmos",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 211 | SIN 132",
+        "Oferecida": "S",
+        "CodDisc": "SIN213",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 211",
+          "SIN 132"
+        ],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 220",
+        "NomeDisciplina": "Banco de Dados",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 110",
+        "Oferecida": "S",
+        "CodDisc": "SIN220",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 110"
+        ],
+        "Dependentes": [
+          "SIN 143",
+          "SIN 320"
+        ]
+      },
+      {
+        "CodDisciplina": "SIN 221",
+        "NomeDisciplina": "Engenharia de Software I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 110",
+        "Oferecida": "S",
+        "CodDisc": "SIN221",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 110"
+        ],
+        "Dependentes": [
+          "SIN 421",
+          "SIN 321",
+          "SIN 322"
+        ]
+      },
+      {
+        "CodDisciplina": "SIN 252",
+        "NomeDisciplina": "Arquitetura de Computadores",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 251",
+        "Oferecida": "S",
+        "CodDisc": "SIN252",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 251"
+        ],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 421",
+        "NomeDisciplina": "Interação Humano-Computador",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 221",
+        "Oferecida": "S",
+        "CodDisc": "SIN421",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 221"
+        ],
+        "Dependentes": []
+      }
+    ],
+    "5": [
+      {
+        "CodDisciplina": "SIN 131",
+        "NomeDisciplina": "Introdução à Teoria da  Computação",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 132",
+        "Oferecida": "S",
+        "CodDisc": "SIN131",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 132"
+        ],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 143",
+        "NomeDisciplina": "Laboratório de Programação",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 141 | SIN 220",
+        "Oferecida": "S",
+        "CodDisc": "SIN143",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 141",
+          "SIN 220"
+        ],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 320",
+        "NomeDisciplina": "Laboratório de Banco de Dados",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 220",
+        "Oferecida": "S",
+        "CodDisc": "SIN320",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 220"
+        ],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 321",
+        "NomeDisciplina": "Engenharia de Software II",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 221",
+        "Oferecida": "S",
+        "CodDisc": "SIN321",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 221"
+        ],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 351",
+        "NomeDisciplina": "Sistemas Operacionais",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 211",
+        "Oferecida": "S",
+        "CodDisc": "SIN351",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 211"
+        ],
+        "Dependentes": [
+          "SIN 352",
+          "SIN 142"
+        ]
+      }
+    ],
+    "6": [
+      {
+        "CodDisciplina": "SIN 100",
+        "NomeDisciplina": "Tratamento e Análise de Dados/Informações",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN100",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 322",
+        "NomeDisciplina": "Prática de Gerenciamento de Projetos",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "SIN 221",
+        "Oferecida": "S",
+        "CodDisc": "SIN322",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 221"
+        ],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 323",
+        "NomeDisciplina": "Inteligência Artificial",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 110 | SIN 132",
+        "Oferecida": "S",
+        "CodDisc": "SIN323",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 110",
+          "SIN 132"
+        ],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 352",
+        "NomeDisciplina": "Redes de Computadores",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "6(4+2)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "SIN 351",
+        "Oferecida": "S",
+        "CodDisc": "SIN352",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 351"
+        ],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 480",
+        "NomeDisciplina": "Pesquisa Operacional I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "MAP 298 | SIN 110",
+        "Oferecida": "S",
+        "CodDisc": "SIN480",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 298",
+          "SIN 110"
+        ],
+        "Dependentes": []
+      }
+    ],
+    "7": [
+      {
+        "CodDisciplina": "SIN 142",
+        "NomeDisciplina": "Sistemas Distribuídos",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 351",
+        "Oferecida": "S",
+        "CodDisc": "SIN142",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 351"
+        ],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 392",
+        "NomeDisciplina": "Introdução ao Processamento Digital de Imagens",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "MAP 199 | SIN 110",
+        "Oferecida": "S",
+        "CodDisc": "SIN392",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 199",
+          "SIN 110"
+        ],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 488",
+        "NomeDisciplina": "Trabalho de Conclusão de Curso I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+10)",
+        "CargaTotal": 150,
+        "Creditos": 0,
+        "Dependencias": "SIN 495",
+        "Oferecida": "S",
+        "CodDisc": "SIN488",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 495"
+        ],
+        "Dependentes": [
+          "SIN 489"
+        ]
+      },
+      {
+        "CodDisciplina": "SIN 495",
+        "NomeDisciplina": "Projeto Integralizador de Extensão",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "6(2+4)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN495",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "SIN 488",
+          "SIN 494"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "CodDisciplina": "ADE 327",
+        "NomeDisciplina": "Empreendedorismo",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ADE327",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "CIC 100",
+        "NomeDisciplina": "Contabilidade Geral",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CIC100",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 489",
+        "NomeDisciplina": "Trabalho de Conclusão de Curso II",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+10)",
+        "CargaTotal": 150,
+        "Creditos": 0,
+        "Dependencias": "SIN 488",
+        "Oferecida": "S",
+        "CodDisc": "SIN489",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 488"
+        ],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 494",
+        "NomeDisciplina": "Atividades Complementares",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+4)",
+        "CargaTotal": 60,
+        "Creditos": 0,
+        "Dependencias": "SIN 495",
+        "Oferecida": "S",
+        "CodDisc": "SIN494",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 495"
+        ],
+        "Dependentes": []
+      },
+      {
+        "CodDisciplina": "SIN 497",
+        "NomeDisciplina": "Atividades de Extensão",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+12)",
+        "CargaTotal": 180,
+        "Creditos": 0,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN497",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": []
+      }
+    ]
+  }
+}
