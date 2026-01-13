@@ -34,14 +34,14 @@
   flex-direction: column;
 }
 
-.dataRow {
+.selected-dataRow {
   display: flex;
   align-items: center;
   margin-top: 1.2em;
   gap: 0.6em;
 }
 
-.label {
+.selected-label {
   font-size: 0.9em;
   font-weight: 600;
   color: #fff;
@@ -49,40 +49,64 @@
 }
 
 /* Novas classes para os tons de vermelho */
-.redLight {
-  background-color: #e05f64;
+.selected-redLight {
+  background-color: #a83237;
   color: #fff;
 }
 
-.redMedium {
+.selected-redMedium {
   background-color: #b32a30;
   color: #fff;
 }
 
-.redDark {
-  background-color: #7a1216;
+.selected-redDark {
+  background-color: #e8969a;
   color: #fff;
 }
 
-.dataBox {
+.selected-dark {
+  background-color: #2a1a1b;
+  color: #fff;
+}
+
+.selected-dataBox {
   height: auto;
   width: auto;
-  min-width: 2.5em;
-  padding: 0.4em 1.2em;
+  min-width: 2.2em;
+  max-width: 8em;
+  padding: 0.3em 0.75em;
   margin-left: 0;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  box-shadow: none;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   font-size: 0.85em;
-  font-weight: 700;
+  font-weight: 600;
   background-color: #b32a30;
   color: #fff;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.dataBox-variant {
+.selected-dataBox.selected-dark {
+  background-color: rgba(179, 42, 48, 0.25);
+}
+
+.selected-dataBox.selected-redLight {
+  background-color: #a83237;
+}
+
+.selected-dataBox.selected-redMedium {
+  background-color: #b32a30;
+}
+
+.selected-dataBox.selected-redDark {
+  background-color: #e8969a;
+}
+
+.selected-dataBox-variant {
   padding: 0.1em 1.1em;
 }
 
@@ -94,4 +118,24 @@
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.selected-dataBox.selected-turmaSlide {
+  animation: fadeSlide 0.7s ease-in-out;
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-3px);
+    box-shadow: 0 0 18px 18px rgba(227, 42, 48, 0.75);
+  }
+  50% {
+    box-shadow: 0 0 16px 16px rgba(227, 42, 48, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
 }
