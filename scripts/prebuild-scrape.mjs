@@ -9,6 +9,7 @@ import * as cheerio from 'cheerio';
 import { writeFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { scrapeAllSchedules } from './dti-schedule-scraper.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -218,9 +219,62 @@ async function main() {
   const startTime = Date.now();
   
   try {
+    // Fase 1: Scraping do catálogo UFV
     const courseData = await scrapeAllPeriodos();
     
-    console.log('\nFase 2/2: Salvando dados\n');
+    // Fase 2: Scraping dos horários DTI
+    console.log('\n' + '='.repeat(80));
+    console.log('FASE 2: HORÁRIOS DTI');
+    console.log('='.repeat(80));
+    const schedules = await scrapeAllSchedules();
+    
+    // Fase 3: Integrar horários com disciplinas
+    console.log('\nFase 3/3: Integrando horários com disciplinas\n');
+    let horariosIntegrados = 0;
+    
+    for (const periodo of Object.keys(courseData)) {
+      for (const disc of courseData[periodo]) {
+        const normalizedCode = disc.CodDisc;
+        
+        // Buscar turmas correspondentes (T e P)
+        const turmasT = Object.values(schedules).filter(s => 
+          s.codigo === normalizedCode && s.tipo === 'T'
+        );
+        const turmasP = Object.values(schedules).filter(s => 
+          s.codigo === normalizedCode && s.tipo === 'P'
+        );
+        
+        // Se encontrou turmas, adicionar horários
+        if (turmasT.length > 0 || turmasP.length > 0) {
+          // Usar primeira turma teórica como padrão para Horarios/Sala
+          if (turmasT.length > 0) {
+            disc.Horarios = turmasT[0].horarios.join('\n');
+            disc.Sala = turmasT[0].salas.join('\n');
+          }
+          
+          // Adicionar informações de todas as turmas
+          disc.TurmasDisponiveis = {
+            teoricas: turmasT.map(t => ({
+              turma: t.turma,
+              horarios: t.horarios,
+              salas: t.salas,
+              professor: t.professor
+            })),
+            praticas: turmasP.map(t => ({
+              turma: t.turma,
+              horarios: t.horarios,
+              salas: t.salas,
+              professor: t.professor
+            }))
+          };
+          
+          horariosIntegrados++;
+        }
+      }
+    }
+    
+    console.log(`Horários integrados: ${horariosIntegrados} disciplinas`);
+    console.log('\nFase 4/4: Salvando dados\n');
     
     const totalDisciplinas = Object.values(courseData).reduce(
       (acc, arr) => acc + arr.length, 
