@@ -1,6 +1,22 @@
 import React, { useState, useEffect } from "react";
 import './SelectedCard.css';
 import { Discipline } from "../../types/types";
+import { courseData } from "../../data/courseData";
+
+const ScrollingText: React.FC<{ items: string[] }> = ({ items }) => {
+  const text = items.join('     |     ');
+  const textLength = text.length;
+  const animationDuration = Math.max(10, textLength * 0.3);
+  
+  return (
+    <div className="scrollingContainer">
+      <div className="scrollingContent" style={{ animationDuration: `${animationDuration}s` }}>
+        <span>{text}</span>
+        <span>{text}</span>
+      </div>
+    </div>
+  );
+};
 
 const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline }) => {
     const [loading, setLoading] = useState(true);
@@ -23,20 +39,49 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                     <div className="theLeftSide">
                         <div className="dataRow">
                             <span className="label">Créditos:</span>
-                            <div className="dataBox redMedium">{discipline.Creditos ?? discipline.CargaSemanal?.[0] ?? '-'}</div>
+                            <div className={`dataBox ${
+                                parseInt(discipline.CargaSemanal) <= 2 ? 'redDark' :
+                                parseInt(discipline.CargaSemanal) === 4 ? 'redMedium' :
+                                'redLight'
+                            }`}>{discipline.CargaSemanal.split('(')[0]}</div>
                         </div>
                         <div className="dataRow">
                             <span className="label">Pré-requisitos:</span>
-                            <div className="dataBox redMedium">
-                                {discipline.Prerequisitos && discipline.Prerequisitos.length > 0 
-                                    ? discipline.Prerequisitos.join(', ') 
-                                    : 'Nenhum'}
-                            </div>
+                            {discipline.Dependencias && discipline.Dependencias !== "não possui" ? (
+                                <div className="dataBox redMedium">{discipline.Dependencias.replace(/\|/g, ' | ')}</div>
+                            ) : (
+                                <span className="plainText">não possui</span>
+                            )}
                         </div>
                         <div className="dataRow">
                             <span className="label">Turmas:</span>
-                            <div className="dataBox redMedium">T1</div>
-                            <div className="dataBox redMedium">T2</div>
+                            {(() => {
+                                const allTurmas = courseData[discipline.Periodo.toString()]?.filter(
+                                    d => d.CodDisciplina === discipline.CodDisciplina && d.Tipo === 'T'
+                                ) || [];
+                                
+                                if (allTurmas.length === 0) {
+                                    return <span className="plainText">não informado</span>;
+                                }
+                                
+                                const turmasTexts = allTurmas.map(turma => 
+                                    `T${turma.Turma}: ${turma.Horarios.replace(/\|/g, ' | ')}h`
+                                );
+                                
+                                if (allTurmas.length > 2) {
+                                    return (
+                                        <div className="dataBox dark turmaScrollBox">
+                                            <ScrollingText items={turmasTexts} />
+                                        </div>
+                                    );
+                                } else {
+                                    return turmasTexts.map((text, index) => (
+                                        <div key={index} className="dataBox dark">
+                                            {text}
+                                        </div>
+                                    ));
+                                }
+                            })()}
                         </div>
                     </div>
 
@@ -47,15 +92,19 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                         </div>
                         <div className="dataRow">
                             <span className="label">Oferta:</span>
-                            <div className="dataBox redMedium">{discipline.Oferecida}</div>
+                            <div className="dataBox dark">
+                                {typeof discipline.Periodo === 'number' 
+                                    ? (discipline.Periodo % 2 === 0 ? 'semestre par' : 'semestre ímpar')
+                                    : discipline.Oferecida}
+                            </div>
                         </div>
                         <div className="dataRow">
                             <span className="label">Dependentes:</span>
-                            <div className="dataBox redMedium">
-                                {discipline.Dependentes && discipline.Dependentes.length > 0 
-                                    ? discipline.Dependentes.join(', ') 
-                                    : 'Nenhum'}
-                            </div>
+                            {discipline.Dependencias && discipline.Dependencias !== "não possui" ? (
+                                <div className="dataBox redMedium">{discipline.Dependencias.replace(/\|/g, ' | ')}</div>
+                            ) : (
+                                <span className="plainText">não possui</span>
+                            )}
                         </div>
                     </div>
                 </div>

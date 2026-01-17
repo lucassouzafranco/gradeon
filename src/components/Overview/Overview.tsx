@@ -1,10 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import './Overview.css';
 import { Discipline } from '../../types/types';
+import { courseData } from '../../data/courseData';
 
 interface OverviewProps {
   selectedCards: Discipline[];
 }
+
+const ScrollingText: React.FC<{ items: string[] }> = ({ items }) => {
+  const text = items.join(' | ');
+  const textLength = text.length;
+  const animationDuration = Math.max(10, textLength * 0.3);
+  
+  return (
+    <div className="scrollingContainer">
+      <div className="scrollingContent" style={{ animationDuration: `${animationDuration}s` }}>
+        <span>{text}</span>
+        <span>{text}</span>
+      </div>
+    </div>
+  );
+};
 
 const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
   const [balanceamento, setBalanceamento] = useState<number | string>('');
@@ -56,16 +72,46 @@ const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
     return 'Desconhecido';
   };
 
-  const classShifts = selectedCards.reduce((acc, card) => {
-    const horarios = card.Horarios.split('|').map(horario => parseInt(horario.split('=')[1]));
-    const shifts = horarios.map(getShift);
-    shifts.forEach(shift => {
-      if (!acc.includes(shift) && shift !== 'Desconhecido') {
-        acc.push(shift);
+  // Buscar todas as turmas disponíveis das disciplinas selecionadas
+  const availableShifts = selectedCards.reduce((acc, card) => {
+    // Buscar todas as turmas dessa disciplina
+    const allTurmas = courseData[card.Periodo.toString()]?.filter(
+      d => d.CodDisciplina === card.CodDisciplina && d.Tipo === 'T'
+    ) || [];
+
+    // Para cada turma, extrair os horários
+    allTurmas.forEach(turma => {
+      if (turma.Horarios) {
+        const horarios = turma.Horarios.split('|').map(horario => parseInt(horario.split('=')[1]));
+        const shifts = horarios.map(getShift);
+        shifts.forEach(shift => {
+          if (!acc.includes(shift) && shift !== 'Desconhecido') {
+            acc.push(shift);
+          }
+        });
       }
     });
+
     return acc;
   }, [] as string[]);
+
+  // Ordenar turnos: Manhã, Tarde, Noite
+  const shiftOrder = ['Manhã', 'Tarde', 'Noite'];
+  const sortedShifts = availableShifts.sort((a, b) => 
+    shiftOrder.indexOf(a) - shiftOrder.indexOf(b)
+  );
+
+  // Extrair locais únicos (salas)
+  const uniqueLocations = Array.from(new Set(
+    selectedCards
+      .map(card => card.Sala)
+      .filter(sala => sala && sala.trim() !== '')
+  )).sort();
+
+  // Extrair códigos únicos das disciplinas
+  const uniqueCodes = Array.from(new Set(
+    selectedCards.map(card => card.CodDisciplina)
+  )).sort();
 
   const conflictsToSolve = 0;
 
@@ -76,6 +122,12 @@ const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
           <div className="leftAndRight">
             <div className="leftSide">
               <div className="dataRow">
+                <span className="label">Balanceamento da grade:</span>
+                <div className="dataBox redMedium narrowBox">
+                  {numDisciplinas < 3 ? '' : classification}
+                </div>
+              </div>
+              <div className="dataRow">
                 <span className="label">Número de disciplinas:</span>
                 <div className="dataBox redMedium">{selectedCards.length}</div>
               </div>
@@ -83,21 +135,45 @@ const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
                 <span className="label">Número de créditos:</span>
                 <div className="dataBox redMedium">{totalCredits}</div>
               </div>
-              <div className="dataRow">
-                <span className="label">Balanceamento da grade:</span>
-                <div className="dataBox redMedium narrowBox">
-                  {numDisciplinas < 3 ? '' : classification} {/* Exibe a classificação sem o número para grades com 3 ou mais disciplinas */}
-                </div>
-              </div>
             </div>
             <div className="rightSide">
               <div className="dataRow">
-                <span className="label">Conflitos a resolver:</span>
-                <div className="dataBox redMedium">{conflictsToSolve}</div>
+                <span className="label">Locais:</span>
+                <div className="dataBox redMedium wideBox">
+                  {uniqueLocations.length > 0 ? (
+                    uniqueLocations.length > 2 ? (
+                      <ScrollingText items={uniqueLocations} />
+                    ) : (
+                      uniqueLocations.join(' | ')
+                    )
+                  ) : (
+                    'N/A'
+                  )}
+                </div>
               </div>
               <div className="dataRow">
-                <span className="label">Turnos:</span>
-                <div className="dataBox redMedium">{classShifts.join(', ')}</div>
+                <span className="label">Códigos:</span>
+                <div className="dataBox redMedium wideBox">
+                  {uniqueCodes.length > 2 ? (
+                    <ScrollingText items={uniqueCodes} />
+                  ) : (
+                    uniqueCodes.join(' | ')
+                  )}
+                </div>
+              </div>
+              <div className="dataRow">
+                <span className="label">Turnos disponíveis:</span>
+                <div className="dataBox redMedium">
+                  {sortedShifts.length > 0 ? (
+                    sortedShifts.length > 2 ? (
+                      <ScrollingText items={sortedShifts} />
+                    ) : (
+                      sortedShifts.join(' | ')
+                    )
+                  ) : (
+                    'N/A'
+                  )}
+                </div>
               </div>
             </div>
           </div>

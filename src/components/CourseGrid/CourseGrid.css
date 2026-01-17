@@ -33,6 +33,11 @@
   cursor: pointer;
 }
 
+.disciplineCard.not-offered {
+  background-color: #4a4a4a;
+  opacity: 0.6;
+}
+
 .disciplineCard:hover,
 .disciplineCard.hovered {
   transform: scale(1.13); /* Efeito de zoom */
@@ -48,6 +53,12 @@
   opacity: 1.0;
   border: 2px solid white;
   box-shadow: 0 0 10px 8px rgba(255, 255, 255, 0.4); /* Brilho mais sutil */
+}
+
+.disciplineCard.not-offered:hover,
+.disciplineCard.not-offered.highlight {
+  background-color: #5a5a5a;
+  opacity: 0.8;
 }
 
 .column h2 {

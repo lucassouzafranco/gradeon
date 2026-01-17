@@ -37,46 +37,116 @@
 .dataRow {
   display: flex;
   align-items: center;
-  margin-top: 1em;
+  margin-top: 1.2em;
+  gap: 0.6em;
 }
 
 .label {
-  font-size: 1em;
-  font-weight: 700;
+  font-size: 0.9em;
+  font-weight: 600;
   color: #fff;
+  min-width: fit-content;
 }
 
 /* Novas classes para os tons de vermelho */
 .redLight {
-  background-color: #FF090E;
+  background-color: #a83237;
   color: #fff;
 }
 
 .redMedium {
-  background-color: rgba(0, 0, 0, 0.23);
+  background-color: #b32a30;
   color: #fff;
 }
 
 .redDark {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #e8969a;
+  color: #fff;
+}
+
+.dark {
+  background-color: #2a1a1b;
   color: #fff;
 }
 
 .dataBox {
-  height: 2.2vh;
+  height: auto;
   width: auto;
-  padding: 0.09em 0.9em;
-  margin-left: 1em;
+  min-width: 3em;
+  max-width: 8em;
+  padding: 0.4em 1.2em;
+  margin-left: 0;
   border-radius: 5px;
-  font-weight: 600;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.8em;
-  font-weight: 600; 
+  font-size: 0.85em;
+  font-weight: 700;
+  background-color: #b32a30;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dataBox.dark {
+  background-color: rgba(179, 42, 48, 0.25);
+}
+
+.dataBox.redLight {
+  background-color: #a83237;
+}
+
+.dataBox.redMedium {
+  background-color: #b32a30;
+}
+
+.dataBox.redDark {
+  background-color: #e8969a;
 }
 
 .dataBox-variant {
   padding: 0.1em 1.1em;
+}
+
+.plainText {
+  font-size: 0.85em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dataBox.turmaScrollBox {
+  max-width: 12em;
+  overflow: hidden;
+  padding: 0.4em 0.8em;
+}
+
+.scrollingContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrollingContent {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
+
+.scrollingContent span {
+  padding-right: 5em;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
