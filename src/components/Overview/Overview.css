@@ -80,21 +80,53 @@
   width: 9em;
 }
 
+.wideBox {
+  min-width: 8em;
+  max-width: 15em;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.scrollingContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrollingContent {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
+
+.scrollingContent span {
+  padding-right: 3em;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .dataBox:hover {
   background-color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
 }
 
 .Balanceada:hover {
-  background-color: rgba(0, 255, 0, 0.7);
-}
-
-.LevementeDesbalanceada:hover {
-  background-color: rgba(255, 165, 0, 0.7);
-}
-
-.Desbalanceada:hover {
-  background-color: rgba(255, 0, 0, 0.7);
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .difficultyRow {

@@ -3,9 +3,23 @@ import './SelectedCard.css';
 import { Discipline } from "../../types/types";
 import { courseData } from "../../data/courseData";
 
+const ScrollingText: React.FC<{ items: string[] }> = ({ items }) => {
+  const text = items.join('     |     ');
+  const textLength = text.length;
+  const animationDuration = Math.max(10, textLength * 0.3);
+  
+  return (
+    <div className="scrollingContainer">
+      <div className="scrollingContent" style={{ animationDuration: `${animationDuration}s` }}>
+        <span>{text}</span>
+        <span>{text}</span>
+      </div>
+    </div>
+  );
+};
+
 const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline }) => {
     const [loading, setLoading] = useState(true);
-    const [currentTurmaIndex, setCurrentTurmaIndex] = useState(0);
 
     useEffect(() => {
         setLoading(true); // Reinicia o estado de loading ao mudar a disciplina
@@ -14,25 +28,6 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
         }, 240); // Delay de 240 milisegundos
 
         return () => clearTimeout(timer); // Limpa o timer ao desmontar o componente
-    }, [discipline]);
-
-    // Rotaciona turmas quando houver mais de 2
-    useEffect(() => {
-        if (!discipline) return;
-        
-        const allTurmas = courseData[discipline.Periodo.toString()]?.filter(
-            d => d.CodDisciplina === discipline.CodDisciplina && d.Tipo === 'T'
-        ) || [];
-        
-        if (allTurmas.length > 2) {
-            const interval = setInterval(() => {
-                setCurrentTurmaIndex(prev => (prev + 1) % allTurmas.length);
-            }, 2500); // Troca a cada 2.5 segundos
-            
-            return () => clearInterval(interval);
-        } else {
-            setCurrentTurmaIndex(0);
-        }
     }, [discipline]);
 
     return (
@@ -69,19 +64,20 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                                     return <span className="plainText">não informado</span>;
                                 }
                                 
+                                const turmasTexts = allTurmas.map(turma => 
+                                    `T${turma.Turma}: ${turma.Horarios.replace(/\|/g, ' | ')}h`
+                                );
+                                
                                 if (allTurmas.length > 2) {
-                                    // Exibe apenas uma turma por vez com animação
-                                    const currentTurma = allTurmas[currentTurmaIndex];
                                     return (
-                                        <div key={currentTurmaIndex} className="dataBox dark turmaSlide">
-                                            T{currentTurma.Turma}: {currentTurma.Horarios.replace(/\|/g, ' | ')}h
+                                        <div className="dataBox dark turmaScrollBox">
+                                            <ScrollingText items={turmasTexts} />
                                         </div>
                                     );
                                 } else {
-                                    // Exibe todas as turmas quando houver 2 ou menos
-                                    return allTurmas.map((turma, index) => (
+                                    return turmasTexts.map((text, index) => (
                                         <div key={index} className="dataBox dark">
-                                            T{turma.Turma}: {turma.Horarios.replace(/\|/g, ' | ')}h
+                                            {text}
                                         </div>
                                     ));
                                 }

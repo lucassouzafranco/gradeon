@@ -1,6 +1,23 @@
 import { Discipline } from '../types/types';
 
-export const courseData: Record<string, Discipline[]> = {
+// Sistema com fallback: tenta usar pipeline refatorado, se falhar usa dados legados
+let courseData: Record<string, Discipline[]>;
+
+try {
+  // Tenta carregar via pipeline refatorado
+  const { buildCourseData } = require('./pipeline');
+  courseData = buildCourseData();
+  console.log('✅ [courseData] Pipeline refatorado carregado com sucesso');
+  console.log(`[courseData] Períodos: ${Object.keys(courseData).length}`);
+  console.log(`[courseData] Total de ofertas: ${
+    Object.values(courseData).reduce((sum, arr) => sum + arr.length, 0)
+  }`);
+} catch (error) {
+  console.warn('⚠️ [courseData] Falha ao carregar pipeline refatorado, usando dados legados');
+  console.error(error);
+  
+  // Fallback: dados legados
+  courseData = {
   '1': [
     {
       CodDisciplina: 'CRP 199',
@@ -1457,5 +1474,7 @@ export const courseData: Record<string, Discipline[]> = {
       Depen: ''
     }
   ],
-
+  };
 }
+
+export { courseData };

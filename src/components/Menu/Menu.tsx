@@ -1,3 +1,4 @@
+import React from "react";
 import "./Menu.css";
 import { IoMenu } from "react-icons/io5";
 import gradeon_logo from "../../assets/gradeon_logo.png";

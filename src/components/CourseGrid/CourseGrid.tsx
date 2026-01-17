@@ -73,6 +73,8 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selected
             <div
               key={index}
               className={`disciplineCard ${
+                disciplina.Oferecida === 'N' ? 'not-offered' : ''
+              } ${
                 highlighted.includes(disciplina.CodDisc) ? 'highlight' : ''
               } ${draggedDiscipline && draggedDiscipline !== disciplina ? 'faded' : ''} ${
                 selectedCards.some(d => d.CodDisciplina === disciplina.CodDisciplina) ? 'selected' : ''
