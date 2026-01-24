@@ -13,6 +13,9 @@ export interface Discipline {
   CodDisc: string;
   Depen: string;
   reprovaPercentual?: number;
+  Prerequisitos?: string[];
+  Dependentes?: string[];
+  Creditos?: number;
 }
 
 // Tipos internos para processamento de dados

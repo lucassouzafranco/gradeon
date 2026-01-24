@@ -1,13 +1,12 @@
 import { RawOffer, Discipline } from '../types/types';
-import { courseData as legacyCourseData } from './courseData';
+import scrapedData from './scrapedData.json';
 
-export function extractRawOffers(
-  legacyData: Record<string, Discipline[]>
-): RawOffer[] {
+export function extractRawOffers(): RawOffer[] {
   const offers: RawOffer[] = [];
+  const data = scrapedData.courseData as Record<string, Discipline[]>;
 
-  for (const periodKey of Object.keys(legacyData)) {
-    const disciplines = legacyData[periodKey];
+  for (const periodKey of Object.keys(data)) {
+    const disciplines = data[periodKey];
     
     for (const disc of disciplines) {
       const rawOffer: RawOffer = {
@@ -30,5 +29,5 @@ export function extractRawOffers(
 }
 
 export function getCurrentRawOffers(): RawOffer[] {
-  return extractRawOffers(legacyCourseData);
+  return extractRawOffers();
 }

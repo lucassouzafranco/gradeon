@@ -22,12 +22,12 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        setLoading(true); // Reinicia o estado de loading ao mudar a disciplina
+        setLoading(true);
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 240); // Delay de 240 milisegundos
+        }, 240);
 
-        return () => clearTimeout(timer); // Limpa o timer ao desmontar o componente
+        return () => clearTimeout(timer);
     }, [discipline]);
 
     return (
@@ -47,11 +47,27 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                         </div>
                         <div className="dataRow">
                             <span className="label">Pré-requisitos:</span>
-                            {discipline.Dependencias && discipline.Dependencias !== "não possui" ? (
-                                <div className="dataBox redMedium">{discipline.Dependencias.replace(/\|/g, ' | ')}</div>
-                            ) : (
-                                <span className="plainText">não possui</span>
-                            )}
+                            {(() => {
+                                if (!discipline.Dependencias || discipline.Dependencias === "não possui") {
+                                    return <span className="plainText">não possui</span>;
+                                }
+                                
+                                const prerequisitosArray = discipline.Dependencias.split('|').map(p => p.trim());
+                                
+                                if (prerequisitosArray.length > 2) {
+                                    return (
+                                        <div className="dataBox redMedium turmaScrollBox">
+                                            <ScrollingText items={prerequisitosArray} />
+                                        </div>
+                                    );
+                                } else {
+                                    return (
+                                        <div className="dataBox redMedium">
+                                            {prerequisitosArray.join(' | ')}
+                                        </div>
+                                    );
+                                }
+                            })()}
                         </div>
                         <div className="dataRow">
                             <span className="label">Turmas:</span>
@@ -100,11 +116,28 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                         </div>
                         <div className="dataRow">
                             <span className="label">Dependentes:</span>
-                            {discipline.Dependencias && discipline.Dependencias !== "não possui" ? (
-                                <div className="dataBox redMedium">{discipline.Dependencias.replace(/\|/g, ' | ')}</div>
-                            ) : (
-                                <span className="plainText">não possui</span>
-                            )}
+                            {(() => {
+                                // Usar o campo Dependentes se existir, senão fallback para message
+                                const dependentes = discipline.Dependentes || [];
+                                
+                                if (!dependentes || dependentes.length === 0) {
+                                    return <span className="plainText">não possui</span>;
+                                }
+                                
+                                if (dependentes.length > 2) {
+                                    return (
+                                        <div className="dataBox redMedium turmaScrollBox">
+                                            <ScrollingText items={dependentes} />
+                                        </div>
+                                    );
+                                } else {
+                                    return (
+                                        <div className="dataBox redMedium">
+                                            {dependentes.join(' | ')}
+                                        </div>
+                                    );
+                                }
+                            })()}
                         </div>
                     </div>
                 </div>
