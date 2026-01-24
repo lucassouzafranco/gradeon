@@ -26,10 +26,12 @@ export function toLegacyCourseData(
         Sala: offer.sala,
         Periodo: norm.periodo,
         NomeDisciplina: offer.nome,
-        CargaSemanal: offer.cargaSemanal,
-        CargaTotal: offer.cargaTotal,
-        Dependencias: norm.prerequisitos.join('|'), // With spaces
-        Oferecida: offer.oferecida,
+        // Use defaults for fields that may be null (from registration scraper)
+        // Frontend expects non-null values, so we provide safe defaults
+        CargaSemanal: offer.cargaSemanal ?? '4(4-0)',  // Common pattern
+        CargaTotal: offer.cargaTotal ?? 60,            // Standard workload
+        Dependencias: norm.prerequisitos.join('|'),    // With spaces
+        Oferecida: offer.oferecida ?? 'S',             // If listed, assume offered
         CodDisc: codDisc,
         Depen: depen
       };

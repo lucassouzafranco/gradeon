@@ -1,5 +1,6 @@
 import { RawOffer, Discipline } from '../types/types';
 import scrapedData from './scrapedData.json';
+import { getSINOffers } from './scraper';
 
 export function extractRawOffers(): RawOffer[] {
   const offers: RawOffer[] = [];
@@ -30,4 +31,14 @@ export function extractRawOffers(): RawOffer[] {
 
 export function getCurrentRawOffers(): RawOffer[] {
   return extractRawOffers();
+}
+
+export async function getScrapedOffers(): Promise<RawOffer[]> {
+  try {
+    const scrapedData = await getSINOffers();
+    return scrapedData;
+  } catch (error) {
+    console.warn('Falha ao fazer scraping, usando dados estáticos:', error);
+    return getCurrentRawOffers();
+  }
 }

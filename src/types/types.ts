@@ -13,9 +13,10 @@ export interface Discipline {
   CodDisc: string;
   Depen: string;
   reprovaPercentual?: number;
+  // Novos campos do catálogo
+  Creditos?: number;
   Prerequisitos?: string[];
   Dependentes?: string[];
-  Creditos?: number;
 }
 
 // Tipos internos para processamento de dados
@@ -26,9 +27,10 @@ export interface RawOffer {
   turma: string;
   horarios: string;
   sala: string;
-  cargaSemanal: string;
-  cargaTotal: number;
-  oferecida: 'S' | 'N';
+  // Fields below may be null if not available from data source
+  cargaSemanal: string | null;
+  cargaTotal: number | null;
+  oferecida: 'S' | 'N' | null;
 }
 
 export interface CurriculumDiscipline {
