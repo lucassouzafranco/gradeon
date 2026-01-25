@@ -3,10 +3,30 @@ import './SelectedCard.css';
 import { Discipline } from "../../types/types";
 import ScrollingText from "../ScrollingText/ScrollingText";
 import { useCourseData } from "../../data";
+import indicadoresData from "../../data/disciplinas-indicadores.json";
+import { getCorPorValor } from "../../data/gradeBalance";
+
+// Tipagem para os dados do JSON
+interface DisciplinaIndicadores {
+  codigo_disciplina: string;
+  indicadores: {
+    taxa_reprovacao: number;
+  };
+}
 
 const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline }) => {
     const [loading, setLoading] = useState(true);
     const { data: courseData, loading: courseLoading } = useCourseData();
+
+    // Buscar taxa de reprovação do JSON
+    const getTaxaReprovacao = (codigo: string): number | null => {
+        const disciplinas = indicadoresData.endpoints['/disciplinas'] as DisciplinaIndicadores[];
+        const indicadores = disciplinas.find(d => d.codigo_disciplina === codigo);
+        return indicadores?.indicadores.taxa_reprovacao ?? null;
+    };
+
+    const taxaReprovacao = discipline ? getTaxaReprovacao(discipline.CodDisciplina) : null;
+    const corReprovacao = taxaReprovacao !== null ? getCorPorValor(taxaReprovacao, 'reprovacao') : '#6b7280';
 
     useEffect(() => {
         setLoading(true);
@@ -91,7 +111,14 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                     <div className="theRightSide">
                         <div className="dataRow">
                             <span className="label">Reprovação:</span>
-                            <div className="dataBox redMedium">34%</div>
+                            <div 
+                                className="dataBox" 
+                                style={{ backgroundColor: corReprovacao, color: '#fff' }}
+                            >
+                                {taxaReprovacao !== null 
+                                    ? `${(taxaReprovacao * 100).toFixed(1)}%` 
+                                    : 'não disponível'}
+                            </div>
                         </div>
                         <div className="dataRow">
                             <span className="label">Oferta:</span>
