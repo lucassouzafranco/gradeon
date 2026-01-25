@@ -3,50 +3,28 @@ import './Overview.css';
 import { Discipline } from '../../types/types';
 import ScrollingText from '../ScrollingText/ScrollingText';
 import { useCourseData } from '../../data';
+import { calcularBalanceamentoGrade, getCorPorValor } from '../../data/gradeBalance';
 
 interface OverviewProps {
   selectedCards: Discipline[];
 }
 
 const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
-  const [balanceamento, setBalanceamento] = useState<number | string>('');
-  const { data: courseData, loading: courseLoading } = useCourseData();
+  const { data: courseData, loading: courseLoading, gradeBalance } = useCourseData();
 
   const totalCredits = selectedCards.reduce((sum, card) => sum + parseInt(card.CargaSemanal.split('(')[0]), 0);
   const numDisciplinas = selectedCards.length;
 
-  // Verificação de disciplinas de 6 créditos
-  const numDisciplinas6Credits = selectedCards.filter(card => parseInt(card.CargaSemanal.split('(')[0]) === 6).length;
-
-  // Futura implementação: Porcentagem média de reprovação
-  // Quando os dados de reprovação estiverem disponíveis, podemos calcular a média das porcentagens de reprovação das disciplinas selecionadas.
-  // Vamos adicionar isso à fórmula do balanceamento da grade.
-  const averageReprovaPercentage = selectedCards.reduce((sum, card) => sum + (card.reprovaPercentual || 0), 0) / selectedCards.length;
+  // Usar os indicadores calculados globalmente para toda a grade
+  const iadg = gradeBalance?.iadg ?? 0;
+  const ibg = gradeBalance?.ibg ?? 0;
+  const classificacaoIADG = gradeBalance?.classificacaoIADG ?? '';
+  const classificacaoIBG = gradeBalance?.classificacaoIBG ?? '';
+  const interpretacao = gradeBalance?.interpretacao ?? '';
   
-  // Balanceamento ajustado para considerar disciplinas de 6 créditos
-  let balanceamentoDaGrade: string | number = '';
-  if (numDisciplinas > 2 && numDisciplinas < 7) {
-    // Adicionando a porcentagem de reprovação na fórmula de balanceamento
-    // Essa parte da fórmula será ajustada assim que tivermos os dados de reprovação.
-    balanceamentoDaGrade = (totalCredits / (numDisciplinas * 4)) * (1 + averageReprovaPercentage / 100); // Ajuste baseado na média da taxa de reprovação
-  } else if (numDisciplinas >= 7 || numDisciplinas6Credits >= 2) {
-    balanceamentoDaGrade = 'Desbalanceada'; // Se houver duas ou mais disciplinas de 6 créditos, a grade é desbalanceada
-  }
-
-  // Classificação ajustada para refletir a natureza dos dados
-  const gradeClassification = (balance: any) => {
-    if (balance === '') return ''; // Para poucas disciplinas ou vazio
-    if (balance === 'Desbalanceada') return 'Desbalanceada'; // Para 7 ou mais disciplinas, ou mais de uma disciplina de 6 créditos
-    if (balance < 0.75) return 'Desbalanceada'; // Menos que 0.75 é desbalanceado
-    if (balance <= 1.25) return 'Balanceada'; // Entre 0.75 e 1.25 é balanceada
-    if (balance <= 1.50) return 'Levemente Desbalanceada'; // Entre 1.25 e 1.50 é levemente desbalanceada
-    return 'Desbalanceada'; // Acima de 1.50 é desbalanceada
-  };
-
-  const classification = gradeClassification(balanceamentoDaGrade);
-
-  // Salvar o número de créditos em algum lugar
-  const savedCredits = balanceamentoDaGrade !== 'Desbalanceada' ? totalCredits : undefined;
+  // Cores baseadas nos indicadores
+  const corIADG = getCorPorValor(iadg, 'dificuldade');
+  const corIBG = getCorPorValor(ibg, 'dificuldade');
 
   const getShift = (time: number) => {
     if (time >= 6 && time < 12) return 'Manhã';
@@ -105,9 +83,23 @@ const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
           <div className="leftAndRight">
             <div className="leftSide">
               <div className="dataRow">
-                <span className="label">Balanceamento da grade:</span>
-                <div className="dataBox redMedium narrowBox">
-                  {numDisciplinas < 3 ? '' : classification}
+                <span className="label">Adequação de Dificuldade (IADG):</span>
+                <div 
+                  className="dataBox narrowBox" 
+                  style={{ backgroundColor: corIADG, color: '#fff' }}
+                  title={interpretacao}
+                >
+                  {classificacaoIADG}
+                </div>
+              </div>
+              <div className="dataRow">
+                <span className="label">Balanceamento (IBG):</span>
+                <div 
+                  className="dataBox narrowBox" 
+                  style={{ backgroundColor: corIBG, color: '#fff' }}
+                  title={interpretacao}
+                >
+                  {classificacaoIBG}
                 </div>
               </div>
               <div className="dataRow">
