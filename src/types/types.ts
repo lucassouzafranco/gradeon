@@ -17,6 +17,17 @@ export interface Discipline {
   Creditos?: number;
   Prerequisitos?: string[];
   Dependentes?: string[];
+  TurmasDisponiveis?: {
+    teoricas: ClassSection[];
+    praticas: ClassSection[];
+  };
+}
+
+export interface ClassSection {
+  turma: string;
+  horarios: string[];
+  salas: string[];
+  professor: string;
 }
 
 // Tipos internos para processamento de dados

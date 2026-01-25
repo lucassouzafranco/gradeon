@@ -18,6 +18,6 @@
     "esModuleInterop": true
   },
   "include": ["src"],
-  "exclude": ["src/scripts", "src/server", "node_modules", "dist"],
+  "exclude": ["src/scripts", "src/server", "node_modules", "dist", "src/data/courseData.backup.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

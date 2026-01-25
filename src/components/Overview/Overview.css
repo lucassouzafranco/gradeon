@@ -118,6 +118,8 @@
 }
 
 .Balanceada:hover {
+  cursor: pointer;
+}
 @keyframes slideIn {
   from {
     opacity: 0;
