@@ -171,30 +171,13 @@ for (const [key, disc] of disciplinas) {
                       notasGlobais.n40a50 + notasGlobais.n50a60;
   const PNB = notasBaixas / totalEstudantes;
   
-  // Calcular CH (consistência histórica)
+  // Calcular CH (consistência histórica) - apenas para cálculo, sem armazenar histórico
   const taxasReprovacaoAnuais = [];
-  const historicoAnual = {};
   
   for (const [ano, anoData] of disc.anos) {
     const trAno = anoData.numEstudantes > 0 ? 
       anoData.reprovacoes / anoData.numEstudantes : 0;
     taxasReprovacaoAnuais.push(trAno);
-    
-    const mediaNotaAno = anoData.numEstudantes > 0 ?
-      anoData.somaMediaPonderada / anoData.numEstudantes : 0;
-    
-    historicoAnual[ano] = {
-      num_estudantes: anoData.numEstudantes,
-      aprovacoes: anoData.aprovacoes,
-      reprovacoes: anoData.reprovacoes,
-      abandonos: anoData.abandonos,
-      media_nota_ponderada: Math.round(mediaNotaAno * 100) / 100,
-      menor_nota: anoData.menorNota === Infinity ? 0 : anoData.menorNota,
-      maior_nota: anoData.maiorNota,
-      taxa_reprovacao: Math.round(trAno * 10000) / 10000,
-      taxa_abandono: Math.round((anoData.abandonos / anoData.numEstudantes) * 10000) / 10000,
-      distribuicao_notas: anoData.notas
-    };
   }
   
   // Desvio padrão das taxas de reprovação anuais
@@ -243,7 +226,6 @@ for (const [key, disc] of disciplinas) {
       consistencia_historica: Math.round(CH * 10000) / 10000,
       indice_dificuldade: Math.round(IDD_normalizado * 10000) / 10000
     },
-    historico_anual: historicoAnual,
     distribuicao_notas_global: notasGlobais
   });
   
@@ -260,7 +242,6 @@ const output = {
   metadata: {
     schema_version: "1.0.0",
     source: "historico-disciplina-filtered.csv",
-    generated_at: new Date().toISOString(),
     total_disciplinas: disciplinasArray.length,
     calculation_methodology: {
       idd_formula: "0.35*TR + 0.20*TA + 0.20*NM_d + 0.15*PNB + 0.10*CH",
