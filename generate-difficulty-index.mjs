@@ -101,7 +101,11 @@ for (let i = 1; i < lines.length; i++) {
       abandonos: 0,
       somaMediaPonderada: 0,
       menorNota: Infinity,
-      maiorNota: -Infinity
+      maiorNota: -Infinity,
+      notas: {
+        n0a10: 0, n10a20: 0, n20a30: 0, n30a40: 0, n40a50: 0,
+        n50a60: 0, n60a70: 0, n70a80: 0, n80a90: 0, n90a100: 0
+      }
     });
   }
   
@@ -113,6 +117,11 @@ for (let i = 1; i < lines.length; i++) {
   anoData.somaMediaPonderada += mediaNota * numEstudantes;
   if (menorNota > 0) anoData.menorNota = Math.min(anoData.menorNota, menorNota);
   anoData.maiorNota = Math.max(anoData.maiorNota, maiorNota);
+  
+  // Agregar distribuição de notas por ano
+  for (const faixa in registro.notas) {
+    anoData.notas[faixa] += registro.notas[faixa];
+  }
 }
 
 // Processar e calcular indicadores
@@ -183,7 +192,8 @@ for (const [key, disc] of disciplinas) {
       menor_nota: anoData.menorNota === Infinity ? 0 : anoData.menorNota,
       maior_nota: anoData.maiorNota,
       taxa_reprovacao: Math.round(trAno * 10000) / 10000,
-      taxa_abandono: Math.round((anoData.abandonos / anoData.numEstudantes) * 10000) / 10000
+      taxa_abandono: Math.round((anoData.abandonos / anoData.numEstudantes) * 10000) / 10000,
+      distribuicao_notas: anoData.notas
     };
   }
   
@@ -214,6 +224,18 @@ for (const [key, disc] of disciplinas) {
       menor_nota_global: menorNotaGlobal === Infinity ? 0 : menorNotaGlobal,
       maior_nota_global: maiorNotaGlobal
     },
+    componentes_idd: {
+      taxa_reprovacao_global: Math.round(TR * 10000) / 10000,
+      taxa_abandono_global: Math.round(TA * 10000) / 10000,
+      media_nota_global: Math.round(NM * 100) / 100,
+      media_nota_normalizada: Math.round(NM_d * 10000) / 10000,
+      proporcao_notas_baixas: Math.round(PNB * 10000) / 10000,
+      consistencia_historica: {
+        valor_normalizado: Math.round(CH * 10000) / 10000,
+        desvio_padrao_tr: Math.round(desvioPadrao * 10000) / 10000,
+        limiar_normalizacao: 0.25
+      }
+    },
     indicadores: {
       taxa_reprovacao: Math.round(TR * 10000) / 10000,
       taxa_abandono: Math.round(TA * 10000) / 10000,
@@ -236,12 +258,24 @@ disciplinasArray.sort((a, b) => a.codigo_disciplina.localeCompare(b.codigo_disci
 // Construir JSON final
 const output = {
   metadata: {
+    schema_version: "1.0.0",
     source: "historico-disciplina-filtered.csv",
     generated_at: new Date().toISOString(),
-    total_disciplinas: disciplinasArray.length
+    total_disciplinas: disciplinasArray.length,
+    calculation_methodology: {
+      idd_formula: "0.35*TR + 0.20*TA + 0.20*NM_d + 0.15*PNB + 0.10*CH",
+      normalization_threshold_ch: 0.25,
+      low_grade_cutoff: 60
+    }
   },
   endpoints: {
     "/disciplinas": disciplinasArray,
+    "/disciplinas/resumo": disciplinasArray.map(d => ({
+      codigo_disciplina: d.codigo_disciplina,
+      disciplina: d.disciplina,
+      taxa_reprovacao: d.indicadores.taxa_reprovacao,
+      indice_dificuldade: d.indicadores.indice_dificuldade
+    })),
     "/disciplinas/{codigo}/taxa-reprovacao": taxasReprovacao,
     "/disciplinas/{codigo}/indice-dificuldade": indicesDificuldade
   }
