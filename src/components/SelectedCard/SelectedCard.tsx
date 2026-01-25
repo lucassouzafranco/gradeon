@@ -1,25 +1,12 @@
 import React, { useState, useEffect } from "react";
 import './SelectedCard.css';
 import { Discipline } from "../../types/types";
-import { courseData } from "../../data/courseData";
-
-const ScrollingText: React.FC<{ items: string[] }> = ({ items }) => {
-  const text = items.join('     |     ');
-  const textLength = text.length;
-  const animationDuration = Math.max(10, textLength * 0.3);
-  
-  return (
-    <div className="scrollingContainer">
-      <div className="scrollingContent" style={{ animationDuration: `${animationDuration}s` }}>
-        <span>{text}</span>
-        <span>{text}</span>
-      </div>
-    </div>
-  );
-};
+import ScrollingText from "../ScrollingText/ScrollingText";
+import { useCourseData } from "../../data";
 
 const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline }) => {
     const [loading, setLoading] = useState(true);
+    const { data: courseData, loading: courseLoading } = useCourseData();
 
     useEffect(() => {
         setLoading(true);
@@ -76,7 +63,7 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                                     d => d.CodDisciplina === discipline.CodDisciplina && d.Tipo === 'T'
                                 ) || [];
                                 
-                                if (allTurmas.length === 0) {
+                                if (courseLoading || allTurmas.length === 0) {
                                     return <span className="plainText">não informado</span>;
                                 }
                                 
@@ -87,7 +74,7 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                                 if (allTurmas.length > 2) {
                                     return (
                                         <div className="dataBox dark turmaScrollBox">
-                                            <ScrollingText items={turmasTexts} />
+                                            <ScrollingText items={turmasTexts} separator="     |     " paddingEm={5} />
                                         </div>
                                     );
                                 } else {

@@ -26,6 +26,7 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { RawOffer } from '../types/types';
+import { logger } from '../utils/logger';
 
 interface ScraperConfig {
   ano: number;
@@ -91,7 +92,7 @@ function parseHorarios(html: string): RawOffer[] {
   });
   
   if (!dataTable) {
-    console.warn('Could not find data table with expected structure');
+    logger.warn('Could not find data table with expected structure');
     return ofertas;
   }
   
@@ -139,10 +140,10 @@ function parseHorarios(html: string): RawOffer[] {
 export async function scrapeHorarios(config: ScraperConfig): Promise<RawOffer[]> {
   const url = `${BASE_URL}?ano=${config.ano}&semestre=${config.semestre}&depto=${config.depto}`;
   
-  console.log('[SCRAPING] ════════════════════════════════════');
-  console.log('[SCRAPING] started: horários (operational data)');
-  console.log(`[SCRAPING] URL: ${url}`);
-  console.log(`[SCRAPING] params: ano=${config.ano}, semestre=${config.semestre}, depto=${config.depto}`);
+  logger.info('[SCRAPING] ════════════════════════════════════');
+  logger.info('[SCRAPING] started: horários (operational data)');
+  logger.info(`[SCRAPING] URL: ${url}`);
+  logger.info(`[SCRAPING] params: ano=${config.ano}, semestre=${config.semestre}, depto=${config.depto}`);
   const startTime = Date.now();
   
   try {
@@ -160,20 +161,20 @@ export async function scrapeHorarios(config: ScraperConfig): Promise<RawOffer[]>
     const ofertas = parseHorarios(response.data);
     const duration = Date.now() - startTime;
     
-    console.log(`[SCRAPING] ✅ found: ${ofertas.length} course offers`);
-    console.log(`[SCRAPING] ✅ finished successfully in ${duration}ms`);
-    console.log('[SCRAPING] ════════════════════════════════════\n');
+    logger.info(`[SCRAPING] ✅ found: ${ofertas.length} course offers`);
+    logger.info(`[SCRAPING] ✅ finished successfully in ${duration}ms`);
+    logger.info('[SCRAPING] ════════════════════════════════════\n');
     
     return ofertas;
   } catch (error) {
     const duration = Date.now() - startTime;
-    console.error(`[SCRAPING] ❌ ERROR after ${duration}ms:`, error);
-    console.log('[SCRAPING] ════════════════════════════════════\n');
+    logger.warn(`[SCRAPING] ❌ ERROR after ${duration}ms:`, error);
+    logger.info('[SCRAPING] ════════════════════════════════════\n');
     throw error;
   }
 }
 
 export async function getSINOffers(ano: number = 2025, semestre: 1 | 2 = 2): Promise<RawOffer[]> {
-  console.log('[SCRAPING] Initiating UFV registration site scraping...');
+  logger.info('[SCRAPING] Initiating UFV registration site scraping...');
   return scrapeHorarios({ ano, semestre, depto: 'SIN' });
 }

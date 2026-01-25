@@ -26,6 +26,7 @@
 
 import axios from 'axios';
 import * as cheerio from 'cheerio';
+import { logger } from '../utils/logger';
 
 export interface CatalogDiscipline {
   cod: string;
@@ -113,7 +114,7 @@ async function fetchDisciplineDetail(cod: string): Promise<{
     
     return { cargaTotal, cargaSemanal, prerequisitos, corequisitos, dependentes };
   } catch (error) {
-    console.warn(`Erro ao buscar detalhes de ${cod}:`, error);
+    logger.warn(`Erro ao buscar detalhes de ${cod}:`, error);
     return { cargaTotal: null, cargaSemanal: null, prerequisitos: [], corequisitos: [], dependentes: [] };
   }
 }
@@ -167,9 +168,9 @@ export async function scrapePeriodo(config: CatalogConfig, includeDetails: boole
   const cursoCode = config.curso === 'SIN' ? 'SIP' : config.curso;
   const url = `${BASE_URL}?ano=${config.ano}&curso=${cursoCode}&campus=${config.campus}&periodo=${config.periodo}&complemento=*`;
   
-  console.log(`[SCRAPING] ────────────────────────────────────`);
-  console.log(`[SCRAPING] started: catalog period ${config.periodo}`);
-  console.log(`[SCRAPING] URL: ${url}`);
+  logger.info(`[SCRAPING] ────────────────────────────────────`);
+  logger.info(`[SCRAPING] started: catalog period ${config.periodo}`);
+  logger.info(`[SCRAPING] URL: ${url}`);
   const startTime = Date.now();
   
   try {
@@ -188,32 +189,32 @@ export async function scrapePeriodo(config: CatalogConfig, includeDetails: boole
     const html = Buffer.from(response.data).toString('latin1');
     let disciplinas = parseCatalogPage(html, config.periodo);
     
-    console.log(`[SCRAPING] ✅ parsed: ${disciplinas.length} disciplines`);
+    logger.info(`[SCRAPING] ✅ parsed: ${disciplinas.length} disciplines`);
     
     // Optionally fetch detail pages for cargaTotal and cargaSemanal
     if (includeDetails) {
-      console.log(`[SCRAPING] fetching details for ${disciplinas.length} disciplines...`);
+      logger.info(`[SCRAPING] fetching details for ${disciplinas.length} disciplines...`);
       disciplinas = await enrichWithDetails(disciplinas);
-      console.log(`[SCRAPING] ✅ enriched with details`);
+      logger.info(`[SCRAPING] ✅ enriched with details`);
     }
     
     const duration = Date.now() - startTime;
-    console.log(`[SCRAPING] ✅ finished successfully in ${duration}ms`);
-    console.log(`[SCRAPING] ────────────────────────────────────\n`);
+    logger.info(`[SCRAPING] ✅ finished successfully in ${duration}ms`);
+    logger.info(`[SCRAPING] ────────────────────────────────────\n`);
     
     return disciplinas;
   } catch (error) {
     const duration = Date.now() - startTime;
-    console.error(`[SCRAPING] ❌ ERROR period ${config.periodo} after ${duration}ms:`, error);
-    console.log(`[SCRAPING] ────────────────────────────────────\n`);
+    logger.warn(`[SCRAPING] ❌ ERROR period ${config.periodo} after ${duration}ms:`, error);
+    logger.info(`[SCRAPING] ────────────────────────────────────\n`);
     throw error;
   }
 }
 
 export async function scrapeSINCatalog(ano: number = 2025, includeDetails: boolean = false): Promise<CatalogDiscipline[]> {
-  console.log('[SCRAPING] ════════════════════════════════════');
-  console.log('[SCRAPING] started: full SIN catalog (periods 1-8)');
-  console.log(`[SCRAPING] params: ano=${ano}, includeDetails=${includeDetails}`);
+  logger.info('[SCRAPING] ════════════════════════════════════');
+  logger.info('[SCRAPING] started: full SIN catalog (periods 1-8)');
+  logger.info(`[SCRAPING] params: ano=${ano}, includeDetails=${includeDetails}`);
   const startTime = Date.now();
   
   const disciplinas: CatalogDiscipline[] = [];
@@ -230,14 +231,14 @@ export async function scrapeSINCatalog(ano: number = 2025, includeDetails: boole
       
       disciplinas.push(...periodoData);
     } catch (error) {
-      console.warn(`[SCRAPING] ⚠️ failed period ${periodo}, continuing...`);
+      logger.warn(`[SCRAPING] ⚠️ failed period ${periodo}, continuing...`);
     }
   }
   
   const duration = Date.now() - startTime;
-  console.log(`[SCRAPING] ✅ total disciplines: ${disciplinas.length}`);
-  console.log(`[SCRAPING] ✅ finished full catalog in ${duration}ms`);
-  console.log('[SCRAPING] ════════════════════════════════════\n');
+  logger.info(`[SCRAPING] ✅ total disciplines: ${disciplinas.length}`);
+  logger.info(`[SCRAPING] ✅ finished full catalog in ${duration}ms`);
+  logger.info('[SCRAPING] ════════════════════════════════════\n');
   
   return disciplinas;
 }
@@ -253,9 +254,9 @@ export async function scrapeSINCatalog(ano: number = 2025, includeDetails: boole
  * para uso futuro (consultas, validações, etc)
  */
 export async function scrapeOptativas(ano: number = 2025, includeDetails: boolean = false): Promise<CatalogDiscipline[]> {
-  console.log('[SCRAPING] ════════════════════════════════════');
-  console.log('[SCRAPING] started: optativas (period=0)');
-  console.log(`[SCRAPING] params: ano=${ano}, includeDetails=${includeDetails}`);
+  logger.info('[SCRAPING] ════════════════════════════════════');
+  logger.info('[SCRAPING] started: optativas (period=0)');
+  logger.info(`[SCRAPING] params: ano=${ano}, includeDetails=${includeDetails}`);
   const startTime = Date.now();
   
   try {
@@ -267,14 +268,14 @@ export async function scrapeOptativas(ano: number = 2025, includeDetails: boolea
     }, includeDetails);
     
     const duration = Date.now() - startTime;
-    console.log(`[SCRAPING] ✅ found: ${optativas.length} optativas`);
-    console.log(`[SCRAPING] ✅ finished successfully in ${duration}ms`);
-    console.log('[SCRAPING] ════════════════════════════════════\n');
+    logger.info(`[SCRAPING] ✅ found: ${optativas.length} optativas`);
+    logger.info(`[SCRAPING] ✅ finished successfully in ${duration}ms`);
+    logger.info('[SCRAPING] ════════════════════════════════════\n');
     return optativas;
   } catch (error) {
     const duration = Date.now() - startTime;
-    console.warn(`[SCRAPING] ⚠️ failed to scrape optativas after ${duration}ms, returning empty array`);
-    console.log('[SCRAPING] ════════════════════════════════════\n');
+    logger.warn(`[SCRAPING] ⚠️ failed to scrape optativas after ${duration}ms, returning empty array`);
+    logger.info('[SCRAPING] ════════════════════════════════════\n');
     return [];
   }
 }

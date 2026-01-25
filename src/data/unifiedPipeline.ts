@@ -11,6 +11,8 @@ import { scrapeOptativas } from './catalogScraper';
 import { courseData as legacyCourseData } from './courseData';
 import type { EnrichedOffer } from './enrichmentLayer';
 import scrapedData from './scrapedData.json';
+import { isValidScrapedData } from './validateScrapedData';
+import { logger } from '../utils/logger';
 
 export interface UnifiedPipelineResult {
   courseData: Record<string, Discipline[]>;
@@ -22,6 +24,8 @@ export interface UnifiedPipelineResult {
     timestamp: string;
   };
 }
+
+let cachedResult: UnifiedPipelineResult | null = null;
 
 function isOptativa(offer: EnrichedOffer, optativasCodes: Set<string>): boolean {
   const normalizedCode = offer.cod.replace(/\s+/g, '').toUpperCase();
@@ -71,10 +75,14 @@ function toLegacyFormat(offers: EnrichedOffer[]): Record<string, Discipline[]> {
 }
 
 export async function getUnifiedCourseData(): Promise<UnifiedPipelineResult> {
+  if (cachedResult) {
+    return cachedResult;
+  }
+
   try {
     // Preferir dados gerados no build (sem logs no browser)
-    if (scrapedData?.courseData && scrapedData?.metadata?.generatedAt) {
-      return {
+    if (isValidScrapedData(scrapedData) && scrapedData?.metadata?.generatedAt) {
+      cachedResult = {
         courseData: scrapedData.courseData,
         metadata: {
           source: 'scraping',
@@ -84,6 +92,7 @@ export async function getUnifiedCourseData(): Promise<UnifiedPipelineResult> {
           timestamp: scrapedData.metadata.generatedAt
         }
       };
+      return cachedResult;
     }
     
     const [optativasResult, scrapingResult] = await Promise.allSettled([
@@ -114,7 +123,7 @@ export async function getUnifiedCourseData(): Promise<UnifiedPipelineResult> {
     
 
     
-    return {
+    cachedResult = {
       courseData,
       metadata: {
         source: 'scraping',
@@ -124,11 +133,13 @@ export async function getUnifiedCourseData(): Promise<UnifiedPipelineResult> {
         timestamp: new Date().toISOString()
       }
     };
+    return cachedResult;
     
   } catch (error) {
     const totalLegacy = Object.values(legacyCourseData).reduce((acc, arr) => acc + arr.length, 0);
-    
-    return {
+    logger.warn('Unified pipeline fallback used:', error);
+
+    cachedResult = {
       courseData: legacyCourseData,
       metadata: {
         source: 'fallback',
@@ -138,6 +149,7 @@ export async function getUnifiedCourseData(): Promise<UnifiedPipelineResult> {
         timestamp: new Date().toISOString()
       }
     };
+    return cachedResult;
   }
 }
 

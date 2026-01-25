@@ -23,6 +23,7 @@
  * ```
  */
 export { getCourseData, getUnifiedCourseData } from './unifiedPipeline';
+export { useCourseData } from './useCourseData';
 
 // ============================================================================
 // TIPOS

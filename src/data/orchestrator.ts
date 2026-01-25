@@ -27,6 +27,7 @@ import {
   calculateEnrichmentStats
 } from './enrichmentLayer';
 import { getCurrentRawOffers } from './rawOfferExtractor';
+import { logger } from '../utils/logger';
 
 /**
  * Cache simples de catálogo
@@ -102,31 +103,31 @@ async function getCatalogWithCache(
     catalogCache.ano === ano &&
     (now - catalogCache.timestamp) < CACHE_TTL_MS
   ) {
-    console.log('📦 Using cached catalog data');
+    logger.info('📦 Using cached catalog data');
     return { data: catalogCache.data, fromCache: true };
   }
   
   // Cache inválido ou refresh forçado - fazer scraping
   try {
-    console.log('🌐 Fetching fresh catalog data...');
+    logger.info('🌐 Fetching fresh catalog data...');
     const data = await scrapeSINCatalog(ano, true); // Com detalhes
     
     // Atualizar cache
     catalogCache = { data, timestamp: now, ano };
-    console.log(`✅ Catalog cached: ${data.length} disciplines`);
+    logger.info(`✅ Catalog cached: ${data.length} disciplines`);
     
     return { data, fromCache: false };
   } catch (error) {
-    console.warn('⚠️ Failed to fetch catalog:', error);
+    logger.warn('⚠️ Failed to fetch catalog:', error);
     
     // Se tem cache antigo, usar mesmo que expirado
     if (catalogCache && catalogCache.ano === ano) {
-      console.log('📦 Using expired cache as fallback');
+      logger.info('📦 Using expired cache as fallback');
       return { data: catalogCache.data, fromCache: true };
     }
     
     // Sem cache, retornar vazio
-    console.log('❌ No catalog data available');
+    logger.info('❌ No catalog data available');
     return { data: [], fromCache: false };
   }
 }
@@ -151,8 +152,8 @@ export async function getUnifiedSINOffers(
   const finalConfig = { ...DEFAULT_CONFIG, ...config };
   const startTime = Date.now();
   
-  console.log('🚀 Starting unified data orchestration...');
-  console.log(`   Config: ano=${finalConfig.ano}, semestre=${finalConfig.semestre}, useCatalog=${finalConfig.useCatalog}`);
+  logger.info('🚀 Starting unified data orchestration...');
+  logger.info(`   Config: ano=${finalConfig.ano}, semestre=${finalConfig.semestre}, useCatalog=${finalConfig.useCatalog}`);
   
   let scrapingSucceeded = false;
   let catalogUsed = false;
@@ -161,21 +162,21 @@ export async function getUnifiedSINOffers(
   
   try {
     // FASE 1: Scraping de ofertas operacionais
-    console.log('\n📋 FASE 1: Fetching operational data (horários)...');
+    logger.info('\n📋 FASE 1: Fetching operational data (horários)...');
     let offers: RawOffer[];
     
     try {
       offers = await getSINOffers(finalConfig.ano, finalConfig.semestre);
       scrapingSucceeded = true;
-      console.log(`✅ Scraped ${offers.length} offers from registration site`);
+      logger.info(`✅ Scraped ${offers.length} offers from registration site`);
     } catch (error) {
-      console.warn('⚠️ Scraping failed:', error);
+      logger.warn('⚠️ Scraping failed:', error);
       
       if (finalConfig.fallbackOnError) {
-        console.log('🔄 Falling back to legacy data...');
+        logger.info('🔄 Falling back to legacy data...');
         offers = getCurrentRawOffers();
         fallbackUsed = true;
-        console.log(`📦 Using ${offers.length} legacy offers`);
+        logger.info(`📦 Using ${offers.length} legacy offers`);
       } else {
         throw error; // Propagar erro se fallback desabilitado
       }
@@ -185,7 +186,7 @@ export async function getUnifiedSINOffers(
     let catalogDisciplines: CatalogDiscipline[] = [];
     
     if (finalConfig.useCatalog && scrapingSucceeded) {
-      console.log('\n📚 FASE 2: Fetching catalog data (structural)...');
+      logger.info('\n📚 FASE 2: Fetching catalog data (structural)...');
       try {
         const catalogResult = await getCatalogWithCache(
           finalConfig.ano,
@@ -194,40 +195,40 @@ export async function getUnifiedSINOffers(
         catalogDisciplines = catalogResult.data;
         catalogUsed = catalogDisciplines.length > 0;
         catalogFromCache = catalogResult.fromCache;
-        console.log(`✅ Catalog data: ${catalogDisciplines.length} disciplines`);
+        logger.info(`✅ Catalog data: ${catalogDisciplines.length} disciplines`);
       } catch (error) {
-        console.warn('⚠️ Catalog fetch failed, continuing without it:', error);
+        logger.warn('⚠️ Catalog fetch failed, continuing without it:', error);
         // Não é crítico - continua sem catálogo
       }
     } else if (!scrapingSucceeded) {
-      console.log('\n⏭️  FASE 2: Skipping catalog (using fallback data)');
+      logger.info('\n⏭️  FASE 2: Skipping catalog (using fallback data)');
     }
     
     // FASE 3: Merge semântico
-    console.log('\n🔀 FASE 3: Merging operational + structural data...');
+    logger.info('\n🔀 FASE 3: Merging operational + structural data...');
     let enrichedOffers: EnrichedOffer[];
     
     if (fallbackUsed) {
       // Dados legados já vêm completos - marcar como fallback
       enrichedOffers = offers.map(createFallbackOffer);
-      console.log(`📦 Using ${enrichedOffers.length} fallback offers`);
+      logger.info(`📦 Using ${enrichedOffers.length} fallback offers`);
     } else {
       // Merge real entre scraping e catálogo
       enrichedOffers = enrichOffersWithCatalog(offers, catalogDisciplines);
       const stats = calculateEnrichmentStats(enrichedOffers);
-      console.log(`✅ Enriched ${stats.enrichedWithCatalog}/${stats.total} offers with catalog data`);
-      console.log(`   Complete carga: ${stats.withCompleteCarga}/${stats.total}`);
+      logger.info(`✅ Enriched ${stats.enrichedWithCatalog}/${stats.total} offers with catalog data`);
+      logger.info(`   Complete carga: ${stats.withCompleteCarga}/${stats.total}`);
     }
     
     // Estatísticas finais
     const finalStats = calculateEnrichmentStats(enrichedOffers);
     const duration = Date.now() - startTime;
     
-    console.log(`\n✅ Orchestration complete in ${duration}ms`);
-    console.log(`   Total offers: ${finalStats.total}`);
-    console.log(`   Enriched: ${finalStats.enrichedWithCatalog}`);
-    console.log(`   With complete carga: ${finalStats.withCompleteCarga}`);
-    console.log(`   Fallback used: ${finalStats.fallbackUsed}`);
+    logger.info(`\n✅ Orchestration complete in ${duration}ms`);
+    logger.info(`   Total offers: ${finalStats.total}`);
+    logger.info(`   Enriched: ${finalStats.enrichedWithCatalog}`);
+    logger.info(`   With complete carga: ${finalStats.withCompleteCarga}`);
+    logger.info(`   Fallback used: ${finalStats.fallbackUsed}`);
     
     return {
       offers: enrichedOffers,
@@ -247,11 +248,11 @@ export async function getUnifiedSINOffers(
     };
     
   } catch (error) {
-    console.error('❌ Orchestration failed completely:', error);
+    logger.warn('❌ Orchestration failed completely:', error);
     
     // Último recurso: dados legados
     if (finalConfig.fallbackOnError) {
-      console.log('🆘 Emergency fallback to legacy data...');
+      logger.info('🆘 Emergency fallback to legacy data...');
       const legacyOffers = getCurrentRawOffers();
       const fallbackOffers = legacyOffers.map(createFallbackOffer);
       
@@ -292,7 +293,7 @@ export async function getDefaultSINOffers(): Promise<EnrichedOffer[]> {
  */
 export function clearCatalogCache(): void {
   catalogCache = null;
-  console.log('🗑️  Catalog cache cleared');
+  logger.info('🗑️  Catalog cache cleared');
 }
 
 /**

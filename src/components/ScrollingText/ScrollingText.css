@@ -1,0 +1,24 @@
+.scrollingContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrollingContent {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
+
+.scrollingContent span {
+  padding-right: var(--scroll-padding, 3em);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Discipline } from '../../types/types';
-import { getCourseData, getUnifiedCourseData } from '../../data';
+import { useCourseData } from '../../data';
+import { logger } from '../../utils/logger';
 import './CourseGrid.css';
+import { useDisciplineHighlights } from './useDisciplineHighlights';
 
 interface CourseGridProps {
   setSelectedDiscipline: React.Dispatch<React.SetStateAction<Discipline | null>>;
@@ -10,30 +12,9 @@ interface CourseGridProps {
 }
 
 const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selectedCards, setSelectedCards }) => {
-  const [disciplinas, setDisciplinas] = useState<Record<string, Discipline[]>>({});
-  const [highlighted, setHighlighted] = useState<string[]>([]);
-  const [hoveredCode, setHoveredCode] = useState<string | null>(null);
+  const { data: disciplinas, loading } = useCourseData();
+  const { highlighted, hoveredCode, handleMouseEnter, handleMouseLeave } = useDisciplineHighlights(setSelectedDiscipline);
   const [draggedDiscipline, setDraggedDiscipline] = useState<Discipline | null>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    async function loadData() {
-      try {
-        const result = await getUnifiedCourseData();
-        setDisciplinas(result.courseData);
-      } catch (error) {
-        try {
-          const data = await getCourseData();
-          setDisciplinas(data);
-        } catch (fallbackError) {
-          // Sem logs no browser; falha total permanece silenciosa.
-        }
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadData();
-  }, []);
 
   const handleDragStart = (disciplina: Discipline) => {
     setDraggedDiscipline(disciplina);
@@ -50,44 +31,13 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selected
     }
   };
 
-  const handleMouseEnter = (disciplina: Discipline) => {
-    // Marcar a disciplina atual como hovered
-    setHoveredCode(disciplina.CodDisc);
-    
-    // Coletar códigos de pré-requisitos e dependentes para destacar
-    const codesToHighlight: string[] = [];
-    
-    // Adicionar pré-requisitos (normalizar removendo espaços)
-    if (disciplina.Prerequisitos && disciplina.Prerequisitos.length > 0) {
-      disciplina.Prerequisitos.forEach(prereq => {
-        codesToHighlight.push(prereq.replace(/\s+/g, ''));
-      });
-    }
-    
-    // Adicionar dependentes (normalizar removendo espaços)
-    if (disciplina.Dependentes && disciplina.Dependentes.length > 0) {
-      disciplina.Dependentes.forEach(dep => {
-        codesToHighlight.push(dep.replace(/\s+/g, ''));
-      });
-    }
-    
-    setHighlighted(codesToHighlight);
-    setSelectedDiscipline(disciplina);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredCode(null);
-    setHighlighted([]);
-    setSelectedDiscipline(null);
-  };
-
   const handleCardClick = (disciplina: Discipline) => {
     setSelectedCards(prevSelected => {
       const isSelected = prevSelected.some(d => d.CodDisciplina === disciplina.CodDisciplina);
       const newSelected = isSelected
         ? prevSelected.filter(d => d.CodDisciplina !== disciplina.CodDisciplina)
         : [...prevSelected, disciplina];
-      console.log('Updated Selected Cards:', newSelected);
+      logger.debug('Updated Selected Cards:', newSelected);
       return newSelected;
     });
   };
@@ -152,9 +102,9 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selected
               }));
               
               // Log estruturado para debug
-              console.log('=== DADOS PARA GRADE DE HORÁRIOS ===');
-              console.log('Total de disciplinas:', scheduleData.length);
-              console.log('Dados:', scheduleData);
+              logger.debug('=== DADOS PARA GRADE DE HORÁRIOS ===');
+              logger.debug('Total de disciplinas:', scheduleData.length);
+              logger.debug('Dados:', scheduleData);
               
               // TODO: Implementar navegação para página de visualização
               // Opção 1: React Router

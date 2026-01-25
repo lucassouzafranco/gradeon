@@ -1,4 +1,5 @@
 import { RawOffer, CurriculumDiscipline, NormalizedDiscipline } from '../types/types';
+import { logger } from '../utils/logger';
 
 export function mergeOffersWithCurriculum(
   offers: RawOffer[],
@@ -17,12 +18,12 @@ export function mergeOffersWithCurriculum(
     const currInfo = curriculumMap.get(cod);
 
     if (!currInfo) {
-      console.warn(`No curriculum info found for discipline: ${cod}`);
+      logger.warn(`No curriculum info found for discipline: ${cod}`);
       continue;
     }
 
     if (offersForDiscipline.length === 0) {
-      console.warn(`No offers found for discipline: ${cod}`);
+      logger.warn(`No offers found for discipline: ${cod}`);
     }
 
     const nome = offersForDiscipline[0]?.nome || cod;
@@ -40,7 +41,7 @@ export function mergeOffersWithCurriculum(
 
   for (const curr of curriculum) {
     if (!offersByCode.has(curr.cod)) {
-      console.warn(`Discipline ${curr.cod} in curriculum but has no offers`);
+      logger.warn(`Discipline ${curr.cod} in curriculum but has no offers`);
       
       const normalizedDisc: NormalizedDiscipline = {
         cod: curr.cod,
@@ -71,28 +72,28 @@ function groupOffersByCode(offers: RawOffer[]): Map<string, RawOffer[]> {
 
 export function validateNormalizedData(data: NormalizedDiscipline[]): boolean {
   if (!Array.isArray(data)) {
-    console.error('Validation failed: data is not an array');
+    logger.warn('Validation failed: data is not an array');
     return false;
   }
 
   for (const disc of data) {
     if (!disc.cod || !disc.nome) {
-      console.error('Validation failed: discipline missing cod or nome');
+      logger.warn('Validation failed: discipline missing cod or nome');
       return false;
     }
 
     if (typeof disc.periodo !== 'number') {
-      console.error(`Validation failed: discipline ${disc.cod} has invalid periodo`);
+      logger.warn(`Validation failed: discipline ${disc.cod} has invalid periodo`);
       return false;
     }
 
     if (!Array.isArray(disc.prerequisitos)) {
-      console.error(`Validation failed: discipline ${disc.cod} prerequisitos not array`);
+      logger.warn(`Validation failed: discipline ${disc.cod} prerequisitos not array`);
       return false;
     }
 
     if (!Array.isArray(disc.ofertas)) {
-      console.error(`Validation failed: discipline ${disc.cod} ofertas not array`);
+      logger.warn(`Validation failed: discipline ${disc.cod} ofertas not array`);
       return false;
     }
   }

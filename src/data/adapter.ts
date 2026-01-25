@@ -1,4 +1,5 @@
 import { Discipline, NormalizedDiscipline } from '../types/types';
+import { logger } from '../utils/logger';
 
 export function toLegacyCourseData(
   normalized: NormalizedDiscipline[]
@@ -45,19 +46,19 @@ export function toLegacyCourseData(
 
 export function validateLegacyFormat(data: Record<string, Discipline[]>): boolean {
   if (typeof data !== 'object' || data === null) {
-    console.error('Validation failed: data is not an object');
+    logger.warn('Validation failed: data is not an object');
     return false;
   }
 
   for (const key of Object.keys(data)) {
     if (!/^\d+$/.test(key)) {
-      console.error(`Validation failed: key "${key}" is not a numeric string`);
+      logger.warn(`Validation failed: key "${key}" is not a numeric string`);
       return false;
     }
 
     const disciplines = data[key];
     if (!Array.isArray(disciplines)) {
-      console.error(`Validation failed: value for key "${key}" is not an array`);
+      logger.warn(`Validation failed: value for key "${key}" is not an array`);
       return false;
     }
 
@@ -70,7 +71,7 @@ export function validateLegacyFormat(data: Record<string, Discipline[]>): boolea
 
       for (const field of requiredFields) {
         if (!(field in disc)) {
-          console.error(`Validation failed: missing field "${field}" in discipline`);
+          logger.warn(`Validation failed: missing field "${field}" in discipline`);
           return false;
         }
       }

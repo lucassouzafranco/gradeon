@@ -35,18 +35,20 @@ O sistema inclui um scraper que busca automaticamente os horários atualizados d
 
 ### Como funciona
 
-1. Ao iniciar, o sistema tenta fazer scraping dos horários atuais
-2. Se bem-sucedido, usa os dados em tempo real do site da UFV
-3. Se falhar (site fora do ar, mudança na estrutura), usa dados estáticos como fallback
-4. Garante disponibilidade contínua da aplicação
+1. O build executa `scripts/prebuild-scrape.mjs` e gera `src/data/scrapedData.json`
+2. Em runtime, o frontend carrega o JSON pré-gerado (mais rápido e estável)
+3. Se o JSON estiver indisponível/inválido, o pipeline tenta scraping em tempo real
+4. Se tudo falhar, usa dados legados como fallback
 
 ### Estrutura
 
 - `src/data/scraper.ts` - Lógica de web scraping
 - `src/data/rawOfferExtractor.ts` - Integração com fallback
-- `src/data/courseData.ts` - Dados estáticos de fallback
+- `scripts/prebuild-scrape.mjs` - Scraping no build (gera JSON)
+- `src/data/scrapedData.json` - Dados pré-gerados consumidos pelo frontend
+- `src/data/courseData.ts` - Fallback legado
 
-Para mais detalhes técnicos, consulte [src/DOCUMENTATION.md](src/DOCUMENTATION.md).
+Para mais detalhes técnicos, consulte [INTEGRATION.md](INTEGRATION.md).
 
 ## Estrutura do Projeto
 

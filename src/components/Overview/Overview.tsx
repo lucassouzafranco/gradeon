@@ -1,33 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Overview.css';
 import { Discipline } from '../../types/types';
-import { courseData } from '../../data/courseData';
+import ScrollingText from '../ScrollingText/ScrollingText';
+import { useCourseData } from '../../data';
 
 interface OverviewProps {
   selectedCards: Discipline[];
 }
 
-const ScrollingText: React.FC<{ items: string[] }> = ({ items }) => {
-  const text = items.join(' | ');
-  const textLength = text.length;
-  const animationDuration = Math.max(10, textLength * 0.3);
-  
-  return (
-    <div className="scrollingContainer">
-      <div className="scrollingContent" style={{ animationDuration: `${animationDuration}s` }}>
-        <span>{text}</span>
-        <span>{text}</span>
-      </div>
-    </div>
-  );
-};
-
 const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
   const [balanceamento, setBalanceamento] = useState<number | string>('');
-  
-  useEffect(() => {
-    console.log('Selected Cards:', selectedCards);
-  }, [selectedCards]);
+  const { data: courseData, loading: courseLoading } = useCourseData();
 
   const totalCredits = selectedCards.reduce((sum, card) => sum + parseInt(card.CargaSemanal.split('(')[0]), 0);
   const numDisciplinas = selectedCards.length;
@@ -164,7 +147,7 @@ const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
               <div className="dataRow">
                 <span className="label">Turnos disponíveis:</span>
                 <div className="dataBox redMedium">
-                  {sortedShifts.length > 0 ? (
+                  {!courseLoading && sortedShifts.length > 0 ? (
                     sortedShifts.length > 2 ? (
                       <ScrollingText items={sortedShifts} />
                     ) : (
