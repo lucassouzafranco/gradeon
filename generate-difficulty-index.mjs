@@ -77,16 +77,16 @@ for (let i = 1; i < lines.length; i++) {
     menorNota,
     maiorNota,
     notas: {
-      n0a10: parseInt(fields[cols.Notas0a10]) || 0,
-      n10a20: parseInt(fields[cols.Notas10a20]) || 0,
-      n20a30: parseInt(fields[cols.Notas20a30]) || 0,
-      n30a40: parseInt(fields[cols.Notas30a40]) || 0,
-      n40a50: parseInt(fields[cols.Notas40a50]) || 0,
-      n50a60: parseInt(fields[cols.Notas50a60]) || 0,
-      n60a70: parseInt(fields[cols.Notas60a70]) || 0,
-      n70a80: parseInt(fields[cols.Notas70a80]) || 0,
-      n80a90: parseInt(fields[cols.Notas80a90]) || 0,
-      n90a100: parseInt(fields[cols.Notas90a100]) || 0
+      '0_10': parseInt(fields[cols.Notas0a10]) || 0,
+      '10_20': parseInt(fields[cols.Notas10a20]) || 0,
+      '20_30': parseInt(fields[cols.Notas20a30]) || 0,
+      '30_40': parseInt(fields[cols.Notas30a40]) || 0,
+      '40_50': parseInt(fields[cols.Notas40a50]) || 0,
+      '50_60': parseInt(fields[cols.Notas50a60]) || 0,
+      '60_70': parseInt(fields[cols.Notas60a70]) || 0,
+      '70_80': parseInt(fields[cols.Notas70a80]) || 0,
+      '80_90': parseInt(fields[cols.Notas80a90]) || 0,
+      '90_100': parseInt(fields[cols.Notas90a100]) || 0
     }
   };
   
@@ -103,8 +103,8 @@ for (let i = 1; i < lines.length; i++) {
       menorNota: Infinity,
       maiorNota: -Infinity,
       notas: {
-        n0a10: 0, n10a20: 0, n20a30: 0, n30a40: 0, n40a50: 0,
-        n50a60: 0, n60a70: 0, n70a80: 0, n80a90: 0, n90a100: 0
+        '0_10': 0, '10_20': 0, '20_30': 0, '30_40': 0, '40_50': 0,
+        '50_60': 0, '60_70': 0, '70_80': 0, '80_90': 0, '90_100': 0
       }
     });
   }
@@ -140,8 +140,8 @@ for (const [key, disc] of disciplinas) {
   let maiorNotaGlobal = -Infinity;
   
   const notasGlobais = {
-    n0a10: 0, n10a20: 0, n20a30: 0, n30a40: 0, n40a50: 0,
-    n50a60: 0, n60a70: 0, n70a80: 0, n80a90: 0, n90a100: 0
+    '0_10': 0, '10_20': 0, '20_30': 0, '30_40': 0, '40_50': 0,
+    '50_60': 0, '60_70': 0, '70_80': 0, '80_90': 0, '90_100': 0
   };
   
   for (const reg of disc.registros) {
@@ -166,9 +166,9 @@ for (const [key, disc] of disciplinas) {
   const NM = somaMediaPonderada / totalEstudantes;
   const NM_d = 1 - (NM / 100);
   
-  const notasBaixas = notasGlobais.n0a10 + notasGlobais.n10a20 + 
-                      notasGlobais.n20a30 + notasGlobais.n30a40 + 
-                      notasGlobais.n40a50 + notasGlobais.n50a60;
+  const notasBaixas = notasGlobais['0_10'] + notasGlobais['10_20'] + 
+                      notasGlobais['20_30'] + notasGlobais['30_40'] + 
+                      notasGlobais['40_50'] + notasGlobais['50_60'];
   const PNB = notasBaixas / totalEstudantes;
   
   // Calcular CH (consistência histórica) - apenas para cálculo, sem armazenar histórico
@@ -242,11 +242,21 @@ const output = {
   metadata: {
     schema_version: "1.0.0",
     source: "historico-disciplina-filtered.csv",
+    generated_at: new Date().toISOString(),
     total_disciplinas: disciplinasArray.length,
     calculation_methodology: {
       idd_formula: "0.35*TR + 0.20*TA + 0.20*NM_d + 0.15*PNB + 0.10*CH",
       normalization_threshold_ch: 0.25,
-      low_grade_cutoff: 60
+      low_grade_cutoff: 60,
+      components: {
+        TR: "componentes_idd.taxa_reprovacao_global",
+        TA: "componentes_idd.taxa_abandono_global",
+        NM: "componentes_idd.media_nota_global",
+        NM_d: "componentes_idd.media_nota_normalizada",
+        PNB: "componentes_idd.proporcao_notas_baixas",
+        CH: "componentes_idd.consistencia_historica.valor_normalizado"
+      },
+      redundancy_policy: "indicadores contains final values for API consumption; componentes_idd contains intermediate calculations for auditability"
     }
   },
   endpoints: {
