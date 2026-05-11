@@ -1,0 +1,320 @@
+/* ===================== WRAPPER ===================== */
+
+.scheduleBuilderWrapper {
+  width: 100%;
+  height: calc(100vh - 5.4vh - 12px);
+  margin-top: 5.4vh;
+  padding: 10px 14px 10px 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Disposição vertical */
+  gap: 12px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.scheduleMainContent {
+  display: flex;
+  flex: 1; /* Ocupa o máximo de espaço */
+  gap: 12px;
+  min-height: 0; /* Importante para flex children */
+}
+
+/* ===================== SHARED PANEL STYLE ===================== */
+
+.panelLeft,
+.panelRight {
+  background-color: rgba(0, 0, 0, 0.10);
+  border-radius: 8px;
+  box-shadow: 
+    0 0 3px rgba(0, 0, 0, 0.4),
+    inset 0 1px 4px rgba(0, 0, 0, 0.1); /* Toque de profundidade */
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===================== PANEL HEADER TITLE ===================== */
+
+.panelHeaderTitle {
+  width: 100%;
+  text-align: center;
+  color: #791D1F;
+  font-size: 1.1em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 14px 0 8px 0;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(121, 29, 31, 0.15); /* Divisor sutil vinho */
+  text-transform: uppercase;
+}
+
+/* ===================== LEFT PANEL (SIDEBAR) ===================== */
+
+.panelLeft {
+  width: 280px;
+  min-width: 280px;
+  max-width: 280px;
+  padding: 0 16px 20px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.panelLeftGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 8px;
+}
+
+.scheduleFooter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaço entre os botões */
+  padding: 5px 0 15px 0;
+}
+
+.clearButton,
+.exportButton {
+  height: 48px;
+  border-radius: 24px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  padding: 0 24px;
+}
+
+.clearButton {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.clearButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #791D1F;
+  border-color: #791D1F;
+  transform: scale(1.05);
+}
+
+.exportButton {
+  width: 280px; /* Mantém a largura maior para destaque */
+  background-color: #791D1F;
+  color: white;
+  border: 2px solid transparent;
+  opacity: 0.9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.exportButton:hover {
+  transform: scale(1.05);
+  opacity: 1.0;
+  border: 2px solid white;
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.25);
+}
+
+.exportButton:hover {
+  transform: scale(1.05);
+  opacity: 1.0;
+  border: 2px solid white;
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.25);
+}
+
+.exportButton svg {
+  font-size: 1.1em;
+}
+
+.turmaColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.turmaColumnTitle {
+  text-align: center;
+  color: #791D1F;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 0.4em;
+}
+
+/* ===================== LEFT PANEL CARDS ===================== */
+
+.turmaCard {
+  width: 100%;
+  height: 60px;
+  background-color: #791D1F; /* Ruby Red */
+  border-radius: 9px; /* Mesmo do CourseGrid.css */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.88; /* Mesmo do CourseGrid.css */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Mesmo do CourseGrid.css */
+  cursor: grab;
+  user-select: none;
+  transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.turmaCard:hover {
+  transform: scale(1.13); /* Mesmo efeito de zoom do CourseGrid.css */
+  opacity: 1.0;
+  border: 2px solid white;
+  background-color: #791D1F;
+}
+
+.turmaCardActive {
+  background-color: #68181a;
+  opacity: 1.0;
+  border: 2px solid white;
+  transform: scale(1.05);
+}
+
+.turmaCardCode {
+  font-size: 80%; /* Escala de texto do CourseGrid.css */
+  font-weight: bold;
+  color: #fff;
+  margin: 0.2em;
+}
+
+.turmaCardSchedule {
+  font-size: 70%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.2em;
+}
+
+.turmaCardEmpty {
+  width: 100%;
+  height: 60px;
+}
+
+/* ===================== RIGHT PANEL (GRID) ===================== */
+
+.panelRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 20px 20px;
+}
+
+/* ===================== GRID HEADER ===================== */
+
+.gridHeader {
+  height: 36px;
+  display: grid;
+  grid-template-columns: 75px repeat(5, 1fr);
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.gridDayHeader {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #791D1F;
+  text-align: center;
+}
+
+/* ===================== GRID BODY ===================== */
+
+.gridBody {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 75px repeat(5, 1fr);
+  position: relative;
+  overflow: hidden;
+}
+
+.gridTimeColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.gridTimeLabel {
+  flex: 1;
+  display: flex;
+  align-items: flex-start; /* Alinhado ao topo para indicar o início do bloco */
+  justify-content: center;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 6px; /* Espaço sutil da borda superior */
+}
+
+.gridDayColumn {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-right: 1px solid rgba(255, 255, 255, 0.2); /* Linha vertical nítida */
+}
+
+.gridSlot {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* Linha horizontal nítida */
+  padding: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.gridSlot:hover {
+  background-color: rgba(255, 255, 255, 0.08); /* Brilho mais visível ao passar o mouse */
+}
+
+/* ===================== GRID ENTRY CARDS ===================== */
+
+.gridEntry {
+  width: 90%;
+  height: 85%;
+  background-color: #791D1F;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.88;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, background-color 0.5s ease;
+}
+
+.gridEntry:hover {
+  transform: scale(1.13);
+  opacity: 1.0;
+  border: 2px solid white;
+  z-index: 10;
+}
+
+.entrySelected {
+  background-color: #68181a;
+  opacity: 1.0;
+  border: 2px solid white;
+}
+
+.entryCode {
+  font-size: 85%;
+  font-weight: bold;
+  color: #fff;
+}
+
+.entrySala {
+  font-size: 70%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 2px;
+}
