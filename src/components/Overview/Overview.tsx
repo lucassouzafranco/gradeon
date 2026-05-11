@@ -8,7 +8,7 @@ interface OverviewProps {
 }
 
 const ScrollingText: React.FC<{ items: string[] }> = ({ items }) => {
-  const text = items.join(' | ');
+  const text = items.join('     |     ');
   const textLength = text.length;
   const animationDuration = Math.max(10, textLength * 0.3);
   
@@ -124,7 +124,7 @@ const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
               <div className="dataRow">
                 <span className="label">Balanceamento da grade:</span>
                 <div className="dataBox redMedium narrowBox">
-                  {numDisciplinas < 3 ? '' : classification}
+                  {numDisciplinas < 3 ? 'requer 3+ disciplinas' : classification}
                 </div>
               </div>
               <div className="dataRow">

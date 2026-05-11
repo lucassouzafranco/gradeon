@@ -7,9 +7,10 @@ interface CourseGridProps {
   setSelectedDiscipline: React.Dispatch<React.SetStateAction<Discipline | null>>;
   selectedCards: Discipline[];
   setSelectedCards: React.Dispatch<React.SetStateAction<Discipline[]>>;
+  onNavigateToSchedule: () => void;
 }
 
-const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selectedCards, setSelectedCards }) => {
+const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selectedCards, setSelectedCards, onNavigateToSchedule }) => {
   const [disciplinas, setDisciplinas] = useState<Record<string, Discipline[]>>({});
   const [highlighted, setHighlighted] = useState<string[]>([]);
   const [hoveredCode, setHoveredCode] = useState<string | null>(null);
@@ -165,7 +166,7 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selected
               
               // Opção 3: LocalStorage (temporário)
               localStorage.setItem('gradeon:schedules', JSON.stringify(scheduleData));
-              alert(`Dados salvos! ${scheduleData.length} disciplinas prontas para visualização.`);
+              onNavigateToSchedule();
             }}
           >
             Grade de Horários ({selectedCards.length})
