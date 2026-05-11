@@ -10,11 +10,14 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  pointer-events: none; /* Garante que a imagem de fundo não bloqueie interações */
+  pointer-events: none;
+  filter: brightness(.88) contrast(.85) saturate(.65);
 }
 
 body {
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .courseGridContainer {

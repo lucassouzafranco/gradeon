@@ -6,7 +6,7 @@
   height: 80%;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.2);
   padding-bottom: 0.9em;
   margin-left: 0.8em;
 }
@@ -21,12 +21,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0 0.7em;
+  margin: 0 0.9em;
 }
 
 .leftSide {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .rightSide {
@@ -38,53 +38,62 @@
   display: flex;
   align-items: center;
   margin-top: 1em;
+  gap: 0.7em;
 }
 
 .label {
-  font-size: 1em;
-  font-weight: 700;
-  color: #fff;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
+/* Variantes de intensidade — paleta vinho */
 .redLight {
-  background-color: #FF090E;
-  color: #fff;
+  background-color: rgba(121, 29, 31, 0.25);
+  border-color: rgba(180, 60, 62, 0.5);
 }
 
 .redMedium {
-  background-color: rgba(0, 0, 0, 0.23);
-  color: #fff;
+  background-color: rgba(121, 29, 31, 0.3);
+  border-color: rgba(160, 45, 48, 0.55);
 }
 
 .redDark {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #fff;
+  background-color: rgba(121, 29, 31, 0.45);
+  border-color: rgba(140, 35, 38, 0.65);
 }
 
 .dataBox {
-  height: 2.2vh;
+  height: auto;
   width: auto;
-  padding: 0.09em 0.9em;
-  margin-left: 1em;
-  border-radius: 5px;
+  min-width: 3em;
+  padding: 0.3em 1.2em;
+  border-radius: 6px;
   font-weight: 600;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 0.8em;
+  letter-spacing: 0.03em;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.8em;
-  font-weight: 600;
+  background-color: rgba(121, 29, 31, 0.28);
+  border: 1px solid rgba(160, 45, 48, 0.5);
+  color: rgba(255, 255, 255, 0.92);
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .narrowBox {
-  width: 9em;
+  min-width: 12em;
 }
 
 .wideBox {
   min-width: 8em;
   max-width: 15em;
   white-space: nowrap;
-  overflow: visible;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .scrollingContainer {
@@ -100,7 +109,7 @@
 }
 
 .scrollingContent span {
-  padding-right: 3em;
+  padding-right: 5em;
 }
 
 @keyframes scroll {
@@ -113,29 +122,32 @@
 }
 
 .dataBox:hover {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(121, 29, 31, 0.5);
+  border-color: rgba(200, 80, 82, 0.7);
+  box-shadow: 0 0 12px rgba(121, 29, 31, 0.3);
   cursor: pointer;
 }
 
 .Balanceada:hover {
   cursor: pointer;
 }
+
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
 .difficultyRow {
   padding: 0.1em 1.1em;
-  border-radius: 5px;
+  border-radius: 6px;
   background-color: rgba(0, 0, 0, 0.23);
   color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  margin-left: 1em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-left: 0;
 }

@@ -6,9 +6,8 @@
   height: 80%;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.2);
   padding-bottom: 0.9em;
-
 }
 
 .disciplineTitle {
@@ -21,7 +20,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0.7em;
+  margin: 0 0.9em;
 }
 
 .theLeftSide {
@@ -42,31 +41,34 @@
 }
 
 .label {
-  font-size: 0.9em;
+  font-size: 0.82em;
   font-weight: 600;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  white-space: nowrap;
   min-width: fit-content;
 }
 
-/* Novas classes para os tons de vermelho */
+/* Variantes de intensidade — paleta vinho */
 .redLight {
-  background-color: #a83237;
-  color: #fff;
+  background-color: rgba(121, 29, 31, 0.25);
+  border-color: rgba(180, 60, 62, 0.5);
 }
 
 .redMedium {
-  background-color: #b32a30;
-  color: #fff;
+  background-color: rgba(121, 29, 31, 0.3);
+  border-color: rgba(160, 45, 48, 0.55);
 }
 
 .redDark {
-  background-color: #e8969a;
-  color: #fff;
+  background-color: rgba(121, 29, 31, 0.45);
+  border-color: rgba(140, 35, 38, 0.65);
 }
 
 .dark {
-  background-color: #2a1a1b;
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .dataBox {
@@ -74,56 +76,56 @@
   width: auto;
   min-width: 3em;
   max-width: 8em;
-  padding: 0.4em 1.2em;
+  padding: 0.32em 1.1em;
   margin-left: 0;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  border: 1px solid rgba(160, 45, 48, 0.5);
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.85em;
+  font-size: 0.82em;
   font-weight: 700;
-  background-color: #b32a30;
-  color: #fff;
+  letter-spacing: 0.03em;
+  background-color: rgba(121, 29, 31, 0.28);
+  color: rgba(255, 255, 255, 0.92);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .dataBox.dark {
-  background-color: rgba(179, 42, 48, 0.25);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
-.dataBox.redLight {
-  background-color: #a83237;
+.dataBox:hover {
+  background-color: rgba(121, 29, 31, 0.5);
+  border-color: rgba(200, 80, 82, 0.7);
+  box-shadow: 0 0 12px rgba(121, 29, 31, 0.3);
+  cursor: pointer;
 }
 
-.dataBox.redMedium {
-  background-color: #b32a30;
-}
-
-.dataBox.redDark {
-  background-color: #e8969a;
-}
-
-.dataBox-variant {
-  padding: 0.1em 1.1em;
+.dataBox.dark:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.22);
 }
 
 .plainText {
   font-size: 0.85em;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.6);
   background: none;
   border: none;
   padding: 0;
   margin: 0;
+  font-style: italic;
 }
 
 .dataBox.turmaScrollBox {
   max-width: 12em;
   overflow: hidden;
-  padding: 0.4em 0.8em;
+  padding: 0.32em 1.1em;
 }
 
 .scrollingContainer {
@@ -148,5 +150,16 @@
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
