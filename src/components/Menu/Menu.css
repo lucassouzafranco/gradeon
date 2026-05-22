@@ -23,17 +23,17 @@
   margin-left: 0.5em;
 }
 
-img {
-  width: 12vw;
+.menuAndLogo img {
+  width: 10vw;
   margin-left: 0.4em;
 }
 
 .menuOptions {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 30%;
+  gap: 1.6em;
   height: 5.5vh;
+  margin-right: 0.6em;
 }
 
 h5 {
