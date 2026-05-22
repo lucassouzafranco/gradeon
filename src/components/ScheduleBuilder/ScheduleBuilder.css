@@ -7,7 +7,7 @@
   padding: 10px 14px 10px 14px;
   overflow: hidden;
   display: flex;
-  flex-direction: column; /* Disposição vertical */
+  flex-direction: column;
   gap: 12px;
   position: relative;
   box-sizing: border-box;
@@ -15,9 +15,9 @@
 
 .scheduleMainContent {
   display: flex;
-  flex: 1; /* Ocupa o máximo de espaço */
+  flex: 1;
   gap: 12px;
-  min-height: 0; /* Importante para flex children */
+  min-height: 0;
 }
 
 /* ===================== SHARED PANEL STYLE ===================== */
@@ -26,9 +26,9 @@
 .panelRight {
   background-color: rgba(0, 0, 0, 0.10);
   border-radius: 8px;
-  box-shadow: 
+  box-shadow:
     0 0 3px rgba(0, 0, 0, 0.4),
-    inset 0 1px 4px rgba(0, 0, 0, 0.1); /* Toque de profundidade */
+    inset 0 1px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -40,24 +40,25 @@
   width: 100%;
   text-align: center;
   color: #791D1F;
-  font-size: 1.1em;
+  font-size: 1.25em;
   font-weight: 800;
   letter-spacing: 2px;
-  padding: 14px 0 8px 0;
+  padding: 14px 0 10px 0;
   margin-bottom: 8px;
-  border-bottom: 1px solid rgba(121, 29, 31, 0.15); /* Divisor sutil vinho */
+  border-bottom: 1px solid rgba(121, 29, 31, 0.15);
   text-transform: uppercase;
 }
 
 /* ===================== LEFT PANEL (SIDEBAR) ===================== */
 
 .panelLeft {
-  width: 280px;
-  min-width: 280px;
-  max-width: 280px;
-  padding: 0 16px 20px 16px;
+  width: 340px;
+  min-width: 340px;
+  max-width: 340px;
+  padding: 0 16px 14px 16px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .panelLeftGrid {
@@ -66,7 +67,8 @@
   gap: 12px;
   flex: 1;
   overflow-y: auto;
-  padding-top: 8px;
+  overflow-x: hidden;
+  padding: 8px 0;
 }
 
 .scheduleFooter {
@@ -74,79 +76,91 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Espaço entre os botões */
+  gap: 20px;
   padding: 5px 0 15px 0;
 }
 
 .clearButton,
-.exportButton {
-  height: 48px;
-  border-radius: 24px;
-  font-size: 0.75rem;
+.exportButton,
+.generateButton {
+  height: 40px;
+  border-radius: 20px;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 1px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   transition: all 0.3s ease;
-  padding: 0 24px;
+  padding: 0 20px;
 }
 
 .clearButton {
   background-color: transparent;
-  color: rgba(0, 0, 0, 0.4);
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  color: #791D1F;
+  border: 2px solid rgba(121, 29, 31, 0.35);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .clearButton:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(121, 29, 31, 0.08);
   color: #791D1F;
   border-color: #791D1F;
-  transform: scale(1.05);
 }
 
 .exportButton {
-  width: 280px; /* Mantém a largura maior para destaque */
+  width: 240px;
   background-color: #791D1F;
   color: white;
   border: 2px solid transparent;
   opacity: 0.9;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
 }
 
 .exportButton:hover {
-  transform: scale(1.05);
   opacity: 1.0;
-  border: 2px solid white;
-  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.25);
+  border-color: white;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.15);
 }
 
-.exportButton:hover {
-  transform: scale(1.05);
-  opacity: 1.0;
-  border: 2px solid white;
-  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.25);
+.generateButton {
+  width: 240px;
+  background-color: #e8a44a;
+  color: #111;
+  border: 2px solid transparent;
+  opacity: 0.9;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
 }
 
-.exportButton svg {
+.generateButton:hover {
+  opacity: 1.0;
+  border-color: white;
+  box-shadow: 0 0 10px 2px rgba(232, 164, 74, 0.25);
+  transform: scale(1.04);
+}
+
+.clearButton svg,
+.exportButton svg,
+.generateButton svg {
   font-size: 1.1em;
 }
 
 .turmaColumn {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .turmaColumnTitle {
   text-align: center;
   color: #791D1F;
-  font-size: 1.4em;
+  font-size: 1.15em;
   font-weight: bold;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.3em;
 }
 
 /* ===================== LEFT PANEL CARDS ===================== */
@@ -154,46 +168,57 @@
 .turmaCard {
   width: 100%;
   height: 60px;
-  background-color: #791D1F; /* Ruby Red */
-  border-radius: 9px; /* Mesmo do CourseGrid.css */
+  background-color: #791D1F;
+  border-radius: 8px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0.88; /* Mesmo do CourseGrid.css */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Mesmo do CourseGrid.css */
+  opacity: 0.88;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
   cursor: grab;
   user-select: none;
-  transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   border: 2px solid transparent;
+  padding: 6px 10px;
+  gap: 3px;
+  box-sizing: border-box;
 }
 
 .turmaCard:hover {
-  transform: scale(1.13); /* Mesmo efeito de zoom do CourseGrid.css */
   opacity: 1.0;
   border: 2px solid white;
-  background-color: #791D1F;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+  background-color: #8a2325;
 }
 
 .turmaCardActive {
   background-color: #68181a;
   opacity: 1.0;
   border: 2px solid white;
-  transform: scale(1.05);
+  box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.15);
 }
 
-.turmaCardCode {
-  font-size: 80%; /* Escala de texto do CourseGrid.css */
+.turmaCardName {
+  font-size: 0.86em; /* 5% increase from 0.82em */
   font-weight: bold;
   color: #fff;
-  margin: 0.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  line-height: 1.2;
 }
 
 .turmaCardSchedule {
-  font-size: 70%;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 0.2em;
+  font-size: 0.9em;
+  color: #e8a44a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  font-weight: 600;
 }
 
 .turmaCardEmpty {
@@ -221,7 +246,7 @@
 }
 
 .gridDayHeader {
-  font-size: 1.2em;
+  font-size: 0.95em;
   font-weight: bold;
   color: #791D1F;
   text-align: center;
@@ -245,20 +270,20 @@
 .gridTimeLabel {
   flex: 1;
   display: flex;
-  align-items: flex-start; /* Alinhado ao topo para indicar o início do bloco */
+  align-items: flex-start;
   justify-content: center;
-  font-size: 0.9em;
+  font-size: 1.15em; /* Increased size of time labels */
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.45);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  padding-top: 6px; /* Espaço sutil da borda superior */
+  padding-top: 4px;
 }
 
 .gridDayColumn {
   display: flex;
   flex-direction: column;
   position: relative;
-  border-right: 1px solid rgba(255, 255, 255, 0.2); /* Linha vertical nítida */
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .gridSlot {
@@ -268,36 +293,39 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* Linha horizontal nítida */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   padding: 4px;
   transition: background-color 0.2s ease;
+  min-height: 0;
 }
 
-.gridSlot:hover {
-  background-color: rgba(255, 255, 255, 0.08); /* Brilho mais visível ao passar o mouse */
+.gridSlot:hover,
+.gridSlot.slotPreviewActive {
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 /* ===================== GRID ENTRY CARDS ===================== */
 
 .gridEntry {
-  width: 90%;
-  height: 85%;
+  width: 88%;
+  height: 82%;
   background-color: #791D1F;
-  border-radius: 9px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0.88;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 0.92;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
   border: 2px solid transparent;
-  transition: transform 0.3s ease, background-color 0.5s ease;
+  transition: opacity 0.2s ease, background-color 0.3s ease, border-color 0.2s ease;
+  box-sizing: border-box;
 }
 
 .gridEntry:hover {
-  transform: scale(1.13);
   opacity: 1.0;
   border: 2px solid white;
+  background-color: #8a2325;
   z-index: 10;
 }
 
@@ -314,7 +342,44 @@
 }
 
 .entrySala {
-  font-size: 70%;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 76%;
+  color: #e8a44a;
   margin-top: 2px;
+  font-weight: 600;
+}
+
+.entryConflict {
+  border-color: #ff4444;
+  box-shadow: 0 0 10px rgba(255, 68, 68, 0.6);
+  animation: conflictPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes conflictPulse {
+  0%, 100% { box-shadow: 0 0 6px rgba(255, 68, 68, 0.4); }
+  50% { box-shadow: 0 0 14px rgba(255, 68, 68, 0.7); }
+}
+
+/* ===================== GRID PREVIEW ENTRY ===================== */
+
+.gridEntryPreview {
+  width: 88%;
+  height: 82%;
+  background-color: rgba(121, 29, 31, 0.3);
+  border: 2px dashed rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.85);
+  pointer-events: none;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.gridEntryPreview.conflictPreview {
+  background-color: rgba(255, 68, 68, 0.25);
+  border-color: #ff4444;
+  color: #ff8888;
+  animation: conflictPulse 1.5s ease-in-out infinite;
 }
