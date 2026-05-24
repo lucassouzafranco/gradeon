@@ -104,8 +104,9 @@ const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
   // Extrair locais únicos (salas)
   const uniqueLocations = Array.from(new Set(
     selectedCards
-      .map(card => card.Sala)
-      .filter(sala => sala && sala.trim() !== '')
+      .flatMap(card => card.Sala ? card.Sala.split('\n') : [])
+      .map(sala => sala.trim())
+      .filter(sala => sala !== '')
   )).sort();
 
   // Extrair códigos únicos das disciplinas

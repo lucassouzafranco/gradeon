@@ -181,7 +181,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
           nome: d.NomeDisciplina,
           turma: tSel,
           creditos: d.Creditos || 4,
-          sala: activeT ? activeT.salas.join(', ') : '-'
+          sala: activeT ? Array.from(new Set(activeT.salas)).join(', ') : '-'
         };
       });
 

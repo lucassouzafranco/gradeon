@@ -1,6 +1,12 @@
-# 🏗️ Arquitetura Final - Diagrama Completo
+# Especificação Técnica de Arquitetura - Pipeline de Dados
 
-## 📊 Visão Geral
+Este documento descreve detalhadamente o design técnico e o fluxo do pipeline unificado de dados do sistema, incluindo os módulos ativos, a hierarquia de fontes de dados e os mecanismos de contingência.
+
+---
+
+## Visão Geral do Sistema
+
+O pipeline consolida os fluxos de extração e tratamento em um modelo centralizado, distribuído da seguinte forma:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -10,56 +16,38 @@
 │                                                                         │
 └────────────────────────────────┬────────────────────────────────────────┘
                                  │
-                                 ↓
+                                 ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                      UNIFIED PIPELINE (index.ts)                        │
 │                         API ÚNICA DE ENTRADA                            │
 │                                                                         │
-│  • getCourseData() ────────────────────────────────────────────────┐   │
-│  • getUnifiedCourseData()                                          │   │
-│                                                                    │   │
-└────────────────────────────────────────────────────────────────────┼───┘
-                                                                     │
-                                 ↓                                   │
-┌─────────────────────────────────────────────────────────────────────────┐
-│                  UNIFIED PIPELINE (unifiedPipeline.ts)              │   │
-│                                                                     │   │
-│  ┌──────────────────────────────────────────────────────────────┐ │   │
-│  │  1. Scraping Paralelo                                        │ │   │
-│  │     • Orchestrator (horários + catálogo)                     │ │   │
-│  │     • Optativas (periodo=0)                                  │ │   │
-│  └──────────────────────────────────────────────────────────────┘ │   │
-│                            ↓                                       │   │
-│  ┌──────────────────────────────────────────────────────────────┐ │   │
-│  │  2. Filtro de Optativas                                      │ │   │
-│  │     • Remove periodo=0 da grade                              │ │   │
-│  │     • Preserva para uso futuro                               │ │   │
-│  └──────────────────────────────────────────────────────────────┘ │   │
-│                            ↓                                       │   │
-│  ┌──────────────────────────────────────────────────────────────┐ │   │
-│  │  3. Dedupe de Turmas                                         │ │   │
-│  │     • Múltiplas turmas → 1 entrada                           │ │   │
-│  │     • Agrupa por código                                      │ │   │
-│  └──────────────────────────────────────────────────────────────┘ │   │
-│                            ↓                                       │   │
-│  ┌──────────────────────────────────────────────────────────────┐ │   │
-│  │  4. Conversão para Formato Legado                            │ │   │
-│  │     • Record<string, Discipline[]>                           │ │   │
-│  │     • Compatibilidade total com frontend                     │ │   │
-│  └──────────────────────────────────────────────────────────────┘ │   │
-│                            ↓                                       │   │
-│  ┌──────────────────────────────────────────────────────────────┐ │   │
-│  │  5. Fallback Gracioso (em caso de erro)  ◄──────────────────┼─┼───┘
-│  │     • courseData.ts (legado)                                 │ │
-│  │     • Nunca quebra                                           │ │
-│  └──────────────────────────────────────────────────────────────┘ │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────────┘
+│  • getCourseData()                                                      │
+│  • getUnifiedCourseData()                                               │
+│                                                                         │
+└────────────────────────────────┬────────────────────────────────────────┘
                                  │
-                                 ↓
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│                  UNIFIED PIPELINE (unifiedPipeline.ts)                  │
+│                                                                         │
+│  1. Scraping Paralelo                                                   │
+│     • Orchestrator (horários + catálogo)                                │
+│     • Optativas (periodo=0)                                             │
+│  2. Filtro de Optativas                                                 │
+│     • Remove periodo=0 da grade principal                               │
+│  3. Dedupe de Turmas                                                    │
+│     • Agrupa múltiplas turmas de uma mesma disciplina                   │
+│  4. Conversão para Formato Legado                                       │
+│     • Conversão para Record<string, Discipline[]>                       │
+│  5. Fallback Gracioso (em caso de erro)                                 │
+│     • Carrega courseData.ts estático como backup                        │
+│                                                                         │
+└────────────────────────────────┬────────────────────────────────────────┘
+                                 │
+                                 ▼
          ┌───────────────────────┴───────────────────────┐
          │                                               │
-         ↓                                               ↓
+         ▼                                               ▼
 ┌──────────────────────┐                    ┌───────────────────────┐
 │   ORCHESTRATOR       │                    │  CATALOG SCRAPER      │
 │ (orchestrator.ts)    │                    │ (catalogScraper.ts)   │
@@ -67,9 +55,9 @@
 │ • Coordena scraping  │                    │ • Scrape períodos 1-8 │
 │ • Cache (24h)        │                    │ • Scrape optativas(0) │
 │ • Fallback           │                    │ • Estrutura curricular│
-└──────────┬───────────┘                    └───────────────────────┘
-           │
-           ↓
+│ └──────────┬─────────┘                    └───────────────────────┘
+             │
+             ▼
 ┌──────────────────────┐
 │  ENRICHMENT LAYER    │
 │ (enrichmentLayer.ts) │
@@ -79,10 +67,10 @@
 │ • periodo, carga     │
 └──────────┬───────────┘
            │
-           ↓
+           ▼
     ┌──────┴──────┐
     │             │
-    ↓             ↓
+    ▼             ▼
 ┌─────────┐  ┌──────────┐
 │ SCRAPER │  │ CATALOG  │
 │horários │  │estrutural│
@@ -91,124 +79,63 @@
 
 ---
 
-## 🔄 Fluxo de Dados Passo a Passo
+## Fluxo de Dados Detalhado
 
-### 1️⃣ **Request do Frontend**
+### 1. Chamada do Frontend
+O componente React consome os dados curriculares de maneira simplificada e assíncrona:
 ```typescript
 // CourseGrid.tsx
 const data = await getCourseData();
 ```
 
-### 2️⃣ **UnifiedPipeline (entrada)**
+### 2. Entrada no Pipeline (unifiedPipeline.ts)
+A chamada expõe o método de processamento principal:
 ```typescript
-// unifiedPipeline.ts
 export async function getCourseData() {
   const result = await getUnifiedCourseData();
-  return result.courseData; // Record<string, Discipline[]>
+  return result.courseData; // Retorna: Record<string, Discipline[]>
 }
 ```
 
-### 3️⃣ **Scraping Paralelo**
+### 3. Execução das Coletas e Paralelismo
+As coletas de dados de optativas e a extração do catálogo de obrigatórias rodam em paralelo para mitigar latência:
 ```typescript
 const [optativas, scraping] = await Promise.allSettled([
-  scrapeOptativas(2025),        // periodo=0
-  getUnifiedSINOffers()         // orchestrator
+  scrapeOptativas(2025),
+  getUnifiedSINOffers()
 ]);
 ```
 
-### 4️⃣ **Orchestrator**
+### 4. Orquestrador e Gerenciamento de Cache
+O orquestrador coordena o ciclo de vida da coleta estrutural (catálogo) e operacional (horários atuais de turmas), controlando o TTL do cache local em 24h:
 ```typescript
 // orchestrator.ts
 async function getUnifiedSINOffers() {
-  // 1. Scrape horários
   const offers = await getSINOffers();
-  
-  // 2. Scrape catálogo (com cache 24h)
   const catalog = await getCatalogWithCache();
-  
-  // 3. Enrichment (merge)
   const enriched = enrichOffersWithCatalog(offers, catalog);
-  
   return { offers: enriched, metadata: {...} };
 }
 ```
 
-### 5️⃣ **Enrichment**
+### 5. Consolidação de Dados (Enrichment)
+Mescla as informações estruturais com as informações de turmas ativas obtidas via scraping:
 ```typescript
-// enrichmentLayer.ts
 function enrichOfferWithCatalog(offer, catalogDiscipline) {
   return {
-    ...offer,                               // operacional
-    periodo: catalogDiscipline?.periodo,    // estrutural
+    ...offer,
+    periodo: catalogDiscipline?.periodo,
     cargaTotal: catalogDiscipline?.cargaTotal,
-    _source: { ... }                        // auditoria
+    _source: { ... } // Dados para auditoria técnica
   };
-}
-```
-
-### 6️⃣ **Filtro de Optativas**
-```typescript
-// unifiedPipeline.ts
-const obrigatorias = allOffers.filter(
-  offer => !isOptativa(offer, optativasCodes)
-);
-// optativasCodes = Set de códigos com periodo=0
-```
-
-### 7️⃣ **Dedupe de Turmas**
-```typescript
-function deduplicateTurmas(offers) {
-  const map = new Map();
-  for (const offer of offers) {
-    if (!map.has(offer.cod)) {
-      map.set(offer.cod, offer);
-    }
-  }
-  return Array.from(map.values());
-}
-```
-
-### 8️⃣ **Conversão para Formato Legado**
-```typescript
-function toLegacyFormat(offers): Record<string, Discipline[]> {
-  const grouped = {};
-  for (const offer of offers) {
-    const periodo = offer.periodo?.toString() || '0';
-    grouped[periodo] = [..., {
-      CodDisciplina: offer.cod,
-      NomeDisciplina: offer.nome,
-      Periodo: offer.periodo,
-      // ... todos os campos de Discipline
-    }];
-  }
-  return grouped;
-}
-```
-
-### 9️⃣ **Fallback (se houver erro)**
-```typescript
-catch (error) {
-  return {
-    courseData: legacyCourseData,  // courseData.ts
-    metadata: { source: 'fallback' }
-  };
-}
-```
-
-### 🔟 **Response ao Frontend**
-```typescript
-// Frontend recebe
-{
-  "1": [Discipline, Discipline, ...],
-  "2": [Discipline, ...],
-  // ...
-  "8": [Discipline, ...]
 }
 ```
 
 ---
 
-## 📁 Estrutura de Arquivos
+## Estrutura Físico-Lógica de Módulos
+
+O diretório de persistência e tratamento de dados está organizado em duas categorias principais:
 
 ```
 src/data/
@@ -225,163 +152,48 @@ src/data/
 ├── pipeline.ts ........................ Pipeline legado (não usado)
 ├── curriculum.ts ...................... Estrutura curricular (não usado)
 ├── rawOfferExtractor.ts ............... Extrator legado (não usado)
-├── formattedData.ts ................... Dados formatados (não usado)
-└── courseData.refactored.ts ........... Teste de refatoração (não usado)
+└── formattedData.ts ................... Dados formatados (não usado)
 ```
 
-### 🟢 Arquivos Ativos (Produção)
-- ✅ **index.ts**: Ponto de entrada
-- ✅ **unifiedPipeline.ts**: Lógica principal
-- ✅ **orchestrator.ts**: Coordenação
-- ✅ **enrichmentLayer.ts**: Merge
-- ✅ **scraper.ts**: Scraping operacional
-- ✅ **catalogScraper.ts**: Scraping estrutural
-- ✅ **courseData.ts**: Fallback crítico
-
-### 🔵 Arquivos Legados (Preservados)
-- 📦 **adapter.ts**: Conversão legada
-- 📦 **merge.ts**: Merge antigo
-- 📦 **pipeline.ts**: Pipeline antigo
-- 📦 **curriculum.ts**: Estrutura antiga
-- 📦 **rawOfferExtractor.ts**: Extrator antigo
-- 📦 **formattedData.ts**: Formato antigo
+### Módulos em Produção (Ativos)
+*   **index.ts**: Interface única de comunicação exposta para o frontend.
+*   **unifiedPipeline.ts**: Gerenciamento do fluxo de tratamento, expurgos e ordenação por período.
+*   **orchestrator.ts**: Motor de controle de cache, temporizadores e orquestração de APIs.
+*   **enrichmentLayer.ts**: Camada lógica que realiza o enriquecimento semântico.
+*   **scraper.ts**: Parsing do portal operacional de ofertas vigentes.
+*   **catalogScraper.ts**: Coleta estrutural das ementas da UFV.
+*   **courseData.ts**: Array local de contingência e estabilidade offline.
 
 ---
 
-## 🎯 Pontos de Decisão
+## Contratos e APIs Recomendadas
 
-### Quando usar cada API?
-
-#### `getCourseData()` ✅ **RECOMENDADO**
+### 1. getCourseData()
+Recomendado para o fluxo padrão de renderização do frontend:
 ```typescript
 import { getCourseData } from '@/data';
 
-// Retorna: Record<string, Discipline[]>
-// Uso: Frontend padrão
 const data = await getCourseData();
 ```
 
-#### `getUnifiedCourseData()` 🔧 **AVANÇADO**
+### 2. getUnifiedCourseData()
+Apropriado para auditorias de sistema e monitoramento de cache:
 ```typescript
 import { getUnifiedCourseData } from '@/data';
 
-// Retorna: { courseData, metadata }
-// Uso: Debug, monitoramento, analytics
 const { courseData, metadata } = await getUnifiedCourseData();
 console.log(`Source: ${metadata.source}`);
-console.log(`Optativas filtradas: ${metadata.optativesFiltered}`);
-```
-
-#### `getUnifiedSINOffers()` ⚙️ **INTERNO**
-```typescript
-import { getUnifiedSINOffers } from '@/data';
-
-// Retorna: { offers: EnrichedOffer[], metadata }
-// Uso: Processamento customizado, análise
-const result = await getUnifiedSINOffers({
-  useCatalog: true,
-  forceCatalogRefresh: false
-});
 ```
 
 ---
 
-## 🛡️ Garantias do Sistema
+## Resiliência e Contratos Estáveis
 
-### ✅ Contrato Estável
-- Frontend sempre recebe `Record<string, Discipline[]>`
-- Formato nunca muda, independente da fonte
-- Campos obrigatórios sempre preenchidos
+### Blindagem Visual
+O frontend consome estritamente o formato de dicionário `Record<string, Discipline[]>`. Caso ocorra falha de rede ou queda completa dos serviços de raspagem, o sistema intercepta a exceção e injeta imediatamente o `courseData` estático, mantendo a tela do usuário operacional.
 
-### ✅ Fallback Gracioso
-- Scraping falha → courseData legado
-- Sistema nunca quebra
-- Usuário continua vendo dados
+### Expurgamento de Optativas
+O tratamento unificado detecta e isola disciplinas sem período obrigatório definido (periodo=0), ocultando-as do painel lateral para evitar poluição visual, mas mantendo a ementa carregada na memória do sistema para validação de pré-requisitos.
 
-### ✅ Optativas Filtradas
-- periodo=0 automaticamente removido da grade
-- Preservado internamente para uso futuro
-- Decisão baseada em fonte autoritativa (catálogo UFV)
-
-### ✅ Dedupe de Turmas
-- Múltiplas turmas → 1 entrada na grade
-- Agrupa por código de disciplina
-- Evita duplicatas visuais
-
-### ✅ Cache Inteligente
-- Catálogo: 24h TTL (muda raramente)
-- Horários: sempre fresh (muda frequentemente)
-- Fallback para cache expirado se scraping falhar
-
----
-
-## 🔍 Metadados de Auditoria
-
-Cada `EnrichedOffer` tem metadados de proveniência:
-
-```typescript
-{
-  cod: "SIN 110",
-  nome: "Programação",
-  // ... campos operacionais e estruturais
-  
-  _source: {
-    operationalData: true,   // Veio do scraper de horários?
-    catalogData: true,        // Foi enriquecido com catálogo?
-    legacyFallback: false     // Usou fallback estático?
-  }
-}
-```
-
-Permite rastrear origem de cada campo para debug e qualidade de dados.
-
----
-
-## 📊 Métricas de Qualidade
-
-### Taxa de Enriquecimento
-```typescript
-const result = await getUnifiedCourseData();
-const taxa = (
-  result.metadata.stats.enrichedWithCatalog / 
-  result.metadata.stats.total * 100
-);
-console.log(`${taxa}% das disciplinas enriquecidas com catálogo`);
-```
-
-### Optativas Filtradas
-```typescript
-console.log(`${result.metadata.optativesFiltered} optativas removidas da grade`);
-```
-
-### Fonte dos Dados
-```typescript
-if (result.metadata.source === 'fallback') {
-  console.warn('Usando fallback - scraping falhou');
-}
-```
-
----
-
-## 🚀 Performance
-
-### Scraping Paralelo
-- Horários + Catálogo = simultâneos
-- Optativas = paralelo com scraping principal
-- Reduz latência total
-
-### Cache Eficiente
-- Catálogo: 1 request/24h (economiza ~90% requests)
-- Horários: sempre fresh (muda frequentemente)
-
-### Lazy Loading Possível
-```typescript
-// Futuro: carregar detalhes sob demanda
-const minimal = await getCourseData({ includeDetails: false });
-// Depois...
-const details = await getDisciplineDetails(codigo);
-```
-
----
-
-**Arquitetura fechada e estável. Sistema pronto para produção.** ✅
+### Agrupamento Lógico de Turmas
+Turmas redundantes são de-duplicadas durante o processamento. O sistema agrupa múltiplas ocorrências de uma mesma disciplina em apenas um card visual no frontend, guardando a lista de horários de cada turma dentro do modelo da disciplina.
