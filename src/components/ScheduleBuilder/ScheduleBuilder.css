@@ -111,7 +111,7 @@
 }
 
 .exportButton {
-  width: 240px;
+  width: 170px;
   background-color: #791D1F;
   color: white;
   border: 2px solid transparent;
@@ -126,11 +126,12 @@
 }
 
 .generateButton {
-  width: 240px;
-  background-color: #e8a44a;
+  width: 170px;
+  background-color: #ff9800;
   color: #111;
   border: 2px solid transparent;
-  opacity: 0.9;
+  opacity: 1.0;
+  font-weight: 800;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
 }
 

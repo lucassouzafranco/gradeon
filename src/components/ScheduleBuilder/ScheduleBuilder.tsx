@@ -71,11 +71,7 @@ function getTurmas(disc: Discipline): TurmaInfo[] {
 interface DragPayload { codDisciplina: string; turma: string; }
 
 const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack }) => {
-  const [selectedTurmas, setSelectedTurmas] = useState<Record<string, string>>(() => {
-    const init: Record<string, string> = {};
-    selectedCards.forEach(d => { const t = getTurmas(d); if (t.length > 0) init[d.CodDisciplina] = t[0].turma; });
-    return init;
-  });
+  const [selectedTurmas, setSelectedTurmas] = useState<Record<string, string>>({});
 
   const [dragOver, setDragOver] = useState(false);
   const [draggedTurma, setDraggedTurma] = useState<{
@@ -154,6 +150,257 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
 
   const handleTurmaSelect = (codDisciplina: string, turma: string) => {
     setSelectedTurmas(prev => ({ ...prev, [codDisciplina]: turma }));
+  };
+
+  const handleRemoveFromGrid = (codDisciplina: string) => {
+    setSelectedTurmas(prev => {
+      const next = { ...prev };
+      delete next[codDisciplina];
+      return next;
+    });
+  };
+
+  const handleConflictClick = (entries: ScheduleEntry[]) => {
+    setSelectedTurmas(prev => {
+      const next = { ...prev };
+      entries.forEach(e => delete next[e.codDisciplina]);
+      return next;
+    });
+  };
+
+  const handleExportPDF = () => {
+    // Filtra e prepara as disciplinas selecionadas para a grade do PDF
+    const selectedList = selectedCards
+      .filter(d => d.CodDisciplina in selectedTurmas)
+      .map(d => {
+        const tSel = selectedTurmas[d.CodDisciplina];
+        const turmas = getTurmas(d);
+        const activeT = turmas.find(t => t.turma === tSel);
+        return {
+          cod: d.CodDisc || d.CodDisciplina,
+          nome: d.NomeDisciplina,
+          turma: tSel,
+          creditos: d.Creditos || 4,
+          sala: activeT ? activeT.salas.join(', ') : '-'
+        };
+      });
+
+    const totalCredits = selectedList.reduce((acc, curr) => acc + curr.creditos, 0);
+
+    const days = ['SEG', 'TER', 'QUA', 'QUI', 'SEX'];
+    const timeLabels: Record<string, string> = {
+      '08:00': '08:00 - 09:40',
+      '10:00': '10:00 - 11:40',
+      '12:00': '12:00 - 13:40',
+      '14:00': '14:00 - 15:40',
+      '16:00': '16:00 - 17:40',
+      '19:00': '19:00 - 20:40',
+      '21:00': '21:00 - 22:40'
+    };
+
+    let tableRowsHtml = '';
+    TIME_SLOTS.forEach((time, slotIdx) => {
+      let rowHtml = `<tr><td class="time-col">${timeLabels[time] || time}</td>`;
+      days.forEach(day => {
+        const cellEntries = getEntriesForCell(day, slotIdx);
+        if (cellEntries.length > 0) {
+          const content = cellEntries.map(e => `
+            <div class="grid-cell-item">
+              <div class="cell-code">${e.codDisc}</div>
+              <div class="cell-sala">${e.sala}</div>
+            </div>
+          `).join('');
+          rowHtml += `<td class="slot-cell filled">${content}</td>`;
+        } else {
+          rowHtml += `<td class="slot-cell"></td>`;
+        }
+      });
+      rowHtml += '</tr>';
+      tableRowsHtml += rowHtml;
+    });
+
+    const disciplineRowsHtml = selectedList.map(item => `
+      <tr>
+        <td>${item.cod} - ${item.nome}</td>
+        <td style="text-align: center;">${item.creditos}</td>
+        <td style="text-align: center;">T${item.turma}</td>
+        <td style="text-align: center;">${item.sala}</td>
+      </tr>
+    `).join('');
+
+    const printWindow = window.open('', '_blank');
+    if (!printWindow) {
+      alert('Por favor, permita popups para exportar o PDF!');
+      return;
+    }
+
+    const htmlContent = `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <title>Grade de Horários - GRADEON</title>
+        <style>
+          body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 25px;
+            color: #111;
+            background-color: #fff;
+          }
+          .header {
+            text-align: center;
+            margin-bottom: 25px;
+          }
+          .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #0c3c60;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 800;
+          }
+          .header p {
+            margin: 5px 0 0 0;
+            font-size: 13px;
+            color: #555;
+          }
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            font-size: 13px;
+          }
+          th, td {
+            border: 1px solid #777;
+            padding: 8px 10px;
+          }
+          th {
+            background-color: #e6e6e6;
+            font-weight: bold;
+            color: #111;
+          }
+          .disc-table th {
+            text-align: left;
+          }
+          .total-row {
+            font-weight: bold;
+            background-color: #f2f2f2;
+          }
+          
+          .grid-title-row {
+            background-color: #cccccc;
+            font-weight: bold;
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #111;
+            padding: 6px;
+          }
+          .day-header {
+            color: #0c3c60;
+            font-weight: bold;
+            text-align: center;
+            width: 17%;
+          }
+          .time-col {
+            font-weight: bold;
+            color: #0c3c60;
+            text-align: center;
+            width: 15%;
+            background-color: #f9f9f9;
+          }
+          .slot-cell {
+            text-align: center;
+            height: 48px;
+            vertical-align: middle;
+          }
+          .slot-cell.filled {
+            background-color: #fafafa;
+          }
+          .grid-cell-item {
+            padding: 2px 0;
+          }
+          .cell-code {
+            font-weight: bold;
+            font-size: 12px;
+            color: #111;
+          }
+          .cell-sala {
+            font-size: 11px;
+            color: #555;
+            margin-top: 1px;
+          }
+
+          @media print {
+            body {
+              margin: 15px;
+            }
+            .no-print {
+              display: none !important;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <div class="header">
+          <h1>Grade Horária Acadêmica</h1>
+          <p>Gerado pelo GRADEON em ${new Date().toLocaleDateString('pt-BR')}</p>
+        </div>
+
+        <table class="disc-table">
+          <thead>
+            <tr>
+              <th>Disciplina</th>
+              <th style="width: 120px; text-align: center;">Créditos</th>
+              <th style="width: 100px; text-align: center;">Turma</th>
+              <th style="width: 150px; text-align: center;">Sala</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${disciplineRowsHtml || '<tr><td colspan="4" style="text-align: center; color: #777;">Nenhuma disciplina selecionada</td></tr>'}
+            <tr class="total-row">
+              <td>Total de Créditos</td>
+              <td style="text-align: center;">${totalCredits}</td>
+              <td colspan="2"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th colspan="6" class="grid-title-row">Horário de Aulas</th>
+            </tr>
+            <tr>
+              <th style="width: 15%;">Horário</th>
+              <th class="day-header">Segunda</th>
+              <th class="day-header">Terça</th>
+              <th class="day-header">Quarta</th>
+              <th class="day-header">Quinta</th>
+              <th class="day-header">Sexta</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${tableRowsHtml}
+          </tbody>
+        </table>
+
+        <div style="text-align: center; margin-top: 30px;" class="no-print">
+          <button onclick="window.print()" style="padding: 12px 24px; background-color: #0c3c60; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">Imprimir / Salvar como PDF</button>
+        </div>
+
+        <script>
+          window.onload = function() {
+            setTimeout(function() {
+              window.print();
+            }, 300);
+          }
+        </script>
+      </body>
+      </html>
+    `;
+
+    printWindow.document.write(htmlContent);
+    printWindow.document.close();
   };
 
   const handleClear = () => {
@@ -245,11 +492,12 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
               <div className="turmaColumnTitle">T1</div>
               {t1Cards.map(({ disc, turma }) => {
                 if (!turma) return <div key={disc.CodDisciplina} className="turmaCardEmpty" />;
-                const isActive = selectedTurmas[disc.CodDisciplina] === turma.turma;
+                const isPlaced = disc.CodDisciplina in selectedTurmas;
+                if (isPlaced) return <div key={disc.CodDisciplina} className="turmaCardEmpty" />;
                 return (
                   <div
                     key={disc.CodDisciplina}
-                    className={`turmaCard ${isActive ? 'turmaCardActive' : ''}`}
+                    className="turmaCard"
                     draggable
                     onDragStart={(e) => handleDragStart(e, disc.CodDisciplina, turma.turma, turma.horarios)}
                     onDragEnd={handleDragEnd}
@@ -266,11 +514,12 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
               <div className="turmaColumnTitle">T2</div>
               {t2Cards.map(({ disc, turma }) => {
                 if (!turma) return <div key={disc.CodDisciplina} className="turmaCardEmpty" />;
-                const isActive = selectedTurmas[disc.CodDisciplina] === turma.turma;
+                const isPlaced = disc.CodDisciplina in selectedTurmas;
+                if (isPlaced) return <div key={disc.CodDisciplina} className="turmaCardEmpty" />;
                 return (
                   <div
                     key={disc.CodDisciplina}
-                    className={`turmaCard ${isActive ? 'turmaCardActive' : ''}`}
+                    className="turmaCard"
                     draggable
                     onDragStart={(e) => handleDragStart(e, disc.CodDisciplina, turma.turma, turma.horarios)}
                     onDragEnd={handleDragEnd}
@@ -326,7 +575,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
                       className={`gridSlot ${isPreviewed ? 'slotPreviewActive' : ''}`}
                     >
                       {hasConflict ? (
-                        <div className="gridEntry entrySelected entryConflict">
+                        <div className="gridEntry entrySelected entryConflict" onClick={() => handleConflictClick(entries)} style={{ cursor: 'pointer' }}>
                           <div className="entryCode" style={{ fontSize: '75%', lineHeight: 1.1 }}>
                             {entries.map(e => e.codDisc).join(' + ')}
                           </div>
@@ -343,7 +592,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
                         </div>
                       ) : (
                         entries.map((entry, i) => (
-                          <div key={i} className="gridEntry entrySelected">
+                          <div key={i} className="gridEntry entrySelected" onClick={() => handleRemoveFromGrid(entry.codDisciplina)} style={{ cursor: 'pointer' }}>
                             <div className="entryCode">{entry.codDisc}</div>
                             <div className="entrySala">{entry.sala}</div>
                           </div>
@@ -362,7 +611,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
         <button className="clearButton" onClick={handleClear}>
           <FaTrashAlt /> LIMPAR GRADE
         </button>
-        <button className="exportButton">
+        <button className="exportButton" onClick={handleExportPDF}>
           <FaDownload /> EXPORTAR GRADE
         </button>
         <button className="generateButton" onClick={handleRandomGenerate}>
