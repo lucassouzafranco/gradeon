@@ -169,6 +169,11 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
   };
 
   const handleExportPDF = () => {
+    if (conflicts.size > 0) {
+      alert('A grade possui conflitos de horário. Resolva antes de exportar o PDF.');
+      return;
+    }
+
     // Filtra e prepara as disciplinas selecionadas para a grade do PDF
     const selectedList = selectedCards
       .filter(d => d.CodDisciplina in selectedTurmas)
@@ -611,7 +616,11 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
         <button className="clearButton" onClick={handleClear}>
           <FaTrashAlt /> LIMPAR GRADE
         </button>
-        <button className="exportButton" onClick={handleExportPDF}>
+        <button 
+          className="exportButton" 
+          onClick={handleExportPDF}
+          style={{ opacity: conflicts.size > 0 ? 0.5 : 1, cursor: conflicts.size > 0 ? 'not-allowed' : 'pointer' }}
+        >
           <FaDownload /> EXPORTAR GRADE
         </button>
         <button className="generateButton" onClick={handleRandomGenerate}>
