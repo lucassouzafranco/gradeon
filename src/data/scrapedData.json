@@ -4,7 +4,8 @@
     "ano": 2025,
     "totalDisciplinas": 38,
     "periodos": 8,
-    "source": "prebuild-scraping"
+    "source": "prebuild-scraping",
+    "medianaGlobalReprovacao": 20.2
   },
   "courseData": {
     "1": [
@@ -2031,7 +2032,7 @@
             }
           ]
         },
-        "reprovaPercentual": 0
+        "reprovaPercentual": null
       },
       {
         "CodDisciplina": "SIN 494",
@@ -2084,7 +2085,7 @@
         "Depen": "",
         "Prerequisitos": [],
         "Dependentes": [],
-        "reprovaPercentual": 0
+        "reprovaPercentual": null
       }
     ]
   }

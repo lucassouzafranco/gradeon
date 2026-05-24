@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Overview.css';
 import { Discipline } from '../../types/types';
-import { courseData } from '../../data/courseData';
+import { courseData, courseMetadata } from '../../data/courseData';
 
 interface OverviewProps {
     selectedCards: Discipline[];
@@ -35,13 +35,30 @@ const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
     // Verificação de disciplinas de 6 créditos
     const numDisciplinas6Credits = selectedCards.filter(card => parseInt(card.CargaSemanal.split('(')[0]) === 6).length;
 
-    // Cálculo da porcentagem média real de reprovação a partir dos dados consolidados no scrapedData
-    const totalReprova = selectedCards.reduce((sum, card) => sum + (card.reprovaPercentual || 0), 0);
-    const averageReprovaPercentage = numDisciplinas > 0 ? totalReprova / numDisciplinas : 0;
+    const fallbackGlobal = courseMetadata?.medianaGlobalReprovacao || 20.2;
+
+    // media com fallback pra materias novas
+    const totalReprova = selectedCards.reduce((sum, card) => {
+        const taxa = (card.reprovaPercentual !== null && card.reprovaPercentual !== undefined) 
+            ? card.reprovaPercentual 
+            : fallbackGlobal;
+        return sum + taxa;
+    }, 0);
+    
+    const averageReprovaPercentage = numDisciplinas > 0 
+        ? totalReprova / numDisciplinas 
+        : 0;
+
+    // checa grades restritas (1 e 8)
+    const isOnlyPeriod1 = selectedCards.length > 0 && selectedCards.every(c => c.Periodo === 1);
+    const isOnlyPeriod8 = selectedCards.length > 0 && selectedCards.every(c => c.Periodo === 8);
 
     // Balanceamento da grade horária
     let balanceamentoDaGrade: string | number = '';
-    if (numDisciplinas > 2 && numDisciplinas < 7) {
+    
+    if (isOnlyPeriod1 || isOnlyPeriod8) {
+        // Ignora a equação matemática para períodos com grade fixa
+    } else if (numDisciplinas > 2 && numDisciplinas < 7) {
         // Coeficiente ajustado pela média da taxa histórica real de reprovação
         balanceamentoDaGrade = (totalCredits / (numDisciplinas * 4)) * (1 + averageReprovaPercentage / 100);
     } else if (numDisciplinas >= 7 || numDisciplinas6Credits >= 2) {
@@ -50,6 +67,7 @@ const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
 
     // Classificação ajustada para refletir a natureza dos dados
     const gradeClassification = (balance: any) => {
+        if (isOnlyPeriod1 || isOnlyPeriod8) return 'Balanceada';
         if (balance === '') return ''; // Para poucas disciplinas ou vazio
         if (balance === 'Desbalanceada') return 'Desbalanceada'; // Para 7 ou mais disciplinas, ou mais de uma disciplina de 6 créditos
         if (balance < 0.75) return 'Desbalanceada'; // Menos que 0.75 é desbalanceado

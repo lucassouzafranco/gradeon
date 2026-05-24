@@ -47,6 +47,7 @@ fs.createReadStream(CSV_FILE)
     const scrapedData = JSON.parse(rawJson);
 
     let matchCount = 0;
+    const reprovacoesArray = [];
 
     for (const periodo of Object.keys(scrapedData.courseData)) {
       for (const disc of scrapedData.courseData[periodo]) {
@@ -56,19 +57,36 @@ fs.createReadStream(CSV_FILE)
           const stats = statsMap[codDisc];
           if (stats.numEstudantes > 0) {
             const taxa = ((stats.reprovacoes + stats.abandonos) / stats.numEstudantes) * 100;
-            disc.reprovaPercentual = Number(taxa.toFixed(1));
+            const taxaFixa = Number(taxa.toFixed(1));
+            disc.reprovaPercentual = taxaFixa;
+            reprovacoesArray.push(taxaFixa);
             matchCount++;
           } else {
-            disc.reprovaPercentual = 0;
+            disc.reprovaPercentual = null;
           }
         } else {
-          disc.reprovaPercentual = 0;
+          disc.reprovaPercentual = null;
         }
       }
     }
 
+    // calcula mediana global
+    if (reprovacoesArray.length > 0 && scrapedData.metadata) {
+      reprovacoesArray.sort((a, b) => a - b);
+      const mid = Math.floor(reprovacoesArray.length / 2);
+      let mediana = reprovacoesArray[mid];
+      if (reprovacoesArray.length % 2 === 0) {
+        mediana = (reprovacoesArray[mid - 1] + reprovacoesArray[mid]) / 2;
+      }
+      scrapedData.metadata.medianaGlobalReprovacao = Number(mediana.toFixed(2));
+      delete scrapedData.metadata.mediaGlobalReprovacao; 
+    }
+
     fs.writeFileSync(JSON_FILE, JSON.stringify(scrapedData, null, 2), 'utf-8');
-    console.log(`✅ Sucesso! Taxa de reprovação real injetada em ${matchCount} disciplinas no JSON.`);
+    console.log(`> merge concluido: ${matchCount} disciplinas mapeadas.`);
+    if (scrapedData.metadata?.medianaGlobalReprovacao !== undefined) {
+      console.log(`> mediana global: ${scrapedData.metadata.medianaGlobalReprovacao}%`);
+    }
   })
   .on('error', (err) => {
     console.error('❌ Erro ao ler CSV:', err);
