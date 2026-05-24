@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-22T17:38:44.123Z",
+    "generatedAt": "2026-05-23T22:42:55.459Z",
     "ano": 2025,
     "totalDisciplinas": 38,
     "periodos": 8,
@@ -12,8 +12,8 @@
         "CodDisciplina": "MAP 199",
         "NomeDisciplina": "Cálculo I",
         "Turma": "1",
-        "Horarios": "",
-        "Sala": "",
+        "Horarios": "3=19-21\n5=21-23",
+        "Sala": "PVA103\nPVA103",
         "Periodo": 1,
         "Tipo": "T",
         "CargaSemanal": "6(4+2)",
@@ -28,7 +28,123 @@
           "MAP 298",
           "ESP 105",
           "SIN 392"
-        ]
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=19-21",
+                "5=21-23"
+              ],
+              "salas": [
+                "PVA103",
+                "PVA103"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=8-10",
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "2=10-12",
+                "5=8-10"
+              ],
+              "salas": [
+                "PVA212",
+                "PVA212"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA213",
+                "PVA213"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "2=14-16",
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA213",
+                "PVA108"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=21-23"
+              ],
+              "salas": [
+                "PVA209"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=8-10"
+              ],
+              "salas": [
+                "PVA229"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=10-12"
+              ],
+              "salas": [
+                "PVA102"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA102"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "4=10-12"
+              ],
+              "salas": [
+                "PVA106"
+              ],
+              "professor": ""
+            }
+          ]
+        }
       },
       {
         "CodDisciplina": "SIN 110",
@@ -231,8 +347,8 @@
         "CodDisciplina": "ADE 104",
         "NomeDisciplina": "Teoria Geral da Administração",
         "Turma": "1",
-        "Horarios": "",
-        "Sala": "",
+        "Horarios": "3=14-16\n5=16-18",
+        "Sala": "PVA108\nPVA103",
         "Periodo": 2,
         "Tipo": "T",
         "CargaSemanal": "4(4+0)",
@@ -243,14 +359,67 @@
         "CodDisc": "ADE104",
         "Depen": "",
         "Prerequisitos": [],
-        "Dependentes": []
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16",
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA108",
+                "PVA103"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=19-21",
+                "5=21-23"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "2=21-23",
+                "5=19-21"
+              ],
+              "salas": [
+                "PVA213",
+                "PVA213"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        }
       },
       {
         "CodDisciplina": "ESP 105",
         "NomeDisciplina": "Iniciação à Estatística",
         "Turma": "1",
-        "Horarios": "",
-        "Sala": "",
+        "Horarios": "4=14-16\n6=16-18",
+        "Sala": "PVA225\nPVA225",
         "Periodo": 2,
         "Tipo": "T",
         "CargaSemanal": "4(4+0)",
@@ -265,14 +434,79 @@
           "MAP 195",
           "MAP 199"
         ],
-        "Dependentes": []
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16",
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=8-10",
+                "6=10-12"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "2=14-16",
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=19-21",
+                "5=21-23"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "2=21-23",
+                "5=19-21"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        }
       },
       {
         "CodDisciplina": "MAP 298",
         "NomeDisciplina": "Geometria Analítica e Álgebra Linear",
         "Turma": "1",
-        "Horarios": "",
-        "Sala": "",
+        "Horarios": "3=8-10\n5=10-12",
+        "Sala": "PVA114\nPVA213",
         "Periodo": 2,
         "Tipo": "T",
         "CargaSemanal": "4(4+0)",
@@ -290,7 +524,24 @@
         ],
         "Dependentes": [
           "SIN 480"
-        ]
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=8-10",
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA114",
+                "PVA213"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        }
       },
       {
         "CodDisciplina": "SIN 101",
@@ -414,8 +665,8 @@
         "CodDisciplina": "ADE 190",
         "NomeDisciplina": "Introdução à Economia",
         "Turma": "1",
-        "Horarios": "",
-        "Sala": "",
+        "Horarios": "2=19-21\n4=21-23",
+        "Sala": "PVA214\nPVA214",
         "Periodo": 3,
         "Tipo": "T",
         "CargaSemanal": "4(4+0)",
@@ -426,14 +677,43 @@
         "CodDisc": "ADE190",
         "Depen": "",
         "Prerequisitos": [],
-        "Dependentes": []
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=19-21",
+                "4=21-23"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=14-16",
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA210"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        }
       },
       {
         "CodDisciplina": "CRP 297",
         "NomeDisciplina": "Sociologia Geral",
         "Turma": "1",
-        "Horarios": "",
-        "Sala": "",
+        "Horarios": "4=14-16\n6=14-16",
+        "Sala": "PVA232\nPVA213",
         "Periodo": 3,
         "Tipo": "T",
         "CargaSemanal": "4(4+0)",
@@ -444,7 +724,96 @@
         "CodDisc": "CRP297",
         "Depen": "",
         "Prerequisitos": [],
-        "Dependentes": []
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA232",
+                "PVA213"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=19-21",
+                "4=21-23"
+              ],
+              "salas": [
+                "PVA108",
+                "PVA108"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "2=14-16",
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA106",
+                "PVA202"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "2=19-21",
+                "4=21-23"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "3=14-16",
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA213"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "6",
+              "horarios": [
+                "3=19-21",
+                "5=21-23"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "7",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA108",
+                "PVA108"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        }
       },
       {
         "CodDisciplina": "SIN 132",
@@ -1552,8 +1921,8 @@
         "CodDisciplina": "CIC 100",
         "NomeDisciplina": "Contabilidade Geral",
         "Turma": "1",
-        "Horarios": "",
-        "Sala": "",
+        "Horarios": "3=16-18\n6=14-16",
+        "Sala": "PVA212\nPVA101",
         "Periodo": 8,
         "Tipo": "T",
         "CargaSemanal": "4(4+0)",
@@ -1564,7 +1933,36 @@
         "CodDisc": "CIC100",
         "Depen": "",
         "Prerequisitos": [],
-        "Dependentes": []
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA212",
+                "PVA101"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=21-23",
+                "6=19-21"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        }
       },
       {
         "CodDisciplina": "SIN 489",
