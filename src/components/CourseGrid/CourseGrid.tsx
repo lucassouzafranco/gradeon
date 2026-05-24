@@ -137,40 +137,46 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selected
       ))}
       {selectedCards.length >= 2 && (
         <div className="gridActionArea">
-          <button 
-            className="gridActionButton" 
-            onClick={() => {
-              // Preparar dados para Grade de Horários
-              const scheduleData = selectedCards.map(disc => ({
-                codigo: disc.CodDisc,
-                codigoCompleto: disc.CodDisciplina,
-                nome: disc.NomeDisciplina,
-                periodo: disc.Periodo,
-                creditos: disc.Creditos,
-                horarios: disc.Horarios?.split('\n') || [],
-                salas: disc.Sala?.split('\n') || [],
-                turmasDisponiveis: disc.TurmasDisponiveis || { teoricas: [], praticas: [] }
-              }));
-              
-              // Log estruturado para debug
-              console.log('=== DADOS PARA GRADE DE HORÁRIOS ===');
-              console.log('Total de disciplinas:', scheduleData.length);
-              console.log('Dados:', scheduleData);
-              
-              // TODO: Implementar navegação para página de visualização
-              // Opção 1: React Router
-              // navigate('/grade-horarios', { state: { schedules: scheduleData } });
-              
-              // Opção 2: Context API / Global State
-              // setGlobalSchedule(scheduleData);
-              
-              // Opção 3: LocalStorage (temporário)
-              localStorage.setItem('gradeon:schedules', JSON.stringify(scheduleData));
-              onNavigateToSchedule();
-            }}
-          >
-            Grade de Horários ({selectedCards.length})
-          </button>
+          {(() => {
+            const isOnlyPeriod1 = selectedCards.every(c => c.Periodo === 1);
+            const isOnlyPeriod8 = selectedCards.every(c => c.Periodo === 8);
+            
+            if (isOnlyPeriod1) {
+              return <div style={{ color: '#fff', fontSize: '14px', fontWeight: 'bold', padding: '10px 20px', backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '8px' }}>Alunos ingressantes (1º período) possuem grade fixa predefinida pela instituição.</div>;
+            }
+            if (isOnlyPeriod8) {
+              return <div style={{ color: '#fff', fontSize: '14px', fontWeight: 'bold', padding: '10px 20px', backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '8px' }}>No último período as atividades possuem horário flexível com o orientador, dispensando o cronograma.</div>;
+            }
+
+            return (
+              <button 
+                className="gridActionButton" 
+                onClick={() => {
+                  // Preparar dados para Grade de Horários
+                  const scheduleData = selectedCards.map(disc => ({
+                    codigo: disc.CodDisc,
+                    codigoCompleto: disc.CodDisciplina,
+                    nome: disc.NomeDisciplina,
+                    periodo: disc.Periodo,
+                    creditos: disc.Creditos,
+                    horarios: disc.Horarios?.split('\n') || [],
+                    salas: disc.Sala?.split('\n') || [],
+                    turmasDisponiveis: disc.TurmasDisponiveis || { teoricas: [], praticas: [] }
+                  }));
+                  
+                  // Log estruturado para debug
+                  console.log('=== DADOS PARA GRADE DE HORÁRIOS ===');
+                  console.log('Total de disciplinas:', scheduleData.length);
+                  console.log('Dados:', scheduleData);
+                  
+                  localStorage.setItem('gradeon:schedules', JSON.stringify(scheduleData));
+                  onNavigateToSchedule();
+                }}
+              >
+                Grade de Horários ({selectedCards.length})
+              </button>
+            );
+          })()}
         </div>
       )}
     </div>
