@@ -21,9 +21,6 @@ const Menu: React.FC<MenuProps> = ({ isSchedulePage }) => {
           <img src={gradeon_logo} alt="logo do GRADEON" />
         </div>
         <div className="menuOptions">
-          {isSchedulePage && (
-            <h5 style={{ cursor: "pointer" }}>OPTATIVAS E FACULTATIVAS</h5>
-          )}
           <h5 style={{ cursor: "pointer" }}>EXPORTAR GRADE</h5>
           <h5>AJUDA</h5>
           <div className="loginContainer">

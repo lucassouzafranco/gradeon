@@ -318,14 +318,14 @@
   align-items: center;
   opacity: 0.92;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   transition: opacity 0.2s ease, background-color 0.3s ease, border-color 0.2s ease;
   box-sizing: border-box;
 }
 
 .gridEntry:hover {
   opacity: 1.0;
-  border: 2px solid white;
+  border: 1px solid white;
   background-color: #8a2325;
   z-index: 10;
 }
@@ -333,7 +333,7 @@
 .entrySelected {
   background-color: #68181a;
   opacity: 1.0;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 .entryCode {

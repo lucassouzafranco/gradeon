@@ -1,115 +1,49 @@
-# 🎯 Integração Completa - Sistema de Dados Unificado
+# Guia de Integração - Sistema de Dados Unificado
 
-## ✅ Status da Arquitetura
-
-A arquitetura foi **completamente unificada**. O sistema agora possui:
-
-1. **Pipeline único** ([unifiedPipeline.ts](src/data/unifiedPipeline.ts))
-2. **Filtro automático de optativas** (período=0 removido da grade)
-3. **Dedupe de turmas** (múltiplas turmas = 1 entrada)
-4. **Fallback gracioso** (courseData legado como rede de segurança)
-5. **Contrato estável** (`Record<string, Discipline[]>`)
+Este documento serve como manual prático para a integração dos componentes visuais com o pipeline de dados unificado do sistema.
 
 ---
 
-## 📊 Fluxo de Dados (Hierarquia de Fontes)
+## Status da Integração
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    UNIFIED PIPELINE (API Única)                 │
-└──────────────────────┬──────────────────────────────────────────┘
-                       │
-                       ↓
-        ┌──────────────┴──────────────┐
-        │                             │
-        ↓                             ↓
-┌───────────────┐            ┌────────────────┐
-│  Orchestrator │            │ Catalog (opt.) │
-│  (horários +  │            │  (periodo=0)   │
-│   catálogo)   │            │                │
-└───────┬───────┘            └────────┬───────┘
-        │                             │
-        │  ┌──────────────────────────┘
-        │  │
-        ↓  ↓
-    ┌────────────┐
-    │ Enrichment │
-    │  + Filter  │
-    │  + Dedupe  │
-    └──────┬─────┘
-           │
-           ↓
-    ┌─────────────┐
-    │   Frontend  │
-    │ (CourseGrid)│
-    └─────────────┘
-           ↑
-           │ (fallback em caso de falha)
-           │
-    ┌──────────────┐
-    │  courseData  │
-    │   (legado)   │
-    └──────────────┘
-```
+A camada de dados está consolidada e ativa, operando com as seguintes especificações:
+
+1. **Pipeline único** (`src/data/unifiedPipeline.ts`)
+2. **Filtro automático de optativas** (disciplinas com período = 0 são filtradas da grade principal)
+3. **Deduplicação de turmas** (agrupamento de múltiplos registros de turmas em uma única entrada)
+4. **Resiliência local (Fallback)** (`courseData` local atua como backup estático)
+5. **Contrato de dados unificado** (estrutura padronizada em `Record<string, Discipline[]>`)
 
 ---
 
-## 🏗️ Camadas da Arquitetura
+## Estrutura das Camadas
 
-### 1. **Sources Layer** (Extração)
-- **scraper.ts**: Scrape de horários (operacional)
-- **catalogScraper.ts**: Scrape de catálogo (estrutural + optativas)
-- **courseData.ts**: Dados legados (fallback de emergência)
-
-### 2. **Enrichment Layer** (Merge)
-- **enrichmentLayer.ts**: Merge semântico entre operacional e estrutural
-- Adiciona `periodo` e `dependentes` do catálogo
-- Metadados de proveniência (`_source`)
-
-### 3. **Orchestration Layer** (Coordenação)
-- **orchestrator.ts**: Coordena scraping + cache (24h)
-- Gerencia fallbacks em múltiplos níveis
-
-### 4. **Unified Pipeline** (Contrato Final)
-- **unifiedPipeline.ts**: 
-  - Filtra optativas (periodo=0)
-  - Dedupe de turmas
-  - Converte para formato legado
-  - Fallback para courseData legado
-
-### 5. **Frontend** (Consumo)
-- **CourseGrid.tsx**: Consome `getCourseData()`
-- Não sabe de onde vieram os dados (scraping ou fallback)
+*   **Camada de Extração (Sources)**: Módulos de scraping (`scraper.ts` para horários, `catalogScraper.ts` para catálogo) e base local de backup (`courseData.ts`).
+*   **Camada de Enriquecimento (Enrichment)**: O arquivo `enrichmentLayer.ts` combina dados estruturais e operacionais e anexa metadados de auditoria.
+*   **Camada de Orquestração (Orchestration)**: O `orchestrator.ts` gerencia as prioridades de consulta e o ciclo de vida do cache (TTL de 24 horas).
+*   **Pipeline Unificado**: Centraliza as lógicas de filtro e normalização final de formato em `unifiedPipeline.ts`.
+*   **Camada Visual (Frontend)**: O componente `CourseGrid.tsx` consome os dados expostos, de forma desacoplada da infraestrutura.
 
 ---
 
-## 🎯 Regras Críticas Implementadas
+## Regras de Negócio Implementadas
 
-### Optativas
-✅ **Definição**: Toda disciplina em `periodo=0` do catálogo UFV é optativa  
-✅ **URL**: https://www.catalogo.ufv.br/interno.php?ano=2025&curso=SIP&campus=crp&periodo=0&complemento=*  
-✅ **Comportamento**: NÃO aparecem na grade, mas são preservadas internamente
+### Tratamento de Optativas
+Disciplinas marcadas como optativas (período = 0 no catálogo da UFV) são preservadas internamente na memória do sistema para validações e verificação de pré-requisitos, mas são ocultadas da listagem padrão de seleção na grade de horários.
 
-### Dedupe de Turmas
-✅ Múltiplas turmas da mesma disciplina = **1 única entrada** na grade  
-✅ Agrupamento por `codigo` (chave primária)
+### Deduplicação de Turmas
+Múltiplas turmas e ofertas de uma mesma disciplina são fundidas em um único registro no painel lateral de seleção. As informações de horários específicos de cada turma são armazenadas em arrays internos no objeto consolidado.
 
-### Hierarquia de Autoridade
-```
-1º) Catálogo UFV     → periodo, carga, estrutura
-2º) Site de Registro → horários, salas, turmas oferecidas
-3º) courseData       → fallback de emergência
-```
-
-### Disciplinas Obrigatórias
-✅ SIN496 e SIN499 sempre presentes  
-✅ Disciplinas de outros institutos (CRP, ADE, CIC) incluídas normalmente
+### Prioridade de Consulta (Hierarquia)
+1. **Catálogo UFV**: Estrutura curricular, cargas horárias e divisões de período.
+2. **Portal de Registro**: Turmas oferecidas, horários reais das aulas e salas de aula.
+3. **Backup Local**: Dados locais em `courseData` atuando como fallback de contingência.
 
 ---
 
-## 🔌 Integração com Frontend
+## Integração no Frontend
 
-### ANTES (código antigo)
+### Modelo Antigo (Carregamento Estático)
 ```typescript
 import { courseData } from '../../data/courseData';
 
@@ -118,7 +52,7 @@ useEffect(() => {
 }, []);
 ```
 
-### DEPOIS (código novo) ✅
+### Modelo Novo (Assíncrono e Resiliente)
 ```typescript
 import { getCourseData } from '../../data/unifiedPipeline';
 
@@ -130,7 +64,7 @@ useEffect(() => {
       const data = await getCourseData();
       setDisciplinas(data);
     } catch (error) {
-      console.error('[CourseGrid] Failed to load course data:', error);
+      console.error('[CourseGrid] Falha ao carregar dados:', error);
     } finally {
       setLoading(false);
     }
@@ -139,144 +73,36 @@ useEffect(() => {
 }, []);
 ```
 
-**Status**: ✅ **JÁ INTEGRADO** em [CourseGrid.tsx](src/components/CourseGrid/CourseGrid.tsx)
+*Nota: A alteração já está implementada e ativa em `src/components/CourseGrid/CourseGrid.tsx`.*
 
 ---
 
-## 🧪 Validação
+## Validação e Verificação de Status
 
-### Checklist de Funcionamento
-- ✅ Frontend carrega dados sem erros
-- ✅ Optativas não aparecem na grade
-- ✅ Dedupe de turmas funciona (1 disciplina = 1 card)
-- ✅ Fallback ativa em caso de falha de scraping
-- ✅ Shape dos dados mantém compatibilidade
-- ✅ Período de cada disciplina correto
-
-### Teste Manual
-```bash
-# 1. Iniciar servidor de desenvolvimento
-npm run dev
-
-# 2. Abrir browser em http://localhost:5173
-
-# 3. Verificar console do navegador:
-#    - "[UnifiedPipeline] Initiating unified scraping..."
-#    - "[UnifiedPipeline] Scraped X offers"
-#    - "[UnifiedPipeline] Filtered Y optativas"
-#    - "[UnifiedPipeline] Deduplicated to Z unique disciplines"
-
-# 4. Verificar grade renderizada:
-#    - Disciplinas distribuídas por períodos
-#    - Sem optativas visíveis
-#    - Sem duplicatas de turmas
-```
-
-### Debug Avançado
-```typescript
-// Adicionar em CourseGrid.tsx (temporário)
-const data = await getCourseData();
-console.log('Course Data:', data);
-console.log('Periods:', Object.keys(data));
-console.log('Total disciplines:', Object.values(data).flat().length);
-```
+### Validação Visual
+1. Certifique-se de que o servidor local está rodando (`npm run dev`).
+2. Acesse a aplicação no navegador.
+3. Verifique se as disciplinas estão distribuídas de forma correta nos períodos curriculares de 1 a 8.
+4. Confirme que disciplinas obrigatórias cruciais (como SIN 496 e SIN 499) são exibidas na listagem.
+5. Valide que não há cards duplicados no painel para a mesma matéria.
 
 ---
 
-## 🚀 Próximos Passos (Opcional)
-
-### Melhorias de Performance
-- [ ] Cache persistente (localStorage/IndexedDB)
-- [ ] Scraping paralelo de períodos
-- [ ] Lazy loading de detalhes
-
-### Melhorias de UX
-- [ ] Skeleton loading durante scraping
-- [ ] Badge indicando fonte dos dados (scraping/cache/fallback)
-- [ ] Timestamp de última atualização
-
-### Melhorias Arquiteturais
-- [ ] API REST wrapper (backend próprio)
-- [ ] GraphQL layer para queries específicas
-- [ ] WebSocket para real-time updates
-
----
-
-## 📝 O Que NÃO Deve Ser Mudado
-
-### ❌ Não Mover para Scraping
-- Regras acadêmicas (quem é obrigatória/optativa)
-- Decisões de produto (o que aparece na grade)
-- Políticas institucionais
-
-### ❌ Não Quebrar
-- **courseData.ts**: Mantido intacto como fallback
-- **Contrato `Record<string, Discipline[]>`**: Frontend depende disso
-- **Shape de `Discipline`**: Campos críticos não devem mudar
-
-### ✅ Mantido Intacto
-- **courseData.ts**: Fallback de emergência
-- **pipeline.ts**: Pipeline antigo (não usado mas preservado)
-- **merge.ts**: Lógica legada (não usada mas preservada)
-- **curriculum.ts**: Estrutura curricular (não usada mas preservada)
-
----
-
-## 🎉 Conclusão
-
-O sistema está **pronto para produção** com:
-
-✅ Pipeline unificado e testado  
-✅ Filtro de optativas automático  
-✅ Dedupe de turmas implementado  
-✅ Fallback gracioso funcionando  
-✅ Frontend integrado sem breaking changes  
-✅ Zero erros TypeScript  
-✅ Documentação completa  
-
-**A arquitetura está fechada e estável.**
-
----
-
-## 📞 API Reference
+## APIs de Consulta Disponíveis
 
 ### `getCourseData(): Promise<Record<string, Discipline[]>>`
-Função principal de entrada. Retorna dados prontos para o frontend.
-
-**Retorno**:
+API principal de consumo para o frontend React. Retorna a grade organizada de forma direta.
 ```typescript
-{
-  "1": [Discipline, Discipline, ...],
-  "2": [Discipline, ...],
-  // ...
-  "8": [Discipline, ...]
-}
-```
+import { getCourseData } from '@/data';
 
-**Garantias**:
-- Nunca retorna null
-- Sempre retorna estrutura válida
-- Optativas filtradas automaticamente
-- Turmas deduplicadas
-- Fallback automático em caso de falha
+const data = await getCourseData();
+```
 
 ### `getUnifiedCourseData(): Promise<UnifiedPipelineResult>`
-Versão avançada com metadados.
-
-**Retorno**:
+API de auditoria técnica. Retorna os dados curriculares junto com metadados detalhando a origem (scraping ou fallback) e estatísticas de filtros aplicados.
 ```typescript
-{
-  courseData: Record<string, Discipline[]>,
-  metadata: {
-    source: 'scraping' | 'fallback',
-    totalDisciplines: number,
-    optativesFiltered: number,
-    scrapingSucceeded: boolean,
-    timestamp: string
-  }
-}
+import { getUnifiedCourseData } from '@/data';
+
+const { courseData, metadata } = await getUnifiedCourseData();
+console.log(`Fonte ativa: ${metadata.source}`);
 ```
-
----
-
-**Criado com ❤️ seguindo princípios de engenharia de dados profissional**

@@ -274,7 +274,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
             padding: 8px 10px;
           }
           th {
-            background-color: #e6e6e6;
+            background-color: #c0c0c0;
             font-weight: bold;
             color: #111;
           }
@@ -287,7 +287,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
           }
           
           .grid-title-row {
-            background-color: #cccccc;
+            background-color: #c0c0c0;
             font-weight: bold;
             text-align: center;
             font-size: 14px;
