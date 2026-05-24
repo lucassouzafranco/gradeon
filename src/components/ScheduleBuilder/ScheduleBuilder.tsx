@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import './ScheduleBuilder.css';
 import { Discipline, ClassSection } from '../../types/types';
 import { courseData } from '../../data/courseData';
@@ -71,7 +71,14 @@ function getTurmas(disc: Discipline): TurmaInfo[] {
 interface DragPayload { codDisciplina: string; turma: string; }
 
 const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack }) => {
-  const [selectedTurmas, setSelectedTurmas] = useState<Record<string, string>>({});
+  const [selectedTurmas, setSelectedTurmas] = useState<Record<string, string>>(() => {
+    const saved = sessionStorage.getItem("gradeon:selectedTurmas");
+    return saved ? JSON.parse(saved) : {};
+  });
+
+  useEffect(() => {
+    sessionStorage.setItem("gradeon:selectedTurmas", JSON.stringify(selectedTurmas));
+  }, [selectedTurmas]);
 
   const [dragOver, setDragOver] = useState(false);
   const [draggedTurma, setDraggedTurma] = useState<{

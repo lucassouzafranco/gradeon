@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import CourseGrid from "./components/CourseGrid/CourseGrid";
 import Menu from "./components/Menu/Menu";
@@ -10,9 +10,16 @@ import { Discipline } from "./types/types";
 
 function App() {
   const [selectedDiscipline, setSelectedDiscipline] = useState<Discipline | null>(null);
-  const [selectedCards, setSelectedCards] = useState<Discipline[]>([]);
+  const [selectedCards, setSelectedCards] = useState<Discipline[]>(() => {
+    const saved = sessionStorage.getItem("gradeon:selectedCards");
+    return saved ? JSON.parse(saved) : [];
+  });
   const navigate = useNavigate();
   const location = useLocation();
+
+  useEffect(() => {
+    sessionStorage.setItem("gradeon:selectedCards", JSON.stringify(selectedCards));
+  }, [selectedCards]);
 
   const isSchedulePage = location.pathname === "/grade";
 

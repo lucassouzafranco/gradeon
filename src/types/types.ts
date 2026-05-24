@@ -12,7 +12,7 @@ export interface Discipline {
   Oferecida: string;
   CodDisc: string;
   Depen: string;
-  reprovaPercentual?: number;
+  reprovaPercentual?: number | null;
   // Novos campos do catálogo
   Creditos?: number;
   Prerequisitos?: string[];
