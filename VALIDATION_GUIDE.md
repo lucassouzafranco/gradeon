@@ -1,102 +1,89 @@
-# 🧪 VALIDAÇÃO RÁPIDA - Comandos para Testar Logs
+# Guia de Validação - Verificação de Logs do Pipeline de Scraping
 
-**Data**: 2025-01-19  
-**Objetivo**: Confirmar que logs [SCRAPING] estão funcionando
-
----
-
-## ✅ SERVIDOR JÁ ESTÁ RODANDO
-
-**URL**: http://localhost:5175/  
-**Status**: ✅ Ativo  
+Este documento descreve os procedimentos para testar e validar o comportamento do pipeline de dados unificado do Gradeon, confirmando o funcionamento dos logs de depuração.
 
 ---
 
-## 🔍 OPÇÃO 1: Verificar no Navegador (RECOMENDADO)
+## Verificação no Console do Navegador
 
-### Passo a Passo
-1. Abra http://localhost:5175/ no navegador
-2. Pressione **F12** (Developer Tools)
-3. Clique na aba **Console**
-4. Pressione **Ctrl+R** (recarregar página)
-5. Observe os logs
+O método recomendado para validar a execução do pipeline é através do console de ferramentas de desenvolvedor do navegador.
 
-### ✅ O Que Você DEVE Ver
+### Procedimento de Teste
 
-#### Banner de Modo Ativo:
+1. Acesse a aplicação local em seu navegador (geralmente http://localhost:5175/ ou a porta ativa exibida pelo Vite).
+2. Abra as Ferramentas do Desenvolvedor pressionando **F12** ou clicando com o botão direito e selecionando **Inspecionar**.
+3. Selecione a aba **Console**.
+4. Recarregue a página com **Ctrl + F5** (ou **Ctrl + R**) para forçar o recarregamento dos scripts.
+5. Analise o fluxo de inicialização e as mensagens do pipeline no console.
+
+### Logs Esperados no Fluxo do Pipeline
+
+O console do desenvolvedor deve apresentar a sequência de mensagens descrita a seguir, estruturada em blocos principais.
+
+#### 1. Cabeçalho de Inicialização (Unified Mode)
+Exibido assim que o módulo de dados é inicializado, informando os parâmetros do semestre ativo e o modo operacional:
+
 ```
-═══════════════════════════════════════════════
-📊 GRADEON DATA PIPELINE - UNIFIED MODE
-═══════════════════════════════════════════════
-🔧 Mode: UNIFIED (new system)
-📅 Timestamp: 19/01/2025 XX:XX:XX
-⚙️  Configuration:
-   - ano: 2025
-   - semestre: 2
-   - useCatalog: true
-   - fallbackOnError: false (pure scraping mode)
-🎯 Features:
-   ✅ Real-time scraping (horários + catálogo)
-   ✅ Optativas filtering (periodo=0)
-   ✅ Turmas deduplication
-   ✅ Data enrichment (operational + structural)
-   ✅ Smart caching (24h TTL)
-═══════════════════════════════════════════════
+===============================================
+GRADEON DATA PIPELINE - UNIFIED MODE
+===============================================
+Mode: UNIFIED
+Timestamp: [Data e Hora da Inicialização]
+Configuration:
+  - ano: 2025
+  - semestre: 2
+  - useCatalog: true
+  - fallbackOnError: false
+Features:
+  - Real-time scraping ativo
+  - Filtro de disciplinas optativas (periodo=0)
+  - Deduplicação de turmas
+  - Enriquecimento estrutural de dados
+  - Cache local com TTL de 24h
+===============================================
 ```
 
-#### Logs de Scraping de Horários:
+#### 2. Execução das Reisições de Scraping (Horários e Catálogo)
+Exibe o progresso de download dos dados de horário direto da DTI:
+
 ```
 [SCRAPING] Initiating UFV registration site scraping...
-[SCRAPING] ════════════════════════════════════
 [SCRAPING] started: horários (operational data)
-[SCRAPING] URL: https://www.dti.ufv.br/horario_crp/horario.asp?ano=2025&semestre=2&depto=SIN
-[SCRAPING] params: ano=2025, semestre=2, depto=SIN
-[SCRAPING] ✅ found: XXX course offers
-[SCRAPING] ✅ finished successfully in XXXXms
-[SCRAPING] ════════════════════════════════════
+[SCRAPING] URL: https://www.dti.ufv.br/horario_crp/horario.asp?depto=SIN...
+[SCRAPING] completed: found X course offers in Xms
 ```
 
-#### Logs de Scraping de Catálogo:
+Seguido pela coleta estrutural de períodos do catálogo da UFV:
+
 ```
-[SCRAPING] ════════════════════════════════════
 [SCRAPING] started: full SIN catalog (periods 1-8)
-[SCRAPING] params: ano=2025, includeDetails=true
-[SCRAPING] ────────────────────────────────────
 [SCRAPING] started: catalog period 1
-[SCRAPING] URL: https://www.catalogo.ufv.br/interno.php?ano=2025&curso=SIP&campus=crp&periodo=1&complemento=*
-[SCRAPING] ✅ parsed: X disciplines
-[SCRAPING] ✅ finished successfully in XXms
-[SCRAPING] ────────────────────────────────────
-... (períodos 2-8)
-[SCRAPING] ✅ total disciplines: XX
-[SCRAPING] ✅ finished full catalog in XXXXms
-[SCRAPING] ════════════════════════════════════
+[SCRAPING] URL: https://www.catalogo.ufv.br/interno.php?curso=SIP&periodo=1...
+[SCRAPING] parsed: X disciplines
+...
+[SCRAPING] total disciplines: X
+[SCRAPING] finished full catalog in Xms
 ```
 
-#### Logs de Optativas:
+E a busca dedicada de disciplinas optativas:
+
 ```
-[SCRAPING] ════════════════════════════════════
 [SCRAPING] started: optativas (period=0)
-[SCRAPING] params: ano=2025, includeDetails=false
-[SCRAPING] ────────────────────────────────────
-[SCRAPING] started: catalog period 0
-[SCRAPING] URL: https://www.catalogo.ufv.br/interno.php?ano=2025&curso=SIP&campus=crp&periodo=0&complemento=*
-[SCRAPING] ✅ parsed: X disciplines
-[SCRAPING] ✅ finished successfully in XXms
-[SCRAPING] ────────────────────────────────────
-[SCRAPING] ✅ found: XX optativas
-[SCRAPING] ✅ finished successfully in XXXms
-[SCRAPING] ════════════════════════════════════
+[SCRAPING] URL: https://www.catalogo.ufv.br/interno.php?curso=SIP&periodo=0...
+[SCRAPING] parsed: X disciplines
+[SCRAPING] finished successfully in Xms
 ```
 
-#### Logs do Pipeline Unificado:
+#### 3. Etapas do Orquestrador e Conversão
+Descreve as fases de consolidação interna no frontend:
+
 ```
 [UnifiedPipeline] Fase 1/5: Iniciando scraping paralelo...
 [UnifiedPipeline] Scraping paralelo concluido
 [UnifiedPipeline] Fase 2/5: Processando optativas...
-[UnifiedPipeline] Identificadas XX optativas
+[UnifiedPipeline] Identificadas X optativas
 [UnifiedPipeline] Fase 3/5: Aplicando filtro de optativas...
-[UnifiedPipeline] Filtradas XX optativas
+[UnifiedPipeline] Filtradas X optativas
 [UnifiedPipeline] Fase 4/5: Deduplicando turmas...
 [UnifiedPipeline] Fase 5/5: Convertendo para formato legado...
 [UnifiedPipeline] Pipeline concluido com sucesso
@@ -104,237 +91,39 @@
 
 ---
 
-## 🔍 OPÇÃO 2: Verificar via PowerShell (Alternativo)
+## Verificação de Build e Ambiente
 
-### Se Quiser Ver Logs no Terminal
+Se você preferir monitorar mensagens de compilação ou validar que o servidor de desenvolvimento está respondendo adequadamente no terminal:
 
-**Nota**: Os logs aparecem no console do navegador, não no terminal.  
-Mas você pode ver status de build:
-
-```powershell
-# Se servidor não estiver rodando ainda
-cd D:\Documentos\Programação\React\gradeon
+```bash
+# Iniciar o servidor local caso esteja inativo
 npm run dev
-```
 
-Depois abra navegador e veja logs lá (Opção 1).
-
----
-
-## 🔍 OPÇÃO 3: Build de Produção
-
-```powershell
-# Build para produção
+# Gerar o build de produção para checar otimização e erros de build estático
 npm run build
 
-# Executar preview
+# Executar a versão de produção localmente
 npm run preview
-
-# Abrir navegador em http://localhost:4173/
-# Ver logs no console (F12)
 ```
 
 ---
 
-## 🔍 OPÇÃO 4: Grep nos Arquivos (Confirmar Código)
+## Resolução de Problemas (Troubleshooting)
 
-### Verificar que logs foram adicionados:
+### Logs de Scraping Não Aparecem no Console
+1. **Filtro de Console Ativo**: Certifique-se de que a aba Console não esteja com algum filtro de texto ativo ou com os níveis de log restritos (deixe as opções "Info", "Log" e "Warnings" habilitadas nas configurações do Console do navegador).
+2. **Cache Persistente no Vite**: Se as alterações nos arquivos não recarregarem sozinhas, pare o terminal do servidor e limpe o cache do Vite:
+   ```bash
+   npm run dev -- --force
+   ```
 
-```powershell
-# Verificar logs em scraper.ts
-Select-String -Path "src/data/scraper.ts" -Pattern "\[SCRAPING\]"
-
-# Verificar logs em catalogScraper.ts
-Select-String -Path "src/data/catalogScraper.ts" -Pattern "\[SCRAPING\]"
-
-# Verificar banner em unifiedPipeline.ts
-Select-String -Path "src/data/unifiedPipeline.ts" -Pattern "UNIFIED MODE"
-```
-
-**Resultado esperado**: Várias linhas encontradas em cada arquivo
+### Mensagem "Using cached catalog data" no log
+O pipeline de dados armazena em cache o catálogo de disciplinas por 24 horas para evitar requisições redundantes ao servidor da UFV. Se precisar forçar uma nova requisição, limpe a propriedade do cache no armazenamento local ou utilize o parâmetro `forceCatalogRefresh: true` no método `getUnifiedSINOffers()`.
 
 ---
 
-## ❌ O Que NÃO Deve Acontecer
-
-### Se NÃO vir logs [SCRAPING]:
-**Possíveis causas**:
-1. ❌ Console do navegador está com filtro ativo
-   - **Solução**: Limpar filtros (botão "Clear" ou ícone de filtro)
-
-2. ❌ Build não recarregou mudanças
-   - **Solução**: 
-     ```powershell
-     # Parar servidor (Ctrl+C)
-     # Limpar cache
-     npm run dev -- --force
-     ```
-
-3. ❌ Usando fallback (cache ou erro de scraping)
-   - **Solução**: Ver próxima seção
-
----
-
-## 🔧 TROUBLESHOOTING
-
-### Se aparecer "Using cached catalog data"
-**Causa**: Cache de 24h ainda válido  
-**Solução**:
-```typescript
-// Opção 1: Limpar cache manualmente
-// Adicione em unifiedPipeline.ts antes de getUnifiedSINOffers():
-import { clearCatalogCache } from './orchestrator';
-clearCatalogCache();
-
-// Opção 2: Esperar 24h para cache expirar
-
-// Opção 3: Forçar refresh de catálogo
-getUnifiedSINOffers({
-  useCatalog: true,
-  forceCatalogRefresh: true  // Força re-scraping
-})
-```
-
-### Se aparecer "Falling back to legacy data"
-**Causa**: Scraping falhou (erro de rede, site fora do ar)  
-**O que ver**:
-```
-⚠️ Scraping failed: <erro>
-🔄 Falling back to legacy data...
-📦 Using XXX legacy offers
-```
-
-**Isso é NORMAL** - sistema tem fallback gracioso.
-
-### Se não aparecer NADA
-**Causa**: Build ou página não carregou  
-**Solução**:
-1. Verificar se servidor está rodando
-2. Verificar console do navegador (F12)
-3. Recarregar página (Ctrl+R)
-4. Limpar cache do navegador (Ctrl+Shift+R)
-
----
-
-## ✅ CRITÉRIOS DE SUCESSO
-
-### ✅ Validação COMPLETA quando você vir:
-
-1. ✅ Banner "📊 GRADEON DATA PIPELINE - UNIFIED MODE"
-2. ✅ Logs `[SCRAPING] started: horários`
-3. ✅ URLs completas sendo acessadas
-4. ✅ Contadores (e.g., "found: 120 offers")
-5. ✅ Timing (e.g., "finished in 2345ms")
-6. ✅ Status de sucesso/erro clara
-
-### ✅ Sistema CONFIRMADO como ativo quando:
-
-1. ✅ URLs reais sendo acessadas (não é mock/cache)
-2. ✅ Timing varia entre execuções (prova que é rede real)
-3. ✅ Contadores batem com dados reais do site
-4. ✅ Mensagem "UNIFIED MODE" aparece
-
----
-
-## 📊 EXEMPLO DE OUTPUT COMPLETO
-
-```
-═══════════════════════════════════════════════
-📊 GRADEON DATA PIPELINE - UNIFIED MODE
-═══════════════════════════════════════════════
-🔧 Mode: UNIFIED (new system)
-📅 Timestamp: 19/01/2025 14:32:15
-⚙️  Configuration:
-   - ano: 2025
-   - semestre: 2
-   - useCatalog: true
-   - fallbackOnError: false (pure scraping mode)
-🎯 Features:
-   ✅ Real-time scraping (horários + catálogo)
-   ✅ Optativas filtering (periodo=0)
-   ✅ Turmas deduplication
-   ✅ Data enrichment (operational + structural)
-   ✅ Smart caching (24h TTL)
-═══════════════════════════════════════════════
-
-[UnifiedPipeline] Fase 1/5: Iniciando scraping paralelo...
-
-[SCRAPING] Initiating UFV registration site scraping...
-[SCRAPING] ════════════════════════════════════
-[SCRAPING] started: horários (operational data)
-[SCRAPING] URL: https://www.dti.ufv.br/horario_crp/horario.asp?ano=2025&semestre=2&depto=SIN
-[SCRAPING] params: ano=2025, semestre=2, depto=SIN
-[SCRAPING] ✅ found: 120 course offers
-[SCRAPING] ✅ finished successfully in 1234ms
-[SCRAPING] ════════════════════════════════════
-
-[SCRAPING] ════════════════════════════════════
-[SCRAPING] started: optativas (period=0)
-[SCRAPING] params: ano=2025, includeDetails=false
-[SCRAPING] ────────────────────────────────────
-[SCRAPING] started: catalog period 0
-[SCRAPING] URL: https://www.catalogo.ufv.br/interno.php?ano=2025&curso=SIP&campus=crp&periodo=0&complemento=*
-[SCRAPING] ✅ parsed: 15 disciplines
-[SCRAPING] ✅ finished successfully in 456ms
-[SCRAPING] ────────────────────────────────────
-[SCRAPING] ✅ found: 15 optativas
-[SCRAPING] ✅ finished successfully in 523ms
-[SCRAPING] ════════════════════════════════════
-
-🚀 Starting unified data orchestration...
-   Config: ano=2025, semestre=2, useCatalog=true
-
-📋 FASE 1: Fetching operational data (horários)...
-✅ Scraped 120 offers from registration site
-
-📚 FASE 2: Fetching catalog data (structural)...
-🌐 Fetching fresh catalog data...
-[SCRAPING] ════════════════════════════════════
-[SCRAPING] started: full SIN catalog (periods 1-8)
-[SCRAPING] params: ano=2025, includeDetails=true
-... (logs de períodos 1-8)
-[SCRAPING] ✅ total disciplines: 64
-[SCRAPING] ✅ finished full catalog in 3456ms
-[SCRAPING] ════════════════════════════════════
-✅ Catalog cached: 64 disciplines
-✅ Catalog data: 64 disciplines
-
-🔀 FASE 3: Merging operational + structural data...
-✅ Enriched 98/120 offers with catalog data
-   Complete carga: 98/120
-
-✅ Orchestration complete in 5234ms
-   Total offers: 120
-   Enriched: 98
-   With complete carga: 98
-   Fallback used: 0
-
-[UnifiedPipeline] Scraping paralelo concluido
-[UnifiedPipeline] Fase 2/5: Processando optativas...
-[UnifiedPipeline] Identificadas 15 optativas
-[UnifiedPipeline] Fase 3/5: Aplicando filtro de optativas...
-[UnifiedPipeline] Filtradas 15 optativas
-[UnifiedPipeline] Fase 4/5: Deduplicando turmas...
-[UnifiedPipeline] Fase 5/5: Convertendo para formato legado...
-[UnifiedPipeline] Pipeline concluido com sucesso
-```
-
----
-
-## 🎯 AÇÃO IMEDIATA
-
-**AGORA**:
-1. ✅ Servidor está rodando: http://localhost:5175/
-2. Abra no navegador
-3. F12 → Console
-4. Ctrl+R (recarregar)
-5. **VEJA OS LOGS**
-
-Se você ver os logs → ✅ **SISTEMA VALIDADO**  
-Se não ver → Siga troubleshooting acima
-
----
-
-**FIM DA VALIDAÇÃO**
-
-_Logs implementados e prontos para inspeção_
+## Critérios de Validação
+O pipeline de dados é considerado totalmente validado e operacional se:
+1. O cabeçalho "GRADEON DATA PIPELINE - UNIFIED MODE" for renderizado no console sem erros de execução.
+2. Os tempos de execução (`timing`) de rede forem exibidos normalmente, indicando que os dados foram obtidos de forma assíncrona.
+3. Não houver erros críticos ou travamentos na interface de seleção de horários do usuário final.

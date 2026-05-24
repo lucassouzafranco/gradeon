@@ -104,7 +104,9 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                     <div className="theRightSide">
                         <div className="dataRow">
                             <span className="label">Reprovação:</span>
-                            <div className="dataBox redMedium">34%</div>
+                            <div className="dataBox redMedium">
+                                {discipline.reprovaPercentual !== undefined ? `${discipline.reprovaPercentual}%` : 'N/A'}
+                            </div>
                         </div>
                         <div className="dataRow">
                             <span className="label">Oferta:</span>
