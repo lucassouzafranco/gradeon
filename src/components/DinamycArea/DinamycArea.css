@@ -9,4 +9,6 @@
   background-color: rgba(121, 29, 31, 0.90);
   border-radius: 8px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 100;
 }

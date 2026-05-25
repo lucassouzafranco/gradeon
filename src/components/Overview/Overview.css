@@ -9,6 +9,8 @@
   background-color: rgba(0, 0, 0, 0.2);
   padding-bottom: 0.9em;
   margin-left: 0.8em;
+  position: relative;
+  z-index: 101;
 }
 
 .overviewDetails {
@@ -150,4 +152,120 @@
   color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   margin-left: 0;
+}
+
+/* Variantes de intensidade SaaS de Alto Contraste */
+.severity-low {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.severity-medium {
+  background-color: rgba(240, 140, 80, 0.15) !important;
+  border: 1px solid rgba(255, 160, 80, 0.65) !important;
+  color: #ffe3d1 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+}
+
+.severity-high {
+  background-color: rgba(235, 75, 75, 0.25) !important;
+  border: 1px solid rgba(255, 90, 95, 0.85) !important;
+  color: #ffd6d6 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+  box-shadow: 0 2px 8px rgba(235, 75, 75, 0.25) !important;
+}
+
+.severity-critical {
+  background-color: rgba(180, 20, 25, 0.75) !important;
+  border: 1px solid rgba(255, 80, 90, 0.95) !important;
+  border-left: 5px solid rgba(255, 60, 70, 1) !important;
+  border-top-left-radius: 2px !important;
+  border-bottom-left-radius: 2px !important;
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0 4px 12px rgba(255, 45, 55, 0.35) !important;
+  font-weight: 700 !important;
+}
+
+/* Tooltip Pedagógico Premium */
+.pedagogicalTooltip {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translate(-50%, 8px);
+  width: 320px;
+  background: rgba(15, 15, 20, 0.96);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  z-index: 999999 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  text-align: left;
+  pointer-events: none; /* Evita tremores ao passar o mouse */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out, visibility 0.2s;
+}
+
+/* Ativação do Balão pelo Hover no Pai (narrowBox) */
+.narrowBox:hover .pedagogicalTooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+/* Desativação completa de alteração de cor/sombra/cursor no Hover da caixa de balanceamento */
+.narrowBox:hover {
+  cursor: default !important;
+  box-shadow: inherit !important;
+  background-color: inherit !important;
+  border-color: inherit !important;
+}
+
+/* Seta do Balão */
+.pedagogicalTooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(15, 15, 20, 0.96) transparent transparent transparent;
+}
+
+.tooltipHeader {
+  font-size: 0.85em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ff3344;
+}
+
+.tooltipMath {
+  font-size: 0.72em;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: monospace, system-ui;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.4em 0.6em;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tooltipDivider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 0.2em 0;
+}
+
+.tooltipContent {
+  font-size: 0.78em;
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.88);
 }
