@@ -28,6 +28,34 @@ function parseHorario(horario: string): ParsedSlot | null {
   return { day, startTime: norm(timeParts[0]), endTime: norm(timeParts[1]) };
 }
 
+interface ParsedInterval {
+  day: string;
+  start: number;
+  end: number;
+}
+
+function parseInterval(horario: string): ParsedInterval | null {
+  const parts = horario.split('=');
+  if (parts.length !== 2) return null;
+  const day = DAY_MAP[parts[0].trim()];
+  if (!day) return null;
+  const timeParts = parts[1].trim().split('-');
+  if (timeParts.length !== 2) return null;
+  
+  const parseTimeToMinutes = (tStr: string): number => {
+    const p = tStr.trim().split(':');
+    const h = parseInt(p[0]);
+    const m = p.length > 1 ? parseInt(p[1]) : 0;
+    return h * 60 + m;
+  };
+  
+  return {
+    day,
+    start: parseTimeToMinutes(timeParts[0]),
+    end: parseTimeToMinutes(timeParts[1])
+  };
+}
+
 function getSlotIndex(startTime: string): number {
   const h = parseInt(startTime.split(':')[0]);
   if (h >= 8 && h < 10) return 0;
@@ -425,7 +453,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
     const findConflictFreeConfig = (
       index: number,
       currentAssignment: Record<string, string>,
-      occupiedSlots: Set<string>
+      occupiedIntervals: ParsedInterval[]
     ): Record<string, string> | null => {
       if (index === selectedCards.length) {
         return currentAssignment;
@@ -434,33 +462,33 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
       const disc = selectedCards[index];
       const turmas = getTurmas(disc);
       if (turmas.length === 0) {
-        return findConflictFreeConfig(index + 1, currentAssignment, occupiedSlots);
+        return findConflictFreeConfig(index + 1, currentAssignment, occupiedIntervals);
       }
 
       const shuffledTurmas = [...turmas].sort(() => Math.random() - 0.5);
 
       for (const t of shuffledTurmas) {
-        const slots: ParsedSlot[] = [];
+        const intervals: ParsedInterval[] = [];
         let conflictDetected = false;
 
         for (const h of t.horarios) {
-          const p = parseHorario(h);
+          const p = parseInterval(h);
           if (p) {
-            slots.push(p);
-            const slotKey = `${p.day}-${getSlotIndex(p.startTime)}`;
-            if (occupiedSlots.has(slotKey)) {
+            // Verifica se há sobreposição matemática no mesmo dia:
+            // start1 < end2 && start2 < end1
+            const hasOverlap = occupiedIntervals.some(occ => 
+              occ.day === p.day && p.start < occ.end && occ.start < p.end
+            );
+            if (hasOverlap) {
               conflictDetected = true;
               break;
             }
+            intervals.push(p);
           }
         }
 
         if (!conflictDetected) {
-          const nextOccupied = new Set(occupiedSlots);
-          slots.forEach(p => {
-            nextOccupied.add(`${p.day}-${getSlotIndex(p.startTime)}`);
-          });
-
+          const nextOccupied = [...occupiedIntervals, ...intervals];
           const nextAssignment = { ...currentAssignment, [disc.CodDisciplina]: t.turma };
           const result = findConflictFreeConfig(index + 1, nextAssignment, nextOccupied);
           if (result) return result;
@@ -470,7 +498,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
       return null;
     };
 
-    const solution = findConflictFreeConfig(0, {}, new Set<string>());
+    const solution = findConflictFreeConfig(0, {}, []);
 
     if (solution) {
       setSelectedTurmas(solution);
