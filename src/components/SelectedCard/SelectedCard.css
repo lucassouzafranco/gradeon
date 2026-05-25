@@ -50,20 +50,38 @@
   min-width: fit-content;
 }
 
-/* Variantes de intensidade — paleta vinho */
-.redLight {
-  background-color: rgba(121, 29, 31, 0.25);
-  border-color: rgba(180, 60, 62, 0.5);
+/* Variantes de intensidade — gravidade de créditos e reprovação */
+.severity-low {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.22) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
 }
 
-.redMedium {
-  background-color: rgba(121, 29, 31, 0.3);
-  border-color: rgba(160, 45, 48, 0.55);
+.severity-medium {
+  background-color: rgba(240, 140, 80, 0.15) !important;
+  border-color: rgba(255, 160, 80, 0.65) !important;
+  color: #ffe3d1 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
 }
 
-.redDark {
-  background-color: rgba(121, 29, 31, 0.45);
-  border-color: rgba(140, 35, 38, 0.65);
+.severity-high {
+  background-color: rgba(235, 75, 75, 0.25) !important;
+  border-color: rgba(255, 90, 95, 0.85) !important;
+  color: #ffd6d6 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+  box-shadow: 0 2px 8px rgba(235, 75, 75, 0.25) !important;
+}
+
+.severity-critical {
+  background-color: rgba(180, 20, 25, 0.75) !important;
+  border-color: rgba(255, 80, 90, 0.95) !important;
+  border-left: 5px solid rgba(255, 60, 70, 1) !important;
+  border-top-left-radius: 2px !important;
+  border-bottom-left-radius: 2px !important;
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0 4px 12px rgba(255, 45, 55, 0.35) !important;
+  font-weight: 700 !important;
 }
 
 .dark {

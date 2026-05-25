@@ -40,9 +40,9 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                         <div className="dataRow">
                             <span className="label">Créditos:</span>
                             <div className={`dataBox ${
-                                parseInt(discipline.CargaSemanal) <= 2 ? 'redDark' :
-                                parseInt(discipline.CargaSemanal) === 4 ? 'redMedium' :
-                                'redLight'
+                                parseInt(discipline.CargaSemanal) <= 2 ? 'severity-low' :
+                                parseInt(discipline.CargaSemanal) === 4 ? 'severity-medium' :
+                                'severity-high'
                             }`}>{discipline.CargaSemanal.split('(')[0]}</div>
                         </div>
                         <div className="dataRow">
@@ -56,13 +56,13 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                                 
                                 if (prerequisitosArray.length > 2) {
                                     return (
-                                        <div className="dataBox redMedium turmaScrollBox">
+                                        <div className="dataBox severity-medium turmaScrollBox">
                                             <ScrollingText items={prerequisitosArray} />
                                         </div>
                                     );
                                 } else {
                                     return (
-                                        <div className="dataBox redMedium">
+                                        <div className="dataBox severity-medium">
                                             {prerequisitosArray.join(' | ')}
                                         </div>
                                     );
@@ -104,8 +104,14 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                     <div className="theRightSide">
                         <div className="dataRow">
                             <span className="label">Reprovação:</span>
-                            <div className="dataBox redMedium">
-                                {discipline.reprovaPercentual !== undefined ? `${discipline.reprovaPercentual}%` : 'N/A'}
+                            <div className={`dataBox ${
+                                discipline.reprovaPercentual === undefined || discipline.reprovaPercentual === null ? 'severity-low' :
+                                discipline.reprovaPercentual < 15 ? 'severity-low' :
+                                discipline.reprovaPercentual <= 30 ? 'severity-medium' :
+                                discipline.reprovaPercentual <= 50 ? 'severity-high' :
+                                'severity-critical'
+                            }`}>
+                                {discipline.reprovaPercentual !== undefined && discipline.reprovaPercentual !== null ? `${discipline.reprovaPercentual}%` : 'N/A'}
                             </div>
                         </div>
                         <div className="dataRow">
@@ -128,13 +134,13 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
                                 
                                 if (dependentes.length > 2) {
                                     return (
-                                        <div className="dataBox redMedium turmaScrollBox">
+                                        <div className="dataBox severity-medium turmaScrollBox">
                                             <ScrollingText items={dependentes} />
                                         </div>
                                     );
                                 } else {
                                     return (
-                                        <div className="dataBox redMedium">
+                                        <div className="dataBox severity-medium">
                                             {dependentes.join(' | ')}
                                         </div>
                                     );
