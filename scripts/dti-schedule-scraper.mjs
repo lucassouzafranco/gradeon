@@ -6,6 +6,42 @@
 
 import axios from 'axios';
 import * as cheerio from 'cheerio';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Helper para extrair departamentos dinamicamente de scrapedData.json
+function getUniqueDepartments() {
+  try {
+    const scrapedDataPath = path.resolve(__dirname, '../src/data/scrapedData.json');
+    if (fs.existsSync(scrapedDataPath)) {
+      const content = fs.readFileSync(scrapedDataPath, 'utf8');
+      const data = JSON.parse(content);
+      if (data && data.courseData) {
+        const deptos = new Set();
+        Object.values(data.courseData).forEach(disciplines => {
+          if (Array.isArray(disciplines)) {
+            disciplines.forEach(disc => {
+              if (disc && disc.CodDisciplina) {
+                const match = disc.CodDisciplina.match(/^([A-Z]+)/);
+                if (match) deptos.add(match[1]);
+              }
+            });
+          }
+        });
+        if (deptos.size > 0) {
+          return Array.from(deptos);
+        }
+      }
+    }
+  } catch (err) {
+    console.warn('[SCRAPER] Warning: Could not read scrapedData.json, using fallback depts:', err.message);
+  }
+  return ['SIN', 'MAP', 'ADE', 'ESP', 'CRP', 'CIC'];
+}
 
 const CONFIG = {
   baseUrl: 'https://www.dti.ufv.br/horario_crp/horario.asp',
@@ -158,8 +194,8 @@ async function scrapeSemestre(semestre, depto) {
  * Scrape ambos semestres e combina resultados para todos os departamentos
  */
 export async function scrapeAllSchedules() {
-  console.log('\nColetando horários dos semestres 1 e 2 para todos os departamentos...\n');
-  const deptos = ['SIN', 'MAP', 'ADE', 'ESP', 'CRP', 'CIC'];
+  const deptos = getUniqueDepartments();
+  console.log(`\nColetando horários dos semestres 1 e 2 para os departamentos: ${deptos.join(', ')}...\n`);
   const semestres = [1, 2];
   
   const promises = [];

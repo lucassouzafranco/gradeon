@@ -26,6 +26,7 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { RawOffer } from '../types/types';
+import scrapedData from './scrapedData.json';
 
 interface ScraperConfig {
   ano: number;
@@ -173,9 +174,37 @@ export async function scrapeHorarios(config: ScraperConfig): Promise<RawOffer[]>
   }
 }
 
+// Extrair departamentos únicos dinamicamente com base no catálogo de disciplinas cadastrado
+export function getUniqueDepartments(): string[] {
+  const deptos = new Set<string>();
+  
+  if (scrapedData && scrapedData.courseData) {
+    Object.values(scrapedData.courseData).forEach((disciplines: any) => {
+      if (Array.isArray(disciplines)) {
+        disciplines.forEach((disc: any) => {
+          if (disc && disc.CodDisciplina) {
+            const match = disc.CodDisciplina.match(/^([A-Z]+)/);
+            if (match) {
+              deptos.add(match[1]);
+            }
+          }
+        });
+      }
+    });
+  }
+  
+  // Garantir 'SIN' como fallback seguro caso os dados estejam corrompidos ou vazios
+  if (deptos.size === 0) {
+    deptos.add('SIN');
+  }
+  
+  return Array.from(deptos);
+}
+
 export async function getSINOffers(ano: number = 2025, semestre: 1 | 2 = 2): Promise<RawOffer[]> {
   console.log('[SCRAPING] Initiating UFV registration site scraping for SIN and external departments...');
-  const deptos = ['SIN', 'MAP', 'ADE', 'ESP', 'CRP', 'CIC'];
+  const deptos = getUniqueDepartments();
+  console.log(`[SCRAPING] Dynamically detected departments from course data: ${deptos.join(', ')}`);
   
   const allResults = await Promise.allSettled(
     deptos.map(depto => scrapeHorarios({ ano, semestre, depto }))
