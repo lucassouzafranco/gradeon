@@ -1,271 +1,300 @@
 .overviewContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 53%;
-  height: 90%;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.2);
-  padding-bottom: 0.9em;
-  margin-left: 0.8em;
-  position: relative;
-  z-index: 101;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 53%;
+    height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-bottom: 0.9em;
+    margin-left: 0.8em;
+    position: relative;
+    z-index: 10000 !important;
+    overflow: visible !important;
 }
 
 .overviewDetails {
-  font-size: 1em;
-  font-weight: 600;
-  color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    overflow: visible !important;
 }
 
 .leftAndRight {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 0 0.9em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0.9em;
+    overflow: visible !important;
 }
 
 .leftSide {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    overflow: visible !important;
 }
 
 .rightSide {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .dataRow {
-  display: flex;
-  align-items: center;
-  margin-top: 1em;
-  gap: 0.7em;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    gap: 0.7em;
+    overflow: visible !important;
 }
 
 .label {
-  font-size: 0.82em;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.75);
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  white-space: nowrap;
+    font-size: 0.82em;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
 /* Variantes de intensidade — paleta vinho */
 .redLight {
-  background-color: rgba(121, 29, 31, 0.25);
-  border-color: rgba(180, 60, 62, 0.5);
+    background-color: rgba(121, 29, 31, 0.25);
+    border-color: rgba(180, 60, 62, 0.5);
 }
 
 .redMedium {
-  background-color: rgba(121, 29, 31, 0.3);
-  border-color: rgba(160, 45, 48, 0.55);
+    background-color: rgba(121, 29, 31, 0.3);
+    border-color: rgba(160, 45, 48, 0.55);
 }
 
 .redDark {
-  background-color: rgba(121, 29, 31, 0.45);
-  border-color: rgba(140, 35, 38, 0.65);
+    background-color: rgba(121, 29, 31, 0.45);
+    border-color: rgba(140, 35, 38, 0.65);
 }
 
 .dataBox {
-  height: auto;
-  width: auto;
-  min-width: 3em;
-  padding: 0.3em 1.2em;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.8em;
-  letter-spacing: 0.03em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(121, 29, 31, 0.28);
-  border: 1px solid rgba(160, 45, 48, 0.5);
-  color: rgba(255, 255, 255, 0.92);
-  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    height: auto;
+    width: auto;
+    min-width: 3em;
+    padding: 0.3em 1.2em;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 0.03em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(121, 29, 31, 0.28);
+    border: 1px solid rgba(160, 45, 48, 0.5);
+    color: rgba(255, 255, 255, 0.92);
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .narrowBox {
-  min-width: 12em;
+    min-width: 12em;
 }
 
 .wideBox {
-  min-width: 8em;
-  max-width: 15em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    min-width: 8em;
+    max-width: 15em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .scrollingContainer {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .scrollingContent {
-  display: inline-flex;
-  white-space: nowrap;
-  animation: scroll 10s linear infinite;
+    display: inline-flex;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
 }
 
 .scrollingContent span {
-  padding-right: 5em;
+    padding-right: 5em;
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .dataBox:hover {
-  background-color: rgba(121, 29, 31, 0.5);
-  border-color: rgba(200, 80, 82, 0.7);
-  box-shadow: 0 0 12px rgba(121, 29, 31, 0.3);
-  cursor: pointer;
+    background-color: rgba(121, 29, 31, 0.5);
+    border-color: rgba(200, 80, 82, 0.7);
+    box-shadow: 0 0 12px rgba(121, 29, 31, 0.3);
+    cursor: pointer;
 }
 
 .Balanceada:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 @keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .difficultyRow {
-  padding: 0.1em 1.1em;
-  border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.23);
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  margin-left: 0;
+    padding: 0.1em 1.1em;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.23);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    margin-left: 0;
 }
 
-/* Variantes de intensidade SaaS de Alto Contraste */
+/* Variantes de intensidade */
 .severity-low {
-  background-color: rgba(255, 255, 255, 0.08) !important;
-  border: 1px solid rgba(255, 255, 255, 0.22) !important;
-  color: rgba(255, 255, 255, 0.95) !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
 }
 
 .severity-medium {
-  background-color: rgba(240, 140, 80, 0.15) !important;
-  border: 1px solid rgba(255, 160, 80, 0.65) !important;
-  color: #ffe3d1 !important;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+    background-color: rgba(240, 140, 80, 0.15) !important;
+    border: 1px solid rgba(255, 160, 80, 0.65) !important;
+    color: #ffe3d1 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
 }
 
 .severity-high {
-  background-color: rgba(235, 75, 75, 0.25) !important;
-  border: 1px solid rgba(255, 90, 95, 0.85) !important;
-  color: #ffd6d6 !important;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
-  box-shadow: 0 2px 8px rgba(235, 75, 75, 0.25) !important;
+    background-color: rgba(235, 75, 75, 0.25) !important;
+    border: 1px solid rgba(255, 90, 95, 0.85) !important;
+    color: #ffd6d6 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+    box-shadow: 0 2px 8px rgba(235, 75, 75, 0.25) !important;
 }
 
 .severity-critical {
-  background-color: rgba(180, 20, 25, 0.75) !important;
-  border: 1px solid rgba(255, 80, 90, 0.95) !important;
-  border-left: 5px solid rgba(255, 60, 70, 1) !important;
-  border-top-left-radius: 2px !important;
-  border-bottom-left-radius: 2px !important;
-  color: #ffffff !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9) !important;
-  box-shadow: 0 4px 12px rgba(255, 45, 55, 0.35) !important;
-  font-weight: 700 !important;
+    background-color: rgba(180, 20, 25, 0.75) !important;
+    border: 1px solid rgba(255, 80, 90, 0.95) !important;
+    border-left: 5px solid rgba(255, 60, 70, 1) !important;
+    border-top-left-radius: 2px !important;
+    border-bottom-left-radius: 2px !important;
+    color: #ffffff !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0 4px 12px rgba(255, 45, 55, 0.35) !important;
+    font-weight: 700 !important;
 }
 
-/* Tooltip Pedagógico Premium */
-.pedagogicalTooltip {
-  position: absolute;
-  bottom: calc(100% + 12px);
-  left: 50%;
-  transform: translate(-50%, 8px);
-  width: 320px;
-  background: rgba(15, 15, 20, 0.96);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
-  padding: 1em;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  z-index: 999999 !important;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-  text-align: left;
-  pointer-events: none; /* Evita tremores ao passar o mouse */
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s ease-out, transform 0.2s ease-out, visibility 0.2s;
+/* Balão Pedagógico Premium (Evita conflitos de classe "tooltip" e clipping de layout) */
+.pedagogicalAdviceBalloon {
+    position: fixed !important;
+    bottom: 24vh !important;
+    left: 66% !important;
+    transform: translate(-50%, 8px) !important;
+    width: 320px !important;
+    background: rgba(15, 15, 20, 0.96) !important;
+    backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 8px !important;
+    padding: 1em !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    z-index: 2147483647 !important;
+    /* Z-index máximo para garantir empilhamento */
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.5em !important;
+    text-align: left !important;
+    pointer-events: none !important;
+    /* Evita tremores ao passar o mouse */
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out, visibility 0.2s !important;
 }
 
 /* Ativação do Balão pelo Hover no Pai (narrowBox) */
-.narrowBox:hover .pedagogicalTooltip {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(-50%, 0);
+.narrowBox:hover .pedagogicalAdviceBalloon {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translate(-50%, 0) !important;
 }
 
 /* Desativação completa de alteração de cor/sombra/cursor no Hover da caixa de balanceamento */
-.narrowBox:hover {
-  cursor: default !important;
-  box-shadow: inherit !important;
-  background-color: inherit !important;
-  border-color: inherit !important;
+.overviewContainer .dataRow .dataBox.narrowBox:hover {
+    cursor: pointer !important;
+    box-shadow: none;
+    background-color: rgba(121, 29, 31, 0.28);
+    border-color: rgba(160, 45, 48, 0.5);
 }
 
 /* Seta do Balão */
-.pedagogicalTooltip::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 6px;
-  border-style: solid;
-  border-color: rgba(15, 15, 20, 0.96) transparent transparent transparent;
+.pedagogicalAdviceBalloon::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(15, 15, 20, 0.96) transparent transparent transparent;
 }
 
-.tooltipHeader {
-  font-size: 0.85em;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #ff3344;
+.adviceHeader {
+    font-size: 0.85em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ff3344;
 }
 
-.tooltipMath {
-  font-size: 0.72em;
-  color: rgba(255, 255, 255, 0.6);
-  font-family: monospace, system-ui;
-  background: rgba(255, 255, 255, 0.03);
-  padding: 0.4em 0.6em;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+/* Cores Dinâmicas do Título baseadas no Estado da Grade */
+.pedagogicalAdviceBalloon.regular .adviceHeader {
+    color: #3b82f6 !important;
+    /* Grade Regular -> Azul */
 }
 
-.tooltipDivider {
-  height: 1px;
-  background: rgba(255, 255, 255, 0.08);
-  margin: 0.2em 0;
+.pedagogicalAdviceBalloon.grade-balanceada .adviceHeader {
+    color: #10b981 !important;
+    /* Grade Balanceada -> Verde */
 }
 
-.tooltipContent {
-  font-size: 0.78em;
-  font-weight: 500;
-  line-height: 1.4;
-  color: rgba(255, 255, 255, 0.88);
+.pedagogicalAdviceBalloon.carga-reduzida .adviceHeader {
+    color: #26a69a !important;
+    /* Carga Reduzida -> Verde Água/Teal */
+}
+
+.pedagogicalAdviceBalloon.carga-elevada .adviceHeader {
+    color: #f59e0b !important;
+    /* Carga Elevada -> Laranja/Amarelo */
+}
+
+.pedagogicalAdviceBalloon.sobrecarga-severa .adviceHeader {
+    color: #ef4444 !important;
+    /* Sobrecarga Severa -> Vermelho */
+}
+
+.pedagogicalAdviceBalloon.poucas .adviceHeader {
+    color: #cccccc !important;
+    /* Poucas Disciplinas -> Cinza */
+}
+
+.adviceContent {
+    font-size: 0.86em;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.88);
+    padding-top: 0.2em;
+    white-space: normal !important;
+    word-wrap: break-word;
+    word-spacing: 0.2em;
+    letter-spacing: 0.01em;
 }

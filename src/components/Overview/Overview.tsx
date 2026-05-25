@@ -179,7 +179,7 @@ const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
             case 'Grade Regular':
                 return 'Excelente escolha! Cursar as disciplinas prescritas para o período regular mantém o discente no fluxo recomendado pela instituição, reduzindo o risco de retenção acadêmica futura.';
             case 'Carga Reduzida':
-                return 'Semestre com carga de esforço leve. É ideal se você estiver realizando estágios exigentes, trabalhando, focado em projetos de extensão/iniciação científica, ou revisando matérias trancadas.';
+                return 'Semestre com demanda acadêmica reduzida, ideal para conciliar com estágios ou atividades extracurriculares. Para acelerar a progressão no curso, recomenda-se adicionar mais 1 disciplina.';
             case 'Grade Balanceada':
                 return 'Combinação ideal! A distribuição de disciplinas com diferentes perfis de retenção histórica atinge o ponto de equilíbrio perfeito (equivalente a 20 créditos padrão). Permite aprendizado sólido com ritmo de estudos saudável.';
             case 'Carga Elevada':
@@ -207,13 +207,9 @@ const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
                                 >
                                     {isRegularGrid ? 'Grade Regular' : (numDisciplinas < 3 ? 'requer 3+ disciplinas' : classification)}
                                     
-                                    <div className="pedagogicalTooltip">
-                                        <div className="tooltipHeader">Orientação Pedagógica</div>
-                                        <div className="tooltipMath">
-                                            <strong>Modelo:</strong> Carga = (Créditos / 20) × (1 + % Reprovação Média / 100) × (1 - 4% × N<sub>amortecedoras</sub>)
-                                        </div>
-                                        <div className="tooltipDivider" />
-                                        <div className="tooltipContent">
+                                    <div className={`pedagogicalAdviceBalloon ${isRegularGrid ? 'regular' : (numDisciplinas < 3 ? 'poucas' : (classification ? classification.toLowerCase().replace(/\s+/g, '-') : ''))}`}>
+                                        <div className="adviceHeader">Recomendação Personalizada</div>
+                                        <div className="adviceContent">
                                             {getPedagogicalDescription(isRegularGrid ? 'Grade Regular' : (numDisciplinas < 3 ? 'Poucas Disciplinas' : classification))}
                                         </div>
                                     </div>

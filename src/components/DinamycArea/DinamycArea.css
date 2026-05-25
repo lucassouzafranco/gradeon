@@ -10,5 +10,6 @@
   border-radius: 8px;
   box-sizing: border-box;
   position: relative;
-  z-index: 100;
+  z-index: 9999 !important;
+  overflow: visible !important;
 }
