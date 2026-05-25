@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-25T12:57:18.968Z",
+    "generatedAt": "2026-05-25T14:25:10.704Z",
     "ano": 2025,
     "totalDisciplinas": 38,
     "periodos": 8,
-    "source": "unified-quick-scraping",
+    "source": "prebuild-scraping",
     "medianaGlobalReprovacao": 20.2
   },
   "courseData": {
@@ -30,7 +30,6 @@
           "ESP 105",
           "SIN 392"
         ],
-        "reprovaPercentual": 77.7,
         "TurmasDisponiveis": {
           "teoricas": [
             {
@@ -146,7 +145,8 @@
               "professor": ""
             }
           ]
-        }
+        },
+        "reprovaPercentual": 77.7
       },
       {
         "CodDisciplina": "SIN 110",
@@ -365,7 +365,6 @@
         "Depen": "",
         "Prerequisitos": [],
         "Dependentes": [],
-        "reprovaPercentual": 17.3,
         "TurmasDisponiveis": {
           "teoricas": [
             {
@@ -418,7 +417,8 @@
             }
           ],
           "praticas": []
-        }
+        },
+        "reprovaPercentual": 17.3
       },
       {
         "CodDisciplina": "ESP 105",
@@ -441,7 +441,6 @@
           "MAP 199"
         ],
         "Dependentes": [],
-        "reprovaPercentual": 30.7,
         "TurmasDisponiveis": {
           "teoricas": [
             {
@@ -506,7 +505,8 @@
             }
           ],
           "praticas": []
-        }
+        },
+        "reprovaPercentual": 30.7
       },
       {
         "CodDisciplina": "MAP 298",
@@ -532,7 +532,6 @@
         "Dependentes": [
           "SIN 480"
         ],
-        "reprovaPercentual": 48.1,
         "TurmasDisponiveis": {
           "teoricas": [
             {
@@ -573,7 +572,8 @@
             }
           ],
           "praticas": []
-        }
+        },
+        "reprovaPercentual": 48.1
       },
       {
         "CodDisciplina": "SIN 101",
@@ -712,7 +712,6 @@
         "Depen": "",
         "Prerequisitos": [],
         "Dependentes": [],
-        "reprovaPercentual": 16.6,
         "TurmasDisponiveis": {
           "teoricas": [
             {
@@ -741,7 +740,8 @@
             }
           ],
           "praticas": []
-        }
+        },
+        "reprovaPercentual": 16.6
       },
       {
         "CodDisciplina": "CRP 297",
@@ -760,7 +760,6 @@
         "Depen": "",
         "Prerequisitos": [],
         "Dependentes": [],
-        "reprovaPercentual": 33.2,
         "TurmasDisponiveis": {
           "teoricas": [
             {
@@ -849,7 +848,8 @@
             }
           ],
           "praticas": []
-        }
+        },
+        "reprovaPercentual": 33.2
       },
       {
         "CodDisciplina": "SIN 132",
@@ -1901,7 +1901,7 @@
         "CodDisciplina": "SIN 488",
         "NomeDisciplina": "Trabalho de Conclusão de Curso I",
         "Turma": "1",
-        "Horarios": "a combinar",
+        "Horarios": "",
         "Sala": "",
         "Periodo": 7,
         "Tipo": "T",
@@ -1974,7 +1974,6 @@
         "Depen": "",
         "Prerequisitos": [],
         "Dependentes": [],
-        "reprovaPercentual": 5.6,
         "TurmasDisponiveis": {
           "teoricas": [
             {
@@ -2003,7 +2002,8 @@
             }
           ],
           "praticas": []
-        }
+        },
+        "reprovaPercentual": 5.6
       },
       {
         "CodDisciplina": "CIC 100",
@@ -2022,7 +2022,6 @@
         "Depen": "",
         "Prerequisitos": [],
         "Dependentes": [],
-        "reprovaPercentual": 42,
         "TurmasDisponiveis": {
           "teoricas": [
             {
@@ -2063,13 +2062,14 @@
             }
           ],
           "praticas": []
-        }
+        },
+        "reprovaPercentual": 42
       },
       {
         "CodDisciplina": "SIN 489",
         "NomeDisciplina": "Trabalho de Conclusão de Curso II",
         "Turma": "1",
-        "Horarios": "a combinar",
+        "Horarios": "",
         "Sala": "",
         "Periodo": 8,
         "Tipo": "T",
@@ -2103,7 +2103,7 @@
         "CodDisciplina": "SIN 494",
         "NomeDisciplina": "Atividades Complementares",
         "Turma": "1",
-        "Horarios": "a combinar",
+        "Horarios": "",
         "Sala": "",
         "Periodo": 8,
         "Tipo": "T",
