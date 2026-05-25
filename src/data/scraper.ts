@@ -174,6 +174,21 @@ export async function scrapeHorarios(config: ScraperConfig): Promise<RawOffer[]>
 }
 
 export async function getSINOffers(ano: number = 2025, semestre: 1 | 2 = 2): Promise<RawOffer[]> {
-  console.log('[SCRAPING] Initiating UFV registration site scraping...');
-  return scrapeHorarios({ ano, semestre, depto: 'SIN' });
+  console.log('[SCRAPING] Initiating UFV registration site scraping for SIN and external departments...');
+  const deptos = ['SIN', 'MAP', 'ADE', 'ESP', 'CRP', 'CIC'];
+  
+  const allResults = await Promise.allSettled(
+    deptos.map(depto => scrapeHorarios({ ano, semestre, depto }))
+  );
+  
+  const combinedOffers: RawOffer[] = [];
+  allResults.forEach((res, idx) => {
+    if (res.status === 'fulfilled') {
+      combinedOffers.push(...res.value);
+    } else {
+      console.warn(`[SCRAPING] Warning: Failed to scrape department ${deptos[idx]}:`, res.reason);
+    }
+  });
+  
+  return combinedOffers;
 }

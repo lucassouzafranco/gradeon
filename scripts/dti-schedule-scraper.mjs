@@ -92,10 +92,10 @@ function parseRooms(roomText) {
 /**
  * Scrape horários de um semestre específico
  */
-async function scrapeSemestre(semestre) {
-  const url = `${CONFIG.baseUrl}?ano=${CONFIG.ano}&semestre=${semestre}&depto=${CONFIG.departamento}`;
+async function scrapeSemestre(semestre, depto) {
+  const url = `${CONFIG.baseUrl}?ano=${CONFIG.ano}&semestre=${semestre}&depto=${depto}`;
   
-  console.log(`\n[Semestre ${semestre}] Iniciando scraping...`);
+  console.log(`\n[Semestre ${semestre} - Depto ${depto}] Iniciando scraping...`);
   console.log(`URL: ${url}`);
   
   try {
@@ -145,28 +145,48 @@ async function scrapeSemestre(semestre) {
       };
     });
     
-    console.log(`[Semestre ${semestre}] Coletadas ${Object.keys(scheduleData).length} turmas`);
+    console.log(`[Semestre ${semestre} - Depto ${depto}] Coletadas ${Object.keys(scheduleData).length} turmas`);
     return scheduleData;
     
   } catch (error) {
-    console.error(`[Semestre ${semestre}] ERRO: ${error.message}`);
+    console.error(`[Semestre ${semestre} - Depto ${depto}] ERRO: ${error.message}`);
     return {};
   }
 }
 
 /**
- * Scrape ambos semestres e combina resultados
+ * Scrape ambos semestres e combina resultados para todos os departamentos
  */
 export async function scrapeAllSchedules() {
-  console.log('\nColetando horários dos semestres 1 e 2...\n');
+  console.log('\nColetando horários dos semestres 1 e 2 para todos os departamentos...\n');
+  const deptos = ['SIN', 'MAP', 'ADE', 'ESP', 'CRP', 'CIC'];
+  const semestres = [1, 2];
   
-  const [sem1, sem2] = await Promise.all([
-    scrapeSemestre(1),
-    scrapeSemestre(2)
-  ]);
+  const promises = [];
+  deptos.forEach(depto => {
+    semestres.forEach(sem => {
+      promises.push(
+        scrapeSemestre(sem, depto).then(data => ({ depto, sem, data }))
+      );
+    });
+  });
   
-  // Combinar resultados (semestre 1 tem prioridade)
-  const combined = { ...sem2, ...sem1 };
+  const results = await Promise.all(promises);
+  
+  // Combinar resultados
+  const combined = {};
+  
+  // Adicionar semestre 2 primeiro, depois semestre 1 (mantendo prioridade de semestre 1 se houver sobreposição de chaves)
+  results.forEach(res => {
+    if (res.sem === 2) {
+      Object.assign(combined, res.data);
+    }
+  });
+  results.forEach(res => {
+    if (res.sem === 1) {
+      Object.assign(combined, res.data);
+    }
+  });
   
   const totalTurmas = Object.keys(combined).length;
   console.log(`\n${'='.repeat(80)}`);
