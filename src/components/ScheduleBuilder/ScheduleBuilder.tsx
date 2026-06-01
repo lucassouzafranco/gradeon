@@ -214,6 +214,9 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
             return;
         }
 
+        const now = new Date();
+        const formattedDateTime = now.toLocaleDateString('pt-BR') + ' às ' + now.toLocaleTimeString('pt-BR');
+
         // Filtra e prepara as disciplinas selecionadas para a grade do PDF
         const selectedList = selectedCards
             .filter(d => d.CodDisciplina in selectedTurmas)
@@ -297,7 +300,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
           }
           .header {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 45px;
           }
           .header .subtitle {
             font-size: 13px;
@@ -348,17 +351,19 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
             padding: 6px;
           }
           .day-header {
-            color: #0c3c60;
+            color: #111;
             font-weight: bold;
             text-align: center;
-            width: 17%;
+            width: 16.4%;
           }
           .time-col {
             font-weight: bold;
             color: #0c3c60;
             text-align: center;
-            width: 15%;
+            width: 18%;
             background-color: #f9f9f9;
+            white-space: nowrap;
+            font-size: 12px;
           }
           .slot-cell {
             text-align: center;
@@ -380,6 +385,18 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
             font-size: 11px;
             color: #555;
             margin-top: 1px;
+          }
+          .print-footer {
+            position: fixed;
+            bottom: 8mm;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 10px;
+            color: #888;
+            font-family: inherit;
+            border-top: 1px solid #eee;
+            padding-top: 6px;
           }
 
           @media print {
@@ -429,7 +446,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
               <th colspan="6" class="grid-title-row">Horário de Aulas</th>
             </tr>
             <tr>
-              <th style="width: 15%;">Horário</th>
+              <th style="width: 18%;">Horário</th>
               <th class="day-header">Segunda</th>
               <th class="day-header">Terça</th>
               <th class="day-header">Quarta</th>
@@ -444,6 +461,10 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
 
         <div style="text-align: center; margin-top: 30px;" class="no-print">
           <button onclick="window.print()" style="padding: 12px 24px; background-color: #0c3c60; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">Imprimir / Salvar como PDF</button>
+        </div>
+
+        <div class="print-footer">
+          Gerado em ${formattedDateTime} | GRADEON - Planejamento Acadêmico Inteligente
         </div>
 
         <script>
