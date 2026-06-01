@@ -32,21 +32,28 @@ const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
     const totalCredits = selectedCards.reduce((sum, card) => sum + parseInt(card.CargaSemanal.split('(')[0]), 0);
     const numDisciplinas = selectedCards.length;
 
+    // Filtragem especial para disciplinas de monografia (TCC I - SIN 488 e TCC II - SIN 489)
+    // Filosoficamente, não há reprovação numérica nestas disciplinas (apenas aplicação de Conceito Q),
+    // portanto elas não devem inflar nem diluir a média histórica das outras matérias.
+    const selectedMonografias = selectedCards.filter(card => card.CodDisciplina === 'SIN 488' || card.CodDisciplina === 'SIN 489');
+    const nonMonografiaCards = selectedCards.filter(card => card.CodDisciplina !== 'SIN 488' && card.CodDisciplina !== 'SIN 489');
+    const numNonMonografia = nonMonografiaCards.length;
+
     // Verificação de disciplinas de 6 créditos
     const numDisciplinas6Credits = selectedCards.filter(card => parseInt(card.CargaSemanal.split('(')[0]) === 6).length;
 
     const fallbackGlobal = courseMetadata?.medianaGlobalReprovacao || 20.2;
 
-    // media com fallback pra materias novas
-    const totalReprova = selectedCards.reduce((sum, card) => {
+    // média de reprovação com fallback, calculada exclusivamente sobre as disciplinas que não são de monografia
+    const totalReprova = nonMonografiaCards.reduce((sum, card) => {
         const taxa = (card.reprovaPercentual !== null && card.reprovaPercentual !== undefined) 
             ? card.reprovaPercentual 
             : fallbackGlobal;
         return sum + taxa;
     }, 0);
     
-    const averageReprovaPercentage = numDisciplinas > 0 
-        ? totalReprova / numDisciplinas 
+    const averageReprovaPercentage = numNonMonografia > 0 
+        ? totalReprova / numNonMonografia 
         : 0;
 
     // Identifica se todas as disciplinas selecionadas são de um único período
@@ -217,11 +224,21 @@ const Overview: React.FC<OverviewProps> = ({ selectedCards }) => {
                             </div>
                             <div className="dataRow">
                                 <span className="label">Número de disciplinas:</span>
-                                <div className="dataBox redMedium">{selectedCards.length}</div>
+                                <div className={`dataBox ${getSeverityClass(isRegularGrid ? 'Grade Regular' : (numDisciplinas < 3 ? '' : classification))}`}>{selectedCards.length}</div>
                             </div>
                             <div className="dataRow">
                                 <span className="label">Número de créditos:</span>
-                                <div className="dataBox redMedium">{totalCredits}</div>
+                                <div 
+                                    className={`dataBox ${getSeverityClass(isRegularGrid ? 'Grade Regular' : (numDisciplinas < 3 ? '' : classification))}`}
+                                    style={{ fontSize: selectedMonografias.length > 0 ? '0.72rem' : undefined }}
+                                >
+                                    {totalCredits}
+                                    {selectedMonografias.length > 0 && (
+                                        <span style={{ marginLeft: '4px', opacity: 0.85, fontWeight: 500 }}>
+                                            (+ {selectedMonografias.map(card => card.CodDisciplina === 'SIN 488' ? 'TCC I' : 'TCC II').join(' + ')})
+                                        </span>
+                                    )}
+                                </div>
                             </div>
                         </div>
                         <div className="rightSide">

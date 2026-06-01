@@ -21,6 +21,11 @@
   align-items: center;
   font-size: 1.8em;
   margin-left: 0.5em;
+  transition: color 0.25s ease;
+}
+
+.menuAndLogo:hover {
+  color: #ff9f43;
 }
 
 .menuAndLogo img {
@@ -36,18 +41,35 @@
   margin-right: 0.6em;
 }
 
+.menuOptions h5 {
+  cursor: pointer;
+  transition: color 0.25s ease, transform 0.25s ease;
+  font-weight: 600;
+}
+
+.menuOptions h5:hover {
+  color: #ff9f43;
+  transform: translateY(-1px);
+}
+
 h5 {
   font-weight: 600;
 }
 
 .loginContainer {
-  display:inline;
+  display: inline;
   text-align: center;
   justify-content: center;
   align-items: center;
   height: 6vh;
   font-weight: 300;
   margin-right: 1em;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.loginContainer:hover {
+  color: #ff9f43;
 }
 
 .loginIcon {
