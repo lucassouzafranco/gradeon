@@ -142,6 +142,18 @@
   transform: scale(1.04);
 }
 
+.generateButton.resolveConflicts {
+  background-color: #e53935;
+  color: white;
+  box-shadow: 0 3px 10px rgba(229, 57, 53, 0.4);
+  animation: conflictPulse 1.5s ease-in-out infinite;
+}
+
+.generateButton.resolveConflicts:hover {
+  background-color: #d32f2f;
+  box-shadow: 0 0 12px 3px rgba(229, 57, 53, 0.6);
+}
+
 .clearButton svg,
 .exportButton svg,
 .generateButton svg {
