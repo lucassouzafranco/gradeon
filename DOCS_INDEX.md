@@ -151,7 +151,7 @@ GradeOn - Sistema de Grades Acadêmicas
 
 ---
 
-## ✅ Validação Rápida
+## Validação Rápida
 
 Tudo funcionando? Verifique:
 

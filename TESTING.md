@@ -6,9 +6,9 @@
 Testa cada scraper individualmente, mostrando dados brutos extraídos.
 
 **O que testa:**
-- ✅ Scraping do site de horários UFV
-- ✅ Scraping do catálogo UFV (períodos 1-8)
-- ✅ Scraping de optativas (periodo=0)
+- Scraping do site de horários UFV
+- Scraping do catálogo UFV (períodos 1-8)
+- Scraping de optativas (periodo=0)
 
 **Saída:**
 ```
@@ -17,7 +17,7 @@ Testa cada scraper individualmente, mostrando dados brutos extraídos.
 📊 TESTE 1: Scraping do site de horários
 → URL: https://www.registro.ufv.br/...
 → Fazendo request...
-✅ Response recebido: 200
+Response recebido: 200
 → Blocos de disciplinas encontrados: 120
 
 📋 Amostra das primeiras 3 disciplinas:
@@ -32,11 +32,11 @@ Testa cada scraper individualmente, mostrando dados brutos extraídos.
 Executa o pipeline unificado e valida todas as transformações.
 
 **O que valida:**
-- ✅ Contrato estável (`Record<string, Discipline[]>`)
-- ✅ Optativas filtradas (sem período 0)
-- ✅ Dedupe de turmas funcionando
-- ✅ Campos obrigatórios presentes
-- ✅ Metadados corretos
+- Contrato estável (`Record<string, Discipline[]>`)
+- Optativas filtradas (sem período 0)
+- Dedupe de turmas funcionando
+- Campos obrigatórios presentes
+- Metadados corretos
 
 ### 3. **Logs Detalhados em unifiedPipeline.ts**
 Logs visuais de cada fase do processamento.
@@ -48,27 +48,27 @@ Logs visuais de cada fase do processamento.
 ================================================================================
 [UnifiedPipeline] ⏰ Timestamp: 25/12/2025 10:30:45
 [UnifiedPipeline] 📊 Fase 1: Iniciando scraping paralelo...
-[UnifiedPipeline] ✅ Scraping paralelo concluído
+[UnifiedPipeline] Scraping paralelo concluído
 
 [UnifiedPipeline] 📚 Fase 2: Processando optativas...
-[UnifiedPipeline] ✅ Identificadas 29 optativas
+[UnifiedPipeline] Identificadas 29 optativas
 [UnifiedPipeline] 📋 Amostra: ADE345, CRP280, CRP291...
 
 [UnifiedPipeline] 🔍 Fase 3: Filtrando optativas...
-[UnifiedPipeline] ✅ Filtradas 29 optativas da grade
+[UnifiedPipeline] Filtradas 29 optativas da grade
 [UnifiedPipeline] 📊 Restam 91 disciplinas obrigatórias
 
 [UnifiedPipeline] 🔄 Fase 4: Deduplicando turmas...
-[UnifiedPipeline] ✅ Removidas 26 duplicatas
+[UnifiedPipeline] Removidas 26 duplicatas
 [UnifiedPipeline] 📊 Total final: 65 disciplinas únicas
 
 [UnifiedPipeline] 🔄 Fase 5: Convertendo para formato legado...
-[UnifiedPipeline] ✅ Dados agrupados em 8 períodos
+[UnifiedPipeline] Dados agrupados em 8 períodos
 [UnifiedPipeline]    Período 1: 5 disciplinas
 [UnifiedPipeline]    Período 2: 5 disciplinas
 ...
 ================================================================================
-[UnifiedPipeline] ✅ PIPELINE CONCLUÍDO COM SUCESSO
+[UnifiedPipeline] PIPELINE CONCLUÍDO COM SUCESSO
 [UnifiedPipeline] 📊 Resumo:
 [UnifiedPipeline]    • Total scraped: 120
 [UnifiedPipeline]    • Optativas filtradas: 29
@@ -142,7 +142,7 @@ node validate-pipeline.mjs
 
 ## 📊 Saídas Esperadas
 
-### ✅ Sucesso Total
+### Sucesso Total
 ```
 🎉 TODOS OS TESTES PASSARAM!
    Pipeline funcionando corretamente.
@@ -156,11 +156,11 @@ node validate-pipeline.mjs
 
 ---
 
-### ⚠️ Fallback Ativado
+### Fallback Ativado
 ```
-[UnifiedPipeline] ❌ ERRO NO SCRAPING
+[UnifiedPipeline] ERRO NO SCRAPING
 [UnifiedPipeline] 🔄 Ativando fallback para dados legados...
-[UnifiedPipeline] ✅ Fallback carregado:
+[UnifiedPipeline] Fallback carregado:
 [UnifiedPipeline]    • 8 períodos
 [UnifiedPipeline]    • 156 disciplinas
 ```
@@ -173,10 +173,10 @@ node validate-pipeline.mjs
 
 ---
 
-### ❌ Erro Crítico
+### Erro Crítico
 ```
-❌ Erro no scraping de horários: ENOTFOUND
-⚠️  ALGUNS TESTES FALHARAM
+Erro no scraping de horários: ENOTFOUND
+ ALGUNS TESTES FALHARAM
 ```
 
 **Causas comuns:**
@@ -225,7 +225,7 @@ console.log(result.metadata);
 - 📊 **Total scraped**: ~120 ofertas (varia por semestre)
 - 🎓 **Optativas**: ~29 (período 0)
 - 🔄 **Dedupe**: ~26 duplicatas removidas
-- ✅ **Final**: ~65 disciplinas únicas
+- **Final**: ~65 disciplinas únicas
 
 ### Qualidade dos Dados
 - 📚 **Taxa de enriquecimento**: % de disciplinas com dados do catálogo
