@@ -294,16 +294,16 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
           }
           body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 20mm;
+            margin: 10mm 15mm 15mm 15mm;
             color: #111;
             background-color: #fff;
           }
           .header {
             text-align: center;
-            margin-bottom: 45px;
+            margin-bottom: 25px;
           }
           .header .subtitle {
-            font-size: 13px;
+            font-size: 14px;
             color: #555;
             text-transform: uppercase;
             font-weight: 700;
@@ -312,7 +312,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
           }
           .header h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 28px;
             color: #0c3c60;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -387,21 +387,12 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
             margin-top: 1px;
           }
           .print-footer {
-            position: fixed;
-            bottom: 8mm;
-            left: 0;
-            right: 0;
-            text-align: center;
-            font-size: 10px;
-            color: #888;
-            font-family: inherit;
-            border-top: 1px solid #eee;
-            padding-top: 6px;
+            display: none;
           }
 
           @media print {
             body {
-              margin: 20mm;
+              margin: 10mm 15mm 15mm 15mm;
               -webkit-print-color-adjust: exact !important;
               print-color-adjust: exact !important;
             }
@@ -411,6 +402,19 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
             }
             .no-print {
               display: none !important;
+            }
+            .print-footer {
+              display: block !important;
+              position: fixed;
+              bottom: 8mm;
+              left: 0;
+              right: 0;
+              text-align: center;
+              font-size: 10px;
+              color: #888;
+              font-family: inherit;
+              border-top: 1px solid #eee;
+              padding-top: 6px;
             }
           }
         </style>
@@ -464,7 +468,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
         </div>
 
         <div class="print-footer">
-          Gerado em ${formattedDateTime} | GRADEON - Planejamento Acadêmico Inteligente
+          Gerado em ${formattedDateTime} | GRADEON
         </div>
 
         <script>
