@@ -1,0 +1,354 @@
+================================================================================
+          GRADEON - RELATÓRIO DE TESTES DE CRUZAMENTO DE DISCIPLINAS          
+================================================================================
+Data de Execução: 26/05/2026, 10:31:57
+Filosofia do Modelo: O GradeOn equilibra a carga acadêmica correlacionando créditos,
+taxa de reprovação histórica e disciplinas amortecedoras (reprovação < 15%), 
+respeitando o fluxo das grades regulares.
+
+[RESTRIÇÃO DE ESCOPO]: A análise de colisões físicas de horários é realizada nesta
+suíte para validar a montagem da grade simulada. O sistema é flexível e não 
+aplica travas curriculares rígidas (como pré-requisitos bloqueantes) na interface 
+do usuário, visto que o aluno pode solicitar quebras de pré-requisito e dispõe 
+de total liberdade de montagem no portal.
+
+--------------------------------------------------------------------------------
+DADOS DE REFERÊNCIA DAS DISCIPLINAS CATALOGADAS (AMOSTRA):
+   - MAP 199: Cálculo I (6 cr, Reprovação: 77.7%)
+   - SIN 110: Programação (6 cr, Reprovação: 58.7%)
+   - SIN 130: Introdução à Lógica (4 cr, Reprovação: 41.4%)
+   - SIN 222: Fundamentos de Sistemas de Informação (4 cr, Reprovação: 21.2%)
+   - ADE 104: Teoria Geral da Administração (4 cr, Reprovação: 17.3%)
+   - ESP 105: Iniciação à Estatística (4 cr, Reprovação: 30.7%)
+   - MAP 298: Geometria Analítica e Álgebra Linear (4 cr, Reprovação: 48.1%)
+   - SIN 101: Informática e Sociedade (2 cr, Reprovação: 14.6%)
+   - SIN 211: Algoritmos e Estruturas de Dados (6 cr, Reprovação: 42.4%)
+   - ADE 190: Introdução à Economia (4 cr, Reprovação: 16.6%)
+   - CRP 297: Sociologia Geral (4 cr, Reprovação: 33.2%)
+   - SIN 132: Matemática Discreta (4 cr, Reprovação: 53.1%)
+   - SIN 141: Computação Orientada a Objetos (4 cr, Reprovação: 41.6%)
+   - SIN 251: Organização de Computadores (4 cr, Reprovação: 29.6%)
+   - SIN 213: Projeto de Algoritmos (4 cr, Reprovação: 16.5%)
+   - SIN 220: Banco de Dados (4 cr, Reprovação: 31.0%)
+   - SIN 221: Engenharia de Software I (4 cr, Reprovação: 19.4%)
+   - SIN 252: Arquitetura de Computadores (4 cr, Reprovação: 25.2%)
+   - SIN 421: Interação Humano-Computador (4 cr, Reprovação: 2.8%)
+   - SIN 131: Introdução à Teoria da  Computação (4 cr, Reprovação: 30.5%)
+   - SIN 143: Laboratório de Programação (4 cr, Reprovação: 6.2%)
+   - SIN 320: Laboratório de Banco de Dados (4 cr, Reprovação: 11.3%)
+   - SIN 321: Engenharia de Software II (4 cr, Reprovação: 9.2%)
+   - SIN 351: Sistemas Operacionais (4 cr, Reprovação: 32.5%)
+   - SIN 100: Tratamento e Análise de Dados/Informações (4 cr, Reprovação: 21.0%)
+   - SIN 322: Prática de Gerenciamento de Projetos (2 cr, Reprovação: 3.9%)
+   - SIN 323: Inteligência Artificial (4 cr, Reprovação: 36.2%)
+   - SIN 352: Redes de Computadores (6 cr, Reprovação: 10.5%)
+   - SIN 480: Pesquisa Operacional I (4 cr, Reprovação: 16.1%)
+   - SIN 142: Sistemas Distribuídos (4 cr, Reprovação: 8.8%)
+   - SIN 392: Introdução ao Processamento Digital de Imagens (4 cr, Reprovação: 12.1%)
+   - SIN 488: Trabalho de Conclusão de Curso I (0 cr, Reprovação: 0.0%)
+   - SIN 495: Projeto Integralizador de Extensão (6 cr, Reprovação: 0.0%)
+   - ADE 327: Empreendedorismo (4 cr, Reprovação: 5.6%)
+   - CIC 100: Contabilidade Geral (4 cr, Reprovação: 42.0%)
+   - SIN 489: Trabalho de Conclusão de Curso II (0 cr, Reprovação: 20.2%)
+   - SIN 494: Atividades Complementares (0 cr, Reprovação: 13.3%)
+   - SIN 497: Atividades de Extensão (0 cr, Reprovação: 20.2%)
+
+================================================================================
+MATRIZ RESUMO DOS RESULTADOS DE CRUZAMENTO
+================================================================================
+======================================================================================================================
+                                         TABELA RESUMO DOS CENÁRIOS DE TESTE                                         
+======================================================================================================================
+Cenário                                               | Disc. | Créd. | Classificação (Score)     | Status de Matrícula
+----------------------------------------------------------------------------------------------------------------------
+1 Grade Regular Completa (1º Período)                 |     4 |    20 | Grade Regular (N/A)       | Autorizada               
+2 Grade Perfeitamente Balanceada                      |     5 |    20 | Grade Balanceada (1,131)  | Autorizada               
+3 Sobrecarga Física Extrema                           |     7 |    30 | Sobrecarga Severa (Desbalanceada) | Bloqueada (Colisão Física)
+4 Sobrecarga Cognitiva Real                           |     5 |    22 | Sobrecarga Severa (1,573) | Autorizada               
+5 Amortecimento por Baixo Volume                      |     3 |    16 | Carga Elevada (1,305)     | Autorizada               
+6 Carga Reduzida (Semestre Leve)                      |     3 |     8 | Carga Reduzida (0,377)    | Autorizada               
+7 Volume Insuficiente para Análise                    |     2 |    12 | Carga Reduzida (N/A)      | Autorizada               
+8 Efeito Amortecedor (Inserção de Buffers)            |     5 |    22 | Carga Elevada (1,321)     | Autorizada               
+9 Exceção Operacional (Conflito de Horário Direto)    |     3 |    14 | Grade Balanceada (0,974)  | Bloqueada (Colisão Física)
+======================================================================================================================
+
+================================================================================
+EXECUÇÃO DETALHADA DOS CENÁRIOS DE TESTE
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+CENÁRIO 1: CASO CLÁSSICO - GRADE REGULAR COMPLETA (1º PERÍODO)
+────────────────────────────────────────────────────────────────────────────────
+Descrição: Filosofia do modelo: Respeita o fluxo institucional sugerido. O modelo define como "Grade Regular" e estimula o aluno a seguir o fluxo padrão.
+
+Fórmula de Balanceamento Aplicada:
+  Cálculo I (6 cr, 77.7%) + 
+  Programação (6 cr, 58.7%) + 
+  Introdução à Lógica (4 cr, 41.4%) + 
+  Fundamentos de Sistemas de Informação (4 cr, 21.2%)
+   = Grade Regular [Score: N/A]
+
+STATUS DE VIABILIDADE CURRICULAR:
+   • Total de Disciplinas: 4
+   • Carga Horária Total: 20 créditos
+   • Média Histórica de Retenção: 49.75%
+   • Disciplinas Amortecedoras (<15%): Nenhuma
+   • Score de Esforço Pedagógico: N/A
+   • Classificação Final: Grade Regular
+   • Viabilidade Acadêmica (Matrícula): Autorizada
+
+CONSELHO PEDAGÓGICO DO MODELO:
+   » "Excelente escolha! Cursar as disciplinas prescritas para o período regular mantém o discente no fluxo recomendado pela instituição, reduzindo o risco de retenção acadêmica."
+
+CONFLITOS DE HORÁRIO DETECTADOS (TURMA 1):
+   [✅ GRADE FÍSICA OK] Sem colisão de horários. Montagem operacional de grade autorizada.
+
+
+────────────────────────────────────────────────────────────────────────────────
+CENÁRIO 2: FILOSOFIA DO MODELO - GRADE PERFEITAMENTE BALANCEADA (EQUILÍBRIO DINÂMICO)
+────────────────────────────────────────────────────────────────────────────────
+Descrição: Um aluno reordenando sua grade cruza matérias pesadas pendentes do 1º período (Cálculo I e Lógica) com disciplinas amortecedoras de períodos posteriores que NÃO possuem conflito de horário. Combinação 100% válida e viável!
+
+Fórmula de Balanceamento Aplicada:
+  Cálculo I (6 cr, 77.7%) + 
+  Introdução à Lógica (4 cr, 41.4%) + 
+  Informática e Sociedade (2 cr, 14.6%) + 
+  Interação Humano-Computador (4 cr, 2.8%) + 
+  Laboratório de Programação (4 cr, 6.2%)
+   = Grade Balanceada [Score: 1.131]
+
+STATUS DE VIABILIDADE CURRICULAR:
+   • Total de Disciplinas: 5
+   • Carga Horária Total: 20 créditos
+   • Média Histórica de Retenção: 28.54%
+   • Disciplinas Amortecedoras (<15%): SIN 101, SIN 421, SIN 143
+   • Score de Esforço Pedagógico: 1.131
+   • Classificação Final: Grade Balanceada
+   • Viabilidade Acadêmica (Matrícula): Autorizada
+
+CONSELHO PEDAGÓGICO DO MODELO:
+   » "Combinação ideal! A distribuição de disciplinas com diferentes perfis de retenção histórica atinge o ponto de equilíbrio perfeito (equivalente a 20 créditos padrão). Permite aprendizado sólido com ritmo de estudos saudável."
+
+CONFLITOS DE HORÁRIO DETECTADOS (TURMA 1):
+   [✅ GRADE FÍSICA OK] Sem colisão de horários. Montagem operacional de grade autorizada.
+
+
+────────────────────────────────────────────────────────────────────────────────
+CENÁRIO 3: CASO CLÁSSICO - SOBRECARGA FÍSICA EXTREMA
+────────────────────────────────────────────────────────────────────────────────
+Descrição: Tentativa de cursar 7 disciplinas ao mesmo tempo, cruzando matérias do 1º e 2º períodos. O limite físico de disciplinas é estourado, classificando a grade como Sobrecarga Severa.
+
+Fórmula de Balanceamento Aplicada:
+  Cálculo I (6 cr, 77.7%) + 
+  Programação (6 cr, 58.7%) + 
+  Introdução à Lógica (4 cr, 41.4%) + 
+  Fundamentos de Sistemas de Informação (4 cr, 21.2%) + 
+  Iniciação à Estatística (4 cr, 30.7%) + 
+  Geometria Analítica e Álgebra Linear (4 cr, 48.1%) + 
+  Informática e Sociedade (2 cr, 14.6%)
+   = Sobrecarga Severa [Score: Desbalanceada]
+
+STATUS DE VIABILIDADE CURRICULAR:
+   • Total de Disciplinas: 7
+   • Carga Horária Total: 30 créditos
+   • Média Histórica de Retenção: 41.77%
+   • Disciplinas Amortecedoras (<15%): SIN 101
+   • Score de Esforço Pedagógico: Desbalanceada
+   • Classificação Final: Sobrecarga Severa
+   • Viabilidade Acadêmica (Matrícula): Bloqueada (Colisão Física)
+
+CONSELHO PEDAGÓGICO DO MODELO:
+   » "Cuidado crítico! Risco elevado de trancamento e múltiplas reprovações. A combinação de alta carga horária com disciplinas de altíssima retenção acadêmica pode se tornar insustentável. Considere trocar disciplinas de alta retenção por disciplinas amortecedoras (com reprovação < 15%)."
+
+CONFLITOS DE HORÁRIO DETECTADOS (TURMA 1):
+   [⚠️ COLISÃO FÍSICA] SIN 110 e ESP 105 colidem no dia (TER) nos horários [14-16] vs [14-16].
+   [⚠️ COLISÃO FÍSICA] MAP 199 e MAP 298 colidem no dia (SEG) nos horários [19:00-20:40] vs [19:00-20:40].
+   [⚠️ COLISÃO FÍSICA] MAP 199 e MAP 298 colidem no dia (QUA) nos horários [21:00-22:40] vs [21:00-22:40].
+   [⚠️ COLISÃO FÍSICA] SIN 110 e SIN 101 colidem no dia (TER) nos horários [14-16] vs [14-16].
+
+
+────────────────────────────────────────────────────────────────────────────────
+CENÁRIO 4: CASO CLÁSSICO - SOBRECARGA COGNITIVA REAL (SEMESTRE DA MORTE)
+────────────────────────────────────────────────────────────────────────────────
+Descrição: Cruzamento de 5 disciplinas pesadíssimas e de alta retenção de períodos variados. O aluno pode se matricular, mas o GradeOn acusa risco severo de reprovação acumulada devido ao score elevado.
+
+Fórmula de Balanceamento Aplicada:
+  Geometria Analítica e Álgebra Linear (4 cr, 48.1%) + 
+  Algoritmos e Estruturas de Dados (6 cr, 42.4%) + 
+  Matemática Discreta (4 cr, 53.1%) + 
+  Computação Orientada a Objetos (4 cr, 41.6%) + 
+  Organização de Computadores (4 cr, 29.6%)
+   = Sobrecarga Severa [Score: 1.573]
+
+STATUS DE VIABILIDADE CURRICULAR:
+   • Total de Disciplinas: 5
+   • Carga Horária Total: 22 créditos
+   • Média Histórica de Retenção: 42.96%
+   • Disciplinas Amortecedoras (<15%): Nenhuma
+   • Score de Esforço Pedagógico: 1.573
+   • Classificação Final: Sobrecarga Severa
+   • Viabilidade Acadêmica (Matrícula): Autorizada
+
+CONSELHO PEDAGÓGICO DO MODELO:
+   » "Cuidado crítico! Risco elevado de trancamento e múltiplas reprovações. A combinação de alta carga horária com disciplinas de altíssima retenção acadêmica pode se tornar insustentável. Considere trocar disciplinas de alta retenção por disciplinas amortecedoras (com reprovação < 15%)."
+
+CONFLITOS DE HORÁRIO DETECTADOS (TURMA 1):
+   [✅ GRADE FÍSICA OK] Sem colisão de horários. Montagem operacional de grade autorizada.
+
+
+────────────────────────────────────────────────────────────────────────────────
+CENÁRIO 5: EXCEÇÃO DO MODELO - AMORTECIMENTO POR BAIXO VOLUME
+────────────────────────────────────────────────────────────────────────────────
+Descrição: Apenas 3 disciplinas muito difíceis. O modelo atenua o score matemático de sobrecarga pesada porque com apenas 3 disciplinas o aluno tem fôlego operacional (menos provas e laboratórios).
+
+Fórmula de Balanceamento Aplicada:
+  Cálculo I (6 cr, 77.7%) + 
+  Programação (6 cr, 58.7%) + 
+  Matemática Discreta (4 cr, 53.1%)
+   = Carga Elevada [Score: 1.305]
+
+STATUS DE VIABILIDADE CURRICULAR:
+   • Total de Disciplinas: 3
+   • Carga Horária Total: 16 créditos
+   • Média Histórica de Retenção: 63.17%
+   • Disciplinas Amortecedoras (<15%): Nenhuma
+   • Score de Esforço Pedagógico: 1.305
+   • Classificação Final: Carga Elevada
+   • Viabilidade Acadêmica (Matrícula): Autorizada
+
+CONSELHO PEDAGÓGICO DO MODELO:
+   » "Atenção! Carga acadêmica densa e exigente. Este semestre demandará alto nível de dedicação aos estudos. É recomendado intercalar componentes curriculares com maiores taxas de retenção com disciplinas amortecedoras para atenuar o desgaste."
+
+CONFLITOS DE HORÁRIO DETECTADOS (TURMA 1):
+   [✅ GRADE FÍSICA OK] Sem colisão de horários. Montagem operacional de grade autorizada.
+
+
+────────────────────────────────────────────────────────────────────────────────
+CENÁRIO 6: CASO CLÁSSICO - CARGA REDUZIDA (SEMESTRE LEVE)
+────────────────────────────────────────────────────────────────────────────────
+Descrição: Cruzamento focado em matérias de alta aprovação. Excelente para conciliação extracurricular.
+
+Fórmula de Balanceamento Aplicada:
+  Informática e Sociedade (2 cr, 14.6%) + 
+  Interação Humano-Computador (4 cr, 2.8%) + 
+  Prática de Gerenciamento de Projetos (2 cr, 3.9%)
+   = Carga Reduzida [Score: 0.377]
+
+STATUS DE VIABILIDADE CURRICULAR:
+   • Total de Disciplinas: 3
+   • Carga Horária Total: 8 créditos
+   • Média Histórica de Retenção: 7.10%
+   • Disciplinas Amortecedoras (<15%): SIN 101, SIN 421, SIN 322
+   • Score de Esforço Pedagógico: 0.377
+   • Classificação Final: Carga Reduzida
+   • Viabilidade Acadêmica (Matrícula): Autorizada
+
+CONSELHO PEDAGÓGICO DO MODELO:
+   » "Semestre com demanda acadêmica reduzida, ideal para conciliar com estágios ou atividades extracurriculares. Para acelerar a progressão no curso, recomenda-se adicionar mais 1 disciplina."
+
+CONFLITOS DE HORÁRIO DETECTADOS (TURMA 1):
+   [✅ GRADE FÍSICA OK] Sem colisão de horários. Montagem operacional de grade autorizada.
+
+
+────────────────────────────────────────────────────────────────────────────────
+CENÁRIO 7: EXCEÇÃO DO MODELO - VOLUME INSUFICIENTE PARA ANÁLISE
+────────────────────────────────────────────────────────────────────────────────
+Descrição: Apenas 2 disciplinas de entrada selecionadas. Sem dados curriculares suficientes para análise de correlação pedagógica.
+
+Fórmula de Balanceamento Aplicada:
+  Cálculo I (6 cr, 77.7%) + 
+  Programação (6 cr, 58.7%)
+   = Carga Reduzida [Score: N/A]
+
+STATUS DE VIABILIDADE CURRICULAR:
+   • Total de Disciplinas: 2
+   • Carga Horária Total: 12 créditos
+   • Média Histórica de Retenção: 68.20%
+   • Disciplinas Amortecedoras (<15%): Nenhuma
+   • Score de Esforço Pedagógico: N/A
+   • Classificação Final: Carga Reduzida
+   • Viabilidade Acadêmica (Matrícula): Autorizada
+
+CONSELHO PEDAGÓGICO DO MODELO:
+   » "Selecione pelo menos 3 disciplinas para que a análise matemática e pedagógica de esforço do semestre seja ativada de forma consistente."
+
+CONFLITOS DE HORÁRIO DETECTADOS (TURMA 1):
+   [✅ GRADE FÍSICA OK] Sem colisão de horários. Montagem operacional de grade autorizada.
+
+
+────────────────────────────────────────────────────────────────────────────────
+CENÁRIO 8: FILOSOFIA DO MODELO - EFEITO AMORTECEDOR (INSERÇÃO DE BUFFERS)
+────────────────────────────────────────────────────────────────────────────────
+Descrição: Mostra como o planejamento inteligente mitiga o esforço. Substituímos matérias difíceis de uma grade pesada de 5 matérias por disciplinas amortecedoras (IHC e Lab Prog), mantendo o mesmo número de créditos mas reduzindo a sobrecarga.
+
+Fórmula de Balanceamento Aplicada:
+  Geometria Analítica e Álgebra Linear (4 cr, 48.1%) + 
+  Algoritmos e Estruturas de Dados (6 cr, 42.4%) + 
+  Matemática Discreta (4 cr, 53.1%) + 
+  Interação Humano-Computador (4 cr, 2.8%) + 
+  Laboratório de Programação (4 cr, 6.2%)
+   = Carga Elevada [Score: 1.321]
+
+STATUS DE VIABILIDADE CURRICULAR:
+   • Total de Disciplinas: 5
+   • Carga Horária Total: 22 créditos
+   • Média Histórica de Retenção: 30.52%
+   • Disciplinas Amortecedoras (<15%): SIN 421, SIN 143
+   • Score de Esforço Pedagógico: 1.321
+   • Classificação Final: Carga Elevada
+   • Viabilidade Acadêmica (Matrícula): Autorizada
+
+CONSELHO PEDAGÓGICO DO MODELO:
+   » "Atenção! Carga acadêmica densa e exigente. Este semestre demandará alto nível de dedicação aos estudos. É recomendado intercalar componentes curriculares com maiores taxas de retenção com disciplinas amortecedoras para atenuar o desgaste."
+
+CONFLITOS DE HORÁRIO DETECTADOS (TURMA 1):
+   [✅ GRADE FÍSICA OK] Sem colisão de horários. Montagem operacional de grade autorizada.
+
+
+────────────────────────────────────────────────────────────────────────────────
+CENÁRIO 9: EXCEÇÃO OPERACIONAL - CONFLITO DE HORÁRIO DIRETO (INDEPENDENTES)
+────────────────────────────────────────────────────────────────────────────────
+Descrição: Tentativa de cruzar matérias cujos horários de Turma 1 colidem exatamente na terça-feira no mesmo horário, impedindo a montagem física da grade.
+
+Fórmula de Balanceamento Aplicada:
+  Programação (6 cr, 58.7%) + 
+  Teoria Geral da Administração (4 cr, 17.3%) + 
+  Introdução à Lógica (4 cr, 41.4%)
+   = Grade Balanceada [Score: 0.974]
+
+STATUS DE VIABILIDADE CURRICULAR:
+   • Total de Disciplinas: 3
+   • Carga Horária Total: 14 créditos
+   • Média Histórica de Retenção: 39.13%
+   • Disciplinas Amortecedoras (<15%): Nenhuma
+   • Score de Esforço Pedagógico: 0.974
+   • Classificação Final: Grade Balanceada
+   • Viabilidade Acadêmica (Matrícula): Bloqueada (Colisão Física)
+
+CONSELHO PEDAGÓGICO DO MODELO:
+   » "Combinação ideal! A distribuição de disciplinas com diferentes perfis de retenção histórica atinge o ponto de equilíbrio perfeito (equivalente a 20 créditos padrão). Permite aprendizado sólido com ritmo de estudos saudável."
+
+CONFLITOS DE HORÁRIO DETECTADOS (TURMA 1):
+   [⚠️ COLISÃO FÍSICA] SIN 110 e ADE 104 colidem no dia (TER) nos horários [14-16] vs [14-16].
+
+
+================================================================================
+RESUMO GERAL DAS EXCEÇÕES E FILOSOFIA DE DESIGN VALIDADA
+================================================================================
+1. [FILOSOFIA] Grade Regular Completa: Prioriza o fluxo institucional recomendado (Grade Regular).
+   Mesmo com alta taxa de reprovação, seguir a grade regular é o caminho recomendado pela instituição.
+
+2. [EXCEÇÃO] Menos de 3 Disciplinas: Não ativam as fórmulas pedagógicas consistentes
+   por volume de exames irrelevante, resultando diretamente em "Carga Reduzida".
+
+3. [EXCEÇÃO] Amortecimento de 3 Disciplinas: Se apenas 3 matérias pesadas forem escolhidas, 
+   o modelo rebaixa o score de "Sobrecarga Severa" para "Carga Elevada", visto que a carga
+   de esforço diário de exames é operacionalmente viável por ter poucas disciplinas.
+
+4. [EXCEÇÃO] Limite Físico de Disciplinas (7+): Acima de 7 disciplinas, independentemente 
+   dos pesos ou pré-requisitos, a grade é cravada diretamente como "Sobrecarga Severa"
+   devido ao limite biológico de carga de atividades.
+
+5. [FILOSOFIA] Disciplinas Amortecedoras: Cada disciplina com reprovação < 15% 
+   atua como alívio psicológico e cognitivo, concedendo um desconto cumulativo de 4% 
+   (factor de 0.04) sobre o índice matemático de esforço total do semestre.

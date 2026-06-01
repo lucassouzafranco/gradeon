@@ -39,7 +39,7 @@ export type { EnrichedOffer } from './enrichmentLayer';
 /**
  * courseData - APENAS PARA FALLBACK INTERNO
  * 
- * ⚠️ NÃO IMPORTE DIRETAMENTE NO FRONTEND
+ * NÃO IMPORTE DIRETAMENTE NO FRONTEND
  * Use getCourseData() que gerencia fallback automaticamente
  */
 export { courseData } from './courseData';
@@ -55,11 +55,11 @@ export { scrapeSINCatalog, scrapeOptativas, scrapeFullCatalog } from './catalogS
 // ORCHESTRATOR (USO INTERNO/AVANÇADO)
 // ============================================================================
 
-export { 
-  getUnifiedSINOffers, 
-  getDefaultSINOffers,
-  clearCatalogCache,
-  getCacheInfo 
+export {
+    getUnifiedSINOffers,
+    getDefaultSINOffers,
+    clearCatalogCache,
+    getCacheInfo
 } from './orchestrator';
 
 // ============================================================================
