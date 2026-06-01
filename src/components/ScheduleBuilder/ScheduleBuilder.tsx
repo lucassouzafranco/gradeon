@@ -285,15 +285,27 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
       <head>
         <title>Grade de Horários - GRADEON</title>
         <style>
+          @page {
+            size: auto;
+            margin: 0mm;
+          }
           body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 25px;
+            margin: 20mm;
             color: #111;
             background-color: #fff;
           }
           .header {
             text-align: center;
             margin-bottom: 25px;
+          }
+          .header .subtitle {
+            font-size: 13px;
+            color: #555;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
           }
           .header h1 {
             margin: 0;
@@ -302,11 +314,6 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
             letter-spacing: 1px;
             text-transform: uppercase;
             font-weight: 800;
-          }
-          .header p {
-            margin: 5px 0 0 0;
-            font-size: 13px;
-            color: #555;
           }
           table {
             width: 100%;
@@ -377,7 +384,13 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
 
           @media print {
             body {
-              margin: 15px;
+              margin: 20mm;
+              -webkit-print-color-adjust: exact !important;
+              print-color-adjust: exact !important;
+            }
+            th, td, .grid-title-row, .total-row, .time-col, th.grid-title-row, td.slot-cell.filled {
+              -webkit-print-color-adjust: exact !important;
+              print-color-adjust: exact !important;
             }
             .no-print {
               display: none !important;
@@ -387,8 +400,8 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
       </head>
       <body>
         <div class="header">
+          <div class="subtitle">Grade de Horários - GRADEON</div>
           <h1>Grade Horária Acadêmica</h1>
-          <p>Gerado pelo GRADEON em ${new Date().toLocaleDateString('pt-BR')}</p>
         </div>
 
         <table class="disc-table">
