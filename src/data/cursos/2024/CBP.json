@@ -21,7 +21,7 @@
     "totalOptativas": 61,
     "totalOptativasOfertadas": 32,
     "source": "catalogo.ufv.br + dti.ufv.br",
-    "medianaGlobalReprovacao": 14.9
+    "medianaGlobalReprovacao": 13.7
   },
   "courseData": {
     "1": [
@@ -58,7 +58,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 44.6
+        "reprovaPercentual": 44.7
       },
       {
         "CodDisciplina": "CBI 102",
@@ -113,7 +113,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 55.9
+        "reprovaPercentual": 56.4
       },
       {
         "CodDisciplina": "CBI 104",
@@ -190,7 +190,7 @@
             }
           ]
         },
-        "reprovaPercentual": 34.9
+        "reprovaPercentual": 35
       },
       {
         "CodDisciplina": "CBI 120",
@@ -254,7 +254,7 @@
             }
           ]
         },
-        "reprovaPercentual": 33.2
+        "reprovaPercentual": 32.8
       },
       {
         "CodDisciplina": "CBI 130",
@@ -312,7 +312,7 @@
             }
           ]
         },
-        "reprovaPercentual": 47.6
+        "reprovaPercentual": 48.1
       },
       {
         "CodDisciplina": "QAM 103",
@@ -354,7 +354,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 23.6
+        "reprovaPercentual": 28.5
       }
     ],
     "2": [
@@ -708,7 +708,7 @@
             }
           ]
         },
-        "reprovaPercentual": 29.3
+        "reprovaPercentual": 30.4
       }
     ],
     "3": [
@@ -752,7 +752,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 21.1
+        "reprovaPercentual": 20.8
       },
       {
         "CodDisciplina": "CBI 100",
@@ -787,7 +787,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 15.1
+        "reprovaPercentual": 14.8
       },
       {
         "CodDisciplina": "CBI 210",
@@ -847,7 +847,7 @@
             }
           ]
         },
-        "reprovaPercentual": 9.6
+        "reprovaPercentual": 9.7
       },
       {
         "CodDisciplina": "CBI 220",
@@ -909,7 +909,7 @@
             }
           ]
         },
-        "reprovaPercentual": 24.2
+        "reprovaPercentual": 22.8
       },
       {
         "CodDisciplina": "CBI 250",
@@ -957,7 +957,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 47.3
+        "reprovaPercentual": 46.9
       },
       {
         "CodDisciplina": "CBI 251",
@@ -1016,7 +1016,7 @@
             }
           ]
         },
-        "reprovaPercentual": 29.7
+        "reprovaPercentual": 29.5
       },
       {
         "CodDisciplina": "CBI 283",
@@ -1059,7 +1059,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 27.3
+        "reprovaPercentual": 25.1
       }
     ],
     "4": [
@@ -1213,7 +1213,7 @@
             }
           ]
         },
-        "reprovaPercentual": 37.3
+        "reprovaPercentual": 37.4
       },
       {
         "CodDisciplina": "CBI 256",
@@ -1325,7 +1325,7 @@
             }
           ]
         },
-        "reprovaPercentual": 12.7
+        "reprovaPercentual": 12.6
       },
       {
         "CodDisciplina": "CBI 284",
@@ -1458,7 +1458,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 14.9
+        "reprovaPercentual": 14.2
       },
       {
         "CodDisciplina": "CBI 296",
@@ -1572,7 +1572,7 @@
             }
           ]
         },
-        "reprovaPercentual": 28.3
+        "reprovaPercentual": 28.7
       },
       {
         "CodDisciplina": "CBI 352",
@@ -1610,7 +1610,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 8.8
+        "reprovaPercentual": 8.3
       },
       {
         "CodDisciplina": "CBI 380",
@@ -1662,7 +1662,7 @@
             }
           ]
         },
-        "reprovaPercentual": 15.4
+        "reprovaPercentual": 16.6
       },
       {
         "CodDisciplina": "ESP 105",
@@ -1754,7 +1754,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 30.7
+        "reprovaPercentual": 28.3
       }
     ],
     "6": [
@@ -2153,7 +2153,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 3.9
+        "reprovaPercentual": 4.8
       },
       {
         "CodDisciplina": "CBI 409",
@@ -2238,7 +2238,7 @@
             }
           ]
         },
-        "reprovaPercentual": null
+        "reprovaPercentual": 0
       },
       {
         "CodDisciplina": "CBI 490",
@@ -2287,7 +2287,7 @@
             }
           ]
         },
-        "reprovaPercentual": 3.6
+        "reprovaPercentual": 3.8
       },
       {
         "CodDisciplina": "CBI 496",
@@ -2467,7 +2467,7 @@
             }
           ]
         },
-        "reprovaPercentual": 3.2
+        "reprovaPercentual": 3.1
       },
       {
         "CodDisciplina": "CBI 460",
@@ -2731,7 +2731,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 35.6
+      "reprovaPercentual": 35.3
     },
     {
       "CodDisciplina": "AGR 355",
@@ -3099,7 +3099,7 @@
           }
         ]
       },
-      "reprovaPercentual": 31.6
+      "reprovaPercentual": 32.4
     },
     {
       "CodDisciplina": "CBI 214",
@@ -3153,7 +3153,7 @@
           }
         ]
       },
-      "reprovaPercentual": 18.5
+      "reprovaPercentual": 17.4
     },
     {
       "CodDisciplina": "CBI 232",
@@ -3239,7 +3239,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 8
+      "reprovaPercentual": 6.5
     },
     {
       "CodDisciplina": "CBI 312",
@@ -3374,7 +3374,7 @@
           }
         ]
       },
-      "reprovaPercentual": 3.4
+      "reprovaPercentual": 3.2
     },
     {
       "CodDisciplina": "CBI 334",
@@ -3562,7 +3562,7 @@
           }
         ]
       },
-      "reprovaPercentual": 1.3
+      "reprovaPercentual": 1.2
     },
     {
       "CodDisciplina": "CBI 392",
@@ -3609,7 +3609,7 @@
           }
         ]
       },
-      "reprovaPercentual": 0
+      "reprovaPercentual": 5
     },
     {
       "CodDisciplina": "CBI 404",
@@ -3777,7 +3777,7 @@
           }
         ]
       },
-      "reprovaPercentual": 1.6
+      "reprovaPercentual": 2.3
     },
     {
       "CodDisciplina": "CBI 422",
@@ -4228,7 +4228,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 12.3
+      "reprovaPercentual": 12
     },
     {
       "CodDisciplina": "CRP 292",
@@ -4366,7 +4366,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 33.2
+      "reprovaPercentual": 32.5
     },
     {
       "CodDisciplina": "CRP 395",
@@ -4478,7 +4478,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 36.5
+      "reprovaPercentual": 40.4
     },
     {
       "CodDisciplina": "FRP 102",
@@ -4515,7 +4515,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 38.7
+      "reprovaPercentual": 40.3
     },
     {
       "CodDisciplina": "FRP 103",
