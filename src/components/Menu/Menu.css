@@ -117,3 +117,10 @@ h5 {
 .cursoSelector select option {
   color: #1f1f1f;
 }
+
+@media (max-width: 600px) {
+  .menuOptions { gap: 6px; margin-right: 4px; }
+  .cursoSelectorLabel, .menuOptions > [role="status"], .loginContainer { display: none; }
+  .menuOptions .cursoSelector:first-child select { width: 138px; }
+  .menuOptions .cursoSelector:nth-child(2) select { width: 70px; }
+}

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-20T22:01:16.277Z",
-  "ano": 2026,
+  "generatedAt": "2026-11-03T04:16:08.307Z",
   "cursos": [
     {
       "id": "SIP",
       "nome": "Sistemas de Informação",
+      "anoCatalogo": 2026,
       "periodos": 8,
       "totalDisciplinas": 39,
       "totalOptativasOfertadas": 12
@@ -12,6 +12,7 @@
     {
       "id": "ADP",
       "nome": "Administração",
+      "anoCatalogo": 2026,
       "periodos": 9,
       "totalDisciplinas": 38,
       "totalOptativasOfertadas": 29
@@ -19,6 +20,7 @@
     {
       "id": "AGP",
       "nome": "Agronomia",
+      "anoCatalogo": 2026,
       "periodos": 10,
       "totalDisciplinas": 58,
       "totalOptativasOfertadas": 32
@@ -26,6 +28,7 @@
     {
       "id": "CBP",
       "nome": "Ciências Biológicas",
+      "anoCatalogo": 2026,
       "periodos": 8,
       "totalDisciplinas": 52,
       "totalOptativasOfertadas": 35
@@ -33,6 +36,7 @@
     {
       "id": "CTP",
       "nome": "Ciências Contábeis",
+      "anoCatalogo": 2026,
       "periodos": 8,
       "totalDisciplinas": 35,
       "totalOptativasOfertadas": 35
@@ -40,6 +44,7 @@
     {
       "id": "CAP",
       "nome": "Ciência e Tecnologia de Alimentos",
+      "anoCatalogo": 2026,
       "periodos": 8,
       "totalDisciplinas": 44,
       "totalOptativasOfertadas": 24
@@ -47,6 +52,7 @@
     {
       "id": "ECP",
       "nome": "Engenharia Civil",
+      "anoCatalogo": 2026,
       "periodos": 10,
       "totalDisciplinas": 61,
       "totalOptativasOfertadas": 21
@@ -54,6 +60,7 @@
     {
       "id": "EPP",
       "nome": "Engenharia de Produção",
+      "anoCatalogo": 2026,
       "periodos": 10,
       "totalDisciplinas": 54,
       "totalOptativasOfertadas": 37
@@ -61,6 +68,7 @@
     {
       "id": "NTP",
       "nome": "Nutrição",
+      "anoCatalogo": 2026,
       "periodos": 9,
       "totalDisciplinas": 51,
       "totalOptativasOfertadas": 22
@@ -68,9 +76,170 @@
     {
       "id": "QMP",
       "nome": "Química",
+      "anoCatalogo": 2026,
       "periodos": 8,
       "totalDisciplinas": 38,
       "totalOptativasOfertadas": 35
+    },
+    {
+      "id": "SIP",
+      "nome": "Sistemas de Informação",
+      "anoCatalogo": 2025,
+      "periodos": 8,
+      "totalDisciplinas": 38,
+      "totalOptativasOfertadas": 10
+    },
+    {
+      "id": "ADP",
+      "nome": "Administração",
+      "anoCatalogo": 2025,
+      "periodos": 9,
+      "totalDisciplinas": 38,
+      "totalOptativasOfertadas": 27
+    },
+    {
+      "id": "AGP",
+      "nome": "Agronomia",
+      "anoCatalogo": 2025,
+      "periodos": 10,
+      "totalDisciplinas": 58,
+      "totalOptativasOfertadas": 31
+    },
+    {
+      "id": "CBP",
+      "nome": "Ciências Biológicas",
+      "anoCatalogo": 2025,
+      "periodos": 8,
+      "totalDisciplinas": 52,
+      "totalOptativasOfertadas": 34
+    },
+    {
+      "id": "CTP",
+      "nome": "Ciências Contábeis",
+      "anoCatalogo": 2025,
+      "periodos": 8,
+      "totalDisciplinas": 35,
+      "totalOptativasOfertadas": 34
+    },
+    {
+      "id": "CAP",
+      "nome": "Ciência e Tecnologia de Alimentos",
+      "anoCatalogo": 2025,
+      "periodos": 8,
+      "totalDisciplinas": 44,
+      "totalOptativasOfertadas": 21
+    },
+    {
+      "id": "ECP",
+      "nome": "Engenharia Civil",
+      "anoCatalogo": 2025,
+      "periodos": 10,
+      "totalDisciplinas": 61,
+      "totalOptativasOfertadas": 20
+    },
+    {
+      "id": "EPP",
+      "nome": "Engenharia de Produção",
+      "anoCatalogo": 2025,
+      "periodos": 10,
+      "totalDisciplinas": 54,
+      "totalOptativasOfertadas": 32
+    },
+    {
+      "id": "NTP",
+      "nome": "Nutrição",
+      "anoCatalogo": 2025,
+      "periodos": 9,
+      "totalDisciplinas": 51,
+      "totalOptativasOfertadas": 21
+    },
+    {
+      "id": "QMP",
+      "nome": "Química",
+      "anoCatalogo": 2025,
+      "periodos": 8,
+      "totalDisciplinas": 38,
+      "totalOptativasOfertadas": 34
+    },
+    {
+      "id": "SIP",
+      "nome": "Sistemas de Informação",
+      "anoCatalogo": 2024,
+      "periodos": 8,
+      "totalDisciplinas": 38,
+      "totalOptativasOfertadas": 10
+    },
+    {
+      "id": "ADP",
+      "nome": "Administração",
+      "anoCatalogo": 2024,
+      "periodos": 9,
+      "totalDisciplinas": 38,
+      "totalOptativasOfertadas": 25
+    },
+    {
+      "id": "AGP",
+      "nome": "Agronomia",
+      "anoCatalogo": 2024,
+      "periodos": 10,
+      "totalDisciplinas": 58,
+      "totalOptativasOfertadas": 30
+    },
+    {
+      "id": "CBP",
+      "nome": "Ciências Biológicas",
+      "anoCatalogo": 2024,
+      "periodos": 8,
+      "totalDisciplinas": 52,
+      "totalOptativasOfertadas": 32
+    },
+    {
+      "id": "CTP",
+      "nome": "Ciências Contábeis",
+      "anoCatalogo": 2024,
+      "periodos": 8,
+      "totalDisciplinas": 35,
+      "totalOptativasOfertadas": 30
+    },
+    {
+      "id": "CAP",
+      "nome": "Ciência e Tecnologia de Alimentos",
+      "anoCatalogo": 2024,
+      "periodos": 8,
+      "totalDisciplinas": 51,
+      "totalOptativasOfertadas": 16
+    },
+    {
+      "id": "ECP",
+      "nome": "Engenharia Civil",
+      "anoCatalogo": 2024,
+      "periodos": 10,
+      "totalDisciplinas": 61,
+      "totalOptativasOfertadas": 19
+    },
+    {
+      "id": "EPP",
+      "nome": "Engenharia de Produção",
+      "anoCatalogo": 2024,
+      "periodos": 10,
+      "totalDisciplinas": 55,
+      "totalOptativasOfertadas": 26
+    },
+    {
+      "id": "NTP",
+      "nome": "Nutrição",
+      "anoCatalogo": 2024,
+      "periodos": 9,
+      "totalDisciplinas": 51,
+      "totalOptativasOfertadas": 20
+    },
+    {
+      "id": "QMP",
+      "nome": "Química",
+      "anoCatalogo": 2024,
+      "periodos": 8,
+      "totalDisciplinas": 37,
+      "totalOptativasOfertadas": 30
     }
   ]
 }

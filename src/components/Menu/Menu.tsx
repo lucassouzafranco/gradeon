@@ -16,7 +16,7 @@ interface MenuProps {
 
 const Menu: React.FC<MenuProps> = ({ isSchedulePage, onHelp }) => {
   const navigate = useNavigate();
-  const { curso, setCursoId } = useCurso();
+  const { curso, setCursoId, anoCatalogo, anos, setAnoCatalogo, aviso } = useCurso();
 
   return (
     <div className="menuContainer">
@@ -38,7 +38,13 @@ const Menu: React.FC<MenuProps> = ({ isSchedulePage, onHelp }) => {
               ))}
             </select>
           </label>
-          <h5 style={{ cursor: "pointer" }}>EXPORTAR GRADE</h5>
+          <label className="cursoSelector">
+            <span className="cursoSelectorLabel">CATÁLOGO</span>
+            <select aria-label="Selecionar catálogo" value={anoCatalogo} onChange={e => setAnoCatalogo(Number(e.target.value))}>
+              {anos.map(ano => <option key={ano} value={ano}>{ano}</option>)}
+            </select>
+          </label>
+          {aviso && <span role="status">{aviso}</span>}
           <h5 style={{ cursor: "pointer" }} onClick={onHelp}>AJUDA</h5>
           <div className="loginContainer">
             <div className="loginIcon">
