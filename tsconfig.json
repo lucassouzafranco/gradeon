@@ -2,10 +2,14 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "target": "ES2020",
-    "module": "CommonJS",
+    "module": "ESNext",
     "moduleResolution": "node",
     "skipLibCheck": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "allowImportingTsExtensions": true,
     "noEmit": true,
     "resolveJsonModule": true,
@@ -14,10 +18,22 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
-    "outDir": "./dist", 
+    "outDir": "./dist",
     "esModuleInterop": true
   },
-  "include": ["src"],
-  "exclude": ["src/scripts", "src/server", "node_modules", "dist", "src/data/courseData.backup.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "src/scripts",
+    "src/server",
+    "node_modules",
+    "dist",
+    "src/data/courseData.backup.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }

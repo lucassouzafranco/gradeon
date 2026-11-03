@@ -1,16 +1,18 @@
 /**
  * PRE-BUILD SCRAPING SCRIPT
  * Coleta o catálogo da UFV e os horários da DTI para todos os cursos e grava um JSON por curso
- * em src/data/cursos/<ID>.json, mais src/data/cursos/index.json com a lista de cursos.
+ * em src/data/cursos/<ANO>/<ID>.json, mais src/data/cursos/index.json com as combinações disponíveis.
  *
- * Uso: node scripts/prebuild-scrape.mjs [--force] [--curso=SIP,ADP]
+ * Uso: node scripts/prebuild-scrape.mjs [--force] [--curso=SIP,ADP] [--anos=2024,2025,2026]
  *   --force        ignora o cache de MAX_AGE_HOURS e raspa de novo
  *   --curso=A,B    raspa só os cursos indicados
+ *   --horarios-ano=2026  consulta os dois semestres desse ano
+ *   --horarios-only     atualiza os horários sem consultar novamente as matrizes
  */
 
 import axios from 'axios';
 import * as cheerio from 'cheerio';
-import { writeFileSync, readFileSync, mkdirSync, existsSync } from 'fs';
+import { writeFileSync, readFileSync, mkdirSync, readdirSync, renameSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { scrapeAllSchedules } from './dti-schedule-scraper.mjs';
@@ -21,8 +23,11 @@ const __dirname = dirname(__filename);
 // ════════════════════════════════════════════════════════════════════════════════
 // CONFIGURACAO
 // ════════════════════════════════════════════════════════════════════════════════
+const arg = (nome, padrao) => process.argv.find(a => a.startsWith('--' + nome + '='))?.split('=')[1] ?? padrao;
+const ANOS = arg('anos', '2024,2025,2026').split(',').map(Number);
+const HORARIOS_ANO = Number(arg('horarios-ano', '2026'));
+if (ANOS.some(a => !Number.isInteger(a) || a < 2000 || a > 2100) || !Number.isInteger(HORARIOS_ANO)) throw new Error('Anos inválidos');
 const CONFIG = {
-  ano: 2026,
   campus: 'crp',
   baseUrl: 'https://www.catalogo.ufv.br',
 };
@@ -126,9 +131,10 @@ const normalizarCodigo = cod => cod.replace(/\s+/g, ' ').trim().toUpperCase();
  */
 async function fetchDisciplineDetail(curso, cod) {
   const html = await fetchHtml({
-    curso: curso.id, periodo: 1, complemento: curso.complemento, disciplina: cod,
+    ano: curso.ano, curso: curso.id, periodo: 1, complemento: curso.complemento, disciplina: cod,
   });
   const $ = cheerio.load(html);
+  if (!$('#disciplina-ch').text().trim()) throw new Error('Detalhe de disciplina incompleto');
 
   // Carga horária total (ex: "90 horas")
   let cargaTotal = 0;
@@ -161,8 +167,9 @@ async function fetchDisciplineDetail(curso, cod) {
  * Lança erro se a rede falhar; devolve [] só quando a página veio sem disciplinas.
  */
 async function scrapePeriodo(curso, periodo) {
-  const html = await fetchHtml({ curso: curso.id, periodo, complemento: curso.complemento });
+  const html = await fetchHtml({ ano: curso.ano, curso: curso.id, periodo, complemento: curso.complemento });
   const $ = cheerio.load(html);
+  if (!$('#disciplinas').length || !$.text().includes(String(curso.ano))) throw new Error('Página de catálogo inválida');
   const disciplinas = [];
 
   $('#disciplinas .bloco a').each((_, link) => {
@@ -216,7 +223,10 @@ async function scrapeCurso(curso) {
 
   const courseData = {};
   for (let p = 1; p <= MAX_PERIODOS; p++) {
-    if (porPeriodo[p].length === 0) break;
+    if (porPeriodo[p].length === 0) {
+      if (periodos.some(n => n > p && porPeriodo[n].length)) throw new Error('Matriz com lacuna de períodos');
+      break;
+    }
     courseData[String(p)] = porPeriodo[p];
   }
   return { courseData, optativas: porPeriodo[0] };
@@ -230,6 +240,8 @@ function integrarHorarios(disciplinas, schedules) {
   let integrados = 0;
   const todas = Object.values(schedules);
   for (const disc of disciplinas) {
+    disc.Horarios = ''; disc.Sala = ''; disc.Oferecida = 'S';
+    disc.TurmasDisponiveis = { teoricas: [], praticas: [] };
     const turmasT = todas.filter(s => s.codigo === disc.CodDisc && s.tipo === 'T');
     const turmasP = todas.filter(s => s.codigo === disc.CodDisc && s.tipo === 'P');
     if (turmasT.length === 0 && turmasP.length === 0) continue;
@@ -238,7 +250,7 @@ function integrarHorarios(disciplinas, schedules) {
       disc.Horarios = turmasT[0].horarios.join('\n');
       disc.Sala = turmasT[0].salas.join('\n');
     }
-    const mapear = t => ({ turma: t.turma, horarios: t.horarios, salas: t.salas, professor: t.professor });
+    const mapear = t => ({ turma: t.turma, horarios: t.horarios, salas: t.salas, professor: t.professor, semestre: t.semestre });
     disc.TurmasDisponiveis = { teoricas: turmasT.map(mapear), praticas: turmasP.map(mapear) };
     integrados++;
   }
@@ -253,136 +265,62 @@ function departamentosDe(disciplinas) {
 // PERSISTENCIA
 // ════════════════════════════════════════════════════════════════════════════════
 
-function caminhoDoCurso(id) {
-  return join(OUT_DIR, `${id}.json`);
+function caminhoDoCurso(curso) { return join(OUT_DIR, String(curso.ano), curso.id + '.json'); }
+function lerSalvo(curso) {
+  try { const d = JSON.parse(readFileSync(caminhoDoCurso(curso), 'utf8')); return d.metadata.anoCatalogo === curso.ano && d.metadata.curso.id === curso.id ? d : null; } catch { return null; }
 }
-
-function lerSalvo(id) {
-  try {
-    return JSON.parse(readFileSync(caminhoDoCurso(id), 'utf-8'));
-  } catch {
-    return null;
-  }
+function gravarAtomico(arquivo, valor) {
+  mkdirSync(dirname(arquivo), {recursive:true});
+  writeFileSync(arquivo + '.tmp', JSON.stringify(valor, null, 2));
+  renameSync(arquivo + '.tmp', arquivo);
 }
-
-function estaFresco(salvo) {
-  const idade = (Date.now() - Date.parse(salvo?.metadata?.generatedAt ?? '')) / 36e5;
-  return Number.isFinite(idade) && idade < MAX_AGE_HOURS && Array.isArray(salvo?.optativas);
-}
-
-function gravarIndice(entradas) {
-  const index = {
-    generatedAt: new Date().toISOString(),
-    ano: CONFIG.ano,
-    cursos: entradas,
-  };
-  writeFileSync(join(OUT_DIR, 'index.json'), JSON.stringify(index, null, 2), 'utf-8');
-}
-
-// ════════════════════════════════════════════════════════════════════════════════
-// MAIN
-// ════════════════════════════════════════════════════════════════════════════════
-
-async function main() {
-  const startTime = Date.now();
-  const force = process.argv.includes('--force');
-  const filtro = process.argv.find(a => a.startsWith('--curso='))?.slice('--curso='.length).split(',').map(s => s.trim().toUpperCase());
-  const alvo = filtro ? CURSOS.filter(c => filtro.includes(c.id)) : CURSOS;
-
-  console.log('\n' + '='.repeat(80));
-  console.log('GRADEON - PRE-BUILD SCRAPING');
-  console.log('='.repeat(80));
-  console.log(`Ano: ${CONFIG.ano} - Campus: ${CONFIG.campus} - Cursos: ${alvo.map(c => c.id).join(', ')}`);
-  console.log('='.repeat(80) + '\n');
-
-  mkdirSync(OUT_DIR, { recursive: true });
-
-  // Fase 1: catálogo. Cursos com cache válido são reaproveitados.
-  const resultados = {}; // id -> { courseData, optativas } | null (falhou)
-  const pendentes = [];
-  for (const curso of alvo) {
-    const salvo = lerSalvo(curso.id);
-    if (!force && salvo && estaFresco(salvo)) {
-      console.log(`[${curso.id}] cache válido, scraping pulado (use --force para raspar de novo)`);
-      resultados[curso.id] = { courseData: salvo.courseData, optativas: salvo.optativas, doCache: true };
-    } else {
-      pendentes.push(curso);
-    }
-  }
-
-  await Promise.all(pendentes.map(async (curso) => {
-    try {
-      const dados = await scrapeCurso(curso);
-      if (Object.keys(dados.courseData).length === 0) throw new Error('nenhum período com disciplinas');
-      resultados[curso.id] = dados;
-    } catch (error) {
-      console.error(`[${curso.id}] ERRO: ${error.message}. Mantendo o arquivo anterior, se existir.`);
-      resultados[curso.id] = null;
-    }
-  }));
-
-  // Fase 2: horários da DTI, uma vez para a união dos departamentos de todos os cursos.
-  const precisamHorario = pendentes.filter(c => resultados[c.id]);
-  if (precisamHorario.length > 0) {
-    console.log('\n' + '='.repeat(80));
-    console.log('FASE 2: HORÁRIOS DTI');
-    console.log('='.repeat(80));
-    const deptos = departamentosDe(precisamHorario.flatMap(c => {
-      const r = resultados[c.id];
-      return [...Object.values(r.courseData).flat(), ...r.optativas];
-    }));
-    const schedules = await scrapeAllSchedules(deptos);
-
-    // Fase 3: integrar e gravar cada curso recém-coletado
-    for (const curso of precisamHorario) {
-      const r = resultados[curso.id];
-      const obrigatorias = Object.values(r.courseData).flat();
-      const integrados = integrarHorarios(obrigatorias, schedules) + integrarHorarios(r.optativas, schedules);
-      const output = {
-        metadata: {
-          generatedAt: new Date().toISOString(),
-          ano: CONFIG.ano,
-          curso: { id: curso.id, nome: curso.nome },
-          totalDisciplinas: obrigatorias.length,
-          periodos: Object.keys(r.courseData).length,
-          totalOptativas: r.optativas.length,
-          totalOptativasOfertadas: r.optativas.filter(d => d.TurmasDisponiveis).length,
-          source: 'prebuild-scraping',
-        },
-        courseData: r.courseData,
-        optativas: r.optativas,
-      };
-      writeFileSync(caminhoDoCurso(curso.id), JSON.stringify(output, null, 2), 'utf-8');
-      console.log(`[${curso.id}] gravado: ${obrigatorias.length} obrigatórias em ${output.metadata.periodos} períodos, ${output.metadata.totalOptativasOfertadas}/${r.optativas.length} optativas com turma, ${integrados} com horário`);
-    }
-  }
-
-  // Índice: todos os cursos que têm arquivo gravado, na ordem de CURSOS.
+function gravarIndice() {
   const entradas = [];
-  for (const curso of CURSOS) {
-    const salvo = lerSalvo(curso.id);
-    if (!salvo) continue;
-    entradas.push({
-      id: curso.id,
-      nome: curso.nome,
-      periodos: salvo.metadata.periodos,
-      totalDisciplinas: salvo.metadata.totalDisciplinas,
-      totalOptativasOfertadas: salvo.metadata.totalOptativasOfertadas,
-    });
+  for (const ano of readdirSync(OUT_DIR).filter(a => /^\d{4}$/.test(a)).sort().reverse()) {
+    for (const curso of CURSOS) {
+      const salvo = lerSalvo({...curso, ano:Number(ano)});
+      if (!salvo) continue;
+      entradas.push({id:curso.id, nome:curso.nome, anoCatalogo:Number(ano), periodos:salvo.metadata.periodos, totalDisciplinas:salvo.metadata.totalDisciplinas, totalOptativasOfertadas:salvo.metadata.totalOptativasOfertadas});
+    }
   }
-  gravarIndice(entradas);
-
-  const falhas = alvo.filter(c => resultados[c.id] === null && !lerSalvo(c.id));
-  const duration = ((Date.now() - startTime) / 1000).toFixed(2);
-  console.log('\n' + '='.repeat(80));
-  console.log(falhas.length ? `CONCLUIDO COM FALHAS: ${falhas.map(c => c.id).join(', ')} sem dados` : 'SCRAPING CONCLUIDO COM SUCESSO');
-  console.log(`Cursos no índice: ${entradas.map(e => `${e.id}(${e.periodos}p)`).join(' ')}`);
-  console.log(`Tempo total: ${duration}s`);
-  console.log('='.repeat(80) + '\n');
-  if (falhas.length) process.exit(1);
+  gravarAtomico(join(OUT_DIR,'index.json'), {generatedAt:new Date().toISOString(), cursos:entradas});
 }
-
-main().catch(error => {
-  console.error('\nERRO FATAL:', error.message);
-  process.exit(1);
-});
+async function main() {
+  mkdirSync(OUT_DIR, {recursive:true});
+  const filtro = arg('curso','').split(',').filter(Boolean);
+  if (filtro.some(id => !CURSOS.some(c => c.id === id))) throw new Error('Curso desconhecido');
+  const alvos = ANOS.flatMap(ano => CURSOS.filter(c => !filtro.length || filtro.includes(c.id)).map(c => ({...c,ano})));
+  const novos = [];
+  let falhas = 0;
+  await mapLimit(alvos, 3, async curso => {
+    const salvo = lerSalvo(curso);
+    const idade = (Date.now() - Date.parse(salvo?.metadata.generatedAt ?? '')) / 36e5;
+    if (!process.argv.includes('--force') && !process.argv.includes('--horarios-only') && idade < MAX_AGE_HOURS && salvo?.metadata.horarios?.ano === HORARIOS_ANO) return;
+    try {
+      if (process.argv.includes('--horarios-only') && !salvo) throw new Error('Matriz anterior inexistente');
+      const dados = process.argv.includes('--horarios-only') ? {courseData:salvo.courseData,optativas:salvo.optativas} : await scrapeCurso(curso);
+      if (!Object.keys(dados.courseData).length) throw new Error('Matriz vazia');
+      novos.push({curso,dados});
+    } catch (e) { falhas++; console.error('[CATALOGO]',curso.id,curso.ano,e.message,'Arquivo anterior preservado.'); }
+  });
+  if (novos.length) {
+    const deptos = departamentosDe(novos.flatMap(({dados}) => [...Object.values(dados.courseData).flat(), ...dados.optativas]));
+    // Os dois semestres são consultados para todas as matrizes; uma falha impede publicação parcial.
+    const schedules = await scrapeAllSchedules(deptos, HORARIOS_ANO);
+    for (const {curso,dados} of novos) {
+      const obrigatorias = Object.values(dados.courseData).flat();
+      integrarHorarios([...obrigatorias,...dados.optativas], schedules);
+      const metadata = { generatedAt:new Date().toISOString(), ano:curso.ano, anoCatalogo:curso.ano,
+        curso:{id:curso.id,nome:curso.nome}, campus:CONFIG.campus, complemento:curso.complemento,
+        horarios:{ano:HORARIOS_ANO,semestres:[1,2]}, totalDisciplinas:obrigatorias.length, periodos:Object.keys(dados.courseData).length,
+        totalOptativas:dados.optativas.length, totalOptativasOfertadas:dados.optativas.filter(d =>
+          d.TurmasDisponiveis.teoricas.length || d.TurmasDisponiveis.praticas.length).length,
+        source:'catalogo.ufv.br + dti.ufv.br' };
+      gravarAtomico(caminhoDoCurso(curso), {metadata,...dados});
+      console.log('[PUBLICADO]',curso.id,curso.ano,'horários',HORARIOS_ANO,obrigatorias.length);
+    }
+  }
+  gravarIndice();
+  if (falhas) process.exitCode = 1;
+}
+main().catch(e => {console.error(e); process.exitCode = 1;});

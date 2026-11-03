@@ -38,7 +38,7 @@ fs.createReadStream(CSV_FILE)
     .on('end', () => {
         console.log(`CSV lido. Dados agregados para ${Object.keys(statsMap).length} disciplinas exclusivas.`);
 
-        const arquivos = fs.readdirSync(CURSOS_DIR).filter(f => f.endsWith('.json') && f !== 'index.json');
+        const arquivos = fs.readdirSync(CURSOS_DIR).filter(f => /^\d{4}$/.test(f)).flatMap(ano => fs.readdirSync(path.join(CURSOS_DIR, ano)).filter(f => f.endsWith('.json')).map(f => path.join(ano, f)));
         if (arquivos.length === 0) {
             console.error(`Nenhum JSON de curso em ${CURSOS_DIR}`);
             process.exit(1);

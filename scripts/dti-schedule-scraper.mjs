@@ -18,9 +18,6 @@ const DEPTOS_PADRAO = ['SIN', 'MAP', 'ADE', 'ESP', 'CRP', 'CIC'];
 
 const CONFIG = {
   baseUrl: 'https://www.dti.ufv.br/horario_crp/horario.asp',
-  // Alterado para o ano letivo de 2026
-  ano: 2026,
-  departamento: 'SIN'
 };
 
 console.log('\n' + '='.repeat(80));
@@ -102,8 +99,8 @@ function parseRooms(roomText) {
 /**
  * Scrape horários de um semestre específico
  */
-async function scrapeSemestre(semestre, depto) {
-  const url = `${CONFIG.baseUrl}?ano=${CONFIG.ano}&semestre=${semestre}&depto=${depto}`;
+async function scrapeSemestre(semestre, depto, ano) {
+  const url = `${CONFIG.baseUrl}?ano=${ano}&semestre=${semestre}&depto=${depto}`;
   
   console.log(`\n[Semestre ${semestre} - Depto ${depto}] Iniciando scraping...`);
   console.log(`URL: ${url}`);
@@ -120,6 +117,7 @@ async function scrapeSemestre(semestre, depto) {
     const html = Buffer.from(response.data).toString('latin1');
     const $ = cheerio.load(html);
     
+    if (!$('table').length || !$.text().includes('Hor')) throw new Error('Página de horários inválida');
     const scheduleData = {};
     
     // Parse tabela HTML
@@ -160,50 +158,25 @@ async function scrapeSemestre(semestre, depto) {
     
   } catch (error) {
     console.error(`[Semestre ${semestre} - Depto ${depto}] ERRO: ${error.message}`);
-    return {};
+    throw error;
   }
 }
 
 /**
  * Scrape ambos semestres e combina resultados para todos os departamentos
  */
-export async function scrapeAllSchedules(deptosInformados = []) {
-  // Os departamentos vêm do chamador (união dos departamentos de todos os cursos coletados).
-  const deptos = deptosInformados.length > 0 ? Array.from(new Set(deptosInformados)) : DEPTOS_PADRAO;
-  console.log(`\nColetando horários dos semestres 1 e 2 para os departamentos: ${deptos.join(', ')}...\n`);
-  const semestres = [1, 2];
-  
-  const promises = [];
-  deptos.forEach(depto => {
-    semestres.forEach(sem => {
-      promises.push(
-        scrapeSemestre(sem, depto).then(data => ({ depto, sem, data }))
-      );
-    });
-  });
-  
-  const results = await Promise.all(promises);
-  
-  // Combinar resultados
+export async function scrapeAllSchedules(deptosInformados = [], ano = 2026) {
+  const deptos = [...new Set(deptosInformados.length ? deptosInformados : DEPTOS_PADRAO)];
   const combined = {};
-  
-  // Adicionar semestre 2 primeiro, depois semestre 1 (mantendo prioridade de semestre 1 se houver sobreposição de chaves)
-  results.forEach(res => {
-    if (res.sem === 2) {
-      Object.assign(combined, res.data);
-    }
-  });
-  results.forEach(res => {
-    if (res.sem === 1) {
-      Object.assign(combined, res.data);
-    }
-  });
-  
-  const totalTurmas = Object.keys(combined).length;
-  console.log(`\n${'='.repeat(80)}`);
-  console.log(`TOTAL: ${totalTurmas} turmas coletadas`);
-  console.log('='.repeat(80));
-  
+  // A montagem usa os horários dos dois semestres; em colisões, mantém a prioridade histórica do primeiro.
+  for (let i=0; i<deptos.length; i+=4) {
+    const resultados = await Promise.all(deptos.slice(i,i+4).map(async d => ({
+      segundo: await scrapeSemestre(2,d,ano),
+      primeiro: await scrapeSemestre(1,d,ano),
+    })));
+    resultados.forEach(({segundo,primeiro}) => Object.assign(combined,segundo,primeiro));
+  }
+  if (!Object.keys(combined).length) throw new Error('Nenhum horário coletado: publicação cancelada');
   return combined;
 }
 
