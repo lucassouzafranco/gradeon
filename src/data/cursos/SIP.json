@@ -1,0 +1,3284 @@
+{
+  "metadata": {
+    "generatedAt": "2026-10-20T20:09:10.136Z",
+    "ano": 2026,
+    "curso": {
+      "id": "SIP",
+      "nome": "Sistemas de Informação"
+    },
+    "totalDisciplinas": 39,
+    "periodos": 8,
+    "totalOptativas": 35,
+    "totalOptativasOfertadas": 12,
+    "source": "prebuild-scraping",
+    "medianaGlobalReprovacao": 18.35
+  },
+  "courseData": {
+    "1": [
+      {
+        "CodDisciplina": "MAP 191",
+        "NomeDisciplina": "Fundamentos de Matemática Elementar",
+        "Turma": "1",
+        "Horarios": "3=08-10\n5=10-12",
+        "Sala": "PVA107\nPVA107",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "MAP191",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "ESP 105",
+          "MAP 112",
+          "SIN 323",
+          "SIN 392"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10",
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=19:00-20:40",
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA108",
+                "PVA108"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=10-12",
+                "6=08-10"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "6",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA210"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 65
+      },
+      {
+        "CodDisciplina": "SIN 111",
+        "NomeDisciplina": "Fundamentos de Programação",
+        "Turma": "1",
+        "Horarios": "4=16-18",
+        "Sala": "PVA106",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN111",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "SIN 215",
+          "SIN 220",
+          "SIN 221",
+          "SIN 480"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA106"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=21:00-22:40"
+              ],
+              "salas": [
+                "PVA103"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=19:00-20:40"
+              ],
+              "salas": [
+                "PVA209"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "2=19:00-20:40"
+              ],
+              "salas": [
+                "PVA233"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16"
+              ],
+              "salas": [
+                "PVA226"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA226"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA226"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA233"
+              ],
+              "professor": ""
+            }
+          ]
+        },
+        "reprovaPercentual": 42.3
+      },
+      {
+        "CodDisciplina": "SIN 130",
+        "NomeDisciplina": "Introdução à Lógica",
+        "Turma": "1",
+        "Horarios": "4=14-16\n6=16-18",
+        "Sala": "PVA232\nPVA232",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN130",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "SIN 132"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16",
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA232",
+                "PVA232"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "PVA232",
+                "PVA232"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA113",
+                "PVA113"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 41.4
+      },
+      {
+        "CodDisciplina": "SIN 222",
+        "NomeDisciplina": "Fundamentos de Sistemas de Informação",
+        "Turma": "1",
+        "Horarios": "3=14-16\n5=16-18",
+        "Sala": "PVA202\nPVA202",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN222",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16",
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA202",
+                "PVA202"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=19:00-20:40",
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA202",
+                "PVA202"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 21.2
+      }
+    ],
+    "2": [
+      {
+        "CodDisciplina": "ADE 104",
+        "NomeDisciplina": "Teoria Geral da Administração",
+        "Turma": "1",
+        "Horarios": "3=16-18\n6=14-16",
+        "Sala": "PVA210\nPVA202",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ADE104",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA202"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA108",
+                "PVA108"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=14-16",
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=19:00-20:40",
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA109",
+                "PVA109"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 17.3
+      },
+      {
+        "CodDisciplina": "ESP 105",
+        "NomeDisciplina": "Iniciação à Estatística",
+        "Turma": "1",
+        "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+        "Sala": "PVA225\nPVA225",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "MAP 191 | MAP 195 | MAP 199",
+        "Oferecida": "S",
+        "CodDisc": "ESP105",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 191",
+          "MAP 195",
+          "MAP 199"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=14-16",
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "LAE248",
+                "LAE248"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 30.7
+      },
+      {
+        "CodDisciplina": "MAP 112",
+        "NomeDisciplina": "Álgebra Linear",
+        "Turma": "1",
+        "Horarios": "3=19:00-20:40\n5=21:00-22:40",
+        "Sala": "PVA107\nPVA107",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "MAP 100 | MAP 191 | MAP 199 | MAP 195",
+        "Oferecida": "S",
+        "CodDisc": "MAP112",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 100",
+          "MAP 191",
+          "MAP 199",
+          "MAP 195"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=19:00-20:40",
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=14-16",
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA108",
+                "PVA108"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": null
+      },
+      {
+        "CodDisciplina": "SIN 101",
+        "NomeDisciplina": "Informática e Sociedade",
+        "Turma": "1",
+        "Horarios": "2=14-16",
+        "Sala": "PVA107",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN101",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16"
+              ],
+              "salas": [
+                "PVA107"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=19:00-20:40"
+              ],
+              "salas": [
+                "PVA107"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 14.6
+      },
+      {
+        "CodDisciplina": "SIN 215",
+        "NomeDisciplina": "Programação e Estruturas de Dados I",
+        "Turma": "1",
+        "Horarios": "2=14-16",
+        "Sala": "PVA102",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 111",
+        "Oferecida": "S",
+        "CodDisc": "SIN215",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 111"
+        ],
+        "Dependentes": [
+          "SIN 141",
+          "SIN 216",
+          "SIN 251",
+          "SIN 392"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16"
+              ],
+              "salas": [
+                "PVA102"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=19:00-20:40"
+              ],
+              "salas": [
+                "PVA229"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=19:00-20:40"
+              ],
+              "salas": [
+                "LAE248"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA113"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA227"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA227"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "LAE248"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=19:00-20:40"
+              ],
+              "salas": [
+                "PVA227"
+              ],
+              "professor": ""
+            }
+          ]
+        },
+        "reprovaPercentual": null
+      }
+    ],
+    "3": [
+      {
+        "CodDisciplina": "CRP 297",
+        "NomeDisciplina": "Sociologia Geral",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA106\nPVA106",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CRP297",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA106",
+                "PVA106"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "3=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA212",
+                "PVA212"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "6",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "7",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 33.2
+      },
+      {
+        "CodDisciplina": "SIN 132",
+        "NomeDisciplina": "Matemática Discreta",
+        "Turma": "1",
+        "Horarios": "4=14-16\n6=16-18",
+        "Sala": "PVA202\nPVA202",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 130",
+        "Oferecida": "S",
+        "CodDisc": "SIN132",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 130"
+        ],
+        "Dependentes": [
+          "SIN 213",
+          "SIN 131"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16",
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA202",
+                "PVA202"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "PVA202",
+                "PVA202"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 53.1
+      },
+      {
+        "CodDisciplina": "SIN 141",
+        "NomeDisciplina": "Computação Orientada a Objetos",
+        "Turma": "1",
+        "Horarios": "3=14-16\n5=16-18",
+        "Sala": "PVA212\nPVA227",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 215",
+        "Oferecida": "S",
+        "CodDisc": "SIN141",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 215"
+        ],
+        "Dependentes": [
+          "SIN 143"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16",
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA212",
+                "PVA227"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=19:00-20:40",
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 41.6
+      },
+      {
+        "CodDisciplina": "SIN 216",
+        "NomeDisciplina": "Programação e Estruturas de Dados II",
+        "Turma": "1",
+        "Horarios": "5=14-16",
+        "Sala": "PVA102",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 215",
+        "Oferecida": "S",
+        "CodDisc": "SIN216",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 215"
+        ],
+        "Dependentes": [
+          "SIN 213",
+          "SIN 351",
+          "SIN 323"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA102"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA102"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18"
+              ],
+              "salas": [
+                "PVA226"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=21:00-22:40"
+              ],
+              "salas": [
+                "PVA226"
+              ],
+              "professor": ""
+            }
+          ]
+        },
+        "reprovaPercentual": null
+      },
+      {
+        "CodDisciplina": "SIN 251",
+        "NomeDisciplina": "Organização de Computadores",
+        "Turma": "1",
+        "Horarios": "2=14-16\n4=16-18",
+        "Sala": "PVA212\nPVA212",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 215",
+        "Oferecida": "S",
+        "CodDisc": "SIN251",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 215"
+        ],
+        "Dependentes": [
+          "SIN 252"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16",
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA212",
+                "PVA212"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 29.6
+      }
+    ],
+    "4": [
+      {
+        "CodDisciplina": "SIN 213",
+        "NomeDisciplina": "Projeto de Algoritmos",
+        "Turma": "1",
+        "Horarios": "3=16-18\n6=14-16",
+        "Sala": "PVA232\nPVA234",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 216 | SIN 132",
+        "Oferecida": "S",
+        "CodDisc": "SIN213",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 216",
+          "SIN 132"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA232",
+                "PVA234"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA232",
+                "PVA234"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 16.5
+      },
+      {
+        "CodDisciplina": "SIN 220",
+        "NomeDisciplina": "Banco de Dados",
+        "Turma": "1",
+        "Horarios": "3=14-16\n5=16-18",
+        "Sala": "PVA210\nPVA210",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 111",
+        "Oferecida": "S",
+        "CodDisc": "SIN220",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 111"
+        ],
+        "Dependentes": [
+          "SIN 143",
+          "SIN 320"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16",
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA210"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=19:00-20:40",
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA210"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 31
+      },
+      {
+        "CodDisciplina": "SIN 221",
+        "NomeDisciplina": "Engenharia de Software I",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA210\nPVA210",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 111",
+        "Oferecida": "S",
+        "CodDisc": "SIN221",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 111"
+        ],
+        "Dependentes": [
+          "SIN 421",
+          "SIN 321",
+          "SIN 322"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA210"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA210"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 19.4
+      },
+      {
+        "CodDisciplina": "SIN 252",
+        "NomeDisciplina": "Arquitetura de Computadores",
+        "Turma": "1",
+        "Horarios": "2=10-12\n4=08-10",
+        "Sala": "PVA232\nPVA232",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 251",
+        "Oferecida": "S",
+        "CodDisc": "SIN252",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 251"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12",
+                "4=08-10"
+              ],
+              "salas": [
+                "PVA232",
+                "PVA232"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA210"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 25.2
+      },
+      {
+        "CodDisciplina": "SIN 421",
+        "NomeDisciplina": "Interação Humano-Computador",
+        "Turma": "1",
+        "Horarios": "4=14-16\n6=16-18",
+        "Sala": "PVA210\nPVA210",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 221",
+        "Oferecida": "S",
+        "CodDisc": "SIN421",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 221"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16",
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA210"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA210"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 2.8
+      }
+    ],
+    "5": [
+      {
+        "CodDisciplina": "SIN 131",
+        "NomeDisciplina": "Introdução à Teoria da  Computação",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA213\nPVA213",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 132",
+        "Oferecida": "S",
+        "CodDisc": "SIN131",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 132"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA213",
+                "PVA213"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA230",
+                "PVA230"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 30.5
+      },
+      {
+        "CodDisciplina": "SIN 143",
+        "NomeDisciplina": "Laboratório de Programação",
+        "Turma": "1",
+        "Horarios": "3=14-16",
+        "Sala": "PVA226",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 141 | SIN 220",
+        "Oferecida": "S",
+        "CodDisc": "SIN143",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 141",
+          "SIN 220"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "PVA226"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=19:00-20:40"
+              ],
+              "salas": [
+                "PVA226"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA226"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA227"
+              ],
+              "professor": ""
+            }
+          ]
+        },
+        "reprovaPercentual": 6.2
+      },
+      {
+        "CodDisciplina": "SIN 320",
+        "NomeDisciplina": "Laboratório de Banco de Dados",
+        "Turma": "1",
+        "Horarios": "2=14-16",
+        "Sala": "PVA213",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 220",
+        "Oferecida": "S",
+        "CodDisc": "SIN320",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 220"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16"
+              ],
+              "salas": [
+                "PVA213"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=19:00-20:40"
+              ],
+              "salas": [
+                "PVA230"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA226"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA226"
+              ],
+              "professor": ""
+            }
+          ]
+        },
+        "reprovaPercentual": 11.3
+      },
+      {
+        "CodDisciplina": "SIN 321",
+        "NomeDisciplina": "Engenharia de Software II",
+        "Turma": "1",
+        "Horarios": "4=14-16\n6=16-18",
+        "Sala": "PVA213\nPVA213",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 221",
+        "Oferecida": "S",
+        "CodDisc": "SIN321",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 221"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16",
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA213",
+                "PVA213"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "PVA230",
+                "PVA230"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 9.2
+      },
+      {
+        "CodDisciplina": "SIN 351",
+        "NomeDisciplina": "Sistemas Operacionais",
+        "Turma": "1",
+        "Horarios": "3=16-18\n6=14-16",
+        "Sala": "PVA213\nPVA213",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 216",
+        "Oferecida": "S",
+        "CodDisc": "SIN351",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 216"
+        ],
+        "Dependentes": [
+          "SIN 352",
+          "SIN 142"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA213",
+                "PVA213"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA230",
+                "PVA230"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 32.5
+      }
+    ],
+    "6": [
+      {
+        "CodDisciplina": "SIN 100",
+        "NomeDisciplina": "Tratamento e Análise de Dados/Informações",
+        "Turma": "1",
+        "Horarios": "4=14-16\n6=16-18",
+        "Sala": "PVA209\nPVA209",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN100",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "SIN 488"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16",
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 21
+      },
+      {
+        "CodDisciplina": "SIN 322",
+        "NomeDisciplina": "Prática de Gerenciamento de Projetos",
+        "Turma": "1",
+        "Horarios": "3=14-16",
+        "Sala": "PVA107",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "SIN 221",
+        "Oferecida": "S",
+        "CodDisc": "SIN322",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 221"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "PVA107"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=19:00-20:40"
+              ],
+              "salas": [
+                "PVA232"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 3.9
+      },
+      {
+        "CodDisciplina": "SIN 323",
+        "NomeDisciplina": "Inteligência Artificial",
+        "Turma": "1",
+        "Horarios": "3=16-18\n6=14-16",
+        "Sala": "PVA209\nPVA209",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "MAP 191 | MAP 195 | SIN 216",
+        "Oferecida": "S",
+        "CodDisc": "SIN323",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 191",
+          "MAP 195",
+          "SIN 216"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 36.2
+      },
+      {
+        "CodDisciplina": "SIN 352",
+        "NomeDisciplina": "Redes de Computadores",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA107\nPVA107",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "6(4+2)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "SIN 351",
+        "Oferecida": "S",
+        "CodDisc": "SIN352",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 351"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA227"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA227"
+              ],
+              "professor": ""
+            }
+          ]
+        },
+        "reprovaPercentual": 10.5
+      },
+      {
+        "CodDisciplina": "SIN 480",
+        "NomeDisciplina": "Pesquisa Operacional I",
+        "Turma": "1",
+        "Horarios": "2=08-10\n4=10-12",
+        "Sala": "PVA106\nPVA106",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 111",
+        "Oferecida": "S",
+        "CodDisc": "SIN480",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 111"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=08-10",
+                "4=10-12"
+              ],
+              "salas": [
+                "PVA106",
+                "PVA106"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 16.1
+      }
+    ],
+    "7": [
+      {
+        "CodDisciplina": "ADE 190",
+        "NomeDisciplina": "Introdução à Economia",
+        "Turma": "1",
+        "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+        "Sala": "PVA214\nPVA214",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ADE190",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA212",
+                "PVA212"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA232",
+                "PVA232"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 16.6
+      },
+      {
+        "CodDisciplina": "SIN 142",
+        "NomeDisciplina": "Sistemas Distribuídos",
+        "Turma": "1",
+        "Horarios": "4=19:00-20:40\n6=21:00-22:40",
+        "Sala": "PVA219\nPVA219",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 351",
+        "Oferecida": "S",
+        "CodDisc": "SIN142",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 351"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "PVA219",
+                "PVA219"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=14-16",
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA219",
+                "PVA219"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 8.8
+      },
+      {
+        "CodDisciplina": "SIN 392",
+        "NomeDisciplina": "Introdução ao Processamento Digital de Imagens",
+        "Turma": "1",
+        "Horarios": "3=16-18\n6=14-16",
+        "Sala": "PVA107\nPVA107",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "MAP 191 | MAP 195 | SIN 215",
+        "Oferecida": "S",
+        "CodDisc": "SIN392",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 191",
+          "MAP 195",
+          "SIN 215"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA114",
+                "PVA114"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 12.1
+      },
+      {
+        "CodDisciplina": "SIN 488",
+        "NomeDisciplina": "Trabalho de Conclusão de Curso I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "10(0+10)",
+        "CargaTotal": 150,
+        "Creditos": 10,
+        "Dependencias": "SIN 100",
+        "Oferecida": "S",
+        "CodDisc": "SIN488",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 100"
+        ],
+        "Dependentes": [
+          "SIN 489"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": ""
+            }
+          ]
+        },
+        "reprovaPercentual": 0
+      },
+      {
+        "CodDisciplina": "SIN 495",
+        "NomeDisciplina": "Projeto Integralizador de Extensão",
+        "Turma": "1",
+        "Horarios": "a combinar",
+        "Sala": "PVA209",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "6(2+4)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN495",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "SIN 494"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "2",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [
+                "PVA209"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "2",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [
+                "PVA230",
+                "PVA230"
+              ],
+              "professor": ""
+            }
+          ]
+        },
+        "reprovaPercentual": 0
+      }
+    ],
+    "8": [
+      {
+        "CodDisciplina": "ADE 327",
+        "NomeDisciplina": "Empreendedorismo",
+        "Turma": "1",
+        "Horarios": "2=14-16\n4=16-18",
+        "Sala": "PVA103\nPVA103",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ADE327",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16",
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA103",
+                "PVA103"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 5.6
+      },
+      {
+        "CodDisciplina": "CIC 100",
+        "NomeDisciplina": "Contabilidade Geral",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA202\nPVA202",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CIC100",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA202",
+                "PVA202"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA108",
+                "PVA108"
+              ],
+              "professor": ""
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=14-16",
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": ""
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 42
+      },
+      {
+        "CodDisciplina": "SIN 489",
+        "NomeDisciplina": "Trabalho de Conclusão de Curso II",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+10)",
+        "CargaTotal": 150,
+        "Creditos": 0,
+        "Dependencias": "SIN 488",
+        "Oferecida": "S",
+        "CodDisc": "SIN489",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 488"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": ""
+            }
+          ]
+        },
+        "reprovaPercentual": null
+      },
+      {
+        "CodDisciplina": "SIN 494",
+        "NomeDisciplina": "Atividades Complementares",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+4)",
+        "CargaTotal": 60,
+        "Creditos": 0,
+        "Dependencias": "SIN 495",
+        "Oferecida": "S",
+        "CodDisc": "SIN494",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 495"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": ""
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": ""
+            }
+          ]
+        },
+        "reprovaPercentual": 13.3
+      },
+      {
+        "CodDisciplina": "SIN 497",
+        "NomeDisciplina": "Atividades de Extensão",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+12)",
+        "CargaTotal": 180,
+        "Creditos": 0,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN497",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": ""
+            }
+          ]
+        },
+        "reprovaPercentual": null
+      }
+    ]
+  },
+  "optativas": [
+    {
+      "CodDisciplina": "ADE 345",
+      "NomeDisciplina": "Comportamento Organizacional",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ADE345",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "reprovaPercentual": 7.7
+    },
+    {
+      "CodDisciplina": "CDP 200",
+      "NomeDisciplina": "Big Data I",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 216",
+      "Oferecida": "S",
+      "CodDisc": "CDP200",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 216"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "CDP 300",
+      "NomeDisciplina": "Processamento de Linguagem Natural",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 0,
+      "Dependencias": "SIN 216",
+      "Oferecida": "S",
+      "CodDisc": "CDP300",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 216"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "CDP 326",
+      "NomeDisciplina": "Inteligência Artificial Avançada",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 0,
+      "Dependencias": "SIN 323",
+      "Oferecida": "S",
+      "CodDisc": "CDP326",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 323"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "CDP 408",
+      "NomeDisciplina": "Análise de Redes Complexas",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "MAP 298 | MAP 112",
+      "Oferecida": "S",
+      "CodDisc": "CDP408",
+      "Depen": "",
+      "Prerequisitos": [
+        "MAP 298",
+        "MAP 112"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "CRP 280",
+      "NomeDisciplina": "LIBRAS Língua Brasileira de Sinais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(1+2)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP280",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "CRP 291",
+      "NomeDisciplina": "Inglês Instrumental",
+      "Turma": "1",
+      "Horarios": "2=19:00-20:40\n4=21:00-22:40",
+      "Sala": "PVA209\nPVA209",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP291",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA209",
+              "PVA209"
+            ],
+            "professor": ""
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=19:00-20:40",
+              "5=21:00-22:40"
+            ],
+            "salas": [
+              "PVA209",
+              "PVA209"
+            ],
+            "professor": ""
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 12.3
+    },
+    {
+      "CodDisciplina": "FRP 310",
+      "NomeDisciplina": "Instrumentação para ensino e automação",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(0+4)",
+      "CargaTotal": 60,
+      "Creditos": 0,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "FRP310",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": ""
+          }
+        ]
+      },
+      "reprovaPercentual": 5.3
+    },
+    {
+      "CodDisciplina": "MAP 100",
+      "NomeDisciplina": "Matemática I",
+      "Turma": "1",
+      "Horarios": "3=21:00-22:40\n6=19:00-20:40",
+      "Sala": "PVA219\nPVA219",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "MAP100",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [
+        "MAP 112"
+      ],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=21:00-22:40",
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "PVA219",
+              "PVA219"
+            ],
+            "professor": ""
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 50
+    },
+    {
+      "CodDisciplina": "MAP 298",
+      "NomeDisciplina": "Geometria Analítica e Álgebra Linear",
+      "Turma": "1",
+      "Horarios": "2=19:00-20:40\n4=21:00-22:40",
+      "Sala": "PVA108\nPVA108",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "MAP 100 | MAP 191 | MAP 199 | MAP 195",
+      "Oferecida": "S",
+      "CodDisc": "MAP298",
+      "Depen": "",
+      "Prerequisitos": [
+        "MAP 100",
+        "MAP 191",
+        "MAP 199",
+        "MAP 195"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "4",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA108",
+              "PVA108"
+            ],
+            "professor": ""
+          },
+          {
+            "turma": "1",
+            "horarios": [
+              "3=21:00-22:40",
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "PVA213",
+              "PVA213"
+            ],
+            "professor": ""
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 48.1
+    },
+    {
+      "CodDisciplina": "SIN 214",
+      "NomeDisciplina": "Administração a Gerenciamento de Redes",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 352",
+      "Oferecida": "S",
+      "CodDisc": "SIN214",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 352"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "SIN 219",
+      "NomeDisciplina": "Formação Integradora em Sistemas de Informação",
+      "Turma": "1",
+      "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+      "Sala": "PVA113\nPVA113",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "SIN219",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA113",
+              "PVA113"
+            ],
+            "professor": ""
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "SIN 223",
+      "NomeDisciplina": "Análise e Projeto Orientados a Objetos",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 141",
+      "Oferecida": "S",
+      "CodDisc": "SIN223",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 141"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "SIN 341",
+      "NomeDisciplina": "Soluções de TI Baseadas em Software Livre",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "SIN341",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "SIN 343",
+      "NomeDisciplina": "Desafios de Programação",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 213",
+      "Oferecida": "S",
+      "CodDisc": "SIN343",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 213"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": 17.9
+    },
+    {
+      "CodDisciplina": "SIN 390",
+      "NomeDisciplina": "Computação Gráfica",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "MAP 112 | SIN 216",
+      "Oferecida": "S",
+      "CodDisc": "SIN390",
+      "Depen": "",
+      "Prerequisitos": [
+        "MAP 112",
+        "SIN 216"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "SIN 393",
+      "NomeDisciplina": "Introdução à Visão Computacional",
+      "Turma": "1",
+      "Horarios": "4=19:00-20:40\n6=21:00-22:40",
+      "Sala": "PVA103\nPVA103",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "MAP 191 | MAP 195 | SIN 215",
+      "Oferecida": "S",
+      "CodDisc": "SIN393",
+      "Depen": "",
+      "Prerequisitos": [
+        "MAP 191",
+        "MAP 195",
+        "SIN 215"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=19:00-20:40",
+              "6=21:00-22:40"
+            ],
+            "salas": [
+              "PVA103",
+              "PVA103"
+            ],
+            "professor": ""
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 12.4
+    },
+    {
+      "CodDisciplina": "SIN 394",
+      "NomeDisciplina": "Introdução aos Jogos Digitais",
+      "Turma": "1",
+      "Horarios": "4=08-10\n6=08-10",
+      "Sala": "PVA227\nPVA214",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 215",
+      "Oferecida": "S",
+      "CodDisc": "SIN394",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 215"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=08-10",
+              "6=08-10"
+            ],
+            "salas": [
+              "PVA227",
+              "PVA214"
+            ],
+            "professor": ""
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 2.7
+    },
+    {
+      "CodDisciplina": "SIN 395",
+      "NomeDisciplina": "Realidade Virtual",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "SIN395",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "SIN 420",
+      "NomeDisciplina": "Bancos de Dados Geográficos",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 320",
+      "Oferecida": "S",
+      "CodDisc": "SIN420",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 320"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": 1.8
+    },
+    {
+      "CodDisciplina": "SIN 422",
+      "NomeDisciplina": "Qualidade de Software",
+      "Turma": "1",
+      "Horarios": "3=10-12\n5=10-12",
+      "Sala": "PVA212\nPVA212",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "SIN422",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=10-12",
+              "5=10-12"
+            ],
+            "salas": [
+              "PVA212",
+              "PVA212"
+            ],
+            "professor": ""
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 4.7
+    },
+    {
+      "CodDisciplina": "SIN 423",
+      "NomeDisciplina": "Verificação, Validação e Teste de Software",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 221",
+      "Oferecida": "S",
+      "CodDisc": "SIN423",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 221"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": 10.6
+    },
+    {
+      "CodDisciplina": "SIN 430",
+      "NomeDisciplina": "Teoria dos Grafos",
+      "Turma": "1",
+      "Horarios": "3=19:00-20:40\n5=21:00-22:40",
+      "Sala": "PVA232\nPVA232",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 216",
+      "Oferecida": "S",
+      "CodDisc": "SIN430",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 216"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=19:00-20:40",
+              "5=21:00-22:40"
+            ],
+            "salas": [
+              "PVA232",
+              "PVA232"
+            ],
+            "professor": ""
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 17.6
+    },
+    {
+      "CodDisciplina": "SIN 440",
+      "NomeDisciplina": "Avaliação de Desempenho de Sistemas Computacionais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 351",
+      "Oferecida": "S",
+      "CodDisc": "SIN440",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 351"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": 2.6
+    },
+    {
+      "CodDisciplina": "SIN 441",
+      "NomeDisciplina": "Tópicos em Sistemas Distribuídos",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 142",
+      "Oferecida": "S",
+      "CodDisc": "SIN441",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 142"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "SIN 450",
+      "NomeDisciplina": "Ciência de Dados Geoespaciais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 320",
+      "Oferecida": "S",
+      "CodDisc": "SIN450",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 320"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "SIN 451",
+      "NomeDisciplina": "Segurança da Informação",
+      "Turma": "1",
+      "Horarios": "3=19:00-20:40\n5=21:00-22:40",
+      "Sala": "PVA226\nPVA226",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "SIN451",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=19:00-20:40",
+              "5=21:00-22:40"
+            ],
+            "salas": [
+              "PVA226",
+              "PVA226"
+            ],
+            "professor": ""
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 7.7
+    },
+    {
+      "CodDisciplina": "SIN 452",
+      "NomeDisciplina": "Redes de Alto Desempenho",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 352",
+      "Oferecida": "S",
+      "CodDisc": "SIN452",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 352"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "SIN 453",
+      "NomeDisciplina": "Laboratório de Redes",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(0+2)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "SIN 352",
+      "Oferecida": "S",
+      "CodDisc": "SIN453",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 352"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "SIN 460",
+      "NomeDisciplina": "Reconhecimento de Padrões",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 215 | ESP 105 | ESP 224",
+      "Oferecida": "S",
+      "CodDisc": "SIN460",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 215",
+        "ESP 105",
+        "ESP 224"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": 24.9
+    },
+    {
+      "CodDisciplina": "SIN 481",
+      "NomeDisciplina": "Pesquisa Operacional II",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 480",
+      "Oferecida": "S",
+      "CodDisc": "SIN481",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 480"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "SIN 490",
+      "NomeDisciplina": "Acompanhamento de Trabalho de Conclusão de Curso",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 498 | SIN 488",
+      "Oferecida": "S",
+      "CodDisc": "SIN490",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 498",
+        "SIN 488"
+      ],
+      "Dependentes": [],
+      "reprovaPercentual": 4.6
+    },
+    {
+      "CodDisciplina": "SIN 491",
+      "NomeDisciplina": "Tópicos Especiais I",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "SIN491",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "reprovaPercentual": 7.8
+    },
+    {
+      "CodDisciplina": "SIN 492",
+      "NomeDisciplina": "Tópicos Especiais II",
+      "Turma": "1",
+      "Horarios": "2=19:00-20:40\n4=21:00-22:40",
+      "Sala": "PVA101\nPVA101",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "SIN492",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": ""
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 8.3
+    },
+    {
+      "CodDisciplina": "SIN 493",
+      "NomeDisciplina": "Tópicos Especiais III",
+      "Turma": "1",
+      "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+      "Sala": "PVA102\nPVA102",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "SIN493",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA102",
+              "PVA102"
+            ],
+            "professor": ""
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 7.7
+    }
+  ]
+}
