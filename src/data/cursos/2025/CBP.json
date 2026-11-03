@@ -1,0 +1,5107 @@
+{
+  "metadata": {
+    "generatedAt": "2026-11-03T04:16:08.222Z",
+    "ano": 2025,
+    "anoCatalogo": 2025,
+    "curso": {
+      "id": "CBP",
+      "nome": "Ciências Biológicas"
+    },
+    "campus": "crp",
+    "complemento": "BAC",
+    "horarios": {
+      "ano": 2026,
+      "semestres": [
+        1,
+        2
+      ]
+    },
+    "totalDisciplinas": 52,
+    "periodos": 8,
+    "totalOptativas": 63,
+    "totalOptativasOfertadas": 34,
+    "source": "catalogo.ufv.br + dti.ufv.br",
+    "medianaGlobalReprovacao": 14.9
+  },
+  "courseData": {
+    "1": [
+      {
+        "CodDisciplina": "CBI 101",
+        "NomeDisciplina": "Filogenias e Classificação Biológica",
+        "Turma": "1",
+        "Horarios": "4=08-10",
+        "Sala": "PVA103",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CBI101",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=08-10"
+              ],
+              "salas": [
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 44.6
+      },
+      {
+        "CodDisciplina": "CBI 102",
+        "NomeDisciplina": "Biologia Celular",
+        "Turma": "1",
+        "Horarios": "3=14-16",
+        "Sala": "PVA109",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 104",
+        "Oferecida": "S",
+        "CodDisc": "CBI102",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 104"
+        ],
+        "Dependentes": [
+          "CBI 104",
+          "CBI 120",
+          "CBI 112",
+          "AGR 240",
+          "CBI 230",
+          "CBI 270"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "PVA109"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "PVA109"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 55.9
+      },
+      {
+        "CodDisciplina": "CBI 104",
+        "NomeDisciplina": "Laboratório de Biologia Celular",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 102",
+        "Oferecida": "S",
+        "CodDisc": "CBI104",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 102"
+        ],
+        "Dependentes": [
+          "CBI 102",
+          "CBI 120",
+          "CBI 112",
+          "AGR 240",
+          "CBI 230",
+          "CBI 270"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=14-16"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "6=08-10"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "6=10-12"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "5=16-18"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 34.9
+      },
+      {
+        "CodDisciplina": "CBI 120",
+        "NomeDisciplina": "Zoologia de Invertebrados I",
+        "Turma": "1",
+        "Horarios": "3=08-10",
+        "Sala": "PVA103",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 102 | CBI 104",
+        "Oferecida": "S",
+        "CodDisc": "CBI120",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 102",
+          "CBI 104"
+        ],
+        "Dependentes": [
+          "CBI 121",
+          "CBI 296"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10"
+              ],
+              "salas": [
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=14-16"
+              ],
+              "salas": [
+                "LAE243"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "5=16-18"
+              ],
+              "salas": [
+                "LAE243"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 33.2
+      },
+      {
+        "CodDisciplina": "CBI 130",
+        "NomeDisciplina": "Biologia de Criptógamas",
+        "Turma": "1",
+        "Horarios": "4=10-12",
+        "Sala": "PVA103",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CBI130",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=10-12"
+              ],
+              "salas": [
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16"
+              ],
+              "salas": [
+                "LAE243"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=16-18"
+              ],
+              "salas": [
+                "LAE243"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 47.6
+      },
+      {
+        "CodDisciplina": "QAM 103",
+        "NomeDisciplina": "Fundamentos de Química",
+        "Turma": "1",
+        "Horarios": "2=10-12\n5=08-10",
+        "Sala": "PVA103\nPVA103",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "QAM103",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "QAM 107",
+          "CBI 250",
+          "AGR 266",
+          "CBI 496"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12",
+                "5=08-10"
+              ],
+              "salas": [
+                "PVA103",
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 23.6
+      }
+    ],
+    "2": [
+      {
+        "CodDisciplina": "CBI 105",
+        "NomeDisciplina": "Metodologia Científica para Ciências Biológicas",
+        "Turma": "1",
+        "Horarios": "5=16-18",
+        "Sala": "PVA107",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CBI105",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "CBI 284"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 18.9
+      },
+      {
+        "CodDisciplina": "CBI 112",
+        "NomeDisciplina": "Histologia Básica",
+        "Turma": "1",
+        "Horarios": "3=14-16",
+        "Sala": "PVA209",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 102 | CBI 104",
+        "Oferecida": "S",
+        "CodDisc": "CBI112",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 102",
+          "CBI 104"
+        ],
+        "Dependentes": [
+          "CBI 210",
+          "CBI 352"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=08-10"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=10-12"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 16.1
+      },
+      {
+        "CodDisciplina": "CBI 121",
+        "NomeDisciplina": "Zoologia dos Invertebrados II",
+        "Turma": "1",
+        "Horarios": "2=14-16",
+        "Sala": "PVA210",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 120",
+        "Oferecida": "S",
+        "CodDisc": "CBI121",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 120"
+        ],
+        "Dependentes": [
+          "CBI 220",
+          "CBI 296"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16"
+              ],
+              "salas": [
+                "PVA210"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=08-10"
+              ],
+              "salas": [
+                "LAE243"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "5=10-12"
+              ],
+              "salas": [
+                "LAE243"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 16.1
+      },
+      {
+        "CodDisciplina": "CBI 131",
+        "NomeDisciplina": "Organografia e Sistemática das Espermatófitas",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(0+4)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CBI131",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "CBI 431"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-18"
+              ],
+              "salas": [
+                "LAE243"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=14-18"
+              ],
+              "salas": [
+                "LAE243"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=08-12"
+              ],
+              "salas": [
+                "LAE243"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "4=08-12"
+              ],
+              "salas": [
+                "LAE243"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 46.1
+      },
+      {
+        "CodDisciplina": "MAP 191",
+        "NomeDisciplina": "Fundamentos de Matemática Elementar",
+        "Turma": "1",
+        "Horarios": "3=08-10\n5=10-12",
+        "Sala": "PVA107\nPVA107",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "MAP191",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "ESP 105"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10",
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=19:00-20:40",
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA108",
+                "PVA108"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=10-12",
+                "6=08-10"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "6",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA210"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 65
+      },
+      {
+        "CodDisciplina": "QAM 107",
+        "NomeDisciplina": "Laboratório de Química Geral",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "QAM 101 | QAM 103",
+        "Oferecida": "S",
+        "CodDisc": "QAM107",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 101",
+          "QAM 103"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=08-10"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "5=10-12"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "2=08-10"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "6",
+              "horarios": [
+                "2=10-12"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 29.3
+      }
+    ],
+    "3": [
+      {
+        "CodDisciplina": "AGR 240",
+        "NomeDisciplina": "Genética",
+        "Turma": "1",
+        "Horarios": "3=14-16\n5=16-18",
+        "Sala": "PVA232\nPVA232",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 102 | CBI 104",
+        "Oferecida": "S",
+        "CodDisc": "AGR240",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 102",
+          "CBI 104"
+        ],
+        "Dependentes": [
+          "CBI 262"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16",
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA232",
+                "PVA232"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 21.1
+      },
+      {
+        "CodDisciplina": "CBI 100",
+        "NomeDisciplina": "Biologia, Sociedade e Bioética",
+        "Turma": "1",
+        "Horarios": "2=10-12",
+        "Sala": "PVA218",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CBI100",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12"
+              ],
+              "salas": [
+                "PVA218"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 15.1
+      },
+      {
+        "CodDisciplina": "CBI 210",
+        "NomeDisciplina": "Embriologia Básica",
+        "Turma": "1",
+        "Horarios": "3=16-18",
+        "Sala": "PVA218",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 112",
+        "Oferecida": "S",
+        "CodDisc": "CBI210",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 112"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "PVA218"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=08-10"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "6=10-12"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 9.6
+      },
+      {
+        "CodDisciplina": "CBI 220",
+        "NomeDisciplina": "Zoologia de Vertebrados I",
+        "Turma": "1",
+        "Horarios": "3=08-10",
+        "Sala": "PVA218",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 121",
+        "Oferecida": "S",
+        "CodDisc": "CBI220",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 121"
+        ],
+        "Dependentes": [
+          "CBI 221"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10"
+              ],
+              "salas": [
+                "PVA218"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=08-10"
+              ],
+              "salas": [
+                "LAE244"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "5=10-12"
+              ],
+              "salas": [
+                "LAE244"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 24.2
+      },
+      {
+        "CodDisciplina": "CBI 250",
+        "NomeDisciplina": "Bioquímica Fundamental",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA109\nPVA109",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 138 | QAM 232 | QAM 103",
+        "Oferecida": "S",
+        "CodDisc": "CBI250",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 138",
+          "QAM 232",
+          "QAM 103"
+        ],
+        "Dependentes": [
+          "CBI 251",
+          "CBI 314",
+          "CBI 270",
+          "CBI 256",
+          "CBI 330",
+          "CBI 310"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA109",
+                "PVA109"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 47.3
+      },
+      {
+        "CodDisciplina": "CBI 251",
+        "NomeDisciplina": "Laboratório de Bioquímica",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 250",
+        "Oferecida": "S",
+        "CodDisc": "CBI251",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 250"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "LAE240"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=08-10"
+              ],
+              "salas": [
+                "LAE240"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "4=10-12"
+              ],
+              "salas": [
+                "LAE240"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 29.7
+      },
+      {
+        "CodDisciplina": "CBI 283",
+        "NomeDisciplina": "Ecologia Geral",
+        "Turma": "1",
+        "Horarios": "3=10-12\n4=10-12",
+        "Sala": "PVA202\nPVA106",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CBI283",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "CBI 284",
+          "CBI 380",
+          "CBI 382",
+          "CBI 391",
+          "CBI 408"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12",
+                "4=10-12"
+              ],
+              "salas": [
+                "PVA202",
+                "PVA106"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 27.3
+      }
+    ],
+    "4": [
+      {
+        "CodDisciplina": "AGR 266",
+        "NomeDisciplina": "Geologia Básica",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "QAM 101 | QAM 102 | QAM 103",
+        "Oferecida": "S",
+        "CodDisc": "AGR266",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 101",
+          "QAM 102",
+          "QAM 103"
+        ],
+        "Dependentes": [
+          "CBI 360"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=08-10"
+              ],
+              "salas": [
+                "LAE148"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 16.7
+      },
+      {
+        "CodDisciplina": "CBI 221",
+        "NomeDisciplina": "Zoologia de Vertebrados II",
+        "Turma": "1",
+        "Horarios": "3=10-12",
+        "Sala": "PVA230",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 220",
+        "Oferecida": "S",
+        "CodDisc": "CBI221",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 220"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12"
+              ],
+              "salas": [
+                "PVA230"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "LAE244"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "LAE244"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 8.2
+      },
+      {
+        "CodDisciplina": "CBI 230",
+        "NomeDisciplina": "Anatomia das Espermatófitas",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(0+4)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 102 | CBI 104",
+        "Oferecida": "S",
+        "CodDisc": "CBI230",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 102",
+          "CBI 104"
+        ],
+        "Dependentes": [
+          "CBI 330"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-12"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=08-12"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 37.3
+      },
+      {
+        "CodDisciplina": "CBI 256",
+        "NomeDisciplina": "Biologia Molecular",
+        "Turma": "1",
+        "Horarios": "3=08-10\n5=10-12",
+        "Sala": "PVA230\nPVA230",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 250 | CAL 250",
+        "Oferecida": "S",
+        "CodDisc": "CBI256",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 250",
+          "CAL 250"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10",
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA230",
+                "PVA230"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 13.2
+      },
+      {
+        "CodDisciplina": "CBI 270",
+        "NomeDisciplina": "Microbiologia Geral",
+        "Turma": "1",
+        "Horarios": "2=10-12",
+        "Sala": "PVA101",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 102 | CBI 104 | CBI 250 | CAL 250",
+        "Oferecida": "S",
+        "CodDisc": "CBI270",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 102",
+          "CBI 104",
+          "CBI 250",
+          "CAL 250"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12"
+              ],
+              "salas": [
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "4=16-18"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 12.7
+      },
+      {
+        "CodDisciplina": "CBI 284",
+        "NomeDisciplina": "Projetos de Ecologia",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 105 | CBI 283",
+        "Oferecida": "S",
+        "CodDisc": "CBI284",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 105",
+          "CBI 283"
+        ],
+        "Dependentes": [
+          "CBI 391"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=14-16"
+              ],
+              "salas": [
+                "LAE241"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "5=16-18"
+              ],
+              "salas": [
+                "LAE241"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 10.9
+      },
+      {
+        "CodDisciplina": "CBI 314",
+        "NomeDisciplina": "Fundamentos de Física e Biofísica",
+        "Turma": "1",
+        "Horarios": "2=08-10\n4=08-10",
+        "Sala": "PVA229\nPVA229",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 250",
+        "Oferecida": "S",
+        "CodDisc": "CBI314",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 250"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=08-10",
+                "4=08-10"
+              ],
+              "salas": [
+                "PVA229",
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 1.9
+      }
+    ],
+    "5": [
+      {
+        "CodDisciplina": "CBI 262",
+        "NomeDisciplina": "Fundamentos de Evolução Biológica",
+        "Turma": "1",
+        "Horarios": "3=10-12\n5=10-12",
+        "Sala": "PVA103\nPVA103",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "AGR 240",
+        "Oferecida": "S",
+        "CodDisc": "CBI262",
+        "Depen": "",
+        "Prerequisitos": [
+          "AGR 240"
+        ],
+        "Dependentes": [
+          "CBI 460"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12",
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA103",
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 14.9
+      },
+      {
+        "CodDisciplina": "CBI 296",
+        "NomeDisciplina": "Projetos de Extensão em Zoologia dos Invertebrados",
+        "Turma": "1",
+        "Horarios": "6=08-11",
+        "Sala": "PVA232",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "3(3+0)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "CBI 120 | CBI 121",
+        "Oferecida": "S",
+        "CodDisc": "CBI296",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 120",
+          "CBI 121"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=08-11"
+              ],
+              "salas": [
+                "PVA232"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 0
+      },
+      {
+        "CodDisciplina": "CBI 330",
+        "NomeDisciplina": "Fisiologia Vegetal",
+        "Turma": "1",
+        "Horarios": "2=08-10\n4=10-12",
+        "Sala": "PVA232\nPVA232",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "6(4+2)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "CBI 230 | CBI 250",
+        "Oferecida": "S",
+        "CodDisc": "CBI330",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 230",
+          "CBI 250"
+        ],
+        "Dependentes": [
+          "CBI 431"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=08-10",
+                "4=10-12"
+              ],
+              "salas": [
+                "PVA232",
+                "PVA232"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10"
+              ],
+              "salas": [
+                "LAE240"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=10-12"
+              ],
+              "salas": [
+                "LAE240"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "2=10-12"
+              ],
+              "salas": [
+                "LAE240"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 28.3
+      },
+      {
+        "CodDisciplina": "CBI 352",
+        "NomeDisciplina": "Imunologia",
+        "Turma": "1",
+        "Horarios": "5=08-10",
+        "Sala": "PVA232",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 112 | CBI 212",
+        "Oferecida": "S",
+        "CodDisc": "CBI352",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 112",
+          "CBI 212"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=08-10"
+              ],
+              "salas": [
+                "PVA232"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 8.8
+      },
+      {
+        "CodDisciplina": "CBI 380",
+        "NomeDisciplina": "Ecologia de Populações",
+        "Turma": "1",
+        "Horarios": "2=14-16",
+        "Sala": "PVA103",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 283",
+        "Oferecida": "S",
+        "CodDisc": "CBI380",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 283"
+        ],
+        "Dependentes": [
+          "CBI 382",
+          "CBI 490"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16"
+              ],
+              "salas": [
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 15.4
+      },
+      {
+        "CodDisciplina": "ESP 105",
+        "NomeDisciplina": "Iniciação à Estatística",
+        "Turma": "1",
+        "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+        "Sala": "PVA225\nPVA225",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "MAP 191 | MAP 195 | MAP 199",
+        "Oferecida": "S",
+        "CodDisc": "ESP105",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 191",
+          "MAP 195",
+          "MAP 199"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=14-16",
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "LAE248",
+                "LAE248"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 30.7
+      }
+    ],
+    "6": [
+      {
+        "CodDisciplina": "CBI 300",
+        "NomeDisciplina": "Divulgação Científica",
+        "Turma": "1",
+        "Horarios": "2=08-10",
+        "Sala": "PVA107",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CBI300",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=08-10"
+              ],
+              "salas": [
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 2.4
+      },
+      {
+        "CodDisciplina": "CBI 310",
+        "NomeDisciplina": "Fisiologia Geral",
+        "Turma": "1",
+        "Horarios": "3=16-18",
+        "Sala": "PVA108",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 250",
+        "Oferecida": "S",
+        "CodDisc": "CBI310",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 250"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "PVA108"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=14-16"
+              ],
+              "salas": [
+                "LAE137"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 6.2
+      },
+      {
+        "CodDisciplina": "CBI 360",
+        "NomeDisciplina": "Paleontologia",
+        "Turma": "1",
+        "Horarios": "2=10-12",
+        "Sala": "PVA107",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "AGR 266",
+        "Oferecida": "S",
+        "CodDisc": "CBI360",
+        "Depen": "",
+        "Prerequisitos": [
+          "AGR 266"
+        ],
+        "Dependentes": [
+          "CBI 408"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12"
+              ],
+              "salas": [
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=16-18"
+              ],
+              "salas": [
+                "LAE244"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 0
+      },
+      {
+        "CodDisciplina": "CBI 382",
+        "NomeDisciplina": "Ecologia de Comunidades",
+        "Turma": "1",
+        "Horarios": "3=10-12\n6=08-10",
+        "Sala": "PVA101\nPVA101",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 283 | CBI 380",
+        "Oferecida": "S",
+        "CodDisc": "CBI382",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 283",
+          "CBI 380"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12",
+                "6=08-10"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 10.3
+      },
+      {
+        "CodDisciplina": "CBI 391",
+        "NomeDisciplina": "Conservação Biológica",
+        "Turma": "1",
+        "Horarios": "3=08-10\n5=10-12",
+        "Sala": "PVA107\nPVA107",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "5(4+1)",
+        "CargaTotal": 75,
+        "Creditos": 5,
+        "Dependencias": "CBI 283 | CBI 284",
+        "Oferecida": "S",
+        "CodDisc": "CBI391",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 283",
+          "CBI 284"
+        ],
+        "Dependentes": [
+          "CBI 393"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10",
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 2.8
+      },
+      {
+        "CodDisciplina": "CBI 393",
+        "NomeDisciplina": "Educação Ambiental",
+        "Turma": "1",
+        "Horarios": "2=16-18",
+        "Sala": "PVA108",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 391",
+        "Oferecida": "S",
+        "CodDisc": "CBI393",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 391"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18"
+              ],
+              "salas": [
+                "PVA108"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 0.6
+      },
+      {
+        "CodDisciplina": "CRP 394",
+        "NomeDisciplina": "Legislação Ambiental I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CRP394",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 10.4
+      },
+      {
+        "CodDisciplina": "NUR 121",
+        "NomeDisciplina": "Parasitologia",
+        "Turma": "1",
+        "Horarios": "4=14-16",
+        "Sala": "PVA108",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "NUR121",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16"
+              ],
+              "salas": [
+                "PVA108"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 20.6
+      }
+    ],
+    "7": [
+      {
+        "CodDisciplina": "CBI 401",
+        "NomeDisciplina": "Trabalho de Conclusão de Curso I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "1(0+1)",
+        "CargaTotal": 15,
+        "Creditos": 1,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CBI401",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "CBI 402"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 0.4
+      },
+      {
+        "CodDisciplina": "CBI 408",
+        "NomeDisciplina": "Biogeografia",
+        "Turma": "1",
+        "Horarios": "3=16-18",
+        "Sala": "PVA108",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 283 | CBI 360",
+        "Oferecida": "S",
+        "CodDisc": "CBI408",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 283",
+          "CBI 360"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "PVA108"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 3.9
+      },
+      {
+        "CodDisciplina": "CBI 409",
+        "NomeDisciplina": "Estágio Curricular Supervisionado I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "12(0+12)",
+        "CargaTotal": 180,
+        "Creditos": 12,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CBI409",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "CBI 410"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 1.9
+      },
+      {
+        "CodDisciplina": "CBI 431",
+        "NomeDisciplina": "Plantando Conhecimento, Colhendo Cidadania",
+        "Turma": "1",
+        "Horarios": "4=14-15",
+        "Sala": "LAE243",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "3(1+2)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "CBI 131 | CBI 330",
+        "Oferecida": "S",
+        "CodDisc": "CBI431",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 131",
+          "CBI 330"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-15"
+              ],
+              "salas": [
+                "LAE243"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=15-17"
+              ],
+              "salas": [
+                "LAE243"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": null
+      },
+      {
+        "CodDisciplina": "CBI 490",
+        "NomeDisciplina": "Unidades de Conservação",
+        "Turma": "1",
+        "Horarios": "3=10-12",
+        "Sala": "PVA108",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 380 | AGR 282 | AGR 366",
+        "Oferecida": "S",
+        "CodDisc": "CBI490",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 380",
+          "AGR 282",
+          "AGR 366"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12"
+              ],
+              "salas": [
+                "PVA108"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 3.6
+      },
+      {
+        "CodDisciplina": "CBI 496",
+        "NomeDisciplina": "Impactos Biológicos da Poluição Ambiental",
+        "Turma": "1",
+        "Horarios": "4=08-10\n6=10-12",
+        "Sala": "PVA108\nPVA108",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 101 | QAM 103",
+        "Oferecida": "S",
+        "CodDisc": "CBI496",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 101",
+          "QAM 103"
+        ],
+        "Dependentes": [
+          "CBI 484"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=08-10",
+                "6=10-12"
+              ],
+              "salas": [
+                "PVA108",
+                "PVA108"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 5.9
+      }
+    ],
+    "8": [
+      {
+        "CodDisciplina": "CBI 400",
+        "NomeDisciplina": "Atividades Complementares",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 0,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CBI400",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": null
+      },
+      {
+        "CodDisciplina": "CBI 402",
+        "NomeDisciplina": "Trabalho de Conclusão de Curso II",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "3(0+3)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "CBI 401",
+        "Oferecida": "S",
+        "CodDisc": "CBI402",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 401"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 0.4
+      },
+      {
+        "CodDisciplina": "CBI 403",
+        "NomeDisciplina": "Atividades de Extensão",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+12)",
+        "CargaTotal": 180,
+        "Creditos": 0,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CBI403",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": null
+      },
+      {
+        "CodDisciplina": "CBI 410",
+        "NomeDisciplina": "Estágio Curricular Supervisionado II",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "12(0+12)",
+        "CargaTotal": 180,
+        "Creditos": 12,
+        "Dependencias": "CBI 409",
+        "Oferecida": "S",
+        "CodDisc": "CBI410",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 409"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 3.2
+      },
+      {
+        "CodDisciplina": "CBI 460",
+        "NomeDisciplina": "Processos Evolutivos",
+        "Turma": "1",
+        "Horarios": "3=08-10\n5=09-10",
+        "Sala": "PVA103\nPVA103",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "5(3+2)",
+        "CargaTotal": 75,
+        "Creditos": 5,
+        "Dependencias": "CBI 262",
+        "Oferecida": "S",
+        "CodDisc": "CBI460",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 262"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10",
+                "5=09-10"
+              ],
+              "salas": [
+                "PVA103",
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 5.1
+      },
+      {
+        "CodDisciplina": "CBI 484",
+        "NomeDisciplina": "Avaliação de Impactos Ambientais nos Ecossistemas",
+        "Turma": "1",
+        "Horarios": "2=10-12\n4=10-12",
+        "Sala": "PVA212\nPVA212",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "5(4+1)",
+        "CargaTotal": 75,
+        "Creditos": 5,
+        "Dependencias": "CBI 496",
+        "Oferecida": "S",
+        "CodDisc": "CBI484",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 496"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12",
+                "4=10-12"
+              ],
+              "salas": [
+                "PVA212",
+                "PVA212"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 1.1
+      }
+    ]
+  },
+  "optativas": [
+    {
+      "CodDisciplina": "ADE 327",
+      "NomeDisciplina": "Empreendedorismo",
+      "Turma": "1",
+      "Horarios": "2=14-16\n4=16-18",
+      "Sala": "PVA103\nPVA103",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ADE327",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=14-16",
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA103",
+              "PVA103"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 5.6
+    },
+    {
+      "CodDisciplina": "AGR 146",
+      "NomeDisciplina": "Entomologia Geral",
+      "Turma": "1",
+      "Horarios": "4=08-10",
+      "Sala": "PVA210",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "AGR146",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=08-10"
+            ],
+            "salas": [
+              "PVA210"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "6=08-10"
+            ],
+            "salas": [
+              "LAE243"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "6=10-12"
+            ],
+            "salas": [
+              "LAE243"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 10.3
+    },
+    {
+      "CodDisciplina": "AGR 194",
+      "NomeDisciplina": "Estatística Experimental",
+      "Turma": "1",
+      "Horarios": "2=10-12\n4=08-10",
+      "Sala": "PVA225\nPVA225",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ESP 105 | ESP 201",
+      "Oferecida": "S",
+      "CodDisc": "AGR194",
+      "Depen": "",
+      "Prerequisitos": [
+        "ESP 105",
+        "ESP 201"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=10-12",
+              "4=08-10"
+            ],
+            "salas": [
+              "PVA225",
+              "PVA225"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=08-10",
+              "4=10-12"
+            ],
+            "salas": [
+              "PVA225",
+              "PVA225"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 35.6
+    },
+    {
+      "CodDisciplina": "AGR 355",
+      "NomeDisciplina": "Constituição, Propriedades e Classificação de Solos",
+      "Turma": "1",
+      "Horarios": "3=10-12",
+      "Sala": "PVA210",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "AGR 144 | AGR 266",
+      "Oferecida": "S",
+      "CodDisc": "AGR355",
+      "Depen": "",
+      "Prerequisitos": [
+        "AGR 144",
+        "AGR 266"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=10-12"
+            ],
+            "salas": [
+              "PVA210"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=14-16"
+            ],
+            "salas": [
+              "LAE138"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "4=16-18"
+            ],
+            "salas": [
+              "LAE138"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 5.2
+    },
+    {
+      "CodDisciplina": "AGR 357",
+      "NomeDisciplina": "Pedologia Aplicada",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(0+2)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "AGR 355",
+      "Oferecida": "S",
+      "CodDisc": "AGR357",
+      "Depen": "",
+      "Prerequisitos": [
+        "AGR 355"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "7=08-10"
+            ],
+            "salas": [
+              "PVA102"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 2.9
+    },
+    {
+      "CodDisciplina": "AGR 362",
+      "NomeDisciplina": "Melhoramento de Plantas",
+      "Turma": "1",
+      "Horarios": "3=08-10",
+      "Sala": "PVA102",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "AGR 240 | AGR 194",
+      "Oferecida": "S",
+      "CodDisc": "AGR362",
+      "Depen": "",
+      "Prerequisitos": [
+        "AGR 240",
+        "AGR 194"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=08-10"
+            ],
+            "salas": [
+              "PVA102"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=10-12"
+            ],
+            "salas": [
+              "PVA102"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 3.4
+    },
+    {
+      "CodDisciplina": "AGR 363",
+      "NomeDisciplina": "Genética Quantitativa Aplicada ao Melhoramento de Plantas",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "AGR 240 | AGR 194",
+      "Oferecida": "S",
+      "CodDisc": "AGR363",
+      "Depen": "",
+      "Prerequisitos": [
+        "AGR 240",
+        "AGR 194"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "AGR 420",
+      "NomeDisciplina": "Agricultura, Meio Ambiente e Desenvolvimento Sustentável",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "AGR420",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "AGR 425",
+      "NomeDisciplina": "Controle Biológico",
+      "Turma": "1",
+      "Horarios": "3=08-11",
+      "Sala": "PVA218",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(3+0)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "AGR 146",
+      "Oferecida": "S",
+      "CodDisc": "AGR425",
+      "Depen": "",
+      "Prerequisitos": [
+        "AGR 146"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=08-11"
+            ],
+            "salas": [
+              "PVA218"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 4.3
+    },
+    {
+      "CodDisciplina": "CAL 151",
+      "NomeDisciplina": "Métodos físico-químicos de análises em alimentos",
+      "Turma": "1",
+      "Horarios": "3=21:00-22:40",
+      "Sala": "PVA229",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 250 | CBI 250",
+      "Oferecida": "S",
+      "CodDisc": "CAL151",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 250",
+        "CBI 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=21:00-22:40"
+            ],
+            "salas": [
+              "PVA229"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "LAE234"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "6=16-18"
+            ],
+            "salas": [
+              "LAE234"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 4.3
+    },
+    {
+      "CodDisciplina": "CAL 360",
+      "NomeDisciplina": "Princípios de Conservação de Alimentos",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CAL360",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 9
+    },
+    {
+      "CodDisciplina": "CAL 475",
+      "NomeDisciplina": "Tecnologia de Carnes, Mel e Ovos",
+      "Turma": "1",
+      "Horarios": "4=16-18",
+      "Sala": "PVA209",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CAL475",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=14-16"
+            ],
+            "salas": [
+              "LAE130"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 7.3
+    },
+    {
+      "CodDisciplina": "CAL 495",
+      "NomeDisciplina": "Enzimologia Aplicada em Alimentos",
+      "Turma": "1",
+      "Horarios": "2=14-16\n5=14-15",
+      "Sala": "PVA212\nLAE132",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(3+1)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 250 | CBI 250",
+      "Oferecida": "S",
+      "CodDisc": "CAL495",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 250",
+        "CBI 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=14-16",
+              "5=14-15"
+            ],
+            "salas": [
+              "PVA212",
+              "LAE132"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=15-16"
+            ],
+            "salas": [
+              "LAE132"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 118",
+      "NomeDisciplina": "Anatomia Humana",
+      "Turma": "1",
+      "Horarios": "3=08-10",
+      "Sala": "PVA102",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CBI118",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=08-10"
+            ],
+            "salas": [
+              "PVA102"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=16-18"
+            ],
+            "salas": [
+              "LAE137"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "5=14-16"
+            ],
+            "salas": [
+              "LAE137"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 31.6
+    },
+    {
+      "CodDisciplina": "CBI 214",
+      "NomeDisciplina": "Fisiologia Humana",
+      "Turma": "1",
+      "Horarios": "3=10-12\n6=08-10",
+      "Sala": "PVA230\nPVA230",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "6(4+2)",
+      "CargaTotal": 90,
+      "Creditos": 6,
+      "Dependencias": "CBI 118 | CBI 112 | CBI 212 | CBI 250",
+      "Oferecida": "S",
+      "CodDisc": "CBI214",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 118",
+        "CBI 112",
+        "CBI 212",
+        "CBI 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=10-12",
+              "6=08-10"
+            ],
+            "salas": [
+              "PVA230",
+              "PVA230"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "6=10-12"
+            ],
+            "salas": [
+              "LAE137"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 18.5
+    },
+    {
+      "CodDisciplina": "CBI 232",
+      "NomeDisciplina": "Fundamentos de Anatomia Vegetal",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 0,
+      "Dependencias": "CBI 102 | CBI 104",
+      "Oferecida": "S",
+      "CodDisc": "CBI232",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 102",
+        "CBI 104"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "CBI 257",
+      "NomeDisciplina": "Laboratório de Biologia Molecular",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(0+4)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 256",
+      "Oferecida": "S",
+      "CodDisc": "CBI257",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 256"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 303",
+      "NomeDisciplina": "Redação Científica",
+      "Turma": "1",
+      "Horarios": "5=16-18",
+      "Sala": "PVA108",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CBI303",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=16-18"
+            ],
+            "salas": [
+              "PVA108"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 8
+    },
+    {
+      "CodDisciplina": "CBI 312",
+      "NomeDisciplina": "Patologia Geral",
+      "Turma": "1",
+      "Horarios": "2=08-10",
+      "Sala": "PVA228",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 214 | CBI 310",
+      "Oferecida": "S",
+      "CodDisc": "CBI312",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 214",
+        "CBI 310"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=08-10"
+            ],
+            "salas": [
+              "PVA228"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=10-12"
+            ],
+            "salas": [
+              "LAE242"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=10-12"
+            ],
+            "salas": [
+              "LAE242"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 1.1
+    },
+    {
+      "CodDisciplina": "CBI 320",
+      "NomeDisciplina": "Anatomia Comparada dos Vertebrados",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CBI 221",
+      "Oferecida": "S",
+      "CodDisc": "CBI320",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 221"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 8.9
+    },
+    {
+      "CodDisciplina": "CBI 333",
+      "NomeDisciplina": "Botânica Econômica",
+      "Turma": "1",
+      "Horarios": "5=14-16",
+      "Sala": "PVA113",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 131",
+      "Oferecida": "S",
+      "CodDisc": "CBI333",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 131"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA113"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=16-18"
+            ],
+            "salas": [
+              "PVA113"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 3.4
+    },
+    {
+      "CodDisciplina": "CBI 334",
+      "NomeDisciplina": "Métodos em Estudos Florísticos",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(1+3)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 131",
+      "Oferecida": "S",
+      "CodDisc": "CBI334",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 131"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 362",
+      "NomeDisciplina": "Evolução Cariotípica",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 262 | AGR 240",
+      "Oferecida": "S",
+      "CodDisc": "CBI362",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 262",
+        "AGR 240"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 364",
+      "NomeDisciplina": "Evolução Molecular",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 101 | CBI 262 | CBI 256",
+      "Oferecida": "S",
+      "CodDisc": "CBI364",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 101",
+        "CBI 262",
+        "CBI 256"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 366",
+      "NomeDisciplina": "História da Vida",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 262",
+      "Oferecida": "S",
+      "CodDisc": "CBI366",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 262"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 370",
+      "NomeDisciplina": "Ecologia Microbiana",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CBI370",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0.6
+    },
+    {
+      "CodDisciplina": "CBI 375",
+      "NomeDisciplina": "Microbiologia do Solo",
+      "Turma": "1",
+      "Horarios": "2=14-16",
+      "Sala": "PVA232",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CBI375",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=14-16"
+            ],
+            "salas": [
+              "PVA232"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=14-16"
+            ],
+            "salas": [
+              "LAE233"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "4=16-18"
+            ],
+            "salas": [
+              "LAE233"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 1.3
+    },
+    {
+      "CodDisciplina": "CBI 392",
+      "NomeDisciplina": "Projetos de Educação Ambiental",
+      "Turma": "1",
+      "Horarios": "5=13-14",
+      "Sala": "PVA224",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(1+2)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "CBI 393",
+      "Oferecida": "S",
+      "CodDisc": "CBI392",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 393"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=13-14"
+            ],
+            "salas": [
+              "PVA224"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 404",
+      "NomeDisciplina": "Tópicos Especiais em Ciências Biológicas I",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CBI404",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 2.9
+    },
+    {
+      "CodDisciplina": "CBI 405",
+      "NomeDisciplina": "Tópicos Especiais em Ciências Biológicas II",
+      "Turma": "1",
+      "Horarios": "4=14-16",
+      "Sala": "PVA219",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CBI405",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=14-16"
+            ],
+            "salas": [
+              "PVA219"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "6=14-16"
+            ],
+            "salas": [
+              "LAE241"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "6=16-18"
+            ],
+            "salas": [
+              "LAE241"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 3.2
+    },
+    {
+      "CodDisciplina": "CBI 406",
+      "NomeDisciplina": "Tópicos Especiais em Ciências Biológicas III",
+      "Turma": "1",
+      "Horarios": "2=16-18\n4=16-18",
+      "Sala": "PVA202\nPVA202",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CBI406",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=16-18",
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA202",
+              "PVA202"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 16.3
+    },
+    {
+      "CodDisciplina": "CBI 420",
+      "NomeDisciplina": "Histologia dos Sistemas e Órgãos",
+      "Turma": "1",
+      "Horarios": "3=08-10",
+      "Sala": "PVA229",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 112 | CBI 212",
+      "Oferecida": "S",
+      "CodDisc": "CBI420",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 112",
+        "CBI 212"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=08-10"
+            ],
+            "salas": [
+              "PVA229"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=10-12"
+            ],
+            "salas": [
+              "LAE233"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 1.6
+    },
+    {
+      "CodDisciplina": "CBI 422",
+      "NomeDisciplina": "Comportamento Animal",
+      "Turma": "1",
+      "Horarios": "2=10-12\n6=10-12",
+      "Sala": "PVA219\nPVA219",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 283 | CBI 221",
+      "Oferecida": "S",
+      "CodDisc": "CBI422",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 283",
+        "CBI 221"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=10-12",
+              "6=10-12"
+            ],
+            "salas": [
+              "PVA219",
+              "PVA219"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 8
+    },
+    {
+      "CodDisciplina": "CBI 423",
+      "NomeDisciplina": "Ecologia de Neornithes",
+      "Turma": "1",
+      "Horarios": "3=16-18",
+      "Sala": "PVA113",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CBI 221",
+      "Oferecida": "S",
+      "CodDisc": "CBI423",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 221"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=16-18"
+            ],
+            "salas": [
+              "PVA113"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 424",
+      "NomeDisciplina": "Ornitologia de Campo",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(0+3)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "CBI 423",
+      "Oferecida": "S",
+      "CodDisc": "CBI424",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 423"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 430",
+      "NomeDisciplina": "Biologia de Campo",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(0+4)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 221 | CBI 230 | CBI 283",
+      "Oferecida": "S",
+      "CodDisc": "CBI430",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 221",
+        "CBI 230",
+        "CBI 283"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 27.3
+    },
+    {
+      "CodDisciplina": "CBI 432",
+      "NomeDisciplina": "Sistemática Evolutiva das Angiospermas",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 131 | CBI 262",
+      "Oferecida": "S",
+      "CodDisc": "CBI432",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 131",
+        "CBI 262"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 434",
+      "NomeDisciplina": "Diversidade Estrutural em Plantas",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "5(1+4)",
+      "CargaTotal": 75,
+      "Creditos": 5,
+      "Dependencias": "CBI 230",
+      "Oferecida": "S",
+      "CodDisc": "CBI434",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 230"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 435",
+      "NomeDisciplina": "Cultura de Tecidos de Plantas",
+      "Turma": "1",
+      "Horarios": "a combinar",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 330",
+      "Oferecida": "S",
+      "CodDisc": "CBI435",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 330"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 436",
+      "NomeDisciplina": "Aplicações da Anatomia Vegetal",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(0+4)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 230",
+      "Oferecida": "S",
+      "CodDisc": "CBI436",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 230"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 440",
+      "NomeDisciplina": "Fundamentos da Genética Ecológica",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 256",
+      "Oferecida": "S",
+      "CodDisc": "CBI440",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 256"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 470",
+      "NomeDisciplina": "Biotecnologia e Biossegurança",
+      "Turma": "1",
+      "Horarios": "4=08-10\n6=10-12",
+      "Sala": "PVA103\nPVA103",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 0,
+      "Dependencias": "CBI 256 | CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CBI470",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 256",
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=08-10",
+              "6=10-12"
+            ],
+            "salas": [
+              "PVA103",
+              "PVA103"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 2.8
+    },
+    {
+      "CodDisciplina": "CRP 280",
+      "NomeDisciplina": "LIBRAS Língua Brasileira de Sinais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(1+2)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP280",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "CRP 290",
+      "NomeDisciplina": "Português Instrumental I",
+      "Turma": "1",
+      "Horarios": "2=14-16\n4=16-18",
+      "Sala": "PVA101\nPVA101",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP290",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "2",
+            "horarios": [
+              "2=14-16",
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "1",
+            "horarios": [
+              "2=14-16",
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA107",
+              "PVA107"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA212",
+              "PVA212"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 16.4
+    },
+    {
+      "CodDisciplina": "CRP 291",
+      "NomeDisciplina": "Inglês I",
+      "Turma": "1",
+      "Horarios": "2=19:00-20:40\n4=21:00-22:40",
+      "Sala": "PVA209\nPVA209",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP291",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA209",
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=19:00-20:40",
+              "5=21:00-22:40"
+            ],
+            "salas": [
+              "PVA209",
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 12.3
+    },
+    {
+      "CodDisciplina": "CRP 292",
+      "NomeDisciplina": "Introdução à Informática",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP292",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 13.5
+    },
+    {
+      "CodDisciplina": "CRP 297",
+      "NomeDisciplina": "Sociologia Geral",
+      "Turma": "1",
+      "Horarios": "2=16-18\n5=14-16",
+      "Sala": "PVA106\nPVA106",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP297",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=16-18",
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA106",
+              "PVA106"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "3=16-18",
+              "6=14-16"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "4",
+            "horarios": [
+              "3=21:00-22:40",
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "5",
+            "horarios": [
+              "3=16-18",
+              "6=14-16"
+            ],
+            "salas": [
+              "PVA212",
+              "PVA212"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "6",
+            "horarios": [
+              "3=21:00-22:40",
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "PVA214",
+              "PVA214"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "7",
+            "horarios": [
+              "2=16-18",
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA107",
+              "PVA107"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 33.2
+    },
+    {
+      "CodDisciplina": "CRP 395",
+      "NomeDisciplina": "Legislação Ambiental II",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CRP 394",
+      "Oferecida": "S",
+      "CodDisc": "CRP395",
+      "Depen": "",
+      "Prerequisitos": [
+        "CRP 394"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 3.5
+    },
+    {
+      "CodDisciplina": "ENP 345",
+      "NomeDisciplina": "Engenharia da Sustentabilidade",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ENP345",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "ESP 401",
+      "NomeDisciplina": "Estatística Aplicada à Taxonomia Vegetal",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ESP 105 | CBI 131",
+      "Oferecida": "S",
+      "CodDisc": "ESP401",
+      "Depen": "",
+      "Prerequisitos": [
+        "ESP 105",
+        "CBI 131"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "FRP 101",
+      "NomeDisciplina": "Introdução à Mecânica",
+      "Turma": "1",
+      "Horarios": "6=14-16",
+      "Sala": "PVA113",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "MAP 191 | MAP 199",
+      "Oferecida": "S",
+      "CodDisc": "FRP101",
+      "Depen": "",
+      "Prerequisitos": [
+        "MAP 191",
+        "MAP 199"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "6=14-16"
+            ],
+            "salas": [
+              "PVA113"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 36.5
+    },
+    {
+      "CodDisciplina": "FRP 102",
+      "NomeDisciplina": "Introdução aos Fluidos e à Termodinâmica",
+      "Turma": "1",
+      "Horarios": "3=16-18",
+      "Sala": "PVA202",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "FRP 101",
+      "Oferecida": "S",
+      "CodDisc": "FRP102",
+      "Depen": "",
+      "Prerequisitos": [
+        "FRP 101"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=16-18"
+            ],
+            "salas": [
+              "PVA202"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 38.7
+    },
+    {
+      "CodDisciplina": "FRP 103",
+      "NomeDisciplina": "Introdução às Ondas e à Ótica",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CAL 232 | FRP 102 | FRP 201",
+      "Oferecida": "S",
+      "CodDisc": "FRP103",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 232",
+        "FRP 102",
+        "FRP 201"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "FRP 104",
+      "NomeDisciplina": "Introdução ao Eletromagnetismo",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CAL 232 | FRP 102 | FRP 202",
+      "Oferecida": "S",
+      "CodDisc": "FRP104",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 232",
+        "FRP 102",
+        "FRP 202"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "FRP 310",
+      "NomeDisciplina": "Instrumentação para ensino e automação",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(0+4)",
+      "CargaTotal": 60,
+      "Creditos": 0,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "FRP310",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 5.3
+    },
+    {
+      "CodDisciplina": "NUR 285",
+      "NomeDisciplina": "Psicologia",
+      "Turma": "1",
+      "Horarios": "2=16-18\n5=14-16",
+      "Sala": "PVA101\nPVA101",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR285",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=16-18",
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA209",
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 20
+    },
+    {
+      "CodDisciplina": "NUR 454",
+      "NomeDisciplina": "Plantas Alimentícias Não Convencionais - PANC",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR454",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "NUR 490",
+      "NomeDisciplina": "Projetos Educacionais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(1+1)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR490",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 33.3
+    },
+    {
+      "CodDisciplina": "QAM 112",
+      "NomeDisciplina": "Química Analítica Aplicada",
+      "Turma": "1",
+      "Horarios": "4=08-10\n6=10-11",
+      "Sala": "PVA106\nPVA106",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(3+0)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "QAM 101 | QAM 103",
+      "Oferecida": "S",
+      "CodDisc": "QAM112",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 101",
+        "QAM 103"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=08-10",
+              "6=10-11"
+            ],
+            "salas": [
+              "PVA106",
+              "PVA106"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=19:00-19:50"
+            ],
+            "salas": [
+              "PVA113",
+              "PVA113"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 43.6
+    },
+    {
+      "CodDisciplina": "QAM 119",
+      "NomeDisciplina": "Laboratório de Química Analítica Aplicada",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(0+2)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "QAM 112",
+      "Oferecida": "S",
+      "CodDisc": "QAM119",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 112"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=14-16"
+            ],
+            "salas": [
+              "LAE229"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "5=16-18"
+            ],
+            "salas": [
+              "LAE229"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "LAE229"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 24.3
+    },
+    {
+      "CodDisciplina": "QAM 315",
+      "NomeDisciplina": "Química Ambiental",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "QAM315",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 9.8
+    },
+    {
+      "CodDisciplina": "SIN 110",
+      "NomeDisciplina": "Programação",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "6(4+2)",
+      "CargaTotal": 90,
+      "Creditos": 6,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "SIN110",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 58.7
+    },
+    {
+      "CodDisciplina": "SIN 220",
+      "NomeDisciplina": "Banco de Dados",
+      "Turma": "1",
+      "Horarios": "3=14-16\n5=16-18",
+      "Sala": "PVA210\nPVA210",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 110",
+      "Oferecida": "S",
+      "CodDisc": "SIN220",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 110"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=14-16",
+              "5=16-18"
+            ],
+            "salas": [
+              "PVA210",
+              "PVA210"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=19:00-20:40",
+              "5=21:00-22:40"
+            ],
+            "salas": [
+              "PVA210",
+              "PVA210"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 31
+    }
+  ]
+}
