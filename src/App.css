@@ -42,3 +42,15 @@ body {
   margin-top: 6vh;
   margin-left: 0.5em;
 }
+
+/* Layout denso: +5vh para a matriz, -5vh nos painéis de baixo, que escalam o conteúdo pela fonte
+   (todas as medidas internas são em em/%), mantendo as proporções. */
+.appContainer.denso .courseGridContainer {
+  height: 76vh;
+  margin-top: 5.6vh;
+}
+
+.appContainer.denso .dinamycAreaContainer {
+  height: 17vh;
+  font-size: 0.8em;
+}

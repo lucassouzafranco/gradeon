@@ -88,3 +88,32 @@ h5 {
   font-weight: 500;
   opacity: 0.8;
 }
+/* Seletor de curso: troca a matriz inteira; fica à esquerda das outras opções do menu. */
+.cursoSelector {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.cursoSelectorLabel {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
+}
+
+.cursoSelector select {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.cursoSelector select option {
+  color: #1f1f1f;
+}

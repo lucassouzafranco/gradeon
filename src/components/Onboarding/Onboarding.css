@@ -1,0 +1,209 @@
+/* Paleta do app: vinho do DinamycArea (#791d1f) e do cartão em hover (#8c2123), sobre branco. */
+.onboardingRoot {
+  --tour-wine: #791d1f;
+  --tour-wine-light: #8c2123;
+  --tour-wine-dark: #5a1416;
+  /* Acima do DinamycArea (z-index 9999), que cria o contexto de empilhamento do balão pedagógico. */
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  pointer-events: none;
+  font-family: inherit;
+}
+
+.onboardingBlocker,
+.onboardingShield {
+  position: fixed;
+  pointer-events: auto;
+}
+
+.onboardingBlocker {
+  background: rgba(20, 4, 5, 0.5);
+}
+
+.onboardingShield {
+  background: transparent;
+}
+
+.onboardingSpotlight {
+  position: fixed;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 14px 2px rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+  transition: top 0.2s ease, left 0.2s ease, width 0.2s ease, height 0.2s ease;
+}
+
+/* Passo que espera ação: o destaque pulsa para mostrar onde agir. */
+.onboardingSpotlight.awaiting {
+  animation: tourPulse 2s ease-in-out infinite;
+}
+
+@keyframes tourPulse {
+  0%, 100% { box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.2); }
+  50% { box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4); }
+}
+
+/* Balão: superfície branca e sóbria, com a cor do app só na borda superior. */
+.onboardingPopover {
+  position: fixed;
+  width: 380px;
+  max-width: calc(100vw - 24px);
+  background: #fff;
+  color: #1f1f1f;
+  border-top: 4px solid var(--tour-wine);
+  border-radius: 8px;
+  padding: 18px 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  pointer-events: auto;
+  box-sizing: border-box;
+  text-align: center;
+  animation: tourFade 0.2s ease-out;
+}
+
+@keyframes tourFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Seta estática no espaço entre o balão e o alvo. */
+.onboardingPointer {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  /* Brilho claro para a seta vinho não sumir sobre o fundo escurecido. */
+  filter: drop-shadow(0 0 1.5px rgba(255, 255, 255, 0.95)) drop-shadow(0 0 6px rgba(255, 255, 255, 0.55));
+}
+
+.side-top .onboardingPointer {
+  bottom: -36px;
+  margin-left: -18px;
+  border-width: 30px 18px 0 18px;
+  border-color: var(--tour-wine-light) transparent transparent transparent;
+}
+
+.side-bottom .onboardingPointer {
+  top: -36px;
+  margin-left: -18px;
+  border-width: 0 18px 30px 18px;
+  border-color: transparent transparent var(--tour-wine-light) transparent;
+}
+
+.side-left .onboardingPointer {
+  right: -36px;
+  margin-top: -18px;
+  border-width: 18px 0 18px 30px;
+  border-color: transparent transparent transparent var(--tour-wine-light);
+}
+
+.side-right .onboardingPointer {
+  left: -36px;
+  margin-top: -18px;
+  border-width: 18px 30px 18px 0;
+  border-color: transparent var(--tour-wine-light) transparent transparent;
+}
+
+.onboardingHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Progresso: passos feitos preenchidos, atual destacado. */
+.onboardingDots {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.onboardingDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: #d9c9c9;
+  box-sizing: border-box;
+}
+
+.onboardingDot.done {
+  background: var(--tour-wine);
+}
+
+.onboardingDot.current {
+  width: 22px;
+  border-radius: 4px;
+  background: var(--tour-wine);
+}
+
+.onboardingTitle {
+  margin: 10px 0 8px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--tour-wine);
+}
+
+.onboardingBody {
+  margin: 0 0 16px;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.onboardingActions {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.onboardingSkip {
+  background: none;
+  border: none;
+  color: #6b4a4b;
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 10px 4px;
+  min-height: 44px;
+}
+
+/* Botão principal com a cor do app. */
+.onboardingNext {
+  background: var(--tour-wine);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 11px 28px;
+  min-height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.onboardingNext:hover {
+  background: var(--tour-wine-light);
+}
+
+.onboardingNext:focus-visible,
+.onboardingSkip:focus-visible {
+  outline: 2px solid rgba(121, 29, 31, 0.55);
+  outline-offset: 3px;
+}
+
+.onboardingHint {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--tour-wine);
+}
+
+/* Quem pede menos movimento no sistema operacional não recebe animações. */
+@media (prefers-reduced-motion: reduce) {
+  .onboardingSpotlight.awaiting,
+  .onboardingPopover {
+    animation: none !important;
+  }
+}
