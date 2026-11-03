@@ -21,7 +21,7 @@
     "totalOptativas": 56,
     "totalOptativasOfertadas": 29,
     "source": "catalogo.ufv.br + dti.ufv.br",
-    "medianaGlobalReprovacao": 13.25
+    "medianaGlobalReprovacao": 13.3
   },
   "courseData": {
     "1": [
@@ -105,7 +105,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 17.3
+        "reprovaPercentual": 17.8
       },
       {
         "CodDisciplina": "CIC 100",
@@ -171,7 +171,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 42
+        "reprovaPercentual": 42.4
       },
       {
         "CodDisciplina": "CRP 290",
@@ -349,7 +349,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 33.2
+        "reprovaPercentual": 32.5
       },
       {
         "CodDisciplina": "DRP 296",
@@ -428,7 +428,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": null
+        "reprovaPercentual": 28.2
       }
     ],
     "2": [
@@ -587,7 +587,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 13.9
+        "reprovaPercentual": 13.8
       },
       {
         "CodDisciplina": "MAP 191",
@@ -695,7 +695,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 65
+        "reprovaPercentual": 63.4
       },
       {
         "CodDisciplina": "NUR 285",
@@ -803,7 +803,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 48.4
+        "reprovaPercentual": 48.6
       },
       {
         "CodDisciplina": "ADE 194",
@@ -843,7 +843,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 27.3
+        "reprovaPercentual": 27.4
       },
       {
         "CodDisciplina": "ADE 310",
@@ -895,7 +895,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 30.6
+        "reprovaPercentual": 30.7
       },
       {
         "CodDisciplina": "ADE 324",
@@ -949,7 +949,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 11.7
+        "reprovaPercentual": 12.8
       },
       {
         "CodDisciplina": "ESP 105",
@@ -1044,7 +1044,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 30.7
+        "reprovaPercentual": 28.3
       }
     ],
     "4": [
@@ -1192,7 +1192,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 11.1
+        "reprovaPercentual": 11
       },
       {
         "CodDisciplina": "ADE 325",
@@ -1403,7 +1403,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 4.9
+        "reprovaPercentual": 5.2
       },
       {
         "CodDisciplina": "ADE 326",
@@ -1442,7 +1442,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 4.9
+        "reprovaPercentual": 5
       },
       {
         "CodDisciplina": "ADE 328",
@@ -1481,7 +1481,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 2.1
+        "reprovaPercentual": 2.2
       }
     ],
     "6": [
@@ -1537,7 +1537,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 17.6
+        "reprovaPercentual": 17.3
       },
       {
         "CodDisciplina": "ADE 321",
@@ -1722,7 +1722,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": null
+        "reprovaPercentual": 8
       }
     ],
     "7": [
@@ -1764,7 +1764,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 3.5
+        "reprovaPercentual": 3.2
       },
       {
         "CodDisciplina": "ADE 340",
@@ -1803,7 +1803,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 3.6
+        "reprovaPercentual": 3.5
       },
       {
         "CodDisciplina": "DRP 392",
@@ -1842,7 +1842,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": null
+        "reprovaPercentual": 28.6
       }
     ],
     "8": [
@@ -2007,7 +2007,7 @@
             }
           ]
         },
-        "reprovaPercentual": 4.1
+        "reprovaPercentual": 4
       },
       {
         "CodDisciplina": "ADE 496",
@@ -2044,7 +2044,7 @@
             }
           ]
         },
-        "reprovaPercentual": 1.3
+        "reprovaPercentual": 0.8
       }
     ]
   },
@@ -2446,7 +2446,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 25.9
+      "reprovaPercentual": 22.8
     },
     {
       "CodDisciplina": "ADE 390",
@@ -2521,7 +2521,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 1.3
+      "reprovaPercentual": 1.7
     },
     {
       "CodDisciplina": "ADE 392",
@@ -2805,7 +2805,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 4.5
+      "reprovaPercentual": 4.3
     },
     {
       "CodDisciplina": "ADE 403",
@@ -2838,7 +2838,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 13.1
+      "reprovaPercentual": 12
     },
     {
       "CodDisciplina": "ADE 404",
@@ -2912,7 +2912,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 13.8
+      "reprovaPercentual": 12.8
     },
     {
       "CodDisciplina": "ADE 491",
@@ -2947,7 +2947,7 @@
           }
         ]
       },
-      "reprovaPercentual": 8.7
+      "reprovaPercentual": 8.3
     },
     {
       "CodDisciplina": "ADE 492",
@@ -2982,7 +2982,7 @@
           }
         ]
       },
-      "reprovaPercentual": 17.5
+      "reprovaPercentual": 17
     },
     {
       "CodDisciplina": "ADE 493",
@@ -3017,7 +3017,7 @@
           }
         ]
       },
-      "reprovaPercentual": 8.7
+      "reprovaPercentual": 8.2
     },
     {
       "CodDisciplina": "ADE 494",
@@ -3052,7 +3052,7 @@
           }
         ]
       },
-      "reprovaPercentual": 30.6
+      "reprovaPercentual": 29.5
     },
     {
       "CodDisciplina": "ADE 498",
@@ -3129,7 +3129,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 35.6
+      "reprovaPercentual": 35.3
     },
     {
       "CodDisciplina": "CDP 308",
@@ -3358,7 +3358,7 @@
           }
         ]
       },
-      "reprovaPercentual": 8.3
+      "reprovaPercentual": 8.1
     },
     {
       "CodDisciplina": "CIC 326",
@@ -3457,7 +3457,7 @@
           }
         ]
       },
-      "reprovaPercentual": 5.3
+      "reprovaPercentual": 5.1
     },
     {
       "CodDisciplina": "CRP 280",
@@ -3517,7 +3517,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 11.6
+      "reprovaPercentual": 11.8
     },
     {
       "CodDisciplina": "CRP 291",
@@ -3567,7 +3567,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 12.3
+      "reprovaPercentual": 12
     },
     {
       "CodDisciplina": "CRP 390",
@@ -3650,7 +3650,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": null
+      "reprovaPercentual": 12.1
     },
     {
       "CodDisciplina": "DRP 395",
@@ -3791,7 +3791,7 @@
           }
         ]
       },
-      "reprovaPercentual": 9.3
+      "reprovaPercentual": 9.2
     },
     {
       "CodDisciplina": "MAP 298",
@@ -3846,7 +3846,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 48.1
+      "reprovaPercentual": 43
     },
     {
       "CodDisciplina": "NUR 106",
@@ -3881,7 +3881,7 @@
           }
         ]
       },
-      "reprovaPercentual": 8
+      "reprovaPercentual": 7.9
     },
     {
       "CodDisciplina": "NUR 290",

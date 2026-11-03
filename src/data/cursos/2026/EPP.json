@@ -21,7 +21,7 @@
     "totalOptativas": 58,
     "totalOptativasOfertadas": 37,
     "source": "catalogo.ufv.br + dti.ufv.br",
-    "medianaGlobalReprovacao": 15.1
+    "medianaGlobalReprovacao": 15.45
   },
   "courseData": {
     "1": [
@@ -102,7 +102,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 17.3
+        "reprovaPercentual": 17.8
       },
       {
         "CodDisciplina": "CRP 297",
@@ -217,7 +217,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 33.2
+        "reprovaPercentual": 32.5
       },
       {
         "CodDisciplina": "ENP 102",
@@ -252,7 +252,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 17.2
+        "reprovaPercentual": 24
       },
       {
         "CodDisciplina": "MAP 199",
@@ -355,7 +355,7 @@
             }
           ]
         },
-        "reprovaPercentual": 77.7
+        "reprovaPercentual": 75.5
       },
       {
         "CodDisciplina": "QAM 101",
@@ -422,7 +422,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 45.8
+        "reprovaPercentual": 46.1
       },
       {
         "CodDisciplina": "QAM 107",
@@ -515,7 +515,7 @@
             }
           ]
         },
-        "reprovaPercentual": 29.3
+        "reprovaPercentual": 30.4
       }
     ],
     "2": [
@@ -582,7 +582,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 42
+        "reprovaPercentual": 42.4
       },
       {
         "CodDisciplina": "ENP 101",
@@ -678,7 +678,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 74.5
+        "reprovaPercentual": 64.6
       },
       {
         "CodDisciplina": "MAP 298",
@@ -736,7 +736,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 48.1
+        "reprovaPercentual": 43
       },
       {
         "CodDisciplina": "SIN 111",
@@ -852,7 +852,7 @@
             }
           ]
         },
-        "reprovaPercentual": 42.3
+        "reprovaPercentual": 33.1
       }
     ],
     "3": [
@@ -900,7 +900,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 11.8
+        "reprovaPercentual": 13.6
       },
       {
         "CodDisciplina": "ESP 105",
@@ -995,7 +995,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 30.7
+        "reprovaPercentual": 28.3
       },
       {
         "CodDisciplina": "FRP 201",
@@ -1053,7 +1053,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 46.5
+        "reprovaPercentual": 47
       },
       {
         "CodDisciplina": "MAP 250",
@@ -1096,7 +1096,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 73
+        "reprovaPercentual": 64.4
       },
       {
         "CodDisciplina": "QAM 151",
@@ -1189,7 +1189,7 @@
             }
           ]
         },
-        "reprovaPercentual": 9
+        "reprovaPercentual": 8.8
       },
       {
         "CodDisciplina": "SIN 215",
@@ -1304,7 +1304,7 @@
             }
           ]
         },
-        "reprovaPercentual": null
+        "reprovaPercentual": 28.6
       }
     ],
     "4": [
@@ -1361,7 +1361,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 30.6
+        "reprovaPercentual": 30.7
       },
       {
         "CodDisciplina": "AGR 194",
@@ -1421,7 +1421,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 35.6
+        "reprovaPercentual": 35.3
       },
       {
         "CodDisciplina": "ENP 201",
@@ -1578,7 +1578,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 48.2
+        "reprovaPercentual": 49.7
       },
       {
         "CodDisciplina": "FRP 211",
@@ -1626,7 +1626,7 @@
             }
           ]
         },
-        "reprovaPercentual": 27.7
+        "reprovaPercentual": 28.1
       },
       {
         "CodDisciplina": "MAP 270",
@@ -1773,7 +1773,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 11.1
+        "reprovaPercentual": 11
       },
       {
         "CodDisciplina": "ECV 230",
@@ -1864,7 +1864,7 @@
             }
           ]
         },
-        "reprovaPercentual": 4.8
+        "reprovaPercentual": 4.7
       },
       {
         "CodDisciplina": "ENP 321",
@@ -1940,7 +1940,7 @@
             }
           ]
         },
-        "reprovaPercentual": 6.2
+        "reprovaPercentual": 5.4
       },
       {
         "CodDisciplina": "ENP 492",
@@ -1992,7 +1992,7 @@
             }
           ]
         },
-        "reprovaPercentual": 3.4
+        "reprovaPercentual": 3.3
       },
       {
         "CodDisciplina": "FRP 203",
@@ -2045,7 +2045,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 57.3
+        "reprovaPercentual": 57.5
       }
     ],
     "6": [
@@ -2101,7 +2101,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 11.4
+        "reprovaPercentual": 11.3
       },
       {
         "CodDisciplina": "ENP 316",
@@ -2473,7 +2473,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 13.5
+        "reprovaPercentual": 13.1
       },
       {
         "CodDisciplina": "ENP 395",
@@ -2556,7 +2556,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 8.7
+        "reprovaPercentual": 8.4
       },
       {
         "CodDisciplina": "ENP 404",
@@ -2595,7 +2595,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 10.2
+        "reprovaPercentual": 10
       }
     ],
     "8": [
@@ -2660,7 +2660,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 16.6
+        "reprovaPercentual": 15.8
       },
       {
         "CodDisciplina": "ENP 337",
@@ -2802,7 +2802,7 @@
             }
           ]
         },
-        "reprovaPercentual": 9.3
+        "reprovaPercentual": 9.2
       },
       {
         "CodDisciplina": "ENP 379",
@@ -2890,7 +2890,7 @@
             }
           ]
         },
-        "reprovaPercentual": 3.2
+        "reprovaPercentual": 3.1
       }
     ],
     "10": [
@@ -3005,7 +3005,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 27.3
+      "reprovaPercentual": 27.4
     },
     {
       "CodDisciplina": "ADE 311",
@@ -3150,7 +3150,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 4.9
+      "reprovaPercentual": 5.2
     },
     {
       "CodDisciplina": "ADE 323",
@@ -3228,7 +3228,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 4.9
+      "reprovaPercentual": 5
     },
     {
       "CodDisciplina": "ADE 342",
@@ -3330,7 +3330,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 1.3
+      "reprovaPercentual": 1.7
     },
     {
       "CodDisciplina": "CAL 365",
@@ -3382,7 +3382,7 @@
           }
         ]
       },
-      "reprovaPercentual": 13.6
+      "reprovaPercentual": 13.5
     },
     {
       "CodDisciplina": "CBI 392",
@@ -3427,7 +3427,7 @@
           }
         ]
       },
-      "reprovaPercentual": 0
+      "reprovaPercentual": 5
     },
     {
       "CodDisciplina": "CRP 181",
@@ -3477,7 +3477,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 13.9
+      "reprovaPercentual": 13.8
     },
     {
       "CodDisciplina": "CRP 280",
@@ -3550,7 +3550,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 12.3
+      "reprovaPercentual": 12
     },
     {
       "CodDisciplina": "CRP 340",
@@ -3676,7 +3676,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": null
+      "reprovaPercentual": 28.2
     },
     {
       "CodDisciplina": "DRP 391",
@@ -3728,7 +3728,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": null
+      "reprovaPercentual": 8
     },
     {
       "CodDisciplina": "DRP 392",
@@ -3767,7 +3767,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": null
+      "reprovaPercentual": 28.6
     },
     {
       "CodDisciplina": "ENP 300",
@@ -3885,7 +3885,7 @@
           }
         ]
       },
-      "reprovaPercentual": 20.4
+      "reprovaPercentual": 19.9
     },
     {
       "CodDisciplina": "ENP 314",
@@ -4063,7 +4063,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 12.1
+      "reprovaPercentual": 11.8
     },
     {
       "CodDisciplina": "ENP 331",
@@ -4112,7 +4112,7 @@
           }
         ]
       },
-      "reprovaPercentual": 1.2
+      "reprovaPercentual": 1.1
     },
     {
       "CodDisciplina": "ENP 338",
@@ -4189,7 +4189,7 @@
           }
         ]
       },
-      "reprovaPercentual": 7.1
+      "reprovaPercentual": 7.4
     },
     {
       "CodDisciplina": "ENP 341",
@@ -4228,7 +4228,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 2.2
+      "reprovaPercentual": 2.6
     },
     {
       "CodDisciplina": "ENP 345",
@@ -4411,7 +4411,7 @@
           }
         ]
       },
-      "reprovaPercentual": 12.1
+      "reprovaPercentual": 11.7
     },
     {
       "CodDisciplina": "ENP 363",
@@ -4696,7 +4696,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 3.7
+      "reprovaPercentual": 6.7
     },
     {
       "CodDisciplina": "ENP 498",
@@ -4888,7 +4888,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 50
+      "reprovaPercentual": 74.5
     },
     {
       "CodDisciplina": "NUR 285",
@@ -5047,7 +5047,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 41.4
+      "reprovaPercentual": 39.6
     },
     {
       "CodDisciplina": "SIN 216",
