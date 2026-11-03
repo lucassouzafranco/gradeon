@@ -21,7 +21,7 @@
     "totalOptativas": 51,
     "totalOptativasOfertadas": 30,
     "source": "catalogo.ufv.br + dti.ufv.br",
-    "medianaGlobalReprovacao": 12.35
+    "medianaGlobalReprovacao": 12.65
   },
   "courseData": {
     "1": [
@@ -167,7 +167,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 33.2
+        "reprovaPercentual": 32.5
       },
       {
         "CodDisciplina": "QAM 102",
@@ -221,7 +221,7 @@
             }
           ]
         },
-        "reprovaPercentual": 28
+        "reprovaPercentual": 27.6
       }
     ],
     "2": [
@@ -286,7 +286,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 12
+        "reprovaPercentual": 12.6
       },
       {
         "CodDisciplina": "QAM 111",
@@ -526,7 +526,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 30.7
+        "reprovaPercentual": 28.3
       },
       {
         "CodDisciplina": "FRP 201",
@@ -582,7 +582,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 46.5
+        "reprovaPercentual": 47
       },
       {
         "CodDisciplina": "QAM 211",
@@ -626,7 +626,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 17.6
+        "reprovaPercentual": 19
       },
       {
         "CodDisciplina": "QAM 213",
@@ -668,7 +668,7 @@
             }
           ]
         },
-        "reprovaPercentual": 7.7
+        "reprovaPercentual": 8.8
       }
     ],
     "4": [
@@ -735,7 +735,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 48.2
+        "reprovaPercentual": 49.7
       },
       {
         "CodDisciplina": "FRP 211",
@@ -783,7 +783,7 @@
             }
           ]
         },
-        "reprovaPercentual": 27.7
+        "reprovaPercentual": 28.1
       },
       {
         "CodDisciplina": "QAM 120",
@@ -944,7 +944,7 @@
             }
           ]
         },
-        "reprovaPercentual": 9
+        "reprovaPercentual": 8.8
       }
     ],
     "5": [
@@ -1004,7 +1004,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 57.3
+        "reprovaPercentual": 57.5
       },
       {
         "CodDisciplina": "FRP 212",
@@ -1082,7 +1082,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 32.6
+        "reprovaPercentual": 32.2
       },
       {
         "CodDisciplina": "QAM 153",
@@ -1136,7 +1136,7 @@
             }
           ]
         },
-        "reprovaPercentual": 3
+        "reprovaPercentual": 2.9
       },
       {
         "CodDisciplina": "QAM 320",
@@ -1185,7 +1185,7 @@
             }
           ]
         },
-        "reprovaPercentual": 8.9
+        "reprovaPercentual": 8.7
       }
     ],
     "6": [
@@ -1228,7 +1228,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 47.3
+        "reprovaPercentual": 46.9
       },
       {
         "CodDisciplina": "QAM 139",
@@ -1549,7 +1549,7 @@
             }
           ]
         },
-        "reprovaPercentual": 2.9
+        "reprovaPercentual": 2.8
       },
       {
         "CodDisciplina": "QAM 350",
@@ -1706,7 +1706,7 @@
             }
           ]
         },
-        "reprovaPercentual": 8.9
+        "reprovaPercentual": 8.8
       }
     ]
   },
@@ -1785,7 +1785,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 17.3
+      "reprovaPercentual": 17.8
     },
     {
       "CodDisciplina": "ADE 190",
@@ -1848,7 +1848,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 16.6
+      "reprovaPercentual": 15.8
     },
     {
       "CodDisciplina": "ADE 327",
@@ -1960,7 +1960,7 @@
           }
         ]
       },
-      "reprovaPercentual": 24.7
+      "reprovaPercentual": 24.5
     },
     {
       "CodDisciplina": "AGR 266",
@@ -2214,7 +2214,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 11.4
+      "reprovaPercentual": 11.3
     },
     {
       "CodDisciplina": "CAL 330",
@@ -2265,7 +2265,7 @@
           }
         ]
       },
-      "reprovaPercentual": 19.9
+      "reprovaPercentual": 18.6
     },
     {
       "CodDisciplina": "CAL 331",
@@ -2368,7 +2368,7 @@
           }
         ]
       },
-      "reprovaPercentual": 13.6
+      "reprovaPercentual": 13.5
     },
     {
       "CodDisciplina": "CAL 461",
@@ -2503,7 +2503,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 55.9
+      "reprovaPercentual": 56.4
     },
     {
       "CodDisciplina": "CBI 104",
@@ -2573,7 +2573,7 @@
           }
         ]
       },
-      "reprovaPercentual": 34.9
+      "reprovaPercentual": 35
     },
     {
       "CodDisciplina": "CBI 251",
@@ -2632,7 +2632,7 @@
           }
         ]
       },
-      "reprovaPercentual": 29.7
+      "reprovaPercentual": 29.5
     },
     {
       "CodDisciplina": "CBI 270",
@@ -2705,7 +2705,7 @@
           }
         ]
       },
-      "reprovaPercentual": 12.7
+      "reprovaPercentual": 12.6
     },
     {
       "CodDisciplina": "CBI 370",
@@ -2790,7 +2790,7 @@
           }
         ]
       },
-      "reprovaPercentual": 1.3
+      "reprovaPercentual": 1.2
     },
     {
       "CodDisciplina": "CRP 181",
@@ -2840,7 +2840,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 13.9
+      "reprovaPercentual": 13.8
     },
     {
       "CodDisciplina": "CRP 250",
@@ -3028,7 +3028,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 12.3
+      "reprovaPercentual": 12
     },
     {
       "CodDisciplina": "CRP 292",
@@ -3145,7 +3145,7 @@
           }
         ]
       },
-      "reprovaPercentual": 36.7
+      "reprovaPercentual": 36.9
     },
     {
       "CodDisciplina": "FRP 204",
@@ -3287,7 +3287,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 50
+      "reprovaPercentual": 74.5
     },
     {
       "CodDisciplina": "QAM 106",

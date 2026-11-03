@@ -21,7 +21,7 @@
     "totalOptativas": 29,
     "totalOptativasOfertadas": 10,
     "source": "catalogo.ufv.br + dti.ufv.br",
-    "medianaGlobalReprovacao": 20.2
+    "medianaGlobalReprovacao": 18.6
   },
   "courseData": {
     "1": [
@@ -146,7 +146,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 41.4
+        "reprovaPercentual": 39.6
       },
       {
         "CodDisciplina": "SIN 222",
@@ -196,7 +196,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 21.2
+        "reprovaPercentual": 20.4
       }
     ],
     "2": [
@@ -274,7 +274,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 17.3
+        "reprovaPercentual": 17.8
       },
       {
         "CodDisciplina": "CRP 298",
@@ -394,7 +394,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 30.7
+        "reprovaPercentual": 28.3
       },
       {
         "CodDisciplina": "SIN 101",
@@ -533,7 +533,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 16.6
+        "reprovaPercentual": 15.8
       },
       {
         "CodDisciplina": "CRP 297",
@@ -648,7 +648,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 33.2
+        "reprovaPercentual": 32.5
       },
       {
         "CodDisciplina": "SIN 132",
@@ -703,7 +703,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 53.1
+        "reprovaPercentual": 51.7
       },
       {
         "CodDisciplina": "SIN 141",
@@ -757,7 +757,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 41.6
+        "reprovaPercentual": 40.5
       },
       {
         "CodDisciplina": "SIN 251",
@@ -811,7 +811,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 29.6
+        "reprovaPercentual": 28.5
       }
     ],
     "4": [
@@ -1133,7 +1133,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 30.5
+        "reprovaPercentual": 30.8
       },
       {
         "CodDisciplina": "SIN 143",
@@ -1205,7 +1205,7 @@
             }
           ]
         },
-        "reprovaPercentual": 6.2
+        "reprovaPercentual": 5.5
       },
       {
         "CodDisciplina": "SIN 320",
@@ -1276,7 +1276,7 @@
             }
           ]
         },
-        "reprovaPercentual": 11.3
+        "reprovaPercentual": 11.8
       },
       {
         "CodDisciplina": "SIN 321",
@@ -1328,7 +1328,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 9.2
+        "reprovaPercentual": 8.3
       },
       {
         "CodDisciplina": "SIN 351",
@@ -1383,7 +1383,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 32.5
+        "reprovaPercentual": 28.4
       }
     ],
     "6": [
@@ -1483,7 +1483,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 3.9
+        "reprovaPercentual": 3.7
       },
       {
         "CodDisciplina": "SIN 323",
@@ -1717,7 +1717,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 8.8
+        "reprovaPercentual": 7.9
       },
       {
         "CodDisciplina": "SIN 392",
@@ -1770,7 +1770,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 12.1
+        "reprovaPercentual": 10.7
       },
       {
         "CodDisciplina": "SIN 488",
@@ -1973,7 +1973,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 42
+        "reprovaPercentual": 42.4
       },
       {
         "CodDisciplina": "SIN 489",
@@ -2008,7 +2008,7 @@
             }
           ]
         },
-        "reprovaPercentual": null
+        "reprovaPercentual": 0
       },
       {
         "CodDisciplina": "SIN 494",
@@ -2052,7 +2052,7 @@
             }
           ]
         },
-        "reprovaPercentual": 13.3
+        "reprovaPercentual": 12.9
       },
       {
         "CodDisciplina": "SIN 497",
@@ -2085,7 +2085,7 @@
             }
           ]
         },
-        "reprovaPercentual": null
+        "reprovaPercentual": 0
       }
     ]
   },
@@ -2184,7 +2184,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 12.3
+      "reprovaPercentual": 12
     },
     {
       "CodDisciplina": "FRP 310",
@@ -2254,7 +2254,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 50
+      "reprovaPercentual": 74.5
     },
     {
       "CodDisciplina": "SIN 214",
@@ -2456,7 +2456,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 2.7
+      "reprovaPercentual": 3.8
     },
     {
       "CodDisciplina": "SIN 395",
@@ -2541,7 +2541,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 4.7
+      "reprovaPercentual": 4.2
     },
     {
       "CodDisciplina": "SIN 423",
@@ -2605,7 +2605,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 17.6
+      "reprovaPercentual": 17.2
     },
     {
       "CodDisciplina": "SIN 440",
@@ -2903,7 +2903,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 8.3
+      "reprovaPercentual": 8.2
     },
     {
       "CodDisciplina": "SIN 493",
@@ -2940,7 +2940,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 7.7
+      "reprovaPercentual": 5.7
     }
   ]
 }
