@@ -10,7 +10,7 @@ import { getUnifiedSINOffers } from './orchestrator';
 import { scrapeOptativas } from './catalogScraper';
 import { courseData as legacyCourseData } from './courseData';
 import type { EnrichedOffer } from './enrichmentLayer';
-import scrapedData from './scrapedData.json';
+import scrapedData from './cursos/SIP.json';
 
 export interface UnifiedPipelineResult {
   courseData: Record<string, Discipline[]>;
@@ -87,7 +87,8 @@ export async function getUnifiedCourseData(): Promise<UnifiedPipelineResult> {
     }
     
     const [optativasResult, scrapingResult] = await Promise.allSettled([
-      scrapeOptativas(2025, false),
+      // Alterado para buscar optativas do catálogo de 2026
+      scrapeOptativas(2026, false),
       getUnifiedSINOffers({
         useCatalog: true,
         fallbackOnError: false

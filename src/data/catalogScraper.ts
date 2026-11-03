@@ -52,15 +52,15 @@ export function normalizeCodigo(cod: string): string {
     return cod.replace(/\s+/g, ' ').trim().toUpperCase();
 }
 
-async function fetchDisciplineDetail(cod: string): Promise<{
+async function fetchDisciplineDetail(cod: string, ano: number = 2026): Promise<{
     cargaTotal: number | null,
     cargaSemanal: string | null,
     prerequisitos: string[],
     corequisitos: string[],
     dependentes: string[]
 }> {
-    // Must include all params, not just disciplina param
-    const url = `${BASE_URL}?ano=2025&curso=SIP&campus=crp&periodo=1&complemento=*&disciplina=${encodeURIComponent(cod)}`;
+    // Busca detalhes da disciplina usando o ano especificado (padrão 2026)
+    const url = `${BASE_URL}?ano=${ano}&curso=SIP&campus=crp&periodo=1&complemento=*&disciplina=${encodeURIComponent(cod)}`;
 
     try {
         const response = await axios.get(url, {
@@ -148,10 +148,10 @@ function parseCatalogPage(html: string, periodo: number): CatalogDiscipline[] {
     return disciplinas;
 }
 
-async function enrichWithDetails(disciplinas: CatalogDiscipline[]): Promise<CatalogDiscipline[]> {
-    // Fetch detail pages to get cargaTotal, cargaSemanal, and relationships
+async function enrichWithDetails(disciplinas: CatalogDiscipline[], ano: number = 2026): Promise<CatalogDiscipline[]> {
+    // Busca detalhes no catálogo para o ano especificado
     for (const disciplina of disciplinas) {
-        const details = await fetchDisciplineDetail(disciplina.cod);
+        const details = await fetchDisciplineDetail(disciplina.cod, ano);
         disciplina.cargaTotal = details.cargaTotal;
         disciplina.cargaSemanal = details.cargaSemanal;
         disciplina.prerequisitos = details.prerequisitos;
@@ -193,7 +193,7 @@ export async function scrapePeriodo(config: CatalogConfig, includeDetails: boole
         // Optionally fetch detail pages for cargaTotal and cargaSemanal
         if (includeDetails) {
             console.log(`[SCRAPING] fetching details for ${disciplinas.length} disciplines...`);
-            disciplinas = await enrichWithDetails(disciplinas);
+            disciplinas = await enrichWithDetails(disciplinas, config.ano);
             console.log(`[SCRAPING] enriched with details`);
         }
 
@@ -210,7 +210,7 @@ export async function scrapePeriodo(config: CatalogConfig, includeDetails: boole
     }
 }
 
-export async function scrapeSINCatalog(ano: number = 2025, includeDetails: boolean = false): Promise<CatalogDiscipline[]> {
+export async function scrapeSINCatalog(ano: number = 2026, includeDetails: boolean = false): Promise<CatalogDiscipline[]> {
     console.log('[SCRAPING] ════════════════════════════════════');
     console.log('[SCRAPING] started: full SIN catalog (periods 1-8)');
     console.log(`[SCRAPING] params: ano=${ano}, includeDetails=${includeDetails}`);
@@ -247,12 +247,12 @@ export async function scrapeSINCatalog(ano: number = 2025, includeDetails: boole
  * 
  * REGRA CRÍTICA:
  * Toda disciplina listada em periodo=0 é optativa
- * URL: https://www.catalogo.ufv.br/interno.php?ano=2025&curso=SIP&campus=crp&periodo=0&complemento=*
+ * URL: https://www.catalogo.ufv.br/interno.php?ano=2026&curso=SIP&campus=crp&periodo=0&complemento=*
  * 
  * Estas disciplinas NÃO devem aparecer na grade, mas devem ser preservadas
  * para uso futuro (consultas, validações, etc)
  */
-export async function scrapeOptativas(ano: number = 2025, includeDetails: boolean = false): Promise<CatalogDiscipline[]> {
+export async function scrapeOptativas(ano: number = 2026, includeDetails: boolean = false): Promise<CatalogDiscipline[]> {
     console.log('[SCRAPING] ════════════════════════════════════');
     console.log('[SCRAPING] started: optativas (period=0)');
     console.log(`[SCRAPING] params: ano=${ano}, includeDetails=${includeDetails}`);
@@ -282,7 +282,7 @@ export async function scrapeOptativas(ano: number = 2025, includeDetails: boolea
 /**
  * Scrape catálogo completo (obrigatórias + optativas)
  */
-export async function scrapeFullCatalog(ano: number = 2025, includeDetails: boolean = false): Promise<{
+export async function scrapeFullCatalog(ano: number = 2026, includeDetails: boolean = false): Promise<{
     obrigatorias: CatalogDiscipline[];
     optativas: CatalogDiscipline[];
 }> {

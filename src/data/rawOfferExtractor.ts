@@ -1,5 +1,5 @@
 import { RawOffer, Discipline } from '../types/types';
-import scrapedData from './scrapedData.json';
+import scrapedData from './cursos/SIP.json';
 import { getSINOffers } from './scraper';
 
 export function extractRawOffers(): RawOffer[] {

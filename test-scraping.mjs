@@ -16,7 +16,7 @@ console.log('📊 TESTE 1: Scraping do site de horários');
 console.log('─'.repeat(80));
 
 async function testHorarios() {
-    const url = 'https://www.registro.ufv.br/Horarios/show.php?Ano=2025&Periodo=1&Campus=crp&Periodo%5B%5D=0&buscaTexto=&Curso%5B%5D=SIN';
+    const url = 'https://www.registro.ufv.br/Horarios/show.php?Ano=2026&Periodo=1&Campus=crp&Periodo%5B%5D=0&buscaTexto=&Curso%5B%5D=SIN';
 
     try {
         console.log('→ URL:', url);
@@ -72,7 +72,7 @@ console.log('\n\n📚 TESTE 2: Scraping do catálogo UFV (obrigatórias)');
 console.log('─'.repeat(80));
 
 async function testCatalogo() {
-    const url = 'https://www.catalogo.ufv.br/interno.php?ano=2025&curso=SIP&campus=crp&periodo=1&complemento=*';
+    const url = 'https://www.catalogo.ufv.br/interno.php?ano=2026&curso=SIP&campus=crp&periodo=1&complemento=*';
 
     try {
         console.log('→ URL:', url);
@@ -128,7 +128,7 @@ console.log('\n\n🎓 TESTE 3: Scraping de optativas (periodo=0)');
 console.log('─'.repeat(80));
 
 async function testOptativas() {
-    const url = 'https://www.catalogo.ufv.br/interno.php?ano=2025&curso=SIP&campus=crp&periodo=0&complemento=*';
+    const url = 'https://www.catalogo.ufv.br/interno.php?ano=2026&curso=SIP&campus=crp&periodo=0&complemento=*';
 
     try {
         console.log('→ URL:', url);

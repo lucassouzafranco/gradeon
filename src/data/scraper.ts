@@ -26,7 +26,7 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { RawOffer } from '../types/types';
-import scrapedData from './scrapedData.json';
+import scrapedData from './cursos/SIP.json';
 
 interface ScraperConfig {
     ano: number;
@@ -201,7 +201,8 @@ export function getUniqueDepartments(): string[] {
     return Array.from(deptos);
 }
 
-export async function getSINOffers(ano: number = 2025, semestre: 1 | 2 = 2): Promise<RawOffer[]> {
+// Alterado o ano padrão para 2026 na assinatura da função
+export async function getSINOffers(ano: number = 2026, semestre: 1 | 2 = 2): Promise<RawOffer[]> {
     console.log('[SCRAPING] Initiating UFV registration site scraping for SIN and external departments...');
     const deptos = getUniqueDepartments();
     console.log(`[SCRAPING] Dynamically detected departments from course data: ${deptos.join(', ')}`);

@@ -53,7 +53,8 @@ export interface OrchestratorConfig {
 }
 
 const DEFAULT_CONFIG: OrchestratorConfig = {
-  ano: 2025,
+  // Alterado para 2026 como ano padrão
+  ano: 2026,
   semestre: 2,
   useCatalog: true,
   forceCatalogRefresh: false,
