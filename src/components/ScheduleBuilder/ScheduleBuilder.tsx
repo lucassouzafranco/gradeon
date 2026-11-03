@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import './ScheduleBuilder.css';
 import { Discipline, ClassSection } from '../../types/types';
-import { courseData } from '../../data/courseData';
+import { useCurso } from '../../data/CursoContext';
 import { FaDownload, FaTrashAlt, FaMagic } from 'react-icons/fa';
 
 interface ScheduleBuilderProps {
@@ -9,11 +9,30 @@ interface ScheduleBuilderProps {
     onBack: () => void;
 }
 
+// Código de dia da DTI (2 = segunda … 7 = sábado) para o rótulo da grade.
 const DAY_MAP: Record<string, string> = {
-    '2': 'SEG', '3': 'TER', '4': 'QUA', '5': 'QUI', '6': 'SEX',
+    '2': 'SEG', '3': 'TER', '4': 'QUA', '5': 'QUI', '6': 'SEX', '7': 'SAB',
 };
-const DAY_ORDER = ['SEG', 'TER', 'QUA', 'QUI', 'SEX'];
-const TIME_SLOTS = ['08:00', '10:00', '12:00', '14:00', '16:00', '19:00', '21:00'];
+const DAY_ORDER = ['SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB'];
+/** Nome por extenso para o cabeçalho do PDF. */
+const DAY_FULL: Record<string, string> = {
+    SEG: 'Segunda', TER: 'Terça', QUA: 'Quarta', QUI: 'Quinta', SEX: 'Sexta', SAB: 'Sábado',
+};
+/** Faixas de horário; o índice no array é o slotIndex usado na grade, nos conflitos e no PDF. */
+const TIME_SLOTS = ['07:00', '08:00', '10:00', '12:00', '14:00', '16:00', '19:00', '21:00'];
+const TIME_LABELS: Record<string, string> = {
+    '07:00': '07:00 - 07:50',
+    '08:00': '08:00 - 09:40',
+    '10:00': '10:00 - 11:40',
+    '12:00': '12:00 - 13:40',
+    '14:00': '14:00 - 15:40',
+    '16:00': '16:00 - 17:40',
+    '19:00': '19:00 - 20:40',
+    '21:00': '21:00 - 22:40',
+};
+/** Sábado e 07:00 só aparecem quando o curso tem aula neles; os demais aparecem sempre. */
+const OPTIONAL_DAY = 'SAB';
+const OPTIONAL_SLOT = 0;
 
 interface ParsedSlot { day: string; startTime: string; endTime: string; }
 
@@ -58,13 +77,14 @@ function parseInterval(horario: string): ParsedInterval | null {
 
 function getSlotIndex(startTime: string): number {
     const h = parseInt(startTime.split(':')[0]);
-    if (h >= 8 && h < 10) return 0;
-    if (h >= 10 && h < 12) return 1;
-    if (h >= 12 && h < 14) return 2;
-    if (h >= 14 && h < 16) return 3;
-    if (h >= 16 && h < 19) return 4;
-    if (h >= 19 && h < 21) return 5;
-    if (h >= 21) return 6;
+    if (h >= 6 && h < 8) return 0;
+    if (h >= 8 && h < 10) return 1;
+    if (h >= 10 && h < 12) return 2;
+    if (h >= 12 && h < 14) return 3;
+    if (h >= 14 && h < 16) return 4;
+    if (h >= 16 && h < 19) return 5;
+    if (h >= 19 && h < 21) return 6;
+    if (h >= 21) return 7;
     return -1;
 }
 
@@ -84,7 +104,7 @@ interface ScheduleEntry {
     slotIndex: number; startTime: string; endTime: string;
 }
 
-function getTurmas(disc: Discipline): TurmaInfo[] {
+function getTurmasDe(disc: Discipline, courseData: Record<string, Discipline[]>): TurmaInfo[] {
     if (disc.TurmasDisponiveis) {
         const all = [...disc.TurmasDisponiveis.teoricas, ...disc.TurmasDisponiveis.praticas];
         if (all.length > 0) return all.map(s => ({ turma: s.turma, horarios: s.horarios, salas: s.salas }));
@@ -99,6 +119,33 @@ function getTurmas(disc: Discipline): TurmaInfo[] {
 interface DragPayload { codDisciplina: string; turma: string; }
 
 const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack }) => {
+    const { dados } = useCurso();
+    const courseData = useMemo(() => dados?.courseData ?? {}, [dados]);
+    const getTurmas = useCallback((disc: Discipline) => getTurmasDe(disc, courseData), [courseData]);
+
+    // Colunas e linhas da grade: sábado e 07:00 só entram se alguma turma do curso usa esses horários.
+    const { visibleDays, visibleSlots } = useMemo(() => {
+        const todas = [...Object.values(courseData).flat(), ...(dados?.optativas ?? [])];
+        let temSabado = false;
+        let temSete = false;
+        for (const disc of todas) {
+            const t = disc.TurmasDisponiveis;
+            if (!t) continue;
+            for (const turma of [...t.teoricas, ...t.praticas]) {
+                for (const h of turma.horarios) {
+                    const p = parseHorario(h);
+                    if (!p) continue;
+                    if (p.day === OPTIONAL_DAY) temSabado = true;
+                    if (getSlotIndex(p.startTime) === OPTIONAL_SLOT) temSete = true;
+                }
+            }
+        }
+        return {
+            visibleDays: DAY_ORDER.filter(d => d !== OPTIONAL_DAY || temSabado),
+            visibleSlots: TIME_SLOTS.map((_, i) => i).filter(i => i !== OPTIONAL_SLOT || temSete),
+        };
+    }, [courseData, dados]);
+    const gridColumns = { gridTemplateColumns: `75px repeat(${visibleDays.length}, 1fr)` };
     const [selectedTurmas, setSelectedTurmas] = useState<Record<string, string>>(() => {
         const saved = sessionStorage.getItem("gradeon:selectedTurmas");
         return saved ? JSON.parse(saved) : {};
@@ -117,7 +164,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
 
     const turmaData = useMemo(() =>
         selectedCards.map(disc => ({ disc, turmas: getTurmas(disc) })),
-        [selectedCards]
+        [selectedCards, getTurmas]
     );
 
     const scheduleEntries = useMemo(() => {
@@ -136,7 +183,22 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
             });
         });
         return entries;
-    }, [selectedCards, selectedTurmas]);
+    }, [selectedCards, selectedTurmas, getTurmas]);
+
+    // Horários sem dia/hora definidos (ex.: "a combinar"): não cabem na grade, mas são listados abaixo dela.
+    const unscheduled = useMemo(() => {
+        const itens: { codDisc: string; turma: string; texto: string }[] = [];
+        selectedCards.forEach(disc => {
+            const sel = selectedTurmas[disc.CodDisciplina];
+            if (!sel) return;
+            const turma = getTurmas(disc).find(t => t.turma === sel);
+            turma?.horarios.forEach(h => {
+                const p = parseHorario(h);
+                if (!p || getSlotIndex(p.startTime) === -1) itens.push({ codDisc: disc.CodDisc, turma: sel, texto: h });
+            });
+        });
+        return itens;
+    }, [selectedCards, selectedTurmas, getTurmas]);
 
     const conflicts = useMemo(() => {
         const map = new Map<string, ScheduleEntry[]>();
@@ -235,20 +297,13 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
 
         const totalCredits = selectedList.reduce((acc, curr) => acc + curr.creditos, 0);
 
-        const days = ['SEG', 'TER', 'QUA', 'QUI', 'SEX'];
-        const timeLabels: Record<string, string> = {
-            '08:00': '08:00 - 09:40',
-            '10:00': '10:00 - 11:40',
-            '12:00': '12:00 - 13:40',
-            '14:00': '14:00 - 15:40',
-            '16:00': '16:00 - 17:40',
-            '19:00': '19:00 - 20:40',
-            '21:00': '21:00 - 22:40'
-        };
+        // O PDF usa as mesmas colunas e linhas da tela: sem sábado nem 07:00 se o curso não tem aula neles.
+        const days = visibleDays;
 
         let tableRowsHtml = '';
-        TIME_SLOTS.forEach((time, slotIdx) => {
-            let rowHtml = `<tr><td class="time-col">${timeLabels[time] || time}</td>`;
+        visibleSlots.forEach(slotIdx => {
+            const time = TIME_SLOTS[slotIdx];
+            let rowHtml = `<tr><td class="time-col">${TIME_LABELS[time] || time}</td>`;
             days.forEach(day => {
                 const cellEntries = getEntriesForCell(day, slotIdx);
                 if (cellEntries.length > 0) {
@@ -447,15 +502,11 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
         <table>
           <thead>
             <tr>
-              <th colspan="6" class="grid-title-row">Horário de Aulas</th>
+              <th colspan="${days.length + 1}" class="grid-title-row">Horário de Aulas</th>
             </tr>
             <tr>
               <th style="width: 18%;">Horário</th>
-              <th class="day-header">Segunda</th>
-              <th class="day-header">Terça</th>
-              <th class="day-header">Quarta</th>
-              <th class="day-header">Quinta</th>
-              <th class="day-header">Sexta</th>
+              ${days.map(d => `<th class="day-header">${DAY_FULL[d] ?? d}</th>`).join('')}
             </tr>
           </thead>
           <tbody>
@@ -624,21 +675,21 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
 
                 <div className="panelRight">
                     <div className="panelHeaderTitle">Grade Semanal de Aulas</div>
-                    <div className="gridHeader">
+                    <div className="gridHeader" style={gridColumns}>
                         <div className="gridDayHeader">Horário</div>
-                        {DAY_ORDER.map(d => (
+                        {visibleDays.map(d => (
                             <div key={d} className="gridDayHeader">{d}</div>
                         ))}
                     </div>
-                    <div className="gridBody">
+                    <div className="gridBody" style={gridColumns}>
                         <div className="gridTimeColumn">
-                            {TIME_SLOTS.map((slot, i) => (
-                                <div key={i} className="gridTimeLabel">{slot}</div>
+                            {visibleSlots.map(i => (
+                                <div key={i} className="gridTimeLabel">{TIME_SLOTS[i]}</div>
                             ))}
                         </div>
-                        {DAY_ORDER.map(day => (
+                        {visibleDays.map(day => (
                             <div key={day} className="gridDayColumn">
-                                {TIME_SLOTS.map((_, slotIdx) => {
+                                {visibleSlots.map(slotIdx => {
                                     const entries = getEntriesForCell(day, slotIdx);
                                     const hasConflict = conflicts.has(`${day}-${slotIdx}`);
                                     const isPreview = draggedTurma && draggedTurma.slots.some(s => s.day === day && getSlotIndex(s.startTime) === slotIdx);
@@ -677,6 +728,14 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
                             </div>
                         ))}
                     </div>
+                    {unscheduled.length > 0 && (
+                        <div className="unscheduledList">
+                            <span className="unscheduledTitle">Sem horário fixo:</span>
+                            {unscheduled.map((u, i) => (
+                                <span key={i} className="unscheduledItem">{u.codDisc} T{u.turma} · {u.texto}</span>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
 

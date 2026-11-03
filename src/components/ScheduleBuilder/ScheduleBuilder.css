@@ -396,3 +396,25 @@
   color: #ff8888;
   animation: conflictPulse 1.5s ease-in-out infinite;
 }
+
+/* Turmas com horário "a combinar" ou fora das faixas da grade: listadas em vez de descartadas. */
+.unscheduledList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+.unscheduledTitle {
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.unscheduledItem {
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.12);
+}
