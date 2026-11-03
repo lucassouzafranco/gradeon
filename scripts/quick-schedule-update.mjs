@@ -6,7 +6,7 @@ import { scrapeAllSchedules } from './dti-schedule-scraper.mjs';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const scrapedDataPath = join(__dirname, '..', 'src', 'data', 'scrapedData.json');
+const scrapedDataPath = join(__dirname, '..', 'src', 'data', 'cursos', 'SIP.json');
 
 console.log('================================================================================');
 console.log('GRADEON - QUICK OPERATIONAL SCHEDULE UPDATE');

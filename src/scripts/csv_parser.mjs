@@ -7,7 +7,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const CSV_FILE = path.resolve(__dirname, '../data/historico-disciplina.csv');
-const JSON_FILE = path.resolve(__dirname, '../data/scrapedData.json');
+// Um JSON por curso, gerado por scripts/prebuild-scrape.mjs (index.json é só a lista de cursos).
+const CURSOS_DIR = path.resolve(__dirname, '../data/cursos');
 
 const statsMap = {};
 
@@ -37,55 +38,49 @@ fs.createReadStream(CSV_FILE)
     .on('end', () => {
         console.log(`CSV lido. Dados agregados para ${Object.keys(statsMap).length} disciplinas exclusivas.`);
 
-        console.log('🔄 Mesclando com scrapedData.json...');
-        if (!fs.existsSync(JSON_FILE)) {
-            console.error(`JSON não encontrado: ${JSON_FILE}`);
+        const arquivos = fs.readdirSync(CURSOS_DIR).filter(f => f.endsWith('.json') && f !== 'index.json');
+        if (arquivos.length === 0) {
+            console.error(`Nenhum JSON de curso em ${CURSOS_DIR}`);
             process.exit(1);
         }
 
-        const rawJson = fs.readFileSync(JSON_FILE, 'utf-8');
-        const scrapedData = JSON.parse(rawJson);
+        // Taxa de insucesso por disciplina: (reprovações + abandonos) / matriculados, somando todos os cursos do CSV.
+        const taxaDe = (codDisc) => {
+            const stats = statsMap[codDisc];
+            if (!stats || stats.numEstudantes === 0) return null;
+            return Number((((stats.reprovacoes + stats.abandonos) / stats.numEstudantes) * 100).toFixed(1));
+        };
 
-        let matchCount = 0;
-        const reprovacoesArray = [];
+        for (const arquivo of arquivos) {
+            const jsonFile = path.join(CURSOS_DIR, arquivo);
+            const dados = JSON.parse(fs.readFileSync(jsonFile, 'utf-8'));
+            const taxasObrigatorias = [];
 
-        for (const periodo of Object.keys(scrapedData.courseData)) {
-            for (const disc of scrapedData.courseData[periodo]) {
-                const codDisc = disc.CodDisc;
-
-                if (statsMap[codDisc]) {
-                    const stats = statsMap[codDisc];
-                    if (stats.numEstudantes > 0) {
-                        const taxa = ((stats.reprovacoes + stats.abandonos) / stats.numEstudantes) * 100;
-                        const taxaFixa = Number(taxa.toFixed(1));
-                        disc.reprovaPercentual = taxaFixa;
-                        reprovacoesArray.push(taxaFixa);
-                        matchCount++;
-                    } else {
-                        disc.reprovaPercentual = null;
-                    }
-                } else {
-                    disc.reprovaPercentual = null;
+            for (const periodo of Object.keys(dados.courseData)) {
+                for (const disc of dados.courseData[periodo]) {
+                    disc.reprovaPercentual = taxaDe(disc.CodDisc);
+                    if (disc.reprovaPercentual !== null) taxasObrigatorias.push(disc.reprovaPercentual);
                 }
             }
-        }
-
-        // calcula mediana global
-        if (reprovacoesArray.length > 0 && scrapedData.metadata) {
-            reprovacoesArray.sort((a, b) => a - b);
-            const mid = Math.floor(reprovacoesArray.length / 2);
-            let mediana = reprovacoesArray[mid];
-            if (reprovacoesArray.length % 2 === 0) {
-                mediana = (reprovacoesArray[mid - 1] + reprovacoesArray[mid]) / 2;
+            // Optativas recebem a taxa, mas ficam fora da mediana para não mudar a calibração das obrigatórias.
+            for (const disc of dados.optativas ?? []) {
+                disc.reprovaPercentual = taxaDe(disc.CodDisc);
             }
-            scrapedData.metadata.medianaGlobalReprovacao = Number(mediana.toFixed(2));
-            delete scrapedData.metadata.mediaGlobalReprovacao;
-        }
 
-        fs.writeFileSync(JSON_FILE, JSON.stringify(scrapedData, null, 2), 'utf-8');
-        console.log(`> merge concluido: ${matchCount} disciplinas mapeadas.`);
-        if (scrapedData.metadata?.medianaGlobalReprovacao !== undefined) {
-            console.log(`> mediana global: ${scrapedData.metadata.medianaGlobalReprovacao}%`);
+            // Mediana global de insucesso do curso, usada como valor para disciplinas sem histórico.
+            if (taxasObrigatorias.length > 0 && dados.metadata) {
+                taxasObrigatorias.sort((a, b) => a - b);
+                const mid = Math.floor(taxasObrigatorias.length / 2);
+                const mediana = taxasObrigatorias.length % 2 === 0
+                    ? (taxasObrigatorias[mid - 1] + taxasObrigatorias[mid]) / 2
+                    : taxasObrigatorias[mid];
+                dados.metadata.medianaGlobalReprovacao = Number(mediana.toFixed(2));
+                delete dados.metadata.mediaGlobalReprovacao;
+            }
+
+            fs.writeFileSync(jsonFile, JSON.stringify(dados, null, 2), 'utf-8');
+            const total = Object.values(dados.courseData).flat().length;
+            console.log(`> ${arquivo.replace('.json', '')}: ${taxasObrigatorias.length}/${total} obrigatórias com taxa, mediana ${dados.metadata?.medianaGlobalReprovacao ?? '-'}%`);
         }
     })
     .on('error', (err) => {
