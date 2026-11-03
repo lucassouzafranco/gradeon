@@ -43,7 +43,7 @@
 /* Estado de Hover (foco direto do mouse) - Maior prioridade e escala */
 .disciplineCard:hover,
 .disciplineCard.hovered {
-  transform: scale(1.12);
+  transform: scale(1.20);
   background-color: #8c2123;
   opacity: 1.0;
   border: 2px solid rgba(255, 255, 255, 0.95);
@@ -53,12 +53,12 @@
 
 /* Estado de Highlight (pré-requisitos e dependentes da disciplina sob hover) - Destaque maior e mais forte */
 .disciplineCard.highlight {
-  transform: scale(1.08);
+  transform: scale(1.20);
   background-color: #852022;
   opacity: 1.0;
   border: 2px solid rgba(255, 255, 255, 0.85);
   box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.3);
-  z-index: 5;
+  z-index: 9;
 }
 
 .disciplineCard.not-offered:hover,
@@ -92,6 +92,19 @@
   opacity: 1.0;
   border: 2px solid white;
   box-shadow: 0 0 12px 3px rgba(255, 255, 255, 0.4);
+}
+.disciplineCard.selected {
+  transform: scale(1.10);
+  z-index: 8;
+}
+.disciplineCard.selected.highlight {
+  transform: scale(1.20);
+  z-index: 9;
+}
+.disciplineCard.selected:hover,
+.disciplineCard.selected.hovered {
+  transform: scale(1.25);
+  z-index: 10;
 }
 .weeklyDisciplineLoad {
   border: 1px solid white;
