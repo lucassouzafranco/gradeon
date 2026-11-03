@@ -7,6 +7,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const CSV_FILE = path.resolve(__dirname, '../data/historico-disciplina.csv');
+// O CSV da UFV inclui registros do semestre em andamento; taxas usam apenas períodos concluídos.
+const ULTIMO_PERIODO_CONCLUIDO = { ano: 2026, semestre: 1 };
 // Um JSON por curso, gerado por scripts/prebuild-scrape.mjs (index.json é só a lista de cursos).
 const CURSOS_DIR = path.resolve(__dirname, '../data/cursos');
 
@@ -17,6 +19,12 @@ console.log('🔄 Iniciando parse do CSV de histórico...');
 fs.createReadStream(CSV_FILE)
     .pipe(csv({ separator: ';' }))
     .on('data', (row) => {
+        const ano = Number(row.AnoOferta);
+        const semestre = Number(row.SemestreOferta);
+        if (!Number.isInteger(ano) || !Number.isInteger(semestre)
+            || ano > ULTIMO_PERIODO_CONCLUIDO.ano
+            || (ano === ULTIMO_PERIODO_CONCLUIDO.ano && semestre > ULTIMO_PERIODO_CONCLUIDO.semestre)) return;
+
         const codigo = row.CodigoDisciplina?.trim().toUpperCase();
         if (!codigo) return;
 
