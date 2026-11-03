@@ -21,7 +21,7 @@
     "totalOptativas": 47,
     "totalOptativasOfertadas": 20,
     "source": "catalogo.ufv.br + dti.ufv.br",
-    "medianaGlobalReprovacao": 11.6
+    "medianaGlobalReprovacao": 11.55
   },
   "courseData": {
     "1": [
@@ -58,7 +58,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 8.1
+        "reprovaPercentual": 9.2
       },
       {
         "CodDisciplina": "ECV 101",
@@ -98,7 +98,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 22.6
+        "reprovaPercentual": 28.6
       },
       {
         "CodDisciplina": "ECV 110",
@@ -147,7 +147,7 @@
             }
           ]
         },
-        "reprovaPercentual": 17.2
+        "reprovaPercentual": 18.5
       },
       {
         "CodDisciplina": "ECV 111",
@@ -182,7 +182,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 20.5
+        "reprovaPercentual": 22.4
       },
       {
         "CodDisciplina": "ECV 220",
@@ -228,7 +228,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 11.8
+        "reprovaPercentual": 13.6
       },
       {
         "CodDisciplina": "MAP 199",
@@ -330,7 +330,7 @@
             }
           ]
         },
-        "reprovaPercentual": 77.7
+        "reprovaPercentual": 75.5
       },
       {
         "CodDisciplina": "QAM 101",
@@ -397,7 +397,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 45.8
+        "reprovaPercentual": 46.1
       },
       {
         "CodDisciplina": "QAM 107",
@@ -492,7 +492,7 @@
             }
           ]
         },
-        "reprovaPercentual": 29.3
+        "reprovaPercentual": 30.4
       }
     ],
     "2": [
@@ -557,7 +557,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 16.6
+        "reprovaPercentual": 15.8
       },
       {
         "CodDisciplina": "ECV 210",
@@ -691,7 +691,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 46.5
+        "reprovaPercentual": 47
       },
       {
         "CodDisciplina": "MAP 205",
@@ -750,7 +750,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 74.5
+        "reprovaPercentual": 64.6
       },
       {
         "CodDisciplina": "MAP 298",
@@ -808,7 +808,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 48.1
+        "reprovaPercentual": 43
       },
       {
         "CodDisciplina": "QAM 106",
@@ -907,7 +907,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 42.9
+        "reprovaPercentual": 53.5
       },
       {
         "CodDisciplina": "ECV 230",
@@ -1013,7 +1013,7 @@
             }
           ]
         },
-        "reprovaPercentual": 36.4
+        "reprovaPercentual": 36.8
       },
       {
         "CodDisciplina": "ESP 105",
@@ -1108,7 +1108,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 30.7
+        "reprovaPercentual": 28.3
       },
       {
         "CodDisciplina": "FRP 202",
@@ -1175,7 +1175,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 48.2
+        "reprovaPercentual": 49.7
       },
       {
         "CodDisciplina": "FRP 211",
@@ -1223,7 +1223,7 @@
             }
           ]
         },
-        "reprovaPercentual": 27.7
+        "reprovaPercentual": 28.1
       },
       {
         "CodDisciplina": "MAP 250",
@@ -1265,7 +1265,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 73
+        "reprovaPercentual": 64.4
       }
     ],
     "4": [
@@ -1343,7 +1343,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 17.3
+        "reprovaPercentual": 17.8
       },
       {
         "CodDisciplina": "CAL 231",
@@ -1399,7 +1399,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 11.4
+        "reprovaPercentual": 11.3
       },
       {
         "CodDisciplina": "ECV 150",
@@ -1443,7 +1443,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 26.2
+        "reprovaPercentual": 28.3
       },
       {
         "CodDisciplina": "ECV 306",
@@ -1536,7 +1536,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 57.3
+        "reprovaPercentual": 57.5
       },
       {
         "CodDisciplina": "MAP 270",
@@ -1641,7 +1641,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 17.8
+        "reprovaPercentual": 17.6
       },
       {
         "CodDisciplina": "ECV 200",
@@ -1763,7 +1763,7 @@
             }
           ]
         },
-        "reprovaPercentual": 15.8
+        "reprovaPercentual": 15.7
       },
       {
         "CodDisciplina": "ECV 351",
@@ -1828,7 +1828,7 @@
             }
           ]
         },
-        "reprovaPercentual": 7.4
+        "reprovaPercentual": 8.4
       },
       {
         "CodDisciplina": "ECV 360",
@@ -1881,7 +1881,7 @@
             }
           ]
         },
-        "reprovaPercentual": 3
+        "reprovaPercentual": 3.7
       }
     ],
     "6": [
@@ -1936,7 +1936,7 @@
             }
           ]
         },
-        "reprovaPercentual": 6.7
+        "reprovaPercentual": 6.5
       },
       {
         "CodDisciplina": "ECV 352",
@@ -2219,7 +2219,7 @@
             }
           ]
         },
-        "reprovaPercentual": 16.8
+        "reprovaPercentual": 17.1
       },
       {
         "CodDisciplina": "ECV 317",
@@ -2268,7 +2268,7 @@
             }
           ]
         },
-        "reprovaPercentual": 4.5
+        "reprovaPercentual": 4.8
       },
       {
         "CodDisciplina": "ECV 357",
@@ -2356,7 +2356,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 6.2
+        "reprovaPercentual": 6
       },
       {
         "CodDisciplina": "ECV 380",
@@ -2452,7 +2452,7 @@
             }
           ]
         },
-        "reprovaPercentual": 6.6
+        "reprovaPercentual": 6.4
       }
     ],
     "8": [
@@ -2787,7 +2787,7 @@
             }
           ]
         },
-        "reprovaPercentual": 1.3
+        "reprovaPercentual": 1.5
       },
       {
         "CodDisciplina": "ECV 371",
@@ -2879,7 +2879,7 @@
             }
           ]
         },
-        "reprovaPercentual": 2.2
+        "reprovaPercentual": 3
       },
       {
         "CodDisciplina": "ECV 434",
@@ -2930,7 +2930,7 @@
             }
           ]
         },
-        "reprovaPercentual": 1.7
+        "reprovaPercentual": 1.5
       }
     ],
     "10": [
@@ -3037,7 +3037,7 @@
             }
           ]
         },
-        "reprovaPercentual": 1.3
+        "reprovaPercentual": 1.6
       },
       {
         "CodDisciplina": "ECV 498",
@@ -3270,7 +3270,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 42
+      "reprovaPercentual": 42.4
     },
     {
       "CodDisciplina": "CRP 280",
@@ -3406,7 +3406,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 12.3
+      "reprovaPercentual": 12
     },
     {
       "CodDisciplina": "CRP 297",
@@ -3521,7 +3521,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 33.2
+      "reprovaPercentual": 32.5
     },
     {
       "CodDisciplina": "ECV 240",
@@ -4021,7 +4021,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 1.7
+      "reprovaPercentual": 1.6
     },
     {
       "CodDisciplina": "ECV 471",
@@ -4524,7 +4524,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 50
+      "reprovaPercentual": 74.5
     },
     {
       "CodDisciplina": "NUR 106",
@@ -4559,7 +4559,7 @@
           }
         ]
       },
-      "reprovaPercentual": 8
+      "reprovaPercentual": 7.9
     },
     {
       "CodDisciplina": "QAM 315",

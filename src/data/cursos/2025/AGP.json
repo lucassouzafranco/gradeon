@@ -58,7 +58,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 12.6
+        "reprovaPercentual": 12.3
       },
       {
         "CodDisciplina": "CRP 290",
@@ -192,7 +192,7 @@
             }
           ]
         },
-        "reprovaPercentual": 36.7
+        "reprovaPercentual": 36.9
       },
       {
         "CodDisciplina": "MAP 191",
@@ -298,7 +298,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 65
+        "reprovaPercentual": 63.4
       },
       {
         "CodDisciplina": "QAM 101",
@@ -364,7 +364,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 45.8
+        "reprovaPercentual": 46.1
       }
     ],
     "2": [
@@ -456,7 +456,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 55.9
+        "reprovaPercentual": 56.4
       },
       {
         "CodDisciplina": "CBI 104",
@@ -531,7 +531,7 @@
             }
           ]
         },
-        "reprovaPercentual": 34.9
+        "reprovaPercentual": 35
       },
       {
         "CodDisciplina": "CBI 131",
@@ -640,7 +640,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 36.5
+        "reprovaPercentual": 40.4
       },
       {
         "CodDisciplina": "QAM 112",
@@ -809,7 +809,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 39.3
+        "reprovaPercentual": 38.7
       }
     ],
     "3": [
@@ -875,7 +875,7 @@
             }
           ]
         },
-        "reprovaPercentual": 24.7
+        "reprovaPercentual": 24.5
       },
       {
         "CodDisciplina": "CBI 230",
@@ -926,7 +926,7 @@
             }
           ]
         },
-        "reprovaPercentual": 37.3
+        "reprovaPercentual": 37.4
       },
       {
         "CodDisciplina": "CBI 250",
@@ -970,7 +970,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 47.3
+        "reprovaPercentual": 46.9
       },
       {
         "CodDisciplina": "CRP 282",
@@ -1007,7 +1007,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 11.6
+        "reprovaPercentual": 11.8
       },
       {
         "CodDisciplina": "CRP 394",
@@ -1125,7 +1125,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 30.7
+        "reprovaPercentual": 28.3
       },
       {
         "CodDisciplina": "FRP 102",
@@ -1165,7 +1165,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 38.7
+        "reprovaPercentual": 40.3
       }
     ],
     "4": [
@@ -1324,7 +1324,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 35.6
+        "reprovaPercentual": 35.3
       },
       {
         "CodDisciplina": "AGR 355",
@@ -1502,7 +1502,7 @@
             }
           ]
         },
-        "reprovaPercentual": 12.7
+        "reprovaPercentual": 12.6
       },
       {
         "CodDisciplina": "ECV 310",
@@ -1568,7 +1568,7 @@
             }
           ]
         },
-        "reprovaPercentual": 36.4
+        "reprovaPercentual": 36.8
       }
     ],
     "5": [
@@ -1612,7 +1612,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 21.1
+        "reprovaPercentual": 20.8
       },
       {
         "CodDisciplina": "AGR 310",
@@ -1712,7 +1712,7 @@
             }
           ]
         },
-        "reprovaPercentual": 19.2
+        "reprovaPercentual": 18.2
       },
       {
         "CodDisciplina": "AGR 358",
@@ -1774,7 +1774,7 @@
             }
           ]
         },
-        "reprovaPercentual": 7
+        "reprovaPercentual": 6.7
       },
       {
         "CodDisciplina": "CBI 330",
@@ -1852,7 +1852,7 @@
             }
           ]
         },
-        "reprovaPercentual": 28.3
+        "reprovaPercentual": 28.7
       },
       {
         "CodDisciplina": "CBI 375",
@@ -1912,7 +1912,7 @@
             }
           ]
         },
-        "reprovaPercentual": 1.3
+        "reprovaPercentual": 1.2
       }
     ],
     "6": [
@@ -2359,7 +2359,7 @@
             }
           ]
         },
-        "reprovaPercentual": 1
+        "reprovaPercentual": 1.6
       },
       {
         "CodDisciplina": "AGR 376",
@@ -2419,7 +2419,7 @@
             }
           ]
         },
-        "reprovaPercentual": 0.8
+        "reprovaPercentual": 0.7
       },
       {
         "CodDisciplina": "AGR 378",
@@ -2479,7 +2479,7 @@
             }
           ]
         },
-        "reprovaPercentual": 11.7
+        "reprovaPercentual": 11.3
       },
       {
         "CodDisciplina": "AGR 382",
@@ -2519,7 +2519,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 14.4
+        "reprovaPercentual": 13.8
       }
     ],
     "8": [
@@ -2598,7 +2598,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 1.3
+        "reprovaPercentual": 1.7
       },
       {
         "CodDisciplina": "AGR 300",
@@ -2631,7 +2631,7 @@
             }
           ]
         },
-        "reprovaPercentual": 6.6
+        "reprovaPercentual": 6.7
       },
       {
         "CodDisciplina": "AGR 450",
@@ -2792,7 +2792,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 6.4
+        "reprovaPercentual": 6.1
       }
     ],
     "9": [
@@ -2890,7 +2890,7 @@
             }
           ]
         },
-        "reprovaPercentual": 1.3
+        "reprovaPercentual": 1.1
       },
       {
         "CodDisciplina": "AGR 496",
@@ -2925,7 +2925,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 2.9
+        "reprovaPercentual": 2.7
       },
       {
         "CodDisciplina": "AGR 497",
@@ -2974,7 +2974,7 @@
             }
           ]
         },
-        "reprovaPercentual": 1.6
+        "reprovaPercentual": 1.5
       }
     ],
     "10": [
@@ -3048,7 +3048,7 @@
             }
           ]
         },
-        "reprovaPercentual": 1.7
+        "reprovaPercentual": 1.9
       },
       {
         "CodDisciplina": "AGR 499",
@@ -3081,7 +3081,7 @@
             }
           ]
         },
-        "reprovaPercentual": 3
+        "reprovaPercentual": 2.9
       }
     ]
   },
@@ -3136,7 +3136,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 48.4
+      "reprovaPercentual": 48.6
     },
     {
       "CodDisciplina": "ADE 190",
@@ -3199,7 +3199,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 16.6
+      "reprovaPercentual": 15.8
     },
     {
       "CodDisciplina": "ADE 327",
@@ -3598,7 +3598,7 @@
           }
         ]
       },
-      "reprovaPercentual": 0.7
+      "reprovaPercentual": 0.6
     },
     {
       "CodDisciplina": "AGR 430",
@@ -3769,7 +3769,7 @@
           }
         ]
       },
-      "reprovaPercentual": 1
+      "reprovaPercentual": 0.8
     },
     {
       "CodDisciplina": "AGR 442",
@@ -3819,7 +3819,7 @@
           }
         ]
       },
-      "reprovaPercentual": 1.1
+      "reprovaPercentual": 0.9
     },
     {
       "CodDisciplina": "AGR 443",
@@ -3914,7 +3914,7 @@
           }
         ]
       },
-      "reprovaPercentual": 1.8
+      "reprovaPercentual": 1.6
     },
     {
       "CodDisciplina": "AGR 453",
@@ -3963,7 +3963,7 @@
           }
         ]
       },
-      "reprovaPercentual": 0.8
+      "reprovaPercentual": 0.7
     },
     {
       "CodDisciplina": "AGR 454",
@@ -4145,7 +4145,7 @@
           }
         ]
       },
-      "reprovaPercentual": 4.3
+      "reprovaPercentual": 11.9
     },
     {
       "CodDisciplina": "CAL 260",
@@ -4222,7 +4222,7 @@
           }
         ]
       },
-      "reprovaPercentual": 19.9
+      "reprovaPercentual": 18.6
     },
     {
       "CodDisciplina": "CAL 352",
@@ -4273,7 +4273,7 @@
           }
         ]
       },
-      "reprovaPercentual": 3.1
+      "reprovaPercentual": 3
     },
     {
       "CodDisciplina": "CAL 410",
@@ -4449,7 +4449,7 @@
           }
         ]
       },
-      "reprovaPercentual": 7.3
+      "reprovaPercentual": 6.7
     },
     {
       "CodDisciplina": "CAL 480",
@@ -4498,7 +4498,7 @@
           }
         ]
       },
-      "reprovaPercentual": 8.6
+      "reprovaPercentual": 7.8
     },
     {
       "CodDisciplina": "CAL 482",
@@ -4688,7 +4688,7 @@
           }
         ]
       },
-      "reprovaPercentual": null
+      "reprovaPercentual": 0
     },
     {
       "CodDisciplina": "CBI 435",
@@ -4806,7 +4806,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 12.3
+      "reprovaPercentual": 12
     },
     {
       "CodDisciplina": "CRP 296",
@@ -5016,7 +5016,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 48.1
+      "reprovaPercentual": 43
     },
     {
       "CodDisciplina": "NUR 290",

@@ -21,7 +21,7 @@
     "totalOptativas": 39,
     "totalOptativasOfertadas": 21,
     "source": "catalogo.ufv.br + dti.ufv.br",
-    "medianaGlobalReprovacao": 3.7
+    "medianaGlobalReprovacao": 3.8
   },
   "courseData": {
     "1": [
@@ -75,7 +75,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 55.9
+        "reprovaPercentual": 56.4
       },
       {
         "CodDisciplina": "CBI 104",
@@ -149,7 +149,7 @@
             }
           ]
         },
-        "reprovaPercentual": 34.9
+        "reprovaPercentual": 35
       },
       {
         "CodDisciplina": "CBI 118",
@@ -209,7 +209,7 @@
             }
           ]
         },
-        "reprovaPercentual": 31.6
+        "reprovaPercentual": 32.4
       },
       {
         "CodDisciplina": "NUR 100",
@@ -310,7 +310,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 10.8
+        "reprovaPercentual": 10.2
       },
       {
         "CodDisciplina": "QAM 138",
@@ -362,7 +362,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 39.3
+        "reprovaPercentual": 38.7
       }
     ],
     "2": [
@@ -425,7 +425,7 @@
             }
           ]
         },
-        "reprovaPercentual": 4.3
+        "reprovaPercentual": 11.9
       },
       {
         "CodDisciplina": "CBI 212",
@@ -535,7 +535,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 47.3
+        "reprovaPercentual": 46.9
       },
       {
         "CodDisciplina": "NUR 101",
@@ -702,7 +702,7 @@
             }
           ]
         },
-        "reprovaPercentual": 18.5
+        "reprovaPercentual": 17.4
       },
       {
         "CodDisciplina": "CBI 270",
@@ -778,7 +778,7 @@
             }
           ]
         },
-        "reprovaPercentual": 12.7
+        "reprovaPercentual": 12.6
       },
       {
         "CodDisciplina": "CBI 352",
@@ -816,7 +816,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 8.8
+        "reprovaPercentual": 8.3
       },
       {
         "CodDisciplina": "CRP 297",
@@ -933,7 +933,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 33.2
+        "reprovaPercentual": 32.5
       },
       {
         "CodDisciplina": "NUR 200",
@@ -975,7 +975,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 3.3
+        "reprovaPercentual": 3
       },
       {
         "CodDisciplina": "NUR 240",
@@ -1039,7 +1039,7 @@
             }
           ]
         },
-        "reprovaPercentual": 8.1
+        "reprovaPercentual": 7.4
       }
     ],
     "4": [
@@ -1428,7 +1428,7 @@
             }
           ]
         },
-        "reprovaPercentual": 3.3
+        "reprovaPercentual": 3
       },
       {
         "CodDisciplina": "NUR 270",
@@ -1479,7 +1479,7 @@
             }
           ]
         },
-        "reprovaPercentual": 2.2
+        "reprovaPercentual": 1.9
       },
       {
         "CodDisciplina": "NUR 280",
@@ -1520,7 +1520,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 2
+        "reprovaPercentual": 2.9
       },
       {
         "CodDisciplina": "NUR 305",
@@ -1574,7 +1574,7 @@
             }
           ]
         },
-        "reprovaPercentual": 9.2
+        "reprovaPercentual": 8.4
       },
       {
         "CodDisciplina": "NUR 320",
@@ -1626,7 +1626,7 @@
             }
           ]
         },
-        "reprovaPercentual": 6.4
+        "reprovaPercentual": 5.9
       },
       {
         "CodDisciplina": "NUR 381",
@@ -1688,7 +1688,7 @@
             }
           ]
         },
-        "reprovaPercentual": 2
+        "reprovaPercentual": 1.9
       }
     ],
     "6": [
@@ -1923,7 +1923,7 @@
             }
           ]
         },
-        "reprovaPercentual": 1.8
+        "reprovaPercentual": 1.7
       },
       {
         "CodDisciplina": "NUR 375",
@@ -2083,7 +2083,7 @@
             }
           ]
         },
-        "reprovaPercentual": 1.1
+        "reprovaPercentual": 1
       },
       {
         "CodDisciplina": "NUR 416",
@@ -2134,7 +2134,7 @@
             }
           ]
         },
-        "reprovaPercentual": 3.1
+        "reprovaPercentual": 3.8
       },
       {
         "CodDisciplina": "NUR 417",
@@ -2241,7 +2241,7 @@
             }
           ]
         },
-        "reprovaPercentual": 1.2
+        "reprovaPercentual": 1.5
       },
       {
         "CodDisciplina": "NUR 428",
@@ -2278,7 +2278,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 0.6
+        "reprovaPercentual": 1
       },
       {
         "CodDisciplina": "NUR 438",
@@ -2315,7 +2315,7 @@
           ],
           "praticas": []
         },
-        "reprovaPercentual": 0.7
+        "reprovaPercentual": 1.2
       },
       {
         "CodDisciplina": "NUR 441",
@@ -2526,7 +2526,7 @@
             }
           ]
         },
-        "reprovaPercentual": 1.8
+        "reprovaPercentual": 1.7
       },
       {
         "CodDisciplina": "NUR 419",
@@ -2716,7 +2716,7 @@
             }
           ]
         },
-        "reprovaPercentual": 0.5
+        "reprovaPercentual": 0.4
       },
       {
         "CodDisciplina": "NUR 407",
@@ -2761,7 +2761,7 @@
             }
           ]
         },
-        "reprovaPercentual": 1.9
+        "reprovaPercentual": 1.7
       },
       {
         "CodDisciplina": "NUR 408",
@@ -2806,7 +2806,7 @@
             }
           ]
         },
-        "reprovaPercentual": 0.5
+        "reprovaPercentual": 0.4
       }
     ]
   },
@@ -2885,7 +2885,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 17.3
+      "reprovaPercentual": 17.8
     },
     {
       "CodDisciplina": "ADE 327",
@@ -2988,7 +2988,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 35.6
+      "reprovaPercentual": 35.3
     },
     {
       "CodDisciplina": "AGR 240",
@@ -3028,7 +3028,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 21.1
+      "reprovaPercentual": 20.8
     },
     {
       "CodDisciplina": "CAL 220",
@@ -3108,7 +3108,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 2.3
+      "reprovaPercentual": 2.2
     },
     {
       "CodDisciplina": "CAL 352",
@@ -3159,7 +3159,7 @@
           }
         ]
       },
-      "reprovaPercentual": 3.1
+      "reprovaPercentual": 3
     },
     {
       "CodDisciplina": "CAL 360",
@@ -3346,7 +3346,7 @@
           }
         ]
       },
-      "reprovaPercentual": 7.3
+      "reprovaPercentual": 6.7
     },
     {
       "CodDisciplina": "CAL 480",
@@ -3395,7 +3395,7 @@
           }
         ]
       },
-      "reprovaPercentual": 8.6
+      "reprovaPercentual": 7.8
     },
     {
       "CodDisciplina": "CAL 489",
@@ -3434,7 +3434,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 6.4
+      "reprovaPercentual": 6.1
     },
     {
       "CodDisciplina": "CAL 494",
@@ -3510,7 +3510,7 @@
           }
         ]
       },
-      "reprovaPercentual": 1.6
+      "reprovaPercentual": 2.3
     },
     {
       "CodDisciplina": "CRP 251",
@@ -3625,7 +3625,7 @@
           }
         ]
       },
-      "reprovaPercentual": 36.7
+      "reprovaPercentual": 36.9
     },
     {
       "CodDisciplina": "ENP 345",
@@ -3683,7 +3683,7 @@
           }
         ]
       },
-      "reprovaPercentual": 8
+      "reprovaPercentual": 7.9
     },
     {
       "CodDisciplina": "NUR 121",
@@ -3905,7 +3905,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 0.7
+      "reprovaPercentual": 0.6
     },
     {
       "CodDisciplina": "NUR 410",
@@ -3992,7 +3992,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 5.3
+      "reprovaPercentual": 2.9
     },
     {
       "CodDisciplina": "NUR 421",
@@ -4099,7 +4099,7 @@
         ],
         "praticas": []
       },
-      "reprovaPercentual": 1.6
+      "reprovaPercentual": 1.5
     },
     {
       "CodDisciplina": "NUR 485",
