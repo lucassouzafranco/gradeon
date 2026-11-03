@@ -1,0 +1,4188 @@
+{
+  "metadata": {
+    "generatedAt": "2026-11-03T04:16:08.242Z",
+    "ano": 2025,
+    "anoCatalogo": 2025,
+    "curso": {
+      "id": "NTP",
+      "nome": "Nutrição"
+    },
+    "campus": "crp",
+    "complemento": "*",
+    "horarios": {
+      "ano": 2026,
+      "semestres": [
+        1,
+        2
+      ]
+    },
+    "totalDisciplinas": 51,
+    "periodos": 9,
+    "totalOptativas": 39,
+    "totalOptativasOfertadas": 21,
+    "source": "catalogo.ufv.br + dti.ufv.br",
+    "medianaGlobalReprovacao": 3.7
+  },
+  "courseData": {
+    "1": [
+      {
+        "CodDisciplina": "CBI 102",
+        "NomeDisciplina": "Biologia Celular",
+        "Turma": "1",
+        "Horarios": "3=14-16",
+        "Sala": "PVA109",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 104",
+        "Oferecida": "S",
+        "CodDisc": "CBI102",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 104"
+        ],
+        "Dependentes": [
+          "CBI 104",
+          "CBI 212",
+          "CBI 270"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "PVA109"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "PVA109"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 55.9
+      },
+      {
+        "CodDisciplina": "CBI 104",
+        "NomeDisciplina": "Laboratório de Biologia Celular",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 102",
+        "Oferecida": "S",
+        "CodDisc": "CBI104",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 102"
+        ],
+        "Dependentes": [
+          "CBI 102",
+          "CBI 212",
+          "CBI 270"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=14-16"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "6=08-10"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "6=10-12"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "5=16-18"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 34.9
+      },
+      {
+        "CodDisciplina": "CBI 118",
+        "NomeDisciplina": "Anatomia Humana",
+        "Turma": "1",
+        "Horarios": "3=08-10",
+        "Sala": "PVA102",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CBI118",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "CBI 214"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10"
+              ],
+              "salas": [
+                "PVA102"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=16-18"
+              ],
+              "salas": [
+                "LAE137"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "5=14-16"
+              ],
+              "salas": [
+                "LAE137"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 31.6
+      },
+      {
+        "CodDisciplina": "NUR 100",
+        "NomeDisciplina": "Iniciação Profissional e Técnicas Culinárias Aplicadas à Nutrição",
+        "Turma": "1",
+        "Horarios": "2=08-10",
+        "Sala": "PVA102",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "NUR100",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "NUR 230"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=08-10"
+              ],
+              "salas": [
+                "PVA102"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16"
+              ],
+              "salas": [
+                "LAE129"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=16-18"
+              ],
+              "salas": [
+                "LAE129"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 10.3
+      },
+      {
+        "CodDisciplina": "NUR 102",
+        "NomeDisciplina": "Introdução à Atividades de Pesquisa e Extensão",
+        "Turma": "1",
+        "Horarios": "2=10-12\n4=08-10",
+        "Sala": "PVA102\nPVA102",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "NUR102",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "NUR 367",
+          "NUR 441",
+          "NUR 444"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12",
+                "4=08-10"
+              ],
+              "salas": [
+                "PVA102",
+                "PVA102"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 10.8
+      },
+      {
+        "CodDisciplina": "QAM 138",
+        "NomeDisciplina": "Fundamentos de Química Orgânica",
+        "Turma": "1",
+        "Horarios": "3=10-12\n6=08-09",
+        "Sala": "PVA102\nPVA102",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "3(3+0)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "QAM138",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "CBI 250"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12",
+                "6=08-09"
+              ],
+              "salas": [
+                "PVA102",
+                "PVA102"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=14-16",
+                "5=16-17"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 39.3
+      }
+    ],
+    "2": [
+      {
+        "CodDisciplina": "CAL 151",
+        "NomeDisciplina": "Métodos físico-químicos de análises em alimentos",
+        "Turma": "1",
+        "Horarios": "3=21:00-22:40",
+        "Sala": "PVA229",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CAL 250 | CBI 250",
+        "Oferecida": "S",
+        "CodDisc": "CAL151",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 250",
+          "CBI 250"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=21:00-22:40"
+              ],
+              "salas": [
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "LAE234"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "6=16-18"
+              ],
+              "salas": [
+                "LAE234"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 4.3
+      },
+      {
+        "CodDisciplina": "CBI 212",
+        "NomeDisciplina": "Histologia e Embriologia",
+        "Turma": "1",
+        "Horarios": "5=08-11",
+        "Sala": "PVA101",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "5(3+2)",
+        "CargaTotal": 75,
+        "Creditos": 5,
+        "Dependencias": "CBI 102 | CBI 104",
+        "Oferecida": "S",
+        "CodDisc": "CBI212",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 102",
+          "CBI 104"
+        ],
+        "Dependentes": [
+          "CBI 352",
+          "CBI 214"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=08-11"
+              ],
+              "salas": [
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=08-10"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "6=10-12"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 31.8
+      },
+      {
+        "CodDisciplina": "CBI 250",
+        "NomeDisciplina": "Bioquímica Fundamental",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA109\nPVA109",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 138 | QAM 232 | QAM 103",
+        "Oferecida": "S",
+        "CodDisc": "CBI250",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 138",
+          "QAM 232",
+          "QAM 103"
+        ],
+        "Dependentes": [
+          "CAL 151",
+          "NUR 200",
+          "CBI 270",
+          "CBI 214"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA109",
+                "PVA109"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 47.3
+      },
+      {
+        "CodDisciplina": "NUR 101",
+        "NomeDisciplina": "Composição de Alimentos",
+        "Turma": "1",
+        "Horarios": "2=08-10",
+        "Sala": "PVA101",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "NUR101",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=08-10"
+              ],
+              "salas": [
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=10-12"
+              ],
+              "salas": [
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 26.7
+      },
+      {
+        "CodDisciplina": "NUR 230",
+        "NomeDisciplina": "Técnica Dietética",
+        "Turma": "1",
+        "Horarios": "3=08-10",
+        "Sala": "PVA101",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 100",
+        "Oferecida": "S",
+        "CodDisc": "NUR230",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 100"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10"
+              ],
+              "salas": [
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16"
+              ],
+              "salas": [
+                "LAE129"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=16-18"
+              ],
+              "salas": [
+                "LAE129"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 2.9
+      }
+    ],
+    "3": [
+      {
+        "CodDisciplina": "CBI 214",
+        "NomeDisciplina": "Fisiologia Humana",
+        "Turma": "1",
+        "Horarios": "3=10-12\n6=08-10",
+        "Sala": "PVA230\nPVA230",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "6(4+2)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "CBI 118 | CBI 112 | CBI 212 | CBI 250",
+        "Oferecida": "S",
+        "CodDisc": "CBI214",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 118",
+          "CBI 112",
+          "CBI 212",
+          "CBI 250"
+        ],
+        "Dependentes": [
+          "NUR 240",
+          "CBI 312",
+          "NUR 299"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12",
+                "6=08-10"
+              ],
+              "salas": [
+                "PVA230",
+                "PVA230"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=10-12"
+              ],
+              "salas": [
+                "LAE137"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 18.5
+      },
+      {
+        "CodDisciplina": "CBI 270",
+        "NomeDisciplina": "Microbiologia Geral",
+        "Turma": "1",
+        "Horarios": "2=10-12",
+        "Sala": "PVA101",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 102 | CBI 104 | CBI 250 | CAL 250",
+        "Oferecida": "S",
+        "CodDisc": "CBI270",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 102",
+          "CBI 104",
+          "CBI 250",
+          "CAL 250"
+        ],
+        "Dependentes": [
+          "CAL 117"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12"
+              ],
+              "salas": [
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "4=16-18"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 12.7
+      },
+      {
+        "CodDisciplina": "CBI 352",
+        "NomeDisciplina": "Imunologia",
+        "Turma": "1",
+        "Horarios": "5=08-10",
+        "Sala": "PVA232",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 112 | CBI 212",
+        "Oferecida": "S",
+        "CodDisc": "CBI352",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 112",
+          "CBI 212"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=08-10"
+              ],
+              "salas": [
+                "PVA232"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 8.8
+      },
+      {
+        "CodDisciplina": "CRP 297",
+        "NomeDisciplina": "Sociologia Geral",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA106\nPVA106",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CRP297",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "NUR 280"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA106",
+                "PVA106"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "3=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA212",
+                "PVA212"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "6",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "7",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 33.2
+      },
+      {
+        "CodDisciplina": "NUR 200",
+        "NomeDisciplina": "Nutrição e Metabolismo I",
+        "Turma": "1",
+        "Horarios": "3=08-10\n5=16-18",
+        "Sala": "PVA212\nPVA212",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 250",
+        "Oferecida": "S",
+        "CodDisc": "NUR200",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 250"
+        ],
+        "Dependentes": [
+          "NUR 240",
+          "NUR 210"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10",
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA212",
+                "PVA212"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 3.3
+      },
+      {
+        "CodDisciplina": "NUR 240",
+        "NomeDisciplina": "Avaliação Nutricional I",
+        "Turma": "1",
+        "Horarios": "3=16-18",
+        "Sala": "PVA230",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 200 | CBI 214",
+        "Oferecida": "S",
+        "CodDisc": "NUR240",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 200",
+          "CBI 214"
+        ],
+        "Dependentes": [
+          "NUR 325",
+          "NUR 375"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "PVA230"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=10-12"
+              ],
+              "salas": [
+                "PVA231"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=08-10"
+              ],
+              "salas": [
+                "PVA231"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 8.1
+      }
+    ],
+    "4": [
+      {
+        "CodDisciplina": "CAL 117",
+        "NomeDisciplina": "Microbiologia de Alimentos",
+        "Turma": "1",
+        "Horarios": "5=14-16",
+        "Sala": "PVA218",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 270",
+        "Oferecida": "S",
+        "CodDisc": "CAL117",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 270"
+        ],
+        "Dependentes": [
+          "NUR 220"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA218"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 7.1
+      },
+      {
+        "CodDisciplina": "CBI 312",
+        "NomeDisciplina": "Patologia Geral",
+        "Turma": "1",
+        "Horarios": "2=08-10",
+        "Sala": "PVA228",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 214 | CBI 310",
+        "Oferecida": "S",
+        "CodDisc": "CBI312",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 214",
+          "CBI 310"
+        ],
+        "Dependentes": [
+          "NUR 305"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=08-10"
+              ],
+              "salas": [
+                "PVA228"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=10-12"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=10-12"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 1.1
+      },
+      {
+        "CodDisciplina": "NUR 210",
+        "NomeDisciplina": "Nutrição e Metabolismo II",
+        "Turma": "1",
+        "Horarios": "2=14-16\n4=16-18",
+        "Sala": "PVA228\nPVA228",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 200",
+        "Oferecida": "S",
+        "CodDisc": "NUR210",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 200"
+        ],
+        "Dependentes": [
+          "NUR 355",
+          "NUR 299"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16",
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA228",
+                "PVA228"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 5.6
+      },
+      {
+        "CodDisciplina": "NUR 300",
+        "NomeDisciplina": "Epidemiologia",
+        "Turma": "1",
+        "Horarios": "4=08-10",
+        "Sala": "LAE251",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "NUR300",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "NUR 381"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=08-10"
+              ],
+              "salas": [
+                "LAE251"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=08-10"
+              ],
+              "salas": [
+                "LAE251"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "6=10-12"
+              ],
+              "salas": [
+                "LAE251"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 7.7
+      },
+      {
+        "CodDisciplina": "NUR 325",
+        "NomeDisciplina": "Avaliação Nutricional II",
+        "Turma": "1",
+        "Horarios": "3=08-10",
+        "Sala": "PVA219",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 240 | NUR 355",
+        "Oferecida": "S",
+        "CodDisc": "NUR325",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 240",
+          "NUR 355"
+        ],
+        "Dependentes": [
+          "NUR 320",
+          "NUR 340",
+          "NUR 417"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10"
+              ],
+              "salas": [
+                "PVA219"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA231"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 9.7
+      },
+      {
+        "CodDisciplina": "NUR 355",
+        "NomeDisciplina": "Nutrição e Dietética",
+        "Turma": "1",
+        "Horarios": "2=16-18",
+        "Sala": "PVA228",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 210",
+        "Oferecida": "S",
+        "CodDisc": "NUR355",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 210"
+        ],
+        "Dependentes": [
+          "NUR 325",
+          "NUR 320",
+          "NUR 305",
+          "NUR 270",
+          "NUR 340"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18"
+              ],
+              "salas": [
+                "PVA228"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16"
+              ],
+              "salas": [
+                "PVA228"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 1
+      }
+    ],
+    "5": [
+      {
+        "CodDisciplina": "NUR 220",
+        "NomeDisciplina": "Higiene dos Alimentos",
+        "Turma": "1",
+        "Horarios": "3=16-18",
+        "Sala": "PVA219",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CAL 117",
+        "Oferecida": "S",
+        "CodDisc": "NUR220",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 117"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "PVA219"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA219"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 3.3
+      },
+      {
+        "CodDisciplina": "NUR 270",
+        "NomeDisciplina": "Gestão de Cardápios",
+        "Turma": "1",
+        "Horarios": "2=14-16",
+        "Sala": "LAE129",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 355",
+        "Oferecida": "S",
+        "CodDisc": "NUR270",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 355"
+        ],
+        "Dependentes": [
+          "NUR 390"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16"
+              ],
+              "salas": [
+                "LAE129"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18"
+              ],
+              "salas": [
+                "LAE129"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 2.2
+      },
+      {
+        "CodDisciplina": "NUR 280",
+        "NomeDisciplina": "Psicologia da Saúde",
+        "Turma": "1",
+        "Horarios": "3=14-16\n5=16-18",
+        "Sala": "PVA219\nPVA219",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CRP 297",
+        "Oferecida": "S",
+        "CodDisc": "NUR280",
+        "Depen": "",
+        "Prerequisitos": [
+          "CRP 297"
+        ],
+        "Dependentes": [
+          "NUR 375"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16",
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA219",
+                "PVA219"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 2
+      },
+      {
+        "CodDisciplina": "NUR 305",
+        "NomeDisciplina": "Patologia da Nutrição e Dietoterapia I",
+        "Turma": "1",
+        "Horarios": "2=08-10\n3=10-11",
+        "Sala": "PVA219\nPVA219",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(3+1)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 312 | NUR 355",
+        "Oferecida": "S",
+        "CodDisc": "NUR305",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 312",
+          "NUR 355"
+        ],
+        "Dependentes": [
+          "NUR 306"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=08-10",
+                "3=10-11"
+              ],
+              "salas": [
+                "PVA219",
+                "PVA219"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=11-12"
+              ],
+              "salas": [
+                "PVA219"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 9.2
+      },
+      {
+        "CodDisciplina": "NUR 320",
+        "NomeDisciplina": "Nutrição Materno-Infantil",
+        "Turma": "1",
+        "Horarios": "3=08-10\n5=10-11",
+        "Sala": "PVA219\nPVA219",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(3+1)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 355 | NUR 325",
+        "Oferecida": "S",
+        "CodDisc": "NUR320",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 355",
+          "NUR 325"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10",
+                "5=10-11"
+              ],
+              "salas": [
+                "PVA219",
+                "PVA219"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=11-12"
+              ],
+              "salas": [
+                "PVA219"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 6.4
+      },
+      {
+        "CodDisciplina": "NUR 381",
+        "NomeDisciplina": "Políticas Públicas de Saúde",
+        "Turma": "1",
+        "Horarios": "2=10-12",
+        "Sala": "LAE251",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 300",
+        "Oferecida": "S",
+        "CodDisc": "NUR381",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 300"
+        ],
+        "Dependentes": [
+          "NUR 422"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12"
+              ],
+              "salas": [
+                "LAE251"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=08-10"
+              ],
+              "salas": [
+                "LAE251"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "6=10-12"
+              ],
+              "salas": [
+                "LAE251"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 2
+      }
+    ],
+    "6": [
+      {
+        "CodDisciplina": "ESP 201",
+        "NomeDisciplina": "Noções de Bioestatística Aplicadas à Nutrição",
+        "Turma": "1",
+        "Horarios": "2=14-16",
+        "Sala": "PVA225",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ESP201",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "NUR 367"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16"
+              ],
+              "salas": [
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 18.9
+      },
+      {
+        "CodDisciplina": "NUR 299",
+        "NomeDisciplina": "Genômica Nutricional",
+        "Turma": "1",
+        "Horarios": "5=08-10",
+        "Sala": "PVA114",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 214 | NUR 210",
+        "Oferecida": "S",
+        "CodDisc": "NUR299",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 214",
+          "NUR 210"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=08-10"
+              ],
+              "salas": [
+                "PVA114"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 10
+      },
+      {
+        "CodDisciplina": "NUR 306",
+        "NomeDisciplina": "Patologia da Nutrição e Dietoterapia II",
+        "Turma": "1",
+        "Horarios": "3=14-16\n5=10-11",
+        "Sala": "PVA228\nPVA228",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(3+1)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 305",
+        "Oferecida": "S",
+        "CodDisc": "NUR306",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 305"
+        ],
+        "Dependentes": [
+          "NUR 438",
+          "NUR 428",
+          "NUR 417",
+          "NUR 416"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16",
+                "5=10-11"
+              ],
+              "salas": [
+                "PVA228",
+                "PVA228"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=11-12"
+              ],
+              "salas": [
+                "PVA228"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 5.7
+      },
+      {
+        "CodDisciplina": "NUR 340",
+        "NomeDisciplina": "Nutrição Esportiva",
+        "Turma": "1",
+        "Horarios": "3=08-09\n4=10-12",
+        "Sala": "PVA231\nPVA231",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(3+1)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 325 | NUR 355",
+        "Oferecida": "S",
+        "CodDisc": "NUR340",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 325",
+          "NUR 355"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-09",
+                "4=10-12"
+              ],
+              "salas": [
+                "PVA231",
+                "PVA231"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=09-10"
+              ],
+              "salas": [
+                "PVA231"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 2.7
+      },
+      {
+        "CodDisciplina": "NUR 367",
+        "NomeDisciplina": "Trabalho de Conclusão de Curso I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "1(0+1)",
+        "CargaTotal": 15,
+        "Creditos": 1,
+        "Dependencias": "ESP 201 | NUR 102",
+        "Oferecida": "S",
+        "CodDisc": "NUR367",
+        "Depen": "",
+        "Prerequisitos": [
+          "ESP 201",
+          "NUR 102"
+        ],
+        "Dependentes": [
+          "NUR 368"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 1.8
+      },
+      {
+        "CodDisciplina": "NUR 375",
+        "NomeDisciplina": "Educação Alimentar e Nutricional",
+        "Turma": "1",
+        "Horarios": "2=16-18",
+        "Sala": "PVA209",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 240 | NUR 280",
+        "Oferecida": "S",
+        "CodDisc": "NUR375",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 240",
+          "NUR 280"
+        ],
+        "Dependentes": [
+          "NUR 422"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18"
+              ],
+              "salas": [
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 0.6
+      },
+      {
+        "CodDisciplina": "NUR 390",
+        "NomeDisciplina": "Gestão de Unidades de Alimentação e Nutrição I",
+        "Turma": "1",
+        "Horarios": "3=16-18\n2=10-11",
+        "Sala": "PVA103\nPVA103",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(3+1)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 270",
+        "Oferecida": "S",
+        "CodDisc": "NUR390",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 270"
+        ],
+        "Dependentes": [
+          "NUR 415"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18",
+                "2=10-11"
+              ],
+              "salas": [
+                "PVA103",
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=11-12"
+              ],
+              "salas": [
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 3.7
+      }
+    ],
+    "7": [
+      {
+        "CodDisciplina": "NUR 415",
+        "NomeDisciplina": "Gestão de Unidades de Alimentação e Nutrição II",
+        "Turma": "1",
+        "Horarios": "2=14-16\n4=16-17",
+        "Sala": "PVA229\nPVA229",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(3+1)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 390",
+        "Oferecida": "S",
+        "CodDisc": "NUR415",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 390"
+        ],
+        "Dependentes": [
+          "NUR 419"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16",
+                "4=16-17"
+              ],
+              "salas": [
+                "PVA229",
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=17-18"
+              ],
+              "salas": [
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 1.1
+      },
+      {
+        "CodDisciplina": "NUR 416",
+        "NomeDisciplina": "Patologia da Nutrição e Dietoterapia III",
+        "Turma": "1",
+        "Horarios": "3=16-18\n5=08-09",
+        "Sala": "PVA229\nPVA229",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(3+1)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 306",
+        "Oferecida": "S",
+        "CodDisc": "NUR416",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 306"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18",
+                "5=08-09"
+              ],
+              "salas": [
+                "PVA229",
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=09-10"
+              ],
+              "salas": [
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 3.1
+      },
+      {
+        "CodDisciplina": "NUR 417",
+        "NomeDisciplina": "Atendimento Ambulatorial I",
+        "Turma": "1",
+        "Horarios": "6=10-11",
+        "Sala": "CAS001",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "3(1+2)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "NUR 306 | NUR 325",
+        "Oferecida": "S",
+        "CodDisc": "NUR417",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 306",
+          "NUR 325"
+        ],
+        "Dependentes": [
+          "NUR 418"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=10-11"
+              ],
+              "salas": [
+                "CAS001"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=14-16"
+              ],
+              "salas": [
+                "CAS001"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=16-18"
+              ],
+              "salas": [
+                "CAS001"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "5=10-12"
+              ],
+              "salas": [
+                "CAS001"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "5=17-19"
+              ],
+              "salas": [
+                "CAS001"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "6=08-10"
+              ],
+              "salas": [
+                "CAS001"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "6",
+              "horarios": [
+                "4=08-10"
+              ],
+              "salas": [
+                "CAS001"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 1.2
+      },
+      {
+        "CodDisciplina": "NUR 428",
+        "NomeDisciplina": "Suporte Nutricional",
+        "Turma": "1",
+        "Horarios": "3=14-16",
+        "Sala": "PVA229",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "NUR 306",
+        "Oferecida": "S",
+        "CodDisc": "NUR428",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 306"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 0.6
+      },
+      {
+        "CodDisciplina": "NUR 438",
+        "NomeDisciplina": "Farmacologia Aplicada à Nutrição",
+        "Turma": "1",
+        "Horarios": "2=08-10",
+        "Sala": "PVA229",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "NUR 306",
+        "Oferecida": "S",
+        "CodDisc": "NUR438",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 306"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=08-10"
+              ],
+              "salas": [
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 0.7
+      },
+      {
+        "CodDisciplina": "NUR 441",
+        "NomeDisciplina": "Atividades Complementares",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 0,
+        "Dependencias": "NUR 102",
+        "Oferecida": "S",
+        "CodDisc": "NUR441",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 102"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 0
+      }
+    ],
+    "8": [
+      {
+        "CodDisciplina": "NUR 335",
+        "NomeDisciplina": "Bioética e Orientação Profissional",
+        "Turma": "1",
+        "Horarios": "3=10-12",
+        "Sala": "PVA209",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "NUR335",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12"
+              ],
+              "salas": [
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 4.1
+      },
+      {
+        "CodDisciplina": "NUR 368",
+        "NomeDisciplina": "Trabalho de Conclusão de Curso II",
+        "Turma": "1",
+        "Horarios": "a combinar",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "1(1+0)",
+        "CargaTotal": 15,
+        "Creditos": 1,
+        "Dependencias": "NUR 367",
+        "Oferecida": "S",
+        "CodDisc": "NUR368",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 367"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 0.3
+      },
+      {
+        "CodDisciplina": "NUR 418",
+        "NomeDisciplina": "Atendimento Ambulatorial II",
+        "Turma": "1",
+        "Horarios": "3=08-09",
+        "Sala": "PVA228",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "3(1+2)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "NUR 417",
+        "Oferecida": "S",
+        "CodDisc": "NUR418",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 417"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-09"
+              ],
+              "salas": [
+                "PVA228"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18"
+              ],
+              "salas": [
+                "AMB001"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=13-15"
+              ],
+              "salas": [
+                "AMB001"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "5=08-10"
+              ],
+              "salas": [
+                "AMB001"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "4=17-19"
+              ],
+              "salas": [
+                "AMB001"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "6=08-10"
+              ],
+              "salas": [
+                "AMB001"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "6",
+              "horarios": [
+                "4=10-12"
+              ],
+              "salas": [
+                "AMB001"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 1.8
+      },
+      {
+        "CodDisciplina": "NUR 419",
+        "NomeDisciplina": "Gastronomia",
+        "Turma": "1",
+        "Horarios": "3=14-16",
+        "Sala": "LAE129",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 415",
+        "Oferecida": "S",
+        "CodDisc": "NUR419",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 415"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "LAE129"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "LAE129"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 0.6
+      },
+      {
+        "CodDisciplina": "NUR 422",
+        "NomeDisciplina": "Nutrição em Saúde Coletiva",
+        "Turma": "1",
+        "Horarios": "2=08-10",
+        "Sala": "LAE251",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "NUR 381 | NUR 375",
+        "Oferecida": "S",
+        "CodDisc": "NUR422",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 381",
+          "NUR 375"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=08-10"
+              ],
+              "salas": [
+                "LAE251"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12"
+              ],
+              "salas": [
+                "LAE251"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 1.7
+      },
+      {
+        "CodDisciplina": "NUR 444",
+        "NomeDisciplina": "Atividades de Extensão",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+4)",
+        "CargaTotal": 60,
+        "Creditos": 0,
+        "Dependencias": "NUR 102",
+        "Oferecida": "S",
+        "CodDisc": "NUR444",
+        "Depen": "",
+        "Prerequisitos": [
+          "NUR 102"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 0
+      }
+    ],
+    "9": [
+      {
+        "CodDisciplina": "NUR 406",
+        "NomeDisciplina": "Estágio Supervisionado em Nutrição Social",
+        "Turma": "1",
+        "Horarios": "4=19:00-19:50",
+        "Sala": "PVA103",
+        "Periodo": 9,
+        "Tipo": "T",
+        "CargaSemanal": "15(1+14)",
+        "CargaTotal": 225,
+        "Creditos": 15,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "NUR406",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=19:00-19:50"
+              ],
+              "salas": [
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 0.5
+      },
+      {
+        "CodDisciplina": "NUR 407",
+        "NomeDisciplina": "Estágio Supervisionado em Nutrição Clínica",
+        "Turma": "1",
+        "Horarios": "5=16-17",
+        "Sala": "PVA214",
+        "Periodo": 9,
+        "Tipo": "T",
+        "CargaSemanal": "15(1+14)",
+        "CargaTotal": 225,
+        "Creditos": 15,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "NUR407",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=16-17"
+              ],
+              "salas": [
+                "PVA214"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 1.9
+      },
+      {
+        "CodDisciplina": "NUR 408",
+        "NomeDisciplina": "Estágio Supervisionado em Unidades de Alimentação e Nutrição",
+        "Turma": "1",
+        "Horarios": "2=18-19",
+        "Sala": "CAS002",
+        "Periodo": 9,
+        "Tipo": "T",
+        "CargaSemanal": "15(1+14)",
+        "CargaTotal": 225,
+        "Creditos": 15,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "NUR408",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=18-19"
+              ],
+              "salas": [
+                "CAS002"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 0.5
+      }
+    ]
+  },
+  "optativas": [
+    {
+      "CodDisciplina": "ADE 104",
+      "NomeDisciplina": "Teoria Geral da Administração",
+      "Turma": "1",
+      "Horarios": "3=16-18\n6=14-16",
+      "Sala": "PVA210\nPVA202",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ADE104",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=16-18",
+              "6=14-16"
+            ],
+            "salas": [
+              "PVA210",
+              "PVA202"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=21:00-22:40",
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "PVA108",
+              "PVA108"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "3=14-16",
+              "5=16-18"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "4",
+            "horarios": [
+              "3=19:00-20:40",
+              "5=21:00-22:40"
+            ],
+            "salas": [
+              "PVA109",
+              "PVA109"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 17.3
+    },
+    {
+      "CodDisciplina": "ADE 327",
+      "NomeDisciplina": "Empreendedorismo",
+      "Turma": "1",
+      "Horarios": "2=14-16\n4=16-18",
+      "Sala": "PVA103\nPVA103",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ADE327",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=14-16",
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA103",
+              "PVA103"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 5.6
+    },
+    {
+      "CodDisciplina": "AGR 194",
+      "NomeDisciplina": "Estatística Experimental",
+      "Turma": "1",
+      "Horarios": "2=10-12\n4=08-10",
+      "Sala": "PVA225\nPVA225",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ESP 105 | ESP 201",
+      "Oferecida": "S",
+      "CodDisc": "AGR194",
+      "Depen": "",
+      "Prerequisitos": [
+        "ESP 105",
+        "ESP 201"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=10-12",
+              "4=08-10"
+            ],
+            "salas": [
+              "PVA225",
+              "PVA225"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=08-10",
+              "4=10-12"
+            ],
+            "salas": [
+              "PVA225",
+              "PVA225"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 35.6
+    },
+    {
+      "CodDisciplina": "AGR 240",
+      "NomeDisciplina": "Genética",
+      "Turma": "1",
+      "Horarios": "3=14-16\n5=16-18",
+      "Sala": "PVA232\nPVA232",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 102 | CBI 104",
+      "Oferecida": "S",
+      "CodDisc": "AGR240",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 102",
+        "CBI 104"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=14-16",
+              "5=16-18"
+            ],
+            "salas": [
+              "PVA232",
+              "PVA232"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 21.1
+    },
+    {
+      "CodDisciplina": "CAL 220",
+      "NomeDisciplina": "Toxicologia de Alimentos",
+      "Turma": "1",
+      "Horarios": "2=16-18",
+      "Sala": "PVA229",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CBI 250 | CAL 250",
+      "Oferecida": "S",
+      "CodDisc": "CAL220",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 250",
+        "CAL 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=16-18"
+            ],
+            "salas": [
+              "PVA229"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 11.7
+    },
+    {
+      "CodDisciplina": "CAL 341",
+      "NomeDisciplina": "Gestão da Qualidade na Indústria de Alimentos",
+      "Turma": "1",
+      "Horarios": "2=19:00-20:40\n4=21:00-22:40",
+      "Sala": "PVA114\nPVA114",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 117 | ESP 105 | NUR 260 | ESP 201",
+      "Oferecida": "S",
+      "CodDisc": "CAL341",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 117",
+        "ESP 105",
+        "NUR 260",
+        "ESP 201"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA114",
+              "PVA114"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 2.3
+    },
+    {
+      "CodDisciplina": "CAL 352",
+      "NomeDisciplina": "Análise Sensorial",
+      "Turma": "1",
+      "Horarios": "2=21:00-22:40",
+      "Sala": "PVA114",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(2+1)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "CAL 260 | AGR 194 | ESP 201",
+      "Oferecida": "S",
+      "CodDisc": "CAL352",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 260",
+        "AGR 194",
+        "ESP 201"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=21:00-22:40"
+            ],
+            "salas": [
+              "PVA114"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=19:00-19:50"
+            ],
+            "salas": [
+              "LAE129"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 3.1
+    },
+    {
+      "CodDisciplina": "CAL 360",
+      "NomeDisciplina": "Princípios de Conservação de Alimentos",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CAL360",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 9
+    },
+    {
+      "CodDisciplina": "CAL 410",
+      "NomeDisciplina": "Fisiologia pós-colheita",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CBI 250 | CAL 250",
+      "Oferecida": "S",
+      "CodDisc": "CAL410",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 250",
+        "CAL 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "CAL 420",
+      "NomeDisciplina": "Legislação de Alimentos",
+      "Turma": "1",
+      "Horarios": "3=16-18",
+      "Sala": "PVA209",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CAL420",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=16-18"
+            ],
+            "salas": [
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 13.5
+    },
+    {
+      "CodDisciplina": "CAL 471",
+      "NomeDisciplina": "Processamento de Cereais, Raízes e Tubérculos",
+      "Turma": "1",
+      "Horarios": "4=08-10",
+      "Sala": "PVA114",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 250 | CBI 250",
+      "Oferecida": "S",
+      "CodDisc": "CAL471",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 250",
+        "CBI 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=08-10"
+            ],
+            "salas": [
+              "PVA114"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=10-12"
+            ],
+            "salas": [
+              "LAE130"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 1.5
+    },
+    {
+      "CodDisciplina": "CAL 475",
+      "NomeDisciplina": "Tecnologia de Carnes, Mel e Ovos",
+      "Turma": "1",
+      "Horarios": "4=16-18",
+      "Sala": "PVA209",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CAL475",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=14-16"
+            ],
+            "salas": [
+              "LAE130"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 7.3
+    },
+    {
+      "CodDisciplina": "CAL 480",
+      "NomeDisciplina": "Tecnologia de Café e Cacau",
+      "Turma": "1",
+      "Horarios": "2=19:00-20:40",
+      "Sala": "PVA113",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CAL480",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=19:00-20:40"
+            ],
+            "salas": [
+              "PVA113"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=21:00-22:40"
+            ],
+            "salas": [
+              "LAE130"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 8.6
+    },
+    {
+      "CodDisciplina": "CAL 489",
+      "NomeDisciplina": "Tecnologia de Alimentos",
+      "Turma": "1",
+      "Horarios": "3=10-12\n5=16-18",
+      "Sala": "PVA229\nPVA229",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CAL489",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=10-12",
+              "5=16-18"
+            ],
+            "salas": [
+              "PVA229",
+              "PVA229"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 6.4
+    },
+    {
+      "CodDisciplina": "CAL 494",
+      "NomeDisciplina": "Desenvolvimento de Produtos Alimentícios",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 352 | NUR 270",
+      "Oferecida": "S",
+      "CodDisc": "CAL494",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 352",
+        "NUR 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 4.4
+    },
+    {
+      "CodDisciplina": "CBI 420",
+      "NomeDisciplina": "Histologia dos Sistemas e Órgãos",
+      "Turma": "1",
+      "Horarios": "3=08-10",
+      "Sala": "PVA229",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 112 | CBI 212",
+      "Oferecida": "S",
+      "CodDisc": "CBI420",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 112",
+        "CBI 212"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=08-10"
+            ],
+            "salas": [
+              "PVA229"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=10-12"
+            ],
+            "salas": [
+              "LAE233"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 1.6
+    },
+    {
+      "CodDisciplina": "CRP 251",
+      "NomeDisciplina": "Antropologia da Alimentação",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(3+0)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP251",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 38.4
+    },
+    {
+      "CodDisciplina": "CRP 280",
+      "NomeDisciplina": "LIBRAS Língua Brasileira de Sinais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(1+2)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP280",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "CRP 292",
+      "NomeDisciplina": "Introdução à Informática",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP292",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 13.5
+    },
+    {
+      "CodDisciplina": "ECV 112",
+      "NomeDisciplina": "Desenho Técnico I",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(0+2)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ECV112",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=14-16"
+            ],
+            "salas": [
+              "LAE248"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=16-18"
+            ],
+            "salas": [
+              "LAE248"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 36.7
+    },
+    {
+      "CodDisciplina": "ENP 345",
+      "NomeDisciplina": "Engenharia da Sustentabilidade",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ENP345",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "NUR 106",
+      "NomeDisciplina": "Acolhimento e Saúde",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(0+2)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR106",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=14-16"
+            ],
+            "salas": [
+              "LAE251"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 8
+    },
+    {
+      "CodDisciplina": "NUR 121",
+      "NomeDisciplina": "Parasitologia",
+      "Turma": "1",
+      "Horarios": "4=14-16",
+      "Sala": "PVA108",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR121",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=14-16"
+            ],
+            "salas": [
+              "PVA108"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 20.6
+    },
+    {
+      "CodDisciplina": "NUR 285",
+      "NomeDisciplina": "Psicologia",
+      "Turma": "1",
+      "Horarios": "2=16-18\n5=14-16",
+      "Sala": "PVA101\nPVA101",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR285",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=16-18",
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA209",
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 20
+    },
+    {
+      "CodDisciplina": "NUR 290",
+      "NomeDisciplina": "Dinâmica de Grupo",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR290",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "NUR 365",
+      "NomeDisciplina": "Atendimento Nutricional Domiciliar",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(2+1)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "NUR 428 | NUR 417",
+      "Oferecida": "S",
+      "CodDisc": "NUR365",
+      "Depen": "",
+      "Prerequisitos": [
+        "NUR 428",
+        "NUR 417"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "NUR 371",
+      "NomeDisciplina": "Nutrição Experimental",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "NUR 355 | ESP 201",
+      "Oferecida": "S",
+      "CodDisc": "NUR371",
+      "Depen": "",
+      "Prerequisitos": [
+        "NUR 355",
+        "ESP 201"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 1.8
+    },
+    {
+      "CodDisciplina": "NUR 392",
+      "NomeDisciplina": "Gestão de Custos em Serviços de Alimentação",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "NUR 415",
+      "Oferecida": "S",
+      "CodDisc": "NUR392",
+      "Depen": "",
+      "Prerequisitos": [
+        "NUR 415"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "NUR 403",
+      "NomeDisciplina": "Nutrição em Geriatria",
+      "Turma": "1",
+      "Horarios": "4=14-16",
+      "Sala": "PVA229",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "NUR 306",
+      "Oferecida": "S",
+      "CodDisc": "NUR403",
+      "Depen": "",
+      "Prerequisitos": [
+        "NUR 306"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=14-16"
+            ],
+            "salas": [
+              "PVA229"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 0.7
+    },
+    {
+      "CodDisciplina": "NUR 410",
+      "NomeDisciplina": "Alimentos Funcionais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR410",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 2.6
+    },
+    {
+      "CodDisciplina": "NUR 411",
+      "NomeDisciplina": "Fitoterapia Aplicada à Nutrição",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(3+0)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "NUR 305",
+      "Oferecida": "S",
+      "CodDisc": "NUR411",
+      "Depen": "",
+      "Prerequisitos": [
+        "NUR 305"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "NUR 412",
+      "NomeDisciplina": "Psicologia e Nutrição Comportamental",
+      "Turma": "1",
+      "Horarios": "3=10-12\n4=10-12",
+      "Sala": "PVA210\nPVA102",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "NUR 280",
+      "Oferecida": "S",
+      "CodDisc": "NUR412",
+      "Depen": "",
+      "Prerequisitos": [
+        "NUR 280"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=10-12",
+              "4=10-12"
+            ],
+            "salas": [
+              "PVA210",
+              "PVA102"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 5.3
+    },
+    {
+      "CodDisciplina": "NUR 421",
+      "NomeDisciplina": "Rotulagem de Alimentos",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "NUR 230",
+      "Oferecida": "S",
+      "CodDisc": "NUR421",
+      "Depen": "",
+      "Prerequisitos": [
+        "NUR 230"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "NUR 454",
+      "NomeDisciplina": "Plantas Alimentícias Não Convencionais - PANC",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR454",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "NUR 464",
+      "NomeDisciplina": "Dietoterapia Infantil",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(3+1)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "NUR 306 | NUR 320",
+      "Oferecida": "S",
+      "CodDisc": "NUR464",
+      "Depen": "",
+      "Prerequisitos": [
+        "NUR 306",
+        "NUR 320"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "NUR 480",
+      "NomeDisciplina": "Tópicos Especiais I",
+      "Turma": "1",
+      "Horarios": "a combinar",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR480",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 1.6
+    },
+    {
+      "CodDisciplina": "NUR 485",
+      "NomeDisciplina": "Tópicos Especiais II",
+      "Turma": "1",
+      "Horarios": "4=08-10\n5=08-09",
+      "Sala": "PVA219\nPVA219",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(3+0)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR485",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=08-10",
+              "5=08-09"
+            ],
+            "salas": [
+              "PVA219",
+              "PVA219"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 7.7
+    },
+    {
+      "CodDisciplina": "NUR 488",
+      "NomeDisciplina": "Tópicos Especiais III",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 0,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR488",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "NUR 490",
+      "NomeDisciplina": "Projetos Educacionais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(1+1)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR490",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 33.3
+    }
+  ]
+}

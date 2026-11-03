@@ -1,0 +1,3955 @@
+{
+  "metadata": {
+    "generatedAt": "2026-11-03T04:16:08.246Z",
+    "ano": 2025,
+    "anoCatalogo": 2025,
+    "curso": {
+      "id": "QMP",
+      "nome": "Química"
+    },
+    "campus": "crp",
+    "complemento": "BAC",
+    "horarios": {
+      "ano": 2026,
+      "semestres": [
+        1,
+        2
+      ]
+    },
+    "totalDisciplinas": 38,
+    "periodos": 8,
+    "totalOptativas": 53,
+    "totalOptativasOfertadas": 34,
+    "source": "catalogo.ufv.br + dti.ufv.br",
+    "medianaGlobalReprovacao": 12.8
+  },
+  "courseData": {
+    "1": [
+      {
+        "CodDisciplina": "FRP 100",
+        "NomeDisciplina": "Introdução à Física",
+        "Turma": "1",
+        "Horarios": "4=21:00-22:40",
+        "Sala": "PVA103",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "FRP100",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 10
+      },
+      {
+        "CodDisciplina": "MAP 100",
+        "NomeDisciplina": "Matemática I",
+        "Turma": "1",
+        "Horarios": "3=21:00-22:40\n6=19:00-20:40",
+        "Sala": "PVA219\nPVA219",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "MAP100",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "MAP 298"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA219",
+                "PVA219"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 50
+      },
+      {
+        "CodDisciplina": "QAM 102",
+        "NomeDisciplina": "Química Fundamental",
+        "Turma": "1",
+        "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+        "Sala": "PVA219\nPVA219",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "6(4+2)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "QAM102",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "QAM 111",
+          "QAM 151",
+          "QAM 131",
+          "QAM 121"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA219",
+                "PVA219"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=19:00-20:40"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 28
+      },
+      {
+        "CodDisciplina": "QAM 105",
+        "NomeDisciplina": "Introdução à Química",
+        "Turma": "1",
+        "Horarios": "5=21:00-22:40",
+        "Sala": "PVA114",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "QAM105",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA114"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 12
+      }
+    ],
+    "2": [
+      {
+        "CodDisciplina": "MAP 195",
+        "NomeDisciplina": "Cálculo Diferencial e Integral",
+        "Turma": "1",
+        "Horarios": "3=19:00-20:40\n5=21:00-22:40",
+        "Sala": "PVA218\nPVA218",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "MAP195",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "MAP 298",
+          "MAP 205",
+          "ESP 105",
+          "FRP 201",
+          "QAM 151"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=19:00-20:40",
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA218",
+                "PVA218"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 66.7
+      },
+      {
+        "CodDisciplina": "MAP 298",
+        "NomeDisciplina": "Geometria Analítica e Álgebra Linear",
+        "Turma": "1",
+        "Horarios": "2=19:00-20:40\n4=21:00-22:40",
+        "Sala": "PVA108\nPVA108",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "MAP 100 | MAP 191 | MAP 199 | MAP 195",
+        "Oferecida": "S",
+        "CodDisc": "MAP298",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 100",
+          "MAP 191",
+          "MAP 199",
+          "MAP 195"
+        ],
+        "Dependentes": [
+          "QAM 252"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "4",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA108",
+                "PVA108"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "1",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA213",
+                "PVA213"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 48.1
+      },
+      {
+        "CodDisciplina": "QAM 111",
+        "NomeDisciplina": "Química Analítica Qualitativa",
+        "Turma": "1",
+        "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+        "Sala": "PVA230\nPVA230",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 102",
+        "Oferecida": "S",
+        "CodDisc": "QAM111",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 102"
+        ],
+        "Dependentes": [
+          "QAM 113",
+          "QAM 211"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA230",
+                "PVA230"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 11.8
+      },
+      {
+        "CodDisciplina": "QAM 113",
+        "NomeDisciplina": "Laboratório de Química Analítica Qualitativa",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(0+4)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 111",
+        "Oferecida": "S",
+        "CodDisc": "QAM113",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 111"
+        ],
+        "Dependentes": [
+          "QAM 211"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=19:00-22:40"
+              ],
+              "salas": [
+                "LAE229"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 5.1
+      },
+      {
+        "CodDisciplina": "QAM 497",
+        "NomeDisciplina": "Metodologia Científica para Química",
+        "Turma": "1",
+        "Horarios": "6=19:00-20:40",
+        "Sala": "PVA228",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "QAM497",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "QAM 498"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA228"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 13.6
+      }
+    ],
+    "3": [
+      {
+        "CodDisciplina": "ESP 105",
+        "NomeDisciplina": "Iniciação à Estatística",
+        "Turma": "1",
+        "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+        "Sala": "PVA225\nPVA225",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "MAP 191 | MAP 195 | MAP 199",
+        "Oferecida": "S",
+        "CodDisc": "ESP105",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 191",
+          "MAP 195",
+          "MAP 199"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=14-16",
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "LAE248",
+                "LAE248"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 30.7
+      },
+      {
+        "CodDisciplina": "FRP 201",
+        "NomeDisciplina": "Física I",
+        "Turma": "1",
+        "Horarios": "3=21:00-22:40\n6=19:00-20:40",
+        "Sala": "PVA103\nPVA103",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "MAP 195 | MAP 199",
+        "Oferecida": "S",
+        "CodDisc": "FRP201",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 195",
+          "MAP 199"
+        ],
+        "Dependentes": [
+          "FRP 211",
+          "FRP 202",
+          "FRP 203"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA103",
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=14-16",
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 46.5
+      },
+      {
+        "CodDisciplina": "MAP 205",
+        "NomeDisciplina": "Cálculo II",
+        "Turma": "1",
+        "Horarios": "2=10-12\n5=08-10",
+        "Sala": "PVA106\nPVA106",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "MAP 191 | MAP 195 | MAP 199",
+        "Oferecida": "S",
+        "CodDisc": "MAP205",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 191",
+          "MAP 195",
+          "MAP 199"
+        ],
+        "Dependentes": [
+          "FRP 203"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "2",
+              "horarios": [
+                "2=10-12",
+                "5=08-10"
+              ],
+              "salas": [
+                "PVA106",
+                "PVA106"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "1",
+              "horarios": [
+                "3=19:00-20:40",
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA212",
+                "PVA212"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 74.5
+      },
+      {
+        "CodDisciplina": "QAM 211",
+        "NomeDisciplina": "Química Analítica Quantitativa",
+        "Turma": "1",
+        "Horarios": "2=19:00-20:40\n4=21:00-22:40",
+        "Sala": "PVA219\nPVA219",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 111 | QAM 113",
+        "Oferecida": "S",
+        "CodDisc": "QAM211",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 111",
+          "QAM 113"
+        ],
+        "Dependentes": [
+          "QAM 213",
+          "QAM 311",
+          "QAM 312"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA219",
+                "PVA219"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 17.6
+      },
+      {
+        "CodDisciplina": "QAM 213",
+        "NomeDisciplina": "Laboratório de Química Analítica Quantitativa",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(0+4)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 211",
+        "Oferecida": "S",
+        "CodDisc": "QAM213",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 211"
+        ],
+        "Dependentes": [
+          "QAM 311",
+          "QAM 312"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "LAE229",
+                "LAE229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 7.7
+      }
+    ],
+    "4": [
+      {
+        "CodDisciplina": "FRP 202",
+        "NomeDisciplina": "Física II",
+        "Turma": "1",
+        "Horarios": "4=19:00-20:40\n6=21:00-22:40",
+        "Sala": "PVA230\nPVA230",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "FRP 201",
+        "Oferecida": "S",
+        "CodDisc": "FRP202",
+        "Depen": "",
+        "Prerequisitos": [
+          "FRP 201"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "PVA230",
+                "PVA230"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=08-10",
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA210"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "4=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 48.2
+      },
+      {
+        "CodDisciplina": "FRP 211",
+        "NomeDisciplina": "Laboratório de Física A",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "FRP 201",
+        "Oferecida": "S",
+        "CodDisc": "FRP211",
+        "Depen": "",
+        "Prerequisitos": [
+          "FRP 201"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16"
+              ],
+              "salas": [
+                "LAE150"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=16-18"
+              ],
+              "salas": [
+                "LAE150"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 27.7
+      },
+      {
+        "CodDisciplina": "QAM 121",
+        "NomeDisciplina": "Química Inorgânica I",
+        "Turma": "1",
+        "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+        "Sala": "PVA218\nPVA218",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 102",
+        "Oferecida": "S",
+        "CodDisc": "QAM121",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 102"
+        ],
+        "Dependentes": [
+          "QAM 321"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA218",
+                "PVA218"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": null
+      },
+      {
+        "CodDisciplina": "QAM 131",
+        "NomeDisciplina": "Química Orgânica I",
+        "Turma": "1",
+        "Horarios": "2=19:00-20:40\n4=21:00-22:40",
+        "Sala": "PVA230\nPVA230",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 102",
+        "Oferecida": "S",
+        "CodDisc": "QAM131",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 102"
+        ],
+        "Dependentes": [
+          "QAM 132"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA230",
+                "PVA230"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 39.2
+      },
+      {
+        "CodDisciplina": "QAM 151",
+        "NomeDisciplina": "Físico-Química I",
+        "Turma": "1",
+        "Horarios": "3=19:00-20:40\n5=21:00-21:50",
+        "Sala": "PVA229\nPVA229",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "3(3+0)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "MAP 191 | MAP 195 | MAP 199 | QAM 101 | QAM 102",
+        "Oferecida": "S",
+        "CodDisc": "QAM151",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 191",
+          "MAP 195",
+          "MAP 199",
+          "QAM 101",
+          "QAM 102"
+        ],
+        "Dependentes": [
+          "QAM 154",
+          "QAM 153"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=19:00-20:40",
+                "5=21:00-21:50"
+              ],
+              "salas": [
+                "PVA229",
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 18.8
+      },
+      {
+        "CodDisciplina": "QAM 154",
+        "NomeDisciplina": "Laboratório de Físico-Química I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "QAM 151",
+        "Oferecida": "S",
+        "CodDisc": "QAM154",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 151"
+        ],
+        "Dependentes": [
+          "QAM 153"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=08-10"
+              ],
+              "salas": [
+                "LAE229"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "5=10-12"
+              ],
+              "salas": [
+                "LAE229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 9
+      }
+    ],
+    "5": [
+      {
+        "CodDisciplina": "FRP 203",
+        "NomeDisciplina": "Física III",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA106\nPVA106",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "FRP 201 | MAP 205",
+        "Oferecida": "S",
+        "CodDisc": "FRP203",
+        "Depen": "",
+        "Prerequisitos": [
+          "FRP 201",
+          "MAP 205"
+        ],
+        "Dependentes": [
+          "QAM 251",
+          "QAM 236",
+          "QAM 312"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA106",
+                "PVA106"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 57.3
+      },
+      {
+        "CodDisciplina": "QAM 132",
+        "NomeDisciplina": "Química Orgânica II",
+        "Turma": "1",
+        "Horarios": "4=08-10\n6=10-12",
+        "Sala": "PVA101\nPVA101",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 131",
+        "Oferecida": "S",
+        "CodDisc": "QAM132",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 131"
+        ],
+        "Dependentes": [
+          "QAM 232"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=08-10",
+                "6=10-12"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 32.6
+      },
+      {
+        "CodDisciplina": "QAM 153",
+        "NomeDisciplina": "Físico-Química II",
+        "Turma": "1",
+        "Horarios": "3=10-12\n5=10-11",
+        "Sala": "PVA101\nPVA101",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "5(3+2)",
+        "CargaTotal": 75,
+        "Creditos": 5,
+        "Dependencias": "QAM 151 | QAM 154",
+        "Oferecida": "S",
+        "CodDisc": "QAM153",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 151",
+          "QAM 154"
+        ],
+        "Dependentes": [
+          "QAM 251"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12",
+                "5=10-11"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=08-10"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 3
+      },
+      {
+        "CodDisciplina": "QAM 252",
+        "NomeDisciplina": "Mineralogia",
+        "Turma": "1",
+        "Horarios": "a combinar",
+        "Sala": "PVA106\nPVA106",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "3(3+0)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "MAP 298",
+        "Oferecida": "S",
+        "CodDisc": "QAM252",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 298"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [
+                "PVA106",
+                "PVA106"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 0.9
+      },
+      {
+        "CodDisciplina": "QAM 321",
+        "NomeDisciplina": "Química Inorgânica II",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 121",
+        "Oferecida": "S",
+        "CodDisc": "QAM321",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 121"
+        ],
+        "Dependentes": [
+          "QAM 325"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": null
+      }
+    ],
+    "6": [
+      {
+        "CodDisciplina": "CBI 250",
+        "NomeDisciplina": "Bioquímica Fundamental",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA109\nPVA109",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 138 | QAM 232 | QAM 103",
+        "Oferecida": "S",
+        "CodDisc": "CBI250",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 138",
+          "QAM 232",
+          "QAM 103"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA109",
+                "PVA109"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 47.3
+      },
+      {
+        "CodDisciplina": "QAM 139",
+        "NomeDisciplina": "Química Orgânica Experimental I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "QAM 138 | QAM 232",
+        "Oferecida": "S",
+        "CodDisc": "QAM139",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 138",
+          "QAM 232"
+        ],
+        "Dependentes": [
+          "QAM 237"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=10-12"
+              ],
+              "salas": [
+                "LAE229"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 34.6
+      },
+      {
+        "CodDisciplina": "QAM 232",
+        "NomeDisciplina": "Química Orgânica III",
+        "Turma": "1",
+        "Horarios": "a combinar",
+        "Sala": "",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 132",
+        "Oferecida": "S",
+        "CodDisc": "QAM232",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 132"
+        ],
+        "Dependentes": [
+          "QAM 139",
+          "CBI 250",
+          "QAM 236"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 5.4
+      },
+      {
+        "CodDisciplina": "QAM 251",
+        "NomeDisciplina": "Físico-Química III",
+        "Turma": "1",
+        "Horarios": "3=10-12\n6=08-10",
+        "Sala": "PVA219\nPVA219",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 153 | FRP 203",
+        "Oferecida": "S",
+        "CodDisc": "QAM251",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 153",
+          "FRP 203"
+        ],
+        "Dependentes": [
+          "QAM 350"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12",
+                "6=08-10"
+              ],
+              "salas": [
+                "PVA219",
+                "PVA219"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 5.5
+      },
+      {
+        "CodDisciplina": "QAM 325",
+        "NomeDisciplina": "Laboratório de Química Inorgânica",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(0+4)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 321",
+        "Oferecida": "S",
+        "CodDisc": "QAM325",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 321"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": null
+      }
+    ],
+    "7": [
+      {
+        "CodDisciplina": "QAM 236",
+        "NomeDisciplina": "Química Orgânica IV",
+        "Turma": "1",
+        "Horarios": "3=08-10\n5=10-12",
+        "Sala": "PVA106\nPVA106",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 232 | FRP 203",
+        "Oferecida": "S",
+        "CodDisc": "QAM236",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 232",
+          "FRP 203"
+        ],
+        "Dependentes": [
+          "QAM 237",
+          "QAM 498"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10",
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA106",
+                "PVA106"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 1
+      },
+      {
+        "CodDisciplina": "QAM 237",
+        "NomeDisciplina": "Química Orgânica Experimental II",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(0+4)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 139 | QAM 236",
+        "Oferecida": "S",
+        "CodDisc": "QAM237",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 139",
+          "QAM 236"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=14-18"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 0
+      },
+      {
+        "CodDisciplina": "QAM 311",
+        "NomeDisciplina": "Métodos de Separação em Química",
+        "Turma": "1",
+        "Horarios": "4=14-16",
+        "Sala": "PVA103",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "6(2+4)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "QAM 211 | QAM 213",
+        "Oferecida": "S",
+        "CodDisc": "QAM311",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 211",
+          "QAM 213"
+        ],
+        "Dependentes": [
+          "QAM 498"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16"
+              ],
+              "salas": [
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=14-18"
+              ],
+              "salas": [
+                "LAE229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 2.9
+      },
+      {
+        "CodDisciplina": "QAM 350",
+        "NomeDisciplina": "Físico-Química IV",
+        "Turma": "1",
+        "Horarios": "3=10-12\n6=08-10",
+        "Sala": "PVA106\nPVA106",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 251",
+        "Oferecida": "S",
+        "CodDisc": "QAM350",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 251"
+        ],
+        "Dependentes": [
+          "QAM 498"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12",
+                "6=08-10"
+              ],
+              "salas": [
+                "PVA106",
+                "PVA106"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 1.6
+      }
+    ],
+    "8": [
+      {
+        "CodDisciplina": "QAM 312",
+        "NomeDisciplina": "Métodos Instrumentais de Análise",
+        "Turma": "1",
+        "Horarios": "2=10-12",
+        "Sala": "PVA218",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "6(2+4)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "QAM 211 | QAM 213 | FRP 203",
+        "Oferecida": "S",
+        "CodDisc": "QAM312",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 211",
+          "QAM 213",
+          "FRP 203"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12"
+              ],
+              "salas": [
+                "PVA218"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-18"
+              ],
+              "salas": [
+                "LAE229"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 0
+      },
+      {
+        "CodDisciplina": "QAM 490",
+        "NomeDisciplina": "Atividades Complementares",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+4)",
+        "CargaTotal": 60,
+        "Creditos": 0,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "QAM490",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 5.3
+      },
+      {
+        "CodDisciplina": "QAM 491",
+        "NomeDisciplina": "Atividades de Extensão",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+11)",
+        "CargaTotal": 165,
+        "Creditos": 0,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "QAM491",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": null
+      },
+      {
+        "CodDisciplina": "QAM 498",
+        "NomeDisciplina": "Trabalho de Conclusão de Curso",
+        "Turma": "1",
+        "Horarios": "a combinar",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(1+11)",
+        "CargaTotal": 180,
+        "Creditos": 0,
+        "Dependencias": "QAM 497 | QAM 311 | QAM 236 | QAM 350",
+        "Oferecida": "S",
+        "CodDisc": "QAM498",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 497",
+          "QAM 311",
+          "QAM 236",
+          "QAM 350"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 8.9
+      }
+    ]
+  },
+  "optativas": [
+    {
+      "CodDisciplina": "ADE 104",
+      "NomeDisciplina": "Teoria Geral da Administração",
+      "Turma": "1",
+      "Horarios": "3=16-18\n6=14-16",
+      "Sala": "PVA210\nPVA202",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ADE104",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=16-18",
+              "6=14-16"
+            ],
+            "salas": [
+              "PVA210",
+              "PVA202"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=21:00-22:40",
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "PVA108",
+              "PVA108"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "3=14-16",
+              "5=16-18"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "4",
+            "horarios": [
+              "3=19:00-20:40",
+              "5=21:00-22:40"
+            ],
+            "salas": [
+              "PVA109",
+              "PVA109"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 17.3
+    },
+    {
+      "CodDisciplina": "ADE 190",
+      "NomeDisciplina": "Introdução à Economia",
+      "Turma": "1",
+      "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+      "Sala": "PVA214\nPVA214",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ADE190",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA214",
+              "PVA214"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=16-18",
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA212",
+              "PVA212"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA232",
+              "PVA232"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 16.6
+    },
+    {
+      "CodDisciplina": "ADE 327",
+      "NomeDisciplina": "Empreendedorismo",
+      "Turma": "1",
+      "Horarios": "2=14-16\n4=16-18",
+      "Sala": "PVA103\nPVA103",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ADE327",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=14-16",
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA103",
+              "PVA103"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 5.6
+    },
+    {
+      "CodDisciplina": "AGR 144",
+      "NomeDisciplina": "Gênese do Solo",
+      "Turma": "1",
+      "Horarios": "3=14-16",
+      "Sala": "PVA108",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "QAM 101 | QAM 102 | QAM 103",
+      "Oferecida": "S",
+      "CodDisc": "AGR144",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 101",
+        "QAM 102",
+        "QAM 103"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=14-16"
+            ],
+            "salas": [
+              "PVA108"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=08-10"
+            ],
+            "salas": [
+              "LAE148"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "5=10-12"
+            ],
+            "salas": [
+              "LAE148"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 24.7
+    },
+    {
+      "CodDisciplina": "AGR 266",
+      "NomeDisciplina": "Geologia Básica",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(0+2)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "QAM 101 | QAM 102 | QAM 103",
+      "Oferecida": "S",
+      "CodDisc": "AGR266",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 101",
+        "QAM 102",
+        "QAM 103"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=08-10"
+            ],
+            "salas": [
+              "LAE148"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 16.7
+    },
+    {
+      "CodDisciplina": "AGR 282",
+      "NomeDisciplina": "Ecologia Básica",
+      "Turma": "1",
+      "Horarios": "2=08-10\n4=10-11",
+      "Sala": "PVA108\nPVA108",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(3+0)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "AGR282",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=08-10",
+              "4=10-11"
+            ],
+            "salas": [
+              "PVA108",
+              "PVA108"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 29
+    },
+    {
+      "CodDisciplina": "CAL 117",
+      "NomeDisciplina": "Microbiologia de Alimentos",
+      "Turma": "1",
+      "Horarios": "5=14-16",
+      "Sala": "PVA218",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CAL117",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA218"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=10-12"
+            ],
+            "salas": [
+              "LAE233"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=14-16"
+            ],
+            "salas": [
+              "LAE233"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 7.1
+    },
+    {
+      "CodDisciplina": "CAL 220",
+      "NomeDisciplina": "Toxicologia de Alimentos",
+      "Turma": "1",
+      "Horarios": "2=16-18",
+      "Sala": "PVA229",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CBI 250 | CAL 250",
+      "Oferecida": "S",
+      "CodDisc": "CAL220",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 250",
+        "CAL 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=16-18"
+            ],
+            "salas": [
+              "PVA229"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 11.7
+    },
+    {
+      "CodDisciplina": "CAL 231",
+      "NomeDisciplina": "Fenômenos de Transporte",
+      "Turma": "1",
+      "Horarios": "2=14-16\n4=14-16",
+      "Sala": "PVA218\nPVA218",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "FRP 202 | MAP 205 | MAP 250",
+      "Oferecida": "S",
+      "CodDisc": "CAL231",
+      "Depen": "",
+      "Prerequisitos": [
+        "FRP 202",
+        "MAP 205",
+        "MAP 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=14-16",
+              "4=14-16"
+            ],
+            "salas": [
+              "PVA218",
+              "PVA218"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=08-10",
+              "5=10-12"
+            ],
+            "salas": [
+              "PVA106",
+              "PVA106"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 11.4
+    },
+    {
+      "CodDisciplina": "CAL 232",
+      "NomeDisciplina": "Mecânica, Temodinâmica e Fenômenos de Transporte",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "QAM 151 | MAP 191 | FRP 201",
+      "Oferecida": "S",
+      "CodDisc": "CAL232",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 151",
+        "MAP 191",
+        "FRP 201"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CAL 330",
+      "NomeDisciplina": "Química de Alimentos I",
+      "Turma": "1",
+      "Horarios": "4=19:00-20:40",
+      "Sala": "PVA113",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "QAM 101 | QAM 102 | CAL 250 | CBI 250",
+      "Oferecida": "S",
+      "CodDisc": "CAL330",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 101",
+        "QAM 102",
+        "CAL 250",
+        "CBI 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=19:00-20:40"
+            ],
+            "salas": [
+              "PVA113"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "LAE234"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 19.9
+    },
+    {
+      "CodDisciplina": "CAL 331",
+      "NomeDisciplina": "Química de Alimentos II",
+      "Turma": "1",
+      "Horarios": "2=19:00-20:40",
+      "Sala": "PVA229",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "QAM 101 | QAM 102 | CAL 250 | CBI 250",
+      "Oferecida": "S",
+      "CodDisc": "CAL331",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 101",
+        "QAM 102",
+        "CAL 250",
+        "CBI 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=19:00-20:40"
+            ],
+            "salas": [
+              "PVA229"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=19:00-20:40"
+            ],
+            "salas": [
+              "LAE234"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 11.4
+    },
+    {
+      "CodDisciplina": "CAL 365",
+      "NomeDisciplina": "Operações Unitárias na Indústria de Alimentos",
+      "Turma": "1",
+      "Horarios": "3=08-10\n4=16-18",
+      "Sala": "PVA113\nPVA113",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "6(4+2)",
+      "CargaTotal": 90,
+      "Creditos": 6,
+      "Dependencias": "CAL 232 | CAL 231",
+      "Oferecida": "S",
+      "CodDisc": "CAL365",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 232",
+        "CAL 231"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=08-10",
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA113",
+              "PVA113"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=14-16"
+            ],
+            "salas": [
+              "LAE132"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 13.6
+    },
+    {
+      "CodDisciplina": "CAL 398",
+      "NomeDisciplina": "Sistemas coloidais em formulações alimentares",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 232 | FRP 102 | FRP 202",
+      "Oferecida": "S",
+      "CodDisc": "CAL398",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 232",
+        "FRP 102",
+        "FRP 202"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CAL 461",
+      "NomeDisciplina": "Higiene Industrial e de Alimentos",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 117",
+      "Oferecida": "S",
+      "CodDisc": "CAL461",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 117"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 4.5
+    },
+    {
+      "CodDisciplina": "CAL 462",
+      "NomeDisciplina": "Tratamento de Resíduos de Indústrias de Alimentos",
+      "Turma": "1",
+      "Horarios": "3=16-18",
+      "Sala": "PVA114",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CAL 117",
+      "Oferecida": "S",
+      "CodDisc": "CAL462",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 117"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=16-18"
+            ],
+            "salas": [
+              "PVA114"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 3.4
+    },
+    {
+      "CodDisciplina": "CBI 102",
+      "NomeDisciplina": "Biologia Celular",
+      "Turma": "1",
+      "Horarios": "3=14-16",
+      "Sala": "PVA109",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CBI 104",
+      "Oferecida": "S",
+      "CodDisc": "CBI102",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 104"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=14-16"
+            ],
+            "salas": [
+              "PVA109"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=16-18"
+            ],
+            "salas": [
+              "PVA109"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 55.9
+    },
+    {
+      "CodDisciplina": "CBI 104",
+      "NomeDisciplina": "Laboratório de Biologia Celular",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(0+2)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CBI 102",
+      "Oferecida": "S",
+      "CodDisc": "CBI104",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 102"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=14-16"
+            ],
+            "salas": [
+              "LAE242"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "6=08-10"
+            ],
+            "salas": [
+              "LAE242"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "6=10-12"
+            ],
+            "salas": [
+              "LAE242"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "4",
+            "horarios": [
+              "5=16-18"
+            ],
+            "salas": [
+              "LAE242"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 34.9
+    },
+    {
+      "CodDisciplina": "CBI 251",
+      "NomeDisciplina": "Laboratório de Bioquímica",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(0+2)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CBI 250",
+      "Oferecida": "S",
+      "CodDisc": "CBI251",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=16-18"
+            ],
+            "salas": [
+              "LAE240"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "4=08-10"
+            ],
+            "salas": [
+              "LAE240"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "4=10-12"
+            ],
+            "salas": [
+              "LAE240"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 29.7
+    },
+    {
+      "CodDisciplina": "CBI 270",
+      "NomeDisciplina": "Microbiologia Geral",
+      "Turma": "1",
+      "Horarios": "2=10-12",
+      "Sala": "PVA101",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 102 | CBI 104 | CBI 250 | CAL 250",
+      "Oferecida": "S",
+      "CodDisc": "CBI270",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 102",
+        "CBI 104",
+        "CBI 250",
+        "CAL 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=10-12"
+            ],
+            "salas": [
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=14-16"
+            ],
+            "salas": [
+              "LAE233"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=16-18"
+            ],
+            "salas": [
+              "LAE233"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "4=16-18"
+            ],
+            "salas": [
+              "LAE233"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 12.7
+    },
+    {
+      "CodDisciplina": "CBI 370",
+      "NomeDisciplina": "Ecologia Microbiana",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CBI370",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0.6
+    },
+    {
+      "CodDisciplina": "CBI 375",
+      "NomeDisciplina": "Microbiologia do Solo",
+      "Turma": "1",
+      "Horarios": "2=14-16",
+      "Sala": "PVA232",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CBI375",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=14-16"
+            ],
+            "salas": [
+              "PVA232"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=14-16"
+            ],
+            "salas": [
+              "LAE233"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "4=16-18"
+            ],
+            "salas": [
+              "LAE233"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 1.3
+    },
+    {
+      "CodDisciplina": "CRP 181",
+      "NomeDisciplina": "Metodologia de Pesquisa Científica",
+      "Turma": "1",
+      "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+      "Sala": "PVA212\nPVA212",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP181",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA212",
+              "PVA212"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA232",
+              "PVA232"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 13.9
+    },
+    {
+      "CodDisciplina": "CRP 280",
+      "NomeDisciplina": "LIBRAS Língua Brasileira de Sinais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(1+2)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP280",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "CRP 290",
+      "NomeDisciplina": "Português Instrumental I",
+      "Turma": "1",
+      "Horarios": "2=14-16\n4=16-18",
+      "Sala": "PVA101\nPVA101",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP290",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "2",
+            "horarios": [
+              "2=14-16",
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "1",
+            "horarios": [
+              "2=14-16",
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA107",
+              "PVA107"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA212",
+              "PVA212"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 16.4
+    },
+    {
+      "CodDisciplina": "CRP 291",
+      "NomeDisciplina": "Inglês I",
+      "Turma": "1",
+      "Horarios": "2=19:00-20:40\n4=21:00-22:40",
+      "Sala": "PVA209\nPVA209",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP291",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA209",
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=19:00-20:40",
+              "5=21:00-22:40"
+            ],
+            "salas": [
+              "PVA209",
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 12.3
+    },
+    {
+      "CodDisciplina": "CRP 292",
+      "NomeDisciplina": "Introdução à Informática",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP292",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 13.5
+    },
+    {
+      "CodDisciplina": "CRP 297",
+      "NomeDisciplina": "Sociologia Geral",
+      "Turma": "1",
+      "Horarios": "2=16-18\n5=14-16",
+      "Sala": "PVA106\nPVA106",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP297",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=16-18",
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA106",
+              "PVA106"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "3=16-18",
+              "6=14-16"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "4",
+            "horarios": [
+              "3=21:00-22:40",
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "5",
+            "horarios": [
+              "3=16-18",
+              "6=14-16"
+            ],
+            "salas": [
+              "PVA212",
+              "PVA212"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "6",
+            "horarios": [
+              "3=21:00-22:40",
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "PVA214",
+              "PVA214"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "7",
+            "horarios": [
+              "2=16-18",
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA107",
+              "PVA107"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 33.2
+    },
+    {
+      "CodDisciplina": "CRP 394",
+      "NomeDisciplina": "Legislação Ambiental I",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP394",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 10.4
+    },
+    {
+      "CodDisciplina": "CRP 395",
+      "NomeDisciplina": "Legislação Ambiental II",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CRP 394",
+      "Oferecida": "S",
+      "CodDisc": "CRP395",
+      "Depen": "",
+      "Prerequisitos": [
+        "CRP 394"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 3.5
+    },
+    {
+      "CodDisciplina": "ECV 112",
+      "NomeDisciplina": "Desenho Técnico I",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(0+2)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ECV112",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=14-16"
+            ],
+            "salas": [
+              "LAE248"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=16-18"
+            ],
+            "salas": [
+              "LAE248"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 36.7
+    },
+    {
+      "CodDisciplina": "FRP 204",
+      "NomeDisciplina": "Física IV",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "FRP 202 | FRP 203",
+      "Oferecida": "S",
+      "CodDisc": "FRP204",
+      "Depen": "",
+      "Prerequisitos": [
+        "FRP 202",
+        "FRP 203"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "FRP 212",
+      "NomeDisciplina": "Laboratório de Física B",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(0+2)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "FRP 203",
+      "Oferecida": "S",
+      "CodDisc": "FRP212",
+      "Depen": "",
+      "Prerequisitos": [
+        "FRP 203"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=14-16"
+            ],
+            "salas": [
+              "LAE150"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "FRP 301",
+      "NomeDisciplina": "Tópicos Especiais I",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "FRP301",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "FRP 302",
+      "NomeDisciplina": "Tópicos Especiais II",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "FRP302",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "FRP 310",
+      "NomeDisciplina": "Instrumentação para ensino e automação",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(0+4)",
+      "CargaTotal": 60,
+      "Creditos": 0,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "FRP310",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 5.3
+    },
+    {
+      "CodDisciplina": "MAP 250",
+      "NomeDisciplina": "Cálculo III",
+      "Turma": "1",
+      "Horarios": "3=13-16\n5=16-18",
+      "Sala": "PVA102\nPVA102",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "5(5+0)",
+      "CargaTotal": 75,
+      "Creditos": 5,
+      "Dependencias": "MAP 205 | MAP 298",
+      "Oferecida": "S",
+      "CodDisc": "MAP250",
+      "Depen": "",
+      "Prerequisitos": [
+        "MAP 205",
+        "MAP 298"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=13-16",
+              "5=16-18"
+            ],
+            "salas": [
+              "PVA102",
+              "PVA102"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 73
+    },
+    {
+      "CodDisciplina": "MAP 270",
+      "NomeDisciplina": "Cálculo Numérico",
+      "Turma": "1",
+      "Horarios": "2=13-16",
+      "Sala": "PVA214",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(3+0)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "MAP 298 | MAP 205",
+      "Oferecida": "S",
+      "CodDisc": "MAP270",
+      "Depen": "",
+      "Prerequisitos": [
+        "MAP 298",
+        "MAP 205"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=13-16"
+            ],
+            "salas": [
+              "PVA214"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 4.8
+    },
+    {
+      "CodDisciplina": "NUR 106",
+      "NomeDisciplina": "Acolhimento e Saúde",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(0+2)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR106",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=14-16"
+            ],
+            "salas": [
+              "LAE251"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 8
+    },
+    {
+      "CodDisciplina": "QAM 106",
+      "NomeDisciplina": "Química Tecnológica",
+      "Turma": "1",
+      "Horarios": "3=10-12",
+      "Sala": "PVA108",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "QAM 107 | QAM 101 | QAM 102",
+      "Oferecida": "S",
+      "CodDisc": "QAM106",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 107",
+        "QAM 101",
+        "QAM 102"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=10-12"
+            ],
+            "salas": [
+              "PVA108"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "6=08-10"
+            ],
+            "salas": [
+              "LAE231"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 13.5
+    },
+    {
+      "CodDisciplina": "QAM 315",
+      "NomeDisciplina": "Química Ambiental",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "QAM315",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 9.8
+    },
+    {
+      "CodDisciplina": "QAM 318",
+      "NomeDisciplina": "Gestão de Resíduos e Toxicologia Ambiental",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "QAM318",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "QAM 354",
+      "NomeDisciplina": "Introdução à Físico-Química de Superfícies e de Sistemas Coloidais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "QAM 153",
+      "Oferecida": "S",
+      "CodDisc": "QAM354",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 153"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "QAM 410",
+      "NomeDisciplina": "Preparo de Amostras para Análise Elementar",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "QAM 312",
+      "Oferecida": "S",
+      "CodDisc": "QAM410",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 312"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 1.4
+    },
+    {
+      "CodDisciplina": "QAM 412",
+      "NomeDisciplina": "Eletroanalítica",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "QAM 153",
+      "Oferecida": "S",
+      "CodDisc": "QAM412",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 153"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "QAM 415",
+      "NomeDisciplina": "Métodos Espectrométricos de Análise de Constituintes Inorgânicos",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "QAM 312",
+      "Oferecida": "S",
+      "CodDisc": "QAM415",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 312"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 4.8
+    },
+    {
+      "CodDisciplina": "QAM 420",
+      "NomeDisciplina": "Química Bioinorgânica",
+      "Turma": "1",
+      "Horarios": "3=10-12\n5=10-12",
+      "Sala": "PVA218\nPVA218",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "QAM 320 | QAM 321",
+      "Oferecida": "S",
+      "CodDisc": "QAM420",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 320",
+        "QAM 321"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=10-12",
+              "5=10-12"
+            ],
+            "salas": [
+              "PVA218",
+              "PVA218"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 1.6
+    },
+    {
+      "CodDisciplina": "QAM 430",
+      "NomeDisciplina": "Síntese Orgânica",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "QAM 232",
+      "Oferecida": "S",
+      "CodDisc": "QAM430",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 232"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "QAM 435",
+      "NomeDisciplina": "Laboratório de química de produtos naturais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(0+4)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "QAM 232",
+      "Oferecida": "S",
+      "CodDisc": "QAM435",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 232"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "QAM 451",
+      "NomeDisciplina": "Ciência e Tecnologia dos Materiais",
+      "Turma": "1",
+      "Horarios": "4=08-10\n6=08-10",
+      "Sala": "PVA107\nPVA107",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "QAM 101 | QAM 102",
+      "Oferecida": "S",
+      "CodDisc": "QAM451",
+      "Depen": "",
+      "Prerequisitos": [
+        "QAM 101",
+        "QAM 102"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "2",
+            "horarios": [
+              "4=08-10",
+              "6=08-10"
+            ],
+            "salas": [
+              "PVA107",
+              "PVA107"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 18.2
+    },
+    {
+      "CodDisciplina": "QAM 455",
+      "NomeDisciplina": "Tópicos em Química Quântica",
+      "Turma": "1",
+      "Horarios": "3=16-18",
+      "Sala": "PVA103",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "FRP 203 | QAM 251 | QAM 350",
+      "Oferecida": "S",
+      "CodDisc": "QAM455",
+      "Depen": "",
+      "Prerequisitos": [
+        "FRP 203",
+        "QAM 251",
+        "QAM 350"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=16-18"
+            ],
+            "salas": [
+              "PVA103"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "QAM 456",
+      "NomeDisciplina": "Tópicos em Química Computacional",
+      "Turma": "1",
+      "Horarios": "a combinar",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "QAM456",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 5.9
+    },
+    {
+      "CodDisciplina": "QAM 495",
+      "NomeDisciplina": "Estágio Supervisionado",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "8(0+8)",
+      "CargaTotal": 120,
+      "Creditos": 8,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "QAM495",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 0
+    }
+  ]
+}
