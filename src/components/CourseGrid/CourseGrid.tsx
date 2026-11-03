@@ -14,8 +14,10 @@ interface CourseGridProps {
 const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selectedCards, setSelectedCards, onNavigateToSchedule }) => {
   const { curso, dados } = useCurso();
   const disciplinas = dados?.courseData ?? {};
-  // Só as optativas ofertadas no semestre (com turma na DTI): são as que dá para cursar e pôr na grade.
-  const OPTATIVAS: Discipline[] = (dados?.optativas ?? []).filter(d => d.TurmasDisponiveis !== undefined);
+  // O painel de optativas mostra as disciplinas com turmas nesta oferta.
+  const OPTATIVAS: Discipline[] = (dados?.optativas ?? []).filter(d =>
+    Boolean(d.TurmasDisponiveis?.teoricas.length || d.TurmasDisponiveis?.praticas.length)
+  );
   const [highlighted, setHighlighted] = useState<string[]>([]);
   const [hoveredCode, setHoveredCode] = useState<string | null>(null);
   const [draggedDiscipline, setDraggedDiscipline] = useState<Discipline | null>(null);
@@ -171,8 +173,6 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selected
             <div
               key={index}
               className={`disciplineCard ${
-                disciplina.Oferecida === 'N' ? 'not-offered' : ''
-              } ${
                 hoveredCode === disciplina.CodDisc ? 'hovered' : ''
               } ${
                 hoveredCode !== disciplina.CodDisc && highlighted.includes(disciplina.CodDisc) ? 'highlight' : ''
@@ -218,27 +218,7 @@ const CourseGrid: React.FC<CourseGridProps> = ({ setSelectedDiscipline, selected
               <button
                 data-tour="botao-grade"
                 className="gridActionButton"
-                onClick={() => {
-                  // Preparar dados para Grade de Horários
-                  const scheduleData = selectedCards.map(disc => ({
-                    codigo: disc.CodDisc,
-                    codigoCompleto: disc.CodDisciplina,
-                    nome: disc.NomeDisciplina,
-                    periodo: disc.Periodo,
-                    creditos: disc.Creditos,
-                    horarios: disc.Horarios?.split('\n') || [],
-                    salas: disc.Sala?.split('\n') || [],
-                    turmasDisponiveis: disc.TurmasDisponiveis || { teoricas: [], praticas: [] }
-                  }));
-                  
-                  // Log estruturado para debug
-                  console.log('=== DADOS PARA GRADE DE HORÁRIOS ===');
-                  console.log('Total de disciplinas:', scheduleData.length);
-                  console.log('Dados:', scheduleData);
-                  
-                  localStorage.setItem('gradeon:schedules', JSON.stringify(scheduleData));
-                  onNavigateToSchedule();
-                }}
+                onClick={onNavigateToSchedule}
               >
                 Grade de Horários ({selectedCards.length})
               </button>

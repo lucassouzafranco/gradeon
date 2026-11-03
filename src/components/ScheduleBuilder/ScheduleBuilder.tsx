@@ -1,3 +1,4 @@
+import { lerSessao, salvarSessao } from '../../data/planejamento';
 import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import './ScheduleBuilder.css';
 import { Discipline, ClassSection } from '../../types/types';
@@ -107,7 +108,7 @@ interface ScheduleEntry {
 function getTurmasDe(disc: Discipline, courseData: Record<string, Discipline[]>): TurmaInfo[] {
     if (disc.TurmasDisponiveis) {
         const all = [...disc.TurmasDisponiveis.teoricas, ...disc.TurmasDisponiveis.praticas];
-        if (all.length > 0) return all.map(s => ({ turma: s.turma, horarios: s.horarios, salas: s.salas }));
+        return all.map(s => ({ turma: s.turma, horarios: s.horarios, salas: s.salas }));
     }
     const pd = courseData[disc.Periodo.toString()] || [];
     const at = pd.filter(d => d.CodDisciplina === disc.CodDisciplina && d.Tipo === 'T');
@@ -119,7 +120,10 @@ function getTurmasDe(disc: Discipline, courseData: Record<string, Discipline[]>)
 interface DragPayload { codDisciplina: string; turma: string; }
 
 const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack }) => {
-    const { dados } = useCurso();
+    const { dados, curso, anoCatalogo, chave } = useCurso();
+    const horariosAno = dados?.metadata.horarios.ano;
+    const tituloContexto = curso.nome + ' — Catálogo ' + anoCatalogo;
+    const turmasKey = 'gradeon:v3:turmas:' + chave + ':' + horariosAno;
     const courseData = useMemo(() => dados?.courseData ?? {}, [dados]);
     const getTurmas = useCallback((disc: Discipline) => getTurmasDe(disc, courseData), [courseData]);
 
@@ -147,13 +151,21 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
     }, [courseData, dados]);
     const gridColumns = { gridTemplateColumns: `75px repeat(${visibleDays.length}, 1fr)` };
     const [selectedTurmas, setSelectedTurmas] = useState<Record<string, string>>(() => {
-        const saved = sessionStorage.getItem("gradeon:selectedTurmas");
-        return saved ? JSON.parse(saved) : {};
+        const saved = lerSessao(turmasKey);
+        const validas: Record<string,string> = {};
+        if (typeof saved === 'object' && saved !== null) {
+            for (const [codigo,turma] of Object.entries(saved)) {
+                const disc = selectedCards.find(d => d.CodDisciplina === codigo);
+                if (disc && typeof turma === 'string' && getTurmas(disc).some(t => t.turma === turma)) validas[codigo] = turma;
+            }
+        }
+        return validas;
     });
-
-    useEffect(() => {
-        sessionStorage.setItem("gradeon:selectedTurmas", JSON.stringify(selectedTurmas));
-    }, [selectedTurmas]);
+    const [avisoTurmas] = useState(() => {
+        const salvo = lerSessao(turmasKey);
+        return salvo && typeof salvo === 'object' && Object.keys(salvo).some(c => !(c in selectedTurmas)) ? 'Algumas turmas salvas não aparecem nos horários atuais. Escolha novamente.' : '';
+    });
+    useEffect(() => { salvarSessao(turmasKey, selectedTurmas); }, [selectedTurmas, turmasKey]);
 
     const [dragOver, setDragOver] = useState(false);
     const [draggedTurma, setDraggedTurma] = useState<{
@@ -166,6 +178,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
         selectedCards.map(disc => ({ disc, turmas: getTurmas(disc) })),
         [selectedCards, getTurmas]
     );
+    const semTurma = turmaData.filter(({ turmas }) => turmas.length === 0).map(({ disc }) => disc.CodDisciplina);
 
     const scheduleEntries = useMemo(() => {
         const entries: ScheduleEntry[] = [];
@@ -477,7 +490,7 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
       <body>
         <div class="header">
           <div class="subtitle">Grade de Horários - GRADEON</div>
-          <h1>Grade Horária Acadêmica</h1>
+          <h1>Grade Horária Acadêmica</h1><p>${tituloContexto.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c] ?? c))}</p>
         </div>
 
         <table class="disc-table">
@@ -623,6 +636,8 @@ const ScheduleBuilder: React.FC<ScheduleBuilderProps> = ({ selectedCards, onBack
 
     return (
         <div className="scheduleBuilderWrapper" onDragOver={handleGridDragOver} onDragLeave={handleGridDragLeave} onDrop={handleGridDrop}>
+            <p>{tituloContexto}</p>{avisoTurmas && <p role="status">{avisoTurmas}</p>}
+            {semTurma.length > 0 && <p role="status">Horários não encontrados para: {semTurma.join(', ')}.</p>}
             <div className="scheduleMainContent">
                 <div className="panelLeft">
                     <div className="panelHeaderTitle">TURMAS</div>
