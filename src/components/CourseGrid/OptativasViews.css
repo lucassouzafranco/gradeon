@@ -1,0 +1,143 @@
+/* Painel de optativas: cobre só a matriz, para o painel de detalhes abaixo continuar visível no hover. */
+.optPainel {
+  position: absolute;
+  inset: 0;
+  z-index: 25;
+  display: flex;
+  flex-direction: column;
+  padding: 0.9em 1.2em 1em;
+  box-sizing: border-box;
+  color: #fff;
+  /* Mesmo tom translúcido da matriz, com desfoque para esconder os cartões de período por trás. */
+  background: rgba(24, 6, 7, 0.86);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  animation: slideUpFade 0.2s ease-out;
+}
+
+.optPainelTopo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.7em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.optPainelTitulo {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-right: 0.8em;
+}
+
+.optPainelSub {
+  font-size: 0.78rem;
+  opacity: 0.7;
+}
+
+.optFechar {
+  /* Zera o padding global de botões (index.css), que deixava o círculo oval e o × fora do centro. */
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.optFechar:hover {
+  background: rgba(255, 255, 255, 0.2);
+  /* Sobrepõe a borda azul de hover global de botões. */
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.optFechar:focus {
+  outline: none;
+}
+
+.optFechar:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
+  outline-offset: 2px;
+}
+
+/* Grupos lado a lado, como os períodos na matriz. Se mesmo assim não couberem, rolagem horizontal. */
+.optGrupos {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  justify-content: safe center;
+  align-items: stretch;
+  gap: 1.6em;
+  padding-top: 0.8em;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.35) transparent;
+}
+
+.optGrupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  min-height: 0;
+  flex-shrink: 0;
+}
+
+/* Um título por departamento, cobrindo todas as suas colunas. */
+.optGrupoTitulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+}
+
+.optGrupoQtd {
+  min-width: 18px;
+  padding: 1px 6px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 0.68rem;
+  letter-spacing: 0;
+}
+
+/* Colunas explícitas (o componente decide quantos cartões por coluna pela altura medida). */
+.optGrupoColunas {
+  display: flex;
+  gap: 0.6em;
+}
+
+.optColuna {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55em;
+  width: 8.6em;
+}
+
+/* Cartão da matriz com tamanho fixo: linhas alinhadas entre colunas e grupos. */
+.disciplineCard.optCard {
+  width: 100%;
+  margin: 0;
+  height: 4.6em;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.optCard .disciplineCode,
+.optCard .disciplineName {
+  margin: 0.2em 0.5em;
+}

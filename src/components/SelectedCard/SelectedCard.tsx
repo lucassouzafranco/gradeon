@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './SelectedCard.css';
 import { Discipline } from "../../types/types";
-import { courseData } from "../../data/courseData";
+import { useCurso } from "../../data/CursoContext";
 
 const ScrollingText: React.FC<{ items: string[] }> = ({ items }) => {
   const text = items.join('     |     ');
@@ -20,6 +20,7 @@ const ScrollingText: React.FC<{ items: string[] }> = ({ items }) => {
 
 const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline }) => {
     const [loading, setLoading] = useState(true);
+    const courseData = useCurso().dados?.courseData ?? {};
 
     useEffect(() => {
         setLoading(true);
@@ -31,7 +32,7 @@ const SelectedCard: React.FC<{ discipline: Discipline | null }> = ({ discipline 
     }, [discipline]);
 
     return (
-        <div className="selectedCardContainer">
+        <div className="selectedCardContainer" data-tour="painel-disciplina">
             {loading ? (
                 <div>Carregando...</div> // Mensagem durante o carregamento
             ) : discipline ? (
