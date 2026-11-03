@@ -1,0 +1,4322 @@
+{
+  "metadata": {
+    "generatedAt": "2026-11-03T04:16:08.199Z",
+    "ano": 2024,
+    "anoCatalogo": 2024,
+    "curso": {
+      "id": "EPP",
+      "nome": "Engenharia de Produção"
+    },
+    "campus": "crp",
+    "complemento": "*",
+    "horarios": {
+      "ano": 2026,
+      "semestres": [
+        1,
+        2
+      ]
+    },
+    "totalDisciplinas": 55,
+    "periodos": 10,
+    "totalOptativas": 47,
+    "totalOptativasOfertadas": 26,
+    "source": "catalogo.ufv.br + dti.ufv.br",
+    "medianaGlobalReprovacao": 13.7
+  },
+  "courseData": {
+    "1": [
+      {
+        "CodDisciplina": "ADE 104",
+        "NomeDisciplina": "Teoria Geral da Administração",
+        "Turma": "1",
+        "Horarios": "3=16-18\n6=14-16",
+        "Sala": "PVA210\nPVA202",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ADE104",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "ADE 302",
+          "ENP 401"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA202"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA108",
+                "PVA108"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=14-16",
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=19:00-20:40",
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA109",
+                "PVA109"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 17.3
+      },
+      {
+        "CodDisciplina": "CRP 199",
+        "NomeDisciplina": "Cálculo I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "6(4+2)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CRP199",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "CRP 298",
+          "CRP 205",
+          "QAM 151",
+          "FRP 201",
+          "ESP 105"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 65
+      },
+      {
+        "CodDisciplina": "CRP 297",
+        "NomeDisciplina": "Sociologia Geral",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA106\nPVA106",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CRP297",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA106",
+                "PVA106"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "3=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA212",
+                "PVA212"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "6",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "7",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 33.2
+      },
+      {
+        "CodDisciplina": "ENP 101",
+        "NomeDisciplina": "Introdução a Sistemas de Produção",
+        "Turma": "1",
+        "Horarios": "4=16-19",
+        "Sala": "PVA230",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "3(3+0)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ENP101",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "ENP 315"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=16-19"
+              ],
+              "salas": [
+                "PVA230"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 13.7
+      },
+      {
+        "CodDisciplina": "QAM 101",
+        "NomeDisciplina": "Química Geral",
+        "Turma": "1",
+        "Horarios": "4=08-10\n6=10-11",
+        "Sala": "PVA107\nPVA107",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "3(3+0)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "QAM101",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "QAM 107",
+          "QAM 151",
+          "QAM 451"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=08-10",
+                "6=10-11"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=08-10",
+                "5=10-11"
+              ],
+              "salas": [
+                "PVA213",
+                "PVA213"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=10-12",
+                "6=08-09"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 45.8
+      },
+      {
+        "CodDisciplina": "QAM 107",
+        "NomeDisciplina": "Laboratório de Química Geral",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "QAM 101 | QAM 103",
+        "Oferecida": "S",
+        "CodDisc": "QAM107",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 101",
+          "QAM 103"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=08-10"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "5=10-12"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "2=08-10"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "6",
+              "horarios": [
+                "2=10-12"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 29.3
+      }
+    ],
+    "2": [
+      {
+        "CodDisciplina": "CIC 100",
+        "NomeDisciplina": "Contabilidade Geral",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA202\nPVA202",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CIC100",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "ADE 310"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA202",
+                "PVA202"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA108",
+                "PVA108"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=14-16",
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 42
+      },
+      {
+        "CodDisciplina": "CRP 205",
+        "NomeDisciplina": "Cálculo II",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CRP 191 | CRP 199",
+        "Oferecida": "S",
+        "CodDisc": "CRP205",
+        "Depen": "",
+        "Prerequisitos": [
+          "CRP 191",
+          "CRP 199"
+        ],
+        "Dependentes": [
+          "CRP 250",
+          "CRP 270",
+          "FRP 203",
+          "CAL 231"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 47.5
+      },
+      {
+        "CodDisciplina": "CRP 298",
+        "NomeDisciplina": "Geometria Analítica e Álgebra Linear",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CRP 191 | CRP 199",
+        "Oferecida": "S",
+        "CodDisc": "CRP298",
+        "Depen": "",
+        "Prerequisitos": [
+          "CRP 191",
+          "CRP 199"
+        ],
+        "Dependentes": [
+          "CRP 250",
+          "CRP 270",
+          "SIN 480"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 54.7
+      },
+      {
+        "CodDisciplina": "SIN 110",
+        "NomeDisciplina": "Programação",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "6(4+2)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "SIN110",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "SIN 211",
+          "SIN 480"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 58.7
+      }
+    ],
+    "3": [
+      {
+        "CodDisciplina": "CRP 250",
+        "NomeDisciplina": "Cálculo III",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "5(5+0)",
+        "CargaTotal": 75,
+        "Creditos": 5,
+        "Dependencias": "CRP 205 | CRP 298",
+        "Oferecida": "S",
+        "CodDisc": "CRP250",
+        "Depen": "",
+        "Prerequisitos": [
+          "CRP 205",
+          "CRP 298"
+        ],
+        "Dependentes": [
+          "CAL 231",
+          "ENP 404"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 48.4
+      },
+      {
+        "CodDisciplina": "ESP 105",
+        "NomeDisciplina": "Iniciação à Estatística",
+        "Turma": "1",
+        "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+        "Sala": "PVA225\nPVA225",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CRP 191 | CRP 199",
+        "Oferecida": "S",
+        "CodDisc": "ESP105",
+        "Depen": "",
+        "Prerequisitos": [
+          "CRP 191",
+          "CRP 199"
+        ],
+        "Dependentes": [
+          "AGR 194"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=14-16",
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "LAE248",
+                "LAE248"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 30.7
+      },
+      {
+        "CodDisciplina": "FRP 201",
+        "NomeDisciplina": "Física I",
+        "Turma": "1",
+        "Horarios": "3=21:00-22:40\n6=19:00-20:40",
+        "Sala": "PVA103\nPVA103",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CRP 199",
+        "Oferecida": "S",
+        "CodDisc": "FRP201",
+        "Depen": "",
+        "Prerequisitos": [
+          "CRP 199"
+        ],
+        "Dependentes": [
+          "FRP 211",
+          "FRP 202",
+          "FRP 203"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA103",
+                "PVA103"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=14-16",
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 46.5
+      },
+      {
+        "CodDisciplina": "QAM 151",
+        "NomeDisciplina": "Físico-Química I",
+        "Turma": "1",
+        "Horarios": "3=19:00-20:40\n5=21:00-21:50",
+        "Sala": "PVA229\nPVA229",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "3(3+0)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "CRP 199 | CRP 191 | QAM 101 | QAM 102",
+        "Oferecida": "S",
+        "CodDisc": "QAM151",
+        "Depen": "",
+        "Prerequisitos": [
+          "CRP 199",
+          "CRP 191",
+          "QAM 101",
+          "QAM 102"
+        ],
+        "Dependentes": [
+          "QAM 154"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=19:00-20:40",
+                "5=21:00-21:50"
+              ],
+              "salas": [
+                "PVA229",
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 18.8
+      },
+      {
+        "CodDisciplina": "QAM 154",
+        "NomeDisciplina": "Laboratório de Físico-Química I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "QAM 151",
+        "Oferecida": "S",
+        "CodDisc": "QAM154",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 151"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=08-10"
+              ],
+              "salas": [
+                "LAE229"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "5=10-12"
+              ],
+              "salas": [
+                "LAE229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 9
+      },
+      {
+        "CodDisciplina": "SIN 211",
+        "NomeDisciplina": "Algoritmos e Estruturas de Dados",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "6(4+2)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "SIN 110",
+        "Oferecida": "S",
+        "CodDisc": "SIN211",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 110"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 42.4
+      }
+    ],
+    "4": [
+      {
+        "CodDisciplina": "ADE 310",
+        "NomeDisciplina": "Análise de Custos",
+        "Turma": "1",
+        "Horarios": "3=16-18\n6=14-16",
+        "Sala": "PVA102\nPVA102",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CIC 100",
+        "Oferecida": "S",
+        "CodDisc": "ADE310",
+        "Depen": "",
+        "Prerequisitos": [
+          "CIC 100"
+        ],
+        "Dependentes": [
+          "ENP 371",
+          "ENP 405",
+          "ENP 351"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA102",
+                "PVA102"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA102",
+                "PVA102"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 30.6
+      },
+      {
+        "CodDisciplina": "AGR 194",
+        "NomeDisciplina": "Estatística Experimental",
+        "Turma": "1",
+        "Horarios": "2=10-12\n4=08-10",
+        "Sala": "PVA225\nPVA225",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ESP 105 | ESP 201",
+        "Oferecida": "S",
+        "CodDisc": "AGR194",
+        "Depen": "",
+        "Prerequisitos": [
+          "ESP 105",
+          "ESP 201"
+        ],
+        "Dependentes": [
+          "ENP 352",
+          "ENP 360",
+          "ENP 320"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12",
+                "4=08-10"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=08-10",
+                "4=10-12"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 35.6
+      },
+      {
+        "CodDisciplina": "CRP 270",
+        "NomeDisciplina": "Cálculo Numérico",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "3(3+0)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "CRP 298 | CRP 205",
+        "Oferecida": "S",
+        "CodDisc": "CRP270",
+        "Depen": "",
+        "Prerequisitos": [
+          "CRP 298",
+          "CRP 205"
+        ],
+        "Dependentes": [
+          "ENP 312"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 38.4
+      },
+      {
+        "CodDisciplina": "ENP 201",
+        "NomeDisciplina": "Representação Gráfica para Engenharia",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ENP201",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "ENP 395"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12"
+              ],
+              "salas": [
+                "LAE248"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 22.9
+      },
+      {
+        "CodDisciplina": "ENP 352",
+        "NomeDisciplina": "Simulação da Produção",
+        "Turma": "1",
+        "Horarios": "3=10-12",
+        "Sala": "PVA233",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "AGR 194 | SIN 480",
+        "Oferecida": "S",
+        "CodDisc": "ENP352",
+        "Depen": "",
+        "Prerequisitos": [
+          "AGR 194",
+          "SIN 480"
+        ],
+        "Dependentes": [
+          "ENP 315",
+          "ENP 395"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12"
+              ],
+              "salas": [
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=08-10"
+              ],
+              "salas": [
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 16
+      },
+      {
+        "CodDisciplina": "FRP 202",
+        "NomeDisciplina": "Física II",
+        "Turma": "1",
+        "Horarios": "4=19:00-20:40\n6=21:00-22:40",
+        "Sala": "PVA230\nPVA230",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "FRP 201",
+        "Oferecida": "S",
+        "CodDisc": "FRP202",
+        "Depen": "",
+        "Prerequisitos": [
+          "FRP 201"
+        ],
+        "Dependentes": [
+          "CAL 231"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "PVA230",
+                "PVA230"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=08-10",
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA210"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "4=16-18",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 48.2
+      },
+      {
+        "CodDisciplina": "FRP 211",
+        "NomeDisciplina": "Laboratório de Física A",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "FRP 201",
+        "Oferecida": "S",
+        "CodDisc": "FRP211",
+        "Depen": "",
+        "Prerequisitos": [
+          "FRP 201"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16"
+              ],
+              "salas": [
+                "LAE150"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=16-18"
+              ],
+              "salas": [
+                "LAE150"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 27.7
+      },
+      {
+        "CodDisciplina": "SIN 480",
+        "NomeDisciplina": "Pesquisa Operacional I",
+        "Turma": "1",
+        "Horarios": "2=08-10\n4=10-12",
+        "Sala": "PVA106\nPVA106",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CRP 298 | SIN 110",
+        "Oferecida": "S",
+        "CodDisc": "SIN480",
+        "Depen": "",
+        "Prerequisitos": [
+          "CRP 298",
+          "SIN 110"
+        ],
+        "Dependentes": [
+          "ENP 352",
+          "ENP 312"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=08-10",
+                "4=10-12"
+              ],
+              "salas": [
+                "PVA106",
+                "PVA106"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 16.1
+      }
+    ],
+    "5": [
+      {
+        "CodDisciplina": "ADE 302",
+        "NomeDisciplina": "Organização, Sistemas e Métodos",
+        "Turma": "1",
+        "Horarios": "4=19:00-20:40\n6=21:00-22:40",
+        "Sala": "PVA102\nPVA102",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ADE 104",
+        "Oferecida": "S",
+        "CodDisc": "ADE302",
+        "Depen": "",
+        "Prerequisitos": [
+          "ADE 104"
+        ],
+        "Dependentes": [
+          "ENP 340"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "2",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "PVA102",
+                "PVA102"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16",
+                "4=16-18"
+              ],
+              "salas": [
+                "LAE251",
+                "PVA102"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 11.1
+      },
+      {
+        "CodDisciplina": "ENP 312",
+        "NomeDisciplina": "Pesquisa Operacional para Engenharia II",
+        "Turma": "1",
+        "Horarios": "3=14-16\n5=16-17",
+        "Sala": "PVA213\nPVA213",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(3+1)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "SIN 480 | CRP 270",
+        "Oferecida": "S",
+        "CodDisc": "ENP312",
+        "Depen": "",
+        "Prerequisitos": [
+          "SIN 480",
+          "CRP 270"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16",
+                "5=16-17"
+              ],
+              "salas": [
+                "PVA213",
+                "PVA213"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=17-18"
+              ],
+              "salas": [
+                "PVA213"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 20.4
+      },
+      {
+        "CodDisciplina": "ENP 315",
+        "NomeDisciplina": "Planejamento e Controle da Produção I",
+        "Turma": "1",
+        "Horarios": "4=08-10",
+        "Sala": "PVA233",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ENP 101 | ENP 352",
+        "Oferecida": "S",
+        "CodDisc": "ENP315",
+        "Depen": "",
+        "Prerequisitos": [
+          "ENP 101",
+          "ENP 352"
+        ],
+        "Dependentes": [
+          "ENP 316"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=08-10"
+              ],
+              "salas": [
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=10-12"
+              ],
+              "salas": [
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 4.8
+      },
+      {
+        "CodDisciplina": "ENP 410",
+        "NomeDisciplina": "Inovação e Empreendedorismo",
+        "Turma": "1",
+        "Horarios": "3=08-10\n5=10-11",
+        "Sala": "PVA233\nPVA233",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(3+1)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ENP410",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10",
+                "5=10-11"
+              ],
+              "salas": [
+                "PVA233",
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=11-12"
+              ],
+              "salas": [
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 6.2
+      },
+      {
+        "CodDisciplina": "ENP 492",
+        "NomeDisciplina": "Metodologia de Pesquisa para Engenharia de Produção",
+        "Turma": "1",
+        "Horarios": "3=16-18",
+        "Sala": "PVA233",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "6(4+2)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ENP492",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "ENP 491"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 3.4
+      },
+      {
+        "CodDisciplina": "FRP 203",
+        "NomeDisciplina": "Física III",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA106\nPVA106",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "FRP 201 | CRP 205",
+        "Oferecida": "S",
+        "CodDisc": "FRP203",
+        "Depen": "",
+        "Prerequisitos": [
+          "FRP 201",
+          "CRP 205"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA106",
+                "PVA106"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 57.3
+      }
+    ],
+    "6": [
+      {
+        "CodDisciplina": "CAL 231",
+        "NomeDisciplina": "Fenômenos de Transporte",
+        "Turma": "1",
+        "Horarios": "2=14-16\n4=14-16",
+        "Sala": "PVA218\nPVA218",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "FRP 202 | CRP 205 | CRP 250",
+        "Oferecida": "S",
+        "CodDisc": "CAL231",
+        "Depen": "",
+        "Prerequisitos": [
+          "FRP 202",
+          "CRP 205",
+          "CRP 250"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16",
+                "4=14-16"
+              ],
+              "salas": [
+                "PVA218",
+                "PVA218"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=08-10",
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA106",
+                "PVA106"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 11.4
+      },
+      {
+        "CodDisciplina": "ENP 316",
+        "NomeDisciplina": "Planejamento e Controle da Produção II",
+        "Turma": "1",
+        "Horarios": "3=10-12",
+        "Sala": "PVA224",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ENP 315",
+        "Oferecida": "S",
+        "CodDisc": "ENP316",
+        "Depen": "",
+        "Prerequisitos": [
+          "ENP 315"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12"
+              ],
+              "salas": [
+                "PVA224"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=08-10"
+              ],
+              "salas": [
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 12.7
+      },
+      {
+        "CodDisciplina": "ENP 330",
+        "NomeDisciplina": "Projeto de Produto I",
+        "Turma": "1",
+        "Horarios": "4=14-16",
+        "Sala": "PVA233",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ENP 340",
+        "Oferecida": "S",
+        "CodDisc": "ENP330",
+        "Depen": "",
+        "Prerequisitos": [
+          "ENP 340"
+        ],
+        "Dependentes": [
+          "ENP 340",
+          "ENP 331"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16"
+              ],
+              "salas": [
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=12-14"
+              ],
+              "salas": [
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 5.3
+      },
+      {
+        "CodDisciplina": "ENP 340",
+        "NomeDisciplina": "Ergonomia",
+        "Turma": "1",
+        "Horarios": "2=14-16\n4=16-17",
+        "Sala": "PVA224\nPVA224",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(3+1)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ADE 302 | ENP 330",
+        "Oferecida": "S",
+        "CodDisc": "ENP340",
+        "Depen": "",
+        "Prerequisitos": [
+          "ADE 302",
+          "ENP 330"
+        ],
+        "Dependentes": [
+          "ENP 330",
+          "ENP 341",
+          "ENP 342"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16",
+                "4=16-17"
+              ],
+              "salas": [
+                "PVA224",
+                "PVA224"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=17-18"
+              ],
+              "salas": [
+                "PVA224"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 7.1
+      },
+      {
+        "CodDisciplina": "ENP 360",
+        "NomeDisciplina": "Controle Estatístico da Qualidade e de Processos",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA212\nPVA212",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "AGR 194",
+        "Oferecida": "S",
+        "CodDisc": "ENP360",
+        "Depen": "",
+        "Prerequisitos": [
+          "AGR 194"
+        ],
+        "Dependentes": [
+          "ENP 361"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA212",
+                "PVA212"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 6.5
+      },
+      {
+        "CodDisciplina": "ENP 401",
+        "NomeDisciplina": "Organização do Trabalho na Produção",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(3+1)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ADE 104",
+        "Oferecida": "S",
+        "CodDisc": "ENP401",
+        "Depen": "",
+        "Prerequisitos": [
+          "ADE 104"
+        ],
+        "Dependentes": [
+          "ENP 402"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 4.4
+      },
+      {
+        "CodDisciplina": "QAM 451",
+        "NomeDisciplina": "Ciência e Tecnologia dos Materiais",
+        "Turma": "1",
+        "Horarios": "4=08-10\n6=08-10",
+        "Sala": "PVA107\nPVA107",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 101 | QAM 102",
+        "Oferecida": "S",
+        "CodDisc": "QAM451",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 101",
+          "QAM 102"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "2",
+              "horarios": [
+                "4=08-10",
+                "6=08-10"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 18.2
+      }
+    ],
+    "7": [
+      {
+        "CodDisciplina": "ENP 341",
+        "NomeDisciplina": "Engenharia de Segurança do Trabalho",
+        "Turma": "1",
+        "Horarios": "2=10-12\n5=08-10",
+        "Sala": "PVA224\nPVA224",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ENP 340",
+        "Oferecida": "S",
+        "CodDisc": "ENP341",
+        "Depen": "",
+        "Prerequisitos": [
+          "ENP 340"
+        ],
+        "Dependentes": [
+          "ENP 342"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12",
+                "5=08-10"
+              ],
+              "salas": [
+                "PVA224",
+                "PVA224"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 2.2
+      },
+      {
+        "CodDisciplina": "ENP 371",
+        "NomeDisciplina": "Engenharia Econômica",
+        "Turma": "1",
+        "Horarios": "4=10-12\n6=10-12",
+        "Sala": "PVA230\nPVA228",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ADE 310 | CIC 301",
+        "Oferecida": "S",
+        "CodDisc": "ENP371",
+        "Depen": "",
+        "Prerequisitos": [
+          "ADE 310",
+          "CIC 301"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=10-12",
+                "6=10-12"
+              ],
+              "salas": [
+                "PVA230",
+                "PVA228"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 13.5
+      },
+      {
+        "CodDisciplina": "ENP 395",
+        "NomeDisciplina": "Projeto de Fábrica",
+        "Turma": "1",
+        "Horarios": "2=16-18\n5=14-16",
+        "Sala": "PVA224\nPVA224",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ENP 201 | ENP 352",
+        "Oferecida": "S",
+        "CodDisc": "ENP395",
+        "Depen": "",
+        "Prerequisitos": [
+          "ENP 201",
+          "ENP 352"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA224",
+                "PVA224"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 3.4
+      },
+      {
+        "CodDisciplina": "ENP 402",
+        "NomeDisciplina": "Gestão Estratégica da Produção",
+        "Turma": "1",
+        "Horarios": "3=10-12\n6=08-10",
+        "Sala": "PVA224\nPVA224",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ENP 401",
+        "Oferecida": "S",
+        "CodDisc": "ENP402",
+        "Depen": "",
+        "Prerequisitos": [
+          "ENP 401"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12",
+                "6=08-10"
+              ],
+              "salas": [
+                "PVA224",
+                "PVA224"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 8.7
+      },
+      {
+        "CodDisciplina": "ENP 404",
+        "NomeDisciplina": "Matemática Discreta Aplicada à Engenharia",
+        "Turma": "1",
+        "Horarios": "3=08-10\n5=10-12",
+        "Sala": "PVA234\nPVA209",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CRP 250",
+        "Oferecida": "S",
+        "CodDisc": "ENP404",
+        "Depen": "",
+        "Prerequisitos": [
+          "CRP 250"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10",
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA234",
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 10.2
+      }
+    ],
+    "8": [
+      {
+        "CodDisciplina": "ADE 190",
+        "NomeDisciplina": "Introdução à Economia",
+        "Turma": "1",
+        "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+        "Sala": "PVA214\nPVA214",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ADE190",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA212",
+                "PVA212"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA232",
+                "PVA232"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 16.6
+      },
+      {
+        "CodDisciplina": "ENP 320",
+        "NomeDisciplina": "Logística",
+        "Turma": "1",
+        "Horarios": "3=08-10\n5=10-12",
+        "Sala": "PVA233\nPVA233",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "AGR 194",
+        "Oferecida": "S",
+        "CodDisc": "ENP320",
+        "Depen": "",
+        "Prerequisitos": [
+          "AGR 194"
+        ],
+        "Dependentes": [
+          "ENP 325"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10",
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA233",
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 3.9
+      },
+      {
+        "CodDisciplina": "ENP 337",
+        "NomeDisciplina": "Projetos Agroindustriais I",
+        "Turma": "1",
+        "Horarios": "3=16-18\n4=16-18",
+        "Sala": "PVA233\nPVA233",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ENP337",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18",
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA233",
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 0.9
+      },
+      {
+        "CodDisciplina": "ENP 342",
+        "NomeDisciplina": "Projeto de Trabalho",
+        "Turma": "1",
+        "Horarios": "2=16-17",
+        "Sala": "PVA224",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "4(1+3)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ENP 340 | ENP 341",
+        "Oferecida": "S",
+        "CodDisc": "ENP342",
+        "Depen": "",
+        "Prerequisitos": [
+          "ENP 340",
+          "ENP 341"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-17"
+              ],
+              "salas": [
+                "PVA224"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=17-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA224",
+                "PVA224"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 1.8
+      },
+      {
+        "CodDisciplina": "ENP 351",
+        "NomeDisciplina": "Gerência de Projeto",
+        "Turma": "1",
+        "Horarios": "4=08-10\n6=10-11",
+        "Sala": "PVA224\nPVA224",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "4(3+1)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ADE 310 | CIC 301",
+        "Oferecida": "S",
+        "CodDisc": "ENP351",
+        "Depen": "",
+        "Prerequisitos": [
+          "ADE 310",
+          "CIC 301"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=08-10",
+                "6=10-11"
+              ],
+              "salas": [
+                "PVA224",
+                "PVA224"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=11-12"
+              ],
+              "salas": [
+                "PVA224"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 9.3
+      },
+      {
+        "CodDisciplina": "ENP 361",
+        "NomeDisciplina": "Gestão da Qualidade I",
+        "Turma": "1",
+        "Horarios": "3=14-16",
+        "Sala": "PVA102",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ENP 360",
+        "Oferecida": "S",
+        "CodDisc": "ENP361",
+        "Depen": "",
+        "Prerequisitos": [
+          "ENP 360"
+        ],
+        "Dependentes": [
+          "ENP 362"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "PVA102"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=16-18"
+              ],
+              "salas": [
+                "PVA102"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 15.1
+      },
+      {
+        "CodDisciplina": "ENP 405",
+        "NomeDisciplina": "Custos Industriais",
+        "Turma": "1",
+        "Horarios": "2=14-16\n6=14-16",
+        "Sala": "PVA230\nPVA228",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ADE 310",
+        "Oferecida": "S",
+        "CodDisc": "ENP405",
+        "Depen": "",
+        "Prerequisitos": [
+          "ADE 310"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16",
+                "6=14-16"
+              ],
+              "salas": [
+                "PVA230",
+                "PVA228"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 8.4
+      }
+    ],
+    "9": [
+      {
+        "CodDisciplina": "ENP 325",
+        "NomeDisciplina": "Gestão da Cadeia de Suprimentos",
+        "Turma": "1",
+        "Horarios": "4=10-12\n6=08-10",
+        "Sala": "PVA233\nPVA233",
+        "Periodo": 9,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ENP 320",
+        "Oferecida": "S",
+        "CodDisc": "ENP325",
+        "Depen": "",
+        "Prerequisitos": [
+          "ENP 320"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=10-12",
+                "6=08-10"
+              ],
+              "salas": [
+                "PVA233",
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 12.1
+      },
+      {
+        "CodDisciplina": "ENP 331",
+        "NomeDisciplina": "Projeto de Produto II",
+        "Turma": "1",
+        "Horarios": "3=16-18",
+        "Sala": "PVA106",
+        "Periodo": 9,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ENP 330",
+        "Oferecida": "S",
+        "CodDisc": "ENP331",
+        "Depen": "",
+        "Prerequisitos": [
+          "ENP 330"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "PVA106"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA108"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 1.2
+      },
+      {
+        "CodDisciplina": "ENP 362",
+        "NomeDisciplina": "Gestão da Qualidade II",
+        "Turma": "1",
+        "Horarios": "3=10-12",
+        "Sala": "PVA233",
+        "Periodo": 9,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ENP 361",
+        "Oferecida": "S",
+        "CodDisc": "ENP362",
+        "Depen": "",
+        "Prerequisitos": [
+          "ENP 361"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12"
+              ],
+              "salas": [
+                "PVA233"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=08-10"
+              ],
+              "salas": [
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 12.1
+      },
+      {
+        "CodDisciplina": "ENP 491",
+        "NomeDisciplina": "Trabalho de Conclusão de Curso",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 9,
+        "Tipo": "T",
+        "CargaSemanal": "12(0+12)",
+        "CargaTotal": 180,
+        "Creditos": 12,
+        "Dependencias": "ENP 492",
+        "Oferecida": "S",
+        "CodDisc": "ENP491",
+        "Depen": "",
+        "Prerequisitos": [
+          "ENP 492"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 3.2
+      }
+    ],
+    "10": [
+      {
+        "CodDisciplina": "ENP 494",
+        "NomeDisciplina": "Estágio Supervisionado",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 10,
+        "Tipo": "T",
+        "CargaSemanal": "20(0+20)",
+        "CargaTotal": 300,
+        "Creditos": 20,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ENP494",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "ENP 495"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 0.6
+      },
+      {
+        "CodDisciplina": "ENP 495",
+        "NomeDisciplina": "Seminário de Estágio",
+        "Turma": "1",
+        "Horarios": "a combinar",
+        "Sala": "",
+        "Periodo": 10,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ENP 494",
+        "Oferecida": "S",
+        "CodDisc": "ENP495",
+        "Depen": "",
+        "Prerequisitos": [
+          "ENP 494"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 1.4
+      }
+    ]
+  },
+  "optativas": [
+    {
+      "CodDisciplina": "ADE 194",
+      "NomeDisciplina": "Economia I",
+      "Turma": "1",
+      "Horarios": "3=19:00-20:40\n5=21:00-22:40",
+      "Sala": "PVA102\nPVA102",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CRP 191 | CRP 199",
+      "Oferecida": "S",
+      "CodDisc": "ADE194",
+      "Depen": "",
+      "Prerequisitos": [
+        "CRP 191",
+        "CRP 199"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=19:00-20:40",
+              "5=21:00-22:40"
+            ],
+            "salas": [
+              "PVA102",
+              "PVA102"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 27.3
+    },
+    {
+      "CodDisciplina": "ADE 311",
+      "NomeDisciplina": "Análise de Custos II",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ADE 310 | CIC 301",
+      "Oferecida": "S",
+      "CodDisc": "ADE311",
+      "Depen": "",
+      "Prerequisitos": [
+        "ADE 310",
+        "CIC 301"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 14.2
+    },
+    {
+      "CodDisciplina": "ADE 320",
+      "NomeDisciplina": "Gestão de Pessoas I",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(0+4)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ADE 104 | CRP 295 | NUR 285",
+      "Oferecida": "S",
+      "CodDisc": "ADE320",
+      "Depen": "",
+      "Prerequisitos": [
+        "ADE 104",
+        "CRP 295",
+        "NUR 285"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "LAE251",
+              "LAE251"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 5.5
+    },
+    {
+      "CodDisciplina": "ADE 321",
+      "NomeDisciplina": "Gestão de Pessoas II",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(0+4)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ADE 320",
+      "Oferecida": "S",
+      "CodDisc": "ADE321",
+      "Depen": "",
+      "Prerequisitos": [
+        "ADE 320"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "2",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "LAE251",
+              "LAE251"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 4.6
+    },
+    {
+      "CodDisciplina": "ADE 322",
+      "NomeDisciplina": "Administração Mercadológica para Administradores I",
+      "Turma": "1",
+      "Horarios": "4=19:00-20:40\n6=21:00-22:40",
+      "Sala": "PVA210\nPVA210",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ADE 104 | ADE 102",
+      "Oferecida": "S",
+      "CodDisc": "ADE322",
+      "Depen": "",
+      "Prerequisitos": [
+        "ADE 104",
+        "ADE 102"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "2",
+            "horarios": [
+              "4=19:00-20:40",
+              "6=21:00-22:40"
+            ],
+            "salas": [
+              "PVA210",
+              "PVA210"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 4.9
+    },
+    {
+      "CodDisciplina": "ADE 323",
+      "NomeDisciplina": "Administração Mercadológica para Administradores II",
+      "Turma": "1",
+      "Horarios": "3=19:00-20:40\n5=21:00-22:40",
+      "Sala": "PVA212\nPVA212",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ADE 322",
+      "Oferecida": "S",
+      "CodDisc": "ADE323",
+      "Depen": "",
+      "Prerequisitos": [
+        "ADE 322"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "2",
+            "horarios": [
+              "3=19:00-20:40",
+              "5=21:00-22:40"
+            ],
+            "salas": [
+              "PVA212",
+              "PVA212"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 3.4
+    },
+    {
+      "CodDisciplina": "ADE 326",
+      "NomeDisciplina": "Tecnologia da Informação nas organizações contemporâneas",
+      "Turma": "1",
+      "Horarios": "2=19:00-20:40\n4=21:00-22:40",
+      "Sala": "PVA210\nPVA210",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ADE 302",
+      "Oferecida": "S",
+      "CodDisc": "ADE326",
+      "Depen": "",
+      "Prerequisitos": [
+        "ADE 302"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA210",
+              "PVA210"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 4.9
+    },
+    {
+      "CodDisciplina": "ADE 342",
+      "NomeDisciplina": "Planejamento da Empresa Rural",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ADE 300 | ADE 390 | ADE 391",
+      "Oferecida": "S",
+      "CodDisc": "ADE342",
+      "Depen": "",
+      "Prerequisitos": [
+        "ADE 300",
+        "ADE 390",
+        "ADE 391"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "ADE 390",
+      "NomeDisciplina": "Economia Rural",
+      "Turma": "1",
+      "Horarios": "4=14-16",
+      "Sala": "PVA106",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ADE390",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=14-16"
+            ],
+            "salas": [
+              "PVA106"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 7.2
+    },
+    {
+      "CodDisciplina": "ADE 391",
+      "NomeDisciplina": "Administração Rural",
+      "Turma": "1",
+      "Horarios": "2=14-16\n4=16-18",
+      "Sala": "PVA106\nPVA106",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ADE 194 | ADE 390",
+      "Oferecida": "S",
+      "CodDisc": "ADE391",
+      "Depen": "",
+      "Prerequisitos": [
+        "ADE 194",
+        "ADE 390"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=14-16",
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA106",
+              "PVA106"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 1.3
+    },
+    {
+      "CodDisciplina": "CAL 365",
+      "NomeDisciplina": "Operações Unitárias na Indústria de Alimentos",
+      "Turma": "1",
+      "Horarios": "3=08-10\n4=16-18",
+      "Sala": "PVA113\nPVA113",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "6(4+2)",
+      "CargaTotal": 90,
+      "Creditos": 6,
+      "Dependencias": "CAL 230 | CAL 231",
+      "Oferecida": "S",
+      "CodDisc": "CAL365",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 230",
+        "CAL 231"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=08-10",
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA113",
+              "PVA113"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=14-16"
+            ],
+            "salas": [
+              "LAE132"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 13.6
+    },
+    {
+      "CodDisciplina": "CRP 181",
+      "NomeDisciplina": "Metodologia de Pesquisa Científica",
+      "Turma": "1",
+      "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+      "Sala": "PVA212\nPVA212",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP181",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA212",
+              "PVA212"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA232",
+              "PVA232"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 13.9
+    },
+    {
+      "CodDisciplina": "CRP 280",
+      "NomeDisciplina": "LIBRAS Língua Brasileira de Sinais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(1+2)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP280",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "CRP 291",
+      "NomeDisciplina": "Inglês I",
+      "Turma": "1",
+      "Horarios": "2=19:00-20:40\n4=21:00-22:40",
+      "Sala": "PVA209\nPVA209",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP291",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA209",
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=19:00-20:40",
+              "5=21:00-22:40"
+            ],
+            "salas": [
+              "PVA209",
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 12.3
+    },
+    {
+      "CodDisciplina": "CRP 296",
+      "NomeDisciplina": "Instituições de Direito",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP296",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 16.5
+    },
+    {
+      "CodDisciplina": "CRP 340",
+      "NomeDisciplina": "Equações Diferenciais Ordinárias",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CRP 205",
+      "Oferecida": "S",
+      "CodDisc": "CRP340",
+      "Depen": "",
+      "Prerequisitos": [
+        "CRP 205"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CRP 341",
+      "NomeDisciplina": "Métodos Matemáticos",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CRP 250",
+      "Oferecida": "S",
+      "CodDisc": "CRP341",
+      "Depen": "",
+      "Prerequisitos": [
+        "CRP 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CRP 391",
+      "NomeDisciplina": "Legislação Trabalhista",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CRP 296",
+      "Oferecida": "S",
+      "CodDisc": "CRP391",
+      "Depen": "",
+      "Prerequisitos": [
+        "CRP 296"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 7.6
+    },
+    {
+      "CodDisciplina": "CRP 392",
+      "NomeDisciplina": "Legislação Tributária",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CRP 296",
+      "Oferecida": "S",
+      "CodDisc": "CRP392",
+      "Depen": "",
+      "Prerequisitos": [
+        "CRP 296"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 16.2
+    },
+    {
+      "CodDisciplina": "ECV 230",
+      "NomeDisciplina": "Estática",
+      "Turma": "1",
+      "Horarios": "2=10-12\n5=08-09",
+      "Sala": "PVA210\nPVA210",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(3+0)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "FRP 201",
+      "Oferecida": "S",
+      "CodDisc": "ECV230",
+      "Depen": "",
+      "Prerequisitos": [
+        "FRP 201"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=10-12",
+              "5=08-09"
+            ],
+            "salas": [
+              "PVA210",
+              "PVA210"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 21.5
+    },
+    {
+      "CodDisciplina": "ENP 300",
+      "NomeDisciplina": "Atividades Complementares",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(0+4)",
+      "CargaTotal": 60,
+      "Creditos": 0,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ENP300",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 6
+    },
+    {
+      "CodDisciplina": "ENP 301",
+      "NomeDisciplina": "Atividades de Extensão",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "8(0+8)",
+      "CargaTotal": 120,
+      "Creditos": 8,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ENP301",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "ENP 314",
+      "NomeDisciplina": "Gestão da Inovação Tecnológica",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ADE 104",
+      "Oferecida": "S",
+      "CodDisc": "ENP314",
+      "Depen": "",
+      "Prerequisitos": [
+        "ADE 104"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 9.6
+    },
+    {
+      "CodDisciplina": "ENP 317",
+      "NomeDisciplina": "Gestão da Manutenção",
+      "Turma": "1",
+      "Horarios": "2=08-10",
+      "Sala": "PVA233",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(2+1)",
+      "CargaTotal": 45,
+      "Creditos": 0,
+      "Dependencias": "ENP 316",
+      "Oferecida": "S",
+      "CodDisc": "ENP317",
+      "Depen": "",
+      "Prerequisitos": [
+        "ENP 316"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=08-10"
+            ],
+            "salas": [
+              "PVA233"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=10-12"
+            ],
+            "salas": [
+              "PVA233"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "ENP 322",
+      "NomeDisciplina": "Pesquisa Operacional Aplicada à Logística",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "SIN 480 | ENP 320",
+      "Oferecida": "S",
+      "CodDisc": "ENP322",
+      "Depen": "",
+      "Prerequisitos": [
+        "SIN 480",
+        "ENP 320"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 28.6
+    },
+    {
+      "CodDisciplina": "ENP 338",
+      "NomeDisciplina": "Projetos Agroindustriais II",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ENP 337",
+      "Oferecida": "S",
+      "CodDisc": "ENP338",
+      "Depen": "",
+      "Prerequisitos": [
+        "ENP 337"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "ENP 345",
+      "NomeDisciplina": "Engenharia da Sustentabilidade",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ENP345",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "ENP 353",
+      "NomeDisciplina": "Gerência de Projeto II",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(0+4)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ENP 351",
+      "Oferecida": "S",
+      "CodDisc": "ENP353",
+      "Depen": "",
+      "Prerequisitos": [
+        "ENP 351"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [
+              "PVA224"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "ENP 354",
+      "NomeDisciplina": "Conceitos e Técnicas de Produção Enxuta",
+      "Turma": "1",
+      "Horarios": "3=08-10",
+      "Sala": "PVA224",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ENP 315 | ENP 401",
+      "Oferecida": "S",
+      "CodDisc": "ENP354",
+      "Depen": "",
+      "Prerequisitos": [
+        "ENP 315",
+        "ENP 401"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=08-10"
+            ],
+            "salas": [
+              "PVA224"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=10-12"
+            ],
+            "salas": [
+              "PVA224"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "ENP 355",
+      "NomeDisciplina": "Manufatura Avançada",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ENP 401",
+      "Oferecida": "S",
+      "CodDisc": "ENP355",
+      "Depen": "",
+      "Prerequisitos": [
+        "ENP 401"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "ENP 356",
+      "NomeDisciplina": "Gestão de Serviços",
+      "Turma": "1",
+      "Horarios": "4=08-10",
+      "Sala": "PVA213",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ENP 410",
+      "Oferecida": "S",
+      "CodDisc": "ENP356",
+      "Depen": "",
+      "Prerequisitos": [
+        "ENP 410"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=08-10"
+            ],
+            "salas": [
+              "PVA213"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "6=10-12"
+            ],
+            "salas": [
+              "PVA213"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 3.4
+    },
+    {
+      "CodDisciplina": "ENP 363",
+      "NomeDisciplina": "Gestão de Desempenho Sustentável",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(2+1)",
+      "CargaTotal": 45,
+      "Creditos": 0,
+      "Dependencias": "ENP 325",
+      "Oferecida": "S",
+      "CodDisc": "ENP363",
+      "Depen": "",
+      "Prerequisitos": [
+        "ENP 325"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "ENP 364",
+      "NomeDisciplina": "Gestão Ambiental e Sustentabilidade do Agronegócio",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(2+1)",
+      "CargaTotal": 45,
+      "Creditos": 0,
+      "Dependencias": "ENP 325",
+      "Oferecida": "S",
+      "CodDisc": "ENP364",
+      "Depen": "",
+      "Prerequisitos": [
+        "ENP 325"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "ENP 370",
+      "NomeDisciplina": "Economia da Produção",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ADE 190",
+      "Oferecida": "S",
+      "CodDisc": "ENP370",
+      "Depen": "",
+      "Prerequisitos": [
+        "ADE 190"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 14
+    },
+    {
+      "CodDisciplina": "ENP 400",
+      "NomeDisciplina": "Otimização Combinatória",
+      "Turma": "1",
+      "Horarios": "a combinar",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ENP 312 | ENP 404",
+      "Oferecida": "S",
+      "CodDisc": "ENP400",
+      "Depen": "",
+      "Prerequisitos": [
+        "ENP 312",
+        "ENP 404"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 8.1
+    },
+    {
+      "CodDisciplina": "ENP 403",
+      "NomeDisciplina": "Empreendedorismo para Engenharia",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ENP 401",
+      "Oferecida": "S",
+      "CodDisc": "ENP403",
+      "Depen": "",
+      "Prerequisitos": [
+        "ENP 401"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 3.1
+    },
+    {
+      "CodDisciplina": "ENP 497",
+      "NomeDisciplina": "Tópicos Especiais I",
+      "Turma": "1",
+      "Horarios": "2=16-18",
+      "Sala": "PVA230",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ENP497",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=16-18"
+            ],
+            "salas": [
+              "PVA230"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 3.7
+    },
+    {
+      "CodDisciplina": "ENP 498",
+      "NomeDisciplina": "Tópicos Especiais II",
+      "Turma": "1",
+      "Horarios": "4=16-18\n9=99-99",
+      "Sala": "PVA228\nPVA228",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(3+0)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ENP498",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=16-18",
+              "9=99-99"
+            ],
+            "salas": [
+              "PVA228",
+              "PVA228"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "ENP 499",
+      "NomeDisciplina": "Tópicos Especiais III",
+      "Turma": "1",
+      "Horarios": "5=14-16\n9=99-99",
+      "Sala": "PVA230\nPVA230",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ENP499",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=14-16",
+              "9=99-99"
+            ],
+            "salas": [
+              "PVA230",
+              "PVA230"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "FRP 301",
+      "NomeDisciplina": "Tópicos Especiais I",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "FRP301",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "FRP 302",
+      "NomeDisciplina": "Tópicos Especiais II",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "FRP302",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "FRP 310",
+      "NomeDisciplina": "Instrumentação para ensino e automação",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(0+4)",
+      "CargaTotal": 60,
+      "Creditos": 0,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "FRP310",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 5.3
+    },
+    {
+      "CodDisciplina": "MAP 100",
+      "NomeDisciplina": "Matemática I",
+      "Turma": "1",
+      "Horarios": "3=21:00-22:40\n6=19:00-20:40",
+      "Sala": "PVA219\nPVA219",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "MAP100",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=21:00-22:40",
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "PVA219",
+              "PVA219"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 50
+    },
+    {
+      "CodDisciplina": "NUR 285",
+      "NomeDisciplina": "Psicologia",
+      "Turma": "1",
+      "Horarios": "2=16-18\n5=14-16",
+      "Sala": "PVA101\nPVA101",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR285",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=16-18",
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA209",
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 20
+    },
+    {
+      "CodDisciplina": "NUR 290",
+      "NomeDisciplina": "Dinâmica de Grupo",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR290",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "NUR 490",
+      "NomeDisciplina": "Projetos Educacionais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(1+1)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR490",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 33.3
+    },
+    {
+      "CodDisciplina": "SIN 130",
+      "NomeDisciplina": "Introdução à Lógica",
+      "Turma": "1",
+      "Horarios": "4=14-16\n6=16-18",
+      "Sala": "PVA232\nPVA232",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "SIN130",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=14-16",
+              "6=16-18"
+            ],
+            "salas": [
+              "PVA232",
+              "PVA232"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "4=19:00-20:40",
+              "6=21:00-22:40"
+            ],
+            "salas": [
+              "PVA232",
+              "PVA232"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA113",
+              "PVA113"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 41.4
+    }
+  ]
+}
