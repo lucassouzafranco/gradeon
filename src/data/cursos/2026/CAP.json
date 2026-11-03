@@ -1,0 +1,4005 @@
+{
+  "metadata": {
+    "generatedAt": "2026-11-03T04:16:08.269Z",
+    "ano": 2026,
+    "anoCatalogo": 2026,
+    "curso": {
+      "id": "CAP",
+      "nome": "Ciência e Tecnologia de Alimentos"
+    },
+    "campus": "crp",
+    "complemento": "*",
+    "horarios": {
+      "ano": 2026,
+      "semestres": [
+        1,
+        2
+      ]
+    },
+    "totalDisciplinas": 44,
+    "periodos": 8,
+    "totalOptativas": 47,
+    "totalOptativasOfertadas": 24,
+    "source": "catalogo.ufv.br + dti.ufv.br",
+    "medianaGlobalReprovacao": 10.1
+  },
+  "courseData": {
+    "1": [
+      {
+        "CodDisciplina": "CAL 100",
+        "NomeDisciplina": "Introdução à Ciência e Tecnologia de Alimentos",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CAL100",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 30.3
+      },
+      {
+        "CodDisciplina": "CRP 251",
+        "NomeDisciplina": "Antropologia da Alimentação",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "3(3+0)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CRP251",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 38.4
+      },
+      {
+        "CodDisciplina": "MAP 191",
+        "NomeDisciplina": "Fundamentos de Matemática Elementar",
+        "Turma": "1",
+        "Horarios": "3=08-10\n5=10-12",
+        "Sala": "PVA107\nPVA107",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "MAP191",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "QAM 151",
+          "ESP 105",
+          "CAL 232"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10",
+                "5=10-12"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=19:00-20:40",
+                "6=21:00-22:40"
+              ],
+              "salas": [
+                "PVA214",
+                "PVA214"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=19:00-20:40",
+                "5=21:00-22:40"
+              ],
+              "salas": [
+                "PVA108",
+                "PVA108"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=10-12",
+                "6=08-10"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "3=21:00-22:40",
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "6",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA210",
+                "PVA210"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 65
+      },
+      {
+        "CodDisciplina": "QAM 101",
+        "NomeDisciplina": "Química Geral",
+        "Turma": "1",
+        "Horarios": "4=08-10\n6=10-11",
+        "Sala": "PVA107\nPVA107",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "3(3+0)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "QAM101",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "QAM 107",
+          "QAM 151",
+          "CAL 330",
+          "CAL 331"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=08-10",
+                "6=10-11"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=08-10",
+                "5=10-11"
+              ],
+              "salas": [
+                "PVA213",
+                "PVA213"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=10-12",
+                "6=08-09"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 45.8
+      },
+      {
+        "CodDisciplina": "QAM 107",
+        "NomeDisciplina": "Laboratório de Química Geral",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "QAM 101 | QAM 103",
+        "Oferecida": "S",
+        "CodDisc": "QAM107",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 101",
+          "QAM 103"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=08-10"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "5=10-12"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "2=08-10"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "6",
+              "horarios": [
+                "2=10-12"
+              ],
+              "salas": [
+                "LAE231"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 29.3
+      },
+      {
+        "CodDisciplina": "QAM 138",
+        "NomeDisciplina": "Fundamentos de Química Orgânica",
+        "Turma": "1",
+        "Horarios": "3=10-12\n6=08-09",
+        "Sala": "PVA102\nPVA102",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "3(3+0)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "QAM138",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [
+          "QAM 139",
+          "CAL 250"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12",
+                "6=08-09"
+              ],
+              "salas": [
+                "PVA102",
+                "PVA102"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "2=14-16",
+                "5=16-17"
+              ],
+              "salas": [
+                "PVA209",
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 39.3
+      },
+      {
+        "CodDisciplina": "QAM 139",
+        "NomeDisciplina": "Química Orgânica Experimental I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 1,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "QAM 138 | QAM 232",
+        "Oferecida": "S",
+        "CodDisc": "QAM139",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 138",
+          "QAM 232"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=10-12"
+              ],
+              "salas": [
+                "LAE229"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 34.6
+      }
+    ],
+    "2": [
+      {
+        "CodDisciplina": "CAL 116",
+        "NomeDisciplina": "Informática Aplicada às Ciências Agrárias",
+        "Turma": "1",
+        "Horarios": "2=21:00-22:40",
+        "Sala": "LAE132",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CAL116",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "2",
+              "horarios": [
+                "2=21:00-22:40"
+              ],
+              "salas": [
+                "LAE132"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 8.4
+      },
+      {
+        "CodDisciplina": "CAL 200",
+        "NomeDisciplina": "Fundamentos e Metodologia de Extensão Universitária",
+        "Turma": "1",
+        "Horarios": "2=16-18",
+        "Sala": "PVA232",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CAL200",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18"
+              ],
+              "salas": [
+                "PVA232"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 0
+      },
+      {
+        "CodDisciplina": "CAL 250",
+        "NomeDisciplina": "Bioquímica de Alimentos",
+        "Turma": "1",
+        "Horarios": "2=21:00-22:40\n4=19:00-20:40",
+        "Sala": "PVA229\nPVA229",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 138",
+        "Oferecida": "S",
+        "CodDisc": "CAL250",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 138"
+        ],
+        "Dependentes": [
+          "CAL 151",
+          "CAL 330",
+          "CBI 270",
+          "CAL 331",
+          "CAL 471",
+          "CAL 220"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=21:00-22:40",
+                "4=19:00-20:40"
+              ],
+              "salas": [
+                "PVA229",
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 33.3
+      },
+      {
+        "CodDisciplina": "CBI 102",
+        "NomeDisciplina": "Biologia Celular",
+        "Turma": "1",
+        "Horarios": "3=14-16",
+        "Sala": "PVA109",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 104",
+        "Oferecida": "S",
+        "CodDisc": "CBI102",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 104"
+        ],
+        "Dependentes": [
+          "CBI 104",
+          "CBI 270"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "PVA109"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "PVA109"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 55.9
+      },
+      {
+        "CodDisciplina": "CBI 104",
+        "NomeDisciplina": "Laboratório de Biologia Celular",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 102",
+        "Oferecida": "S",
+        "CodDisc": "CBI104",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 102"
+        ],
+        "Dependentes": [
+          "CBI 102",
+          "CBI 270"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=14-16"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "6=08-10"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "6=10-12"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "5=16-18"
+              ],
+              "salas": [
+                "LAE242"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 34.9
+      },
+      {
+        "CodDisciplina": "CRP 290",
+        "NomeDisciplina": "Português Instrumental I",
+        "Turma": "1",
+        "Horarios": "2=14-16\n4=16-18",
+        "Sala": "PVA101\nPVA101",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CRP290",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "2",
+              "horarios": [
+                "2=14-16",
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA101",
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "1",
+              "horarios": [
+                "2=14-16",
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA107",
+                "PVA107"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA212",
+                "PVA212"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 16.4
+      },
+      {
+        "CodDisciplina": "ECV 112",
+        "NomeDisciplina": "Desenho Técnico I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 2,
+        "Tipo": "T",
+        "CargaSemanal": "2(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "ECV112",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "LAE248"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "LAE248"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 36.7
+      }
+    ],
+    "3": [
+      {
+        "CodDisciplina": "CAL 151",
+        "NomeDisciplina": "Métodos físico-químicos de análises em alimentos",
+        "Turma": "1",
+        "Horarios": "3=21:00-22:40",
+        "Sala": "PVA229",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CAL 250 | CBI 250",
+        "Oferecida": "S",
+        "CodDisc": "CAL151",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 250",
+          "CBI 250"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=21:00-22:40"
+              ],
+              "salas": [
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "6=19:00-20:40"
+              ],
+              "salas": [
+                "LAE234"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "6=16-18"
+              ],
+              "salas": [
+                "LAE234"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 4.3
+      },
+      {
+        "CodDisciplina": "CAL 330",
+        "NomeDisciplina": "Química de Alimentos I",
+        "Turma": "1",
+        "Horarios": "4=19:00-20:40",
+        "Sala": "PVA113",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 101 | QAM 102 | CAL 250 | CBI 250",
+        "Oferecida": "S",
+        "CodDisc": "CAL330",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 101",
+          "QAM 102",
+          "CAL 250",
+          "CBI 250"
+        ],
+        "Dependentes": [
+          "CAL 490"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=19:00-20:40"
+              ],
+              "salas": [
+                "PVA113"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "LAE234"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 19.9
+      },
+      {
+        "CodDisciplina": "CBI 270",
+        "NomeDisciplina": "Microbiologia Geral",
+        "Turma": "1",
+        "Horarios": "2=10-12",
+        "Sala": "PVA101",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 102 | CBI 104 | CBI 250 | CAL 250",
+        "Oferecida": "S",
+        "CodDisc": "CBI270",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 102",
+          "CBI 104",
+          "CBI 250",
+          "CAL 250"
+        ],
+        "Dependentes": [
+          "CAL 117",
+          "CAL 360",
+          "CAL 420",
+          "CAL 482",
+          "CAL 470",
+          "CAL 475"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=10-12"
+              ],
+              "salas": [
+                "PVA101"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "4=16-18"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 12.7
+      },
+      {
+        "CodDisciplina": "ESP 105",
+        "NomeDisciplina": "Iniciação à Estatística",
+        "Turma": "1",
+        "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+        "Sala": "PVA225\nPVA225",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "MAP 191 | MAP 195 | MAP 199",
+        "Oferecida": "S",
+        "CodDisc": "ESP105",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 191",
+          "MAP 195",
+          "MAP 199"
+        ],
+        "Dependentes": [
+          "CAL 260",
+          "CAL 341"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "4=14-16",
+                "6=16-18"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "3",
+              "horarios": [
+                "2=16-18",
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "4",
+              "horarios": [
+                "2=21:00-22:40",
+                "5=19:00-20:40"
+              ],
+              "salas": [
+                "LAE248",
+                "LAE248"
+              ],
+              "professor": "",
+              "semestre": 1
+            },
+            {
+              "turma": "5",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA225",
+                "PVA225"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 30.7
+      },
+      {
+        "CodDisciplina": "QAM 151",
+        "NomeDisciplina": "Físico-Química I",
+        "Turma": "1",
+        "Horarios": "3=19:00-20:40\n5=21:00-21:50",
+        "Sala": "PVA229\nPVA229",
+        "Periodo": 3,
+        "Tipo": "T",
+        "CargaSemanal": "3(3+0)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "MAP 191 | MAP 195 | MAP 199 | QAM 101 | QAM 102",
+        "Oferecida": "S",
+        "CodDisc": "QAM151",
+        "Depen": "",
+        "Prerequisitos": [
+          "MAP 191",
+          "MAP 195",
+          "MAP 199",
+          "QAM 101",
+          "QAM 102"
+        ],
+        "Dependentes": [
+          "CAL 232"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=19:00-20:40",
+                "5=21:00-21:50"
+              ],
+              "salas": [
+                "PVA229",
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 18.8
+      }
+    ],
+    "4": [
+      {
+        "CodDisciplina": "CAL 117",
+        "NomeDisciplina": "Microbiologia de Alimentos",
+        "Turma": "1",
+        "Horarios": "5=14-16",
+        "Sala": "PVA218",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 270",
+        "Oferecida": "S",
+        "CodDisc": "CAL117",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 270"
+        ],
+        "Dependentes": [
+          "CAL 361",
+          "CAL 462",
+          "CAL 461",
+          "CAL 341"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=14-16"
+              ],
+              "salas": [
+                "PVA218"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=10-12"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 2
+            },
+            {
+              "turma": "2",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "LAE233"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 7.1
+      },
+      {
+        "CodDisciplina": "CAL 232",
+        "NomeDisciplina": "Mecânica, Temodinâmica e Fenômenos de Transporte",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 151 | MAP 191 | FRP 201",
+        "Oferecida": "S",
+        "CodDisc": "CAL232",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 151",
+          "MAP 191",
+          "FRP 201"
+        ],
+        "Dependentes": [
+          "CAL 365",
+          "CAL 421"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 0
+      },
+      {
+        "CodDisciplina": "CAL 260",
+        "NomeDisciplina": "Metodologia de Pesquisa em Alimentos",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "ESP 105",
+        "Oferecida": "S",
+        "CodDisc": "CAL260",
+        "Depen": "",
+        "Prerequisitos": [
+          "ESP 105"
+        ],
+        "Dependentes": [
+          "CAL 352",
+          "CAL 497"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 0
+      },
+      {
+        "CodDisciplina": "CAL 331",
+        "NomeDisciplina": "Química de Alimentos II",
+        "Turma": "1",
+        "Horarios": "2=19:00-20:40",
+        "Sala": "PVA229",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "QAM 101 | QAM 102 | CAL 250 | CBI 250",
+        "Oferecida": "S",
+        "CodDisc": "CAL331",
+        "Depen": "",
+        "Prerequisitos": [
+          "QAM 101",
+          "QAM 102",
+          "CAL 250",
+          "CBI 250"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=19:00-20:40"
+              ],
+              "salas": [
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=19:00-20:40"
+              ],
+              "salas": [
+                "LAE234"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 11.4
+      },
+      {
+        "CodDisciplina": "CAL 360",
+        "NomeDisciplina": "Princípios de Conservação de Alimentos",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 4,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 270",
+        "Oferecida": "S",
+        "CodDisc": "CAL360",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 270"
+        ],
+        "Dependentes": [
+          "CAL 498"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 9
+      }
+    ],
+    "5": [
+      {
+        "CodDisciplina": "CAL 352",
+        "NomeDisciplina": "Análise Sensorial",
+        "Turma": "1",
+        "Horarios": "2=21:00-22:40",
+        "Sala": "PVA114",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "3(2+1)",
+        "CargaTotal": 45,
+        "Creditos": 3,
+        "Dependencias": "CAL 260 | AGR 194 | ESP 201",
+        "Oferecida": "S",
+        "CodDisc": "CAL352",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 260",
+          "AGR 194",
+          "ESP 201"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=21:00-22:40"
+              ],
+              "salas": [
+                "PVA114"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=19:00-19:50"
+              ],
+              "salas": [
+                "LAE129"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 3.1
+      },
+      {
+        "CodDisciplina": "CAL 361",
+        "NomeDisciplina": "Processos Bioquímicos Industriais",
+        "Turma": "1",
+        "Horarios": "4=10-12",
+        "Sala": "PVA113",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CAL 117",
+        "Oferecida": "S",
+        "CodDisc": "CAL361",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 117"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=10-12"
+              ],
+              "salas": [
+                "PVA113"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 16.4
+      },
+      {
+        "CodDisciplina": "CAL 365",
+        "NomeDisciplina": "Operações Unitárias na Indústria de Alimentos",
+        "Turma": "1",
+        "Horarios": "3=08-10\n4=16-18",
+        "Sala": "PVA113\nPVA113",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "6(4+2)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "CAL 232 | CAL 231",
+        "Oferecida": "S",
+        "CodDisc": "CAL365",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 232",
+          "CAL 231"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=08-10",
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA113",
+                "PVA113"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "LAE132"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 13.6
+      },
+      {
+        "CodDisciplina": "CAL 420",
+        "NomeDisciplina": "Legislação de Alimentos",
+        "Turma": "1",
+        "Horarios": "3=16-18",
+        "Sala": "PVA209",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 270",
+        "Oferecida": "S",
+        "CodDisc": "CAL420",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 270"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 13.5
+      },
+      {
+        "CodDisciplina": "CAL 471",
+        "NomeDisciplina": "Processamento de Cereais, Raízes e Tubérculos",
+        "Turma": "1",
+        "Horarios": "4=08-10",
+        "Sala": "PVA114",
+        "Periodo": 5,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CAL 250 | CBI 250",
+        "Oferecida": "S",
+        "CodDisc": "CAL471",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 250",
+          "CBI 250"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=08-10"
+              ],
+              "salas": [
+                "PVA114"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=10-12"
+              ],
+              "salas": [
+                "LAE130"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 1.5
+      }
+    ],
+    "6": [
+      {
+        "CodDisciplina": "CAL 220",
+        "NomeDisciplina": "Toxicologia de Alimentos",
+        "Turma": "1",
+        "Horarios": "2=16-18",
+        "Sala": "PVA229",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CBI 250 | CAL 250",
+        "Oferecida": "S",
+        "CodDisc": "CAL220",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 250",
+          "CAL 250"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=16-18"
+              ],
+              "salas": [
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 11.7
+      },
+      {
+        "CodDisciplina": "CAL 461",
+        "NomeDisciplina": "Higiene Industrial e de Alimentos",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CAL 117",
+        "Oferecida": "S",
+        "CodDisc": "CAL461",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 117"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 4.5
+      },
+      {
+        "CodDisciplina": "CAL 462",
+        "NomeDisciplina": "Tratamento de Resíduos de Indústrias de Alimentos",
+        "Turma": "1",
+        "Horarios": "3=16-18",
+        "Sala": "PVA114",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CAL 117",
+        "Oferecida": "S",
+        "CodDisc": "CAL462",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 117"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=16-18"
+              ],
+              "salas": [
+                "PVA114"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 3.4
+      },
+      {
+        "CodDisciplina": "CAL 482",
+        "NomeDisciplina": "Tecnologia de Frutas e Hortaliças",
+        "Turma": "1",
+        "Horarios": "3=14-16",
+        "Sala": "PVA229",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 270",
+        "Oferecida": "S",
+        "CodDisc": "CAL482",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 270"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "3=14-16"
+              ],
+              "salas": [
+                "PVA229"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "5=16-18"
+              ],
+              "salas": [
+                "LAE130"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 6.8
+      },
+      {
+        "CodDisciplina": "CAL 490",
+        "NomeDisciplina": "Embalagem de Alimentos",
+        "Turma": "1",
+        "Horarios": "4=14-16",
+        "Sala": "PVA218",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CAL 330",
+        "Oferecida": "S",
+        "CodDisc": "CAL490",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 330"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16"
+              ],
+              "salas": [
+                "PVA218"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=16-18"
+              ],
+              "salas": [
+                "LAE234"
+              ],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": 5.4
+      },
+      {
+        "CodDisciplina": "CAL 497",
+        "NomeDisciplina": "Trabalho de Conclusão de Curso I",
+        "Turma": "1",
+        "Horarios": "a combinar",
+        "Sala": "",
+        "Periodo": 6,
+        "Tipo": "T",
+        "CargaSemanal": "2(2+0)",
+        "CargaTotal": 30,
+        "Creditos": 2,
+        "Dependencias": "CAL 260",
+        "Oferecida": "S",
+        "CodDisc": "CAL497",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 260"
+        ],
+        "Dependentes": [
+          "CAL 499"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 3.6
+      }
+    ],
+    "7": [
+      {
+        "CodDisciplina": "CAL 341",
+        "NomeDisciplina": "Gestão da Qualidade na Indústria de Alimentos",
+        "Turma": "1",
+        "Horarios": "2=19:00-20:40\n4=21:00-22:40",
+        "Sala": "PVA114\nPVA114",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(4+0)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CAL 117 | ESP 105 | NUR 260 | ESP 201",
+        "Oferecida": "S",
+        "CodDisc": "CAL341",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 117",
+          "ESP 105",
+          "NUR 260",
+          "ESP 201"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "2=19:00-20:40",
+                "4=21:00-22:40"
+              ],
+              "salas": [
+                "PVA114",
+                "PVA114"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 2.3
+      },
+      {
+        "CodDisciplina": "CAL 421",
+        "NomeDisciplina": "Projetos Agroindustriais",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CAL 232 | FRP 102",
+        "Oferecida": "S",
+        "CodDisc": "CAL421",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 232",
+          "FRP 102"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 0
+      },
+      {
+        "CodDisciplina": "CAL 470",
+        "NomeDisciplina": "Processamento de Leite e Produtos Lácteos",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 270",
+        "Oferecida": "S",
+        "CodDisc": "CAL470",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 270"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": []
+        },
+        "reprovaPercentual": 6.3
+      },
+      {
+        "CodDisciplina": "CAL 475",
+        "NomeDisciplina": "Tecnologia de Carnes, Mel e Ovos",
+        "Turma": "1",
+        "Horarios": "4=16-18",
+        "Sala": "PVA209",
+        "Periodo": 7,
+        "Tipo": "T",
+        "CargaSemanal": "4(2+2)",
+        "CargaTotal": 60,
+        "Creditos": 4,
+        "Dependencias": "CBI 270",
+        "Oferecida": "S",
+        "CodDisc": "CAL475",
+        "Depen": "",
+        "Prerequisitos": [
+          "CBI 270"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=16-18"
+              ],
+              "salas": [
+                "PVA209"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "4=14-16"
+              ],
+              "salas": [
+                "LAE130"
+              ],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 7.3
+      }
+    ],
+    "8": [
+      {
+        "CodDisciplina": "CAL 400",
+        "NomeDisciplina": "Seminário de Estágio Supervisionado",
+        "Turma": "1",
+        "Horarios": "a combinar",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "1(1+0)",
+        "CargaTotal": 15,
+        "Creditos": 1,
+        "Dependencias": "CAL 498",
+        "Oferecida": "S",
+        "CodDisc": "CAL400",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 498"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ],
+          "praticas": []
+        },
+        "reprovaPercentual": 10.1
+      },
+      {
+        "CodDisciplina": "CAL 430",
+        "NomeDisciplina": "Atividades de Extensão I",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+8)",
+        "CargaTotal": 120,
+        "Creditos": 0,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CAL430",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 2
+            }
+          ]
+        },
+        "reprovaPercentual": null
+      },
+      {
+        "CodDisciplina": "CAL 491",
+        "NomeDisciplina": "Atividades Complementares",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+2)",
+        "CargaTotal": 30,
+        "Creditos": 0,
+        "Dependencias": "",
+        "Oferecida": "S",
+        "CodDisc": "CAL491",
+        "Depen": "",
+        "Prerequisitos": [],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 3.5
+      },
+      {
+        "CodDisciplina": "CAL 498",
+        "NomeDisciplina": "Estágio Supervisionado",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "0(0+16)",
+        "CargaTotal": 240,
+        "Creditos": 0,
+        "Dependencias": "CAL 360",
+        "Oferecida": "S",
+        "CodDisc": "CAL498",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 360"
+        ],
+        "Dependentes": [
+          "CAL 400"
+        ],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 4.4
+      },
+      {
+        "CodDisciplina": "CAL 499",
+        "NomeDisciplina": "Trabalho de Conclusão de Curso II",
+        "Turma": "1",
+        "Horarios": "",
+        "Sala": "",
+        "Periodo": 8,
+        "Tipo": "T",
+        "CargaSemanal": "6(0+6)",
+        "CargaTotal": 90,
+        "Creditos": 6,
+        "Dependencias": "CAL 497",
+        "Oferecida": "S",
+        "CodDisc": "CAL499",
+        "Depen": "",
+        "Prerequisitos": [
+          "CAL 497"
+        ],
+        "Dependentes": [],
+        "TurmasDisponiveis": {
+          "teoricas": [],
+          "praticas": [
+            {
+              "turma": "1",
+              "horarios": [
+                "a combinar"
+              ],
+              "salas": [],
+              "professor": "",
+              "semestre": 1
+            }
+          ]
+        },
+        "reprovaPercentual": 5.4
+      }
+    ]
+  },
+  "optativas": [
+    {
+      "CodDisciplina": "ADE 104",
+      "NomeDisciplina": "Teoria Geral da Administração",
+      "Turma": "1",
+      "Horarios": "3=16-18\n6=14-16",
+      "Sala": "PVA210\nPVA202",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ADE104",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=16-18",
+              "6=14-16"
+            ],
+            "salas": [
+              "PVA210",
+              "PVA202"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=21:00-22:40",
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "PVA108",
+              "PVA108"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "3=14-16",
+              "5=16-18"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "4",
+            "horarios": [
+              "3=19:00-20:40",
+              "5=21:00-22:40"
+            ],
+            "salas": [
+              "PVA109",
+              "PVA109"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 17.3
+    },
+    {
+      "CodDisciplina": "ADE 190",
+      "NomeDisciplina": "Introdução à Economia",
+      "Turma": "1",
+      "Horarios": "2=21:00-22:40\n5=19:00-20:40",
+      "Sala": "PVA214\nPVA214",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ADE190",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA214",
+              "PVA214"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=16-18",
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA212",
+              "PVA212"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA232",
+              "PVA232"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 16.6
+    },
+    {
+      "CodDisciplina": "ADE 310",
+      "NomeDisciplina": "Análise de Custos",
+      "Turma": "1",
+      "Horarios": "3=16-18\n6=14-16",
+      "Sala": "PVA102\nPVA102",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CIC 100",
+      "Oferecida": "S",
+      "CodDisc": "ADE310",
+      "Depen": "",
+      "Prerequisitos": [
+        "CIC 100"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=16-18",
+              "6=14-16"
+            ],
+            "salas": [
+              "PVA102",
+              "PVA102"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "3=21:00-22:40",
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "PVA102",
+              "PVA102"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 30.6
+    },
+    {
+      "CodDisciplina": "ADE 311",
+      "NomeDisciplina": "Análise de Custos II",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ADE 310 | CIC 301",
+      "Oferecida": "S",
+      "CodDisc": "ADE311",
+      "Depen": "",
+      "Prerequisitos": [
+        "ADE 310",
+        "CIC 301"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 14.2
+    },
+    {
+      "CodDisciplina": "ADE 390",
+      "NomeDisciplina": "Economia Rural",
+      "Turma": "1",
+      "Horarios": "4=14-16",
+      "Sala": "PVA106",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "ADE390",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=14-16"
+            ],
+            "salas": [
+              "PVA106"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 7.2
+    },
+    {
+      "CodDisciplina": "ADE 391",
+      "NomeDisciplina": "Administração Rural",
+      "Turma": "1",
+      "Horarios": "2=14-16\n4=16-18",
+      "Sala": "PVA106\nPVA106",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ADE 194 | ADE 390",
+      "Oferecida": "S",
+      "CodDisc": "ADE391",
+      "Depen": "",
+      "Prerequisitos": [
+        "ADE 194",
+        "ADE 390"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=14-16",
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA106",
+              "PVA106"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 1.3
+    },
+    {
+      "CodDisciplina": "ADE 395",
+      "NomeDisciplina": "Políticas Governamentais Aplicadas ao Agronegócio",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ADE 194 | ADE 390",
+      "Oferecida": "S",
+      "CodDisc": "ADE395",
+      "Depen": "",
+      "Prerequisitos": [
+        "ADE 194",
+        "ADE 390"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 1.4
+    },
+    {
+      "CodDisciplina": "AGR 194",
+      "NomeDisciplina": "Estatística Experimental",
+      "Turma": "1",
+      "Horarios": "2=10-12\n4=08-10",
+      "Sala": "PVA225\nPVA225",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "ESP 105 | ESP 201 | ESP 224",
+      "Oferecida": "S",
+      "CodDisc": "AGR194",
+      "Depen": "",
+      "Prerequisitos": [
+        "ESP 105",
+        "ESP 201",
+        "ESP 224"
+      ],
+      "Dependentes": [
+        "CAL 352"
+      ],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=10-12",
+              "4=08-10"
+            ],
+            "salas": [
+              "PVA225",
+              "PVA225"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=08-10",
+              "4=10-12"
+            ],
+            "salas": [
+              "PVA225",
+              "PVA225"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 35.6
+    },
+    {
+      "CodDisciplina": "AGR 240",
+      "NomeDisciplina": "Genética",
+      "Turma": "1",
+      "Horarios": "3=14-16\n5=16-18",
+      "Sala": "PVA232\nPVA232",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 102 | CBI 104",
+      "Oferecida": "S",
+      "CodDisc": "AGR240",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 102",
+        "CBI 104"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=14-16",
+              "5=16-18"
+            ],
+            "salas": [
+              "PVA232",
+              "PVA232"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 21.1
+    },
+    {
+      "CodDisciplina": "CAL 398",
+      "NomeDisciplina": "Sistemas coloidais em formulações alimentares",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 232 | FRP 102 | FRP 202",
+      "Oferecida": "S",
+      "CodDisc": "CAL398",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 232",
+        "FRP 102",
+        "FRP 202"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CAL 401",
+      "NomeDisciplina": "Tópicos Especiais em Ciência e Tecnologia de Alimentos I",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CAL401",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CAL 402",
+      "NomeDisciplina": "Tópicos Especiais em Ciência e Tecnologia de Alimentos II",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CAL402",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 5.8
+    },
+    {
+      "CodDisciplina": "CAL 403",
+      "NomeDisciplina": "Tópicos Especiais em Ciência e Tecnologia de Alimentos III",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CAL403",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CAL 410",
+      "NomeDisciplina": "Fisiologia pós-colheita",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CBI 250 | CAL 250",
+      "Oferecida": "S",
+      "CodDisc": "CAL410",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 250",
+        "CAL 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "CAL 431",
+      "NomeDisciplina": "Atividades de Extensão II",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(0+2)",
+      "CargaTotal": 30,
+      "Creditos": 0,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CAL431",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "CAL 450",
+      "NomeDisciplina": "Desidratação e Secagem de Alimentos",
+      "Turma": "1",
+      "Horarios": "6=14-16",
+      "Sala": "PVA108",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 232 | FRP 102",
+      "Oferecida": "S",
+      "CodDisc": "CAL450",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 232",
+        "FRP 102"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "6=14-16"
+            ],
+            "salas": [
+              "PVA108"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "6=16-18"
+            ],
+            "salas": [
+              "LAE130"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CAL 472",
+      "NomeDisciplina": "Produtos Lácteos Fermentados",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 470",
+      "Oferecida": "S",
+      "CodDisc": "CAL472",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 470"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 6.8
+    },
+    {
+      "CodDisciplina": "CAL 474",
+      "NomeDisciplina": "Armazenamento e Industrialização de Oleaginosas",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CAL474",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 11.6
+    },
+    {
+      "CodDisciplina": "CAL 476",
+      "NomeDisciplina": "Tecnologia de Bebidas",
+      "Turma": "1",
+      "Horarios": "a combinar",
+      "Sala": "PVA114",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 361",
+      "Oferecida": "S",
+      "CodDisc": "CAL476",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 361"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [
+              "PVA114"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [
+              "LAE130"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 0.9
+    },
+    {
+      "CodDisciplina": "CAL 480",
+      "NomeDisciplina": "Tecnologia de Café e Cacau",
+      "Turma": "1",
+      "Horarios": "2=19:00-20:40",
+      "Sala": "PVA113",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 270",
+      "Oferecida": "S",
+      "CodDisc": "CAL480",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=19:00-20:40"
+            ],
+            "salas": [
+              "PVA113"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=21:00-22:40"
+            ],
+            "salas": [
+              "LAE130"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 8.6
+    },
+    {
+      "CodDisciplina": "CAL 485",
+      "NomeDisciplina": "Tecnologia de Amidos, Massas Alimentícias e Panificados",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 471 | CAL 489",
+      "Oferecida": "S",
+      "CodDisc": "CAL485",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 471",
+        "CAL 489"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CAL 492",
+      "NomeDisciplina": "Inovações em Embalagens de Alimentos",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 117",
+      "Oferecida": "S",
+      "CodDisc": "CAL492",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 117"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 1.9
+    },
+    {
+      "CodDisciplina": "CAL 494",
+      "NomeDisciplina": "Desenvolvimento de Produtos Alimentícios",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 352 | NUR 270",
+      "Oferecida": "S",
+      "CodDisc": "CAL494",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 352",
+        "NUR 270"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 4.4
+    },
+    {
+      "CodDisciplina": "CAL 495",
+      "NomeDisciplina": "Enzimologia Aplicada em Alimentos",
+      "Turma": "1",
+      "Horarios": "2=14-16\n5=14-15",
+      "Sala": "PVA212\nLAE132",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(3+1)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CAL 250 | CBI 250",
+      "Oferecida": "S",
+      "CodDisc": "CAL495",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 250",
+        "CBI 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=14-16",
+              "5=14-15"
+            ],
+            "salas": [
+              "PVA212",
+              "LAE132"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "5=15-16"
+            ],
+            "salas": [
+              "LAE132"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ]
+      },
+      "reprovaPercentual": 0
+    },
+    {
+      "CodDisciplina": "CBI 256",
+      "NomeDisciplina": "Biologia Molecular",
+      "Turma": "1",
+      "Horarios": "3=08-10\n5=10-12",
+      "Sala": "PVA230\nPVA230",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "CBI 250 | CAL 250",
+      "Oferecida": "S",
+      "CodDisc": "CBI256",
+      "Depen": "",
+      "Prerequisitos": [
+        "CBI 250",
+        "CAL 250"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=08-10",
+              "5=10-12"
+            ],
+            "salas": [
+              "PVA230",
+              "PVA230"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 13.2
+    },
+    {
+      "CodDisciplina": "CIC 100",
+      "NomeDisciplina": "Contabilidade Geral",
+      "Turma": "1",
+      "Horarios": "2=16-18\n5=14-16",
+      "Sala": "PVA202\nPVA202",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CIC100",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=16-18",
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA202",
+              "PVA202"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA108",
+              "PVA108"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "3=14-16",
+              "5=16-18"
+            ],
+            "salas": [
+              "PVA214",
+              "PVA214"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 42
+    },
+    {
+      "CodDisciplina": "CRP 280",
+      "NomeDisciplina": "LIBRAS Língua Brasileira de Sinais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(1+2)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP280",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "CRP 297",
+      "NomeDisciplina": "Sociologia Geral",
+      "Turma": "1",
+      "Horarios": "2=16-18\n5=14-16",
+      "Sala": "PVA106\nPVA106",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP297",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=16-18",
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA106",
+              "PVA106"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "3=16-18",
+              "6=14-16"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "4",
+            "horarios": [
+              "3=21:00-22:40",
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "5",
+            "horarios": [
+              "3=16-18",
+              "6=14-16"
+            ],
+            "salas": [
+              "PVA212",
+              "PVA212"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "6",
+            "horarios": [
+              "3=21:00-22:40",
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "PVA214",
+              "PVA214"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "7",
+            "horarios": [
+              "2=16-18",
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA107",
+              "PVA107"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 33.2
+    },
+    {
+      "CodDisciplina": "CRP 390",
+      "NomeDisciplina": "Direito Agrário e Legislação de Terras",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(3+0)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "CRP390",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 3.2
+    },
+    {
+      "CodDisciplina": "DRP 296",
+      "NomeDisciplina": "Instituições de Direito",
+      "Turma": "1",
+      "Horarios": "4=14-16\n6=16-18",
+      "Sala": "PVA214\nPVA214",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "DRP296",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=14-16",
+              "6=16-18"
+            ],
+            "salas": [
+              "PVA214",
+              "PVA214"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "4=19:00-20:40",
+              "6=21:00-22:40"
+            ],
+            "salas": [
+              "PVA108",
+              "PVA108"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "4=14-16",
+              "6=16-18"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "4",
+            "horarios": [
+              "4=19:00-20:40",
+              "6=21:00-22:40"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "DRP 394",
+      "NomeDisciplina": "Legislação Ambiental I",
+      "Turma": "1",
+      "Horarios": "6=14-16",
+      "Sala": "PVA209",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "DRP394",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "6=14-16"
+            ],
+            "salas": [
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "DRP 395",
+      "NomeDisciplina": "Legislação Ambiental II",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "DRP 394",
+      "Oferecida": "S",
+      "CodDisc": "DRP395",
+      "Depen": "",
+      "Prerequisitos": [
+        "DRP 394"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "ENP 320",
+      "NomeDisciplina": "Logística",
+      "Turma": "1",
+      "Horarios": "3=08-10\n5=10-12",
+      "Sala": "PVA233\nPVA233",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "AGR 194",
+      "Oferecida": "S",
+      "CodDisc": "ENP320",
+      "Depen": "",
+      "Prerequisitos": [
+        "AGR 194"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=08-10",
+              "5=10-12"
+            ],
+            "salas": [
+              "PVA233",
+              "PVA233"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 3.9
+    },
+    {
+      "CodDisciplina": "FRP 103",
+      "NomeDisciplina": "Introdução às Ondas e à Ótica",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CAL 232 | FRP 102 | FRP 201",
+      "Oferecida": "S",
+      "CodDisc": "FRP103",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 232",
+        "FRP 102",
+        "FRP 201"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "FRP 104",
+      "NomeDisciplina": "Introdução ao Eletromagnetismo",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CAL 232 | FRP 102 | FRP 202",
+      "Oferecida": "S",
+      "CodDisc": "FRP104",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 232",
+        "FRP 102",
+        "FRP 202"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "FRP 111",
+      "NomeDisciplina": "Laboratório de Física Geral",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(0+2)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "CAL 232 | FRP 102 | FRP 203",
+      "Oferecida": "S",
+      "CodDisc": "FRP111",
+      "Depen": "",
+      "Prerequisitos": [
+        "CAL 232",
+        "FRP 102",
+        "FRP 203"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "FRP 310",
+      "NomeDisciplina": "Instrumentação para ensino e automação",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "0(0+4)",
+      "CargaTotal": 60,
+      "Creditos": 0,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "FRP310",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "a combinar"
+            ],
+            "salas": [],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 5.3
+    },
+    {
+      "CodDisciplina": "MAP 205",
+      "NomeDisciplina": "Cálculo II",
+      "Turma": "1",
+      "Horarios": "2=10-12\n5=08-10",
+      "Sala": "PVA106\nPVA106",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "MAP 191 | MAP 195 | MAP 199",
+      "Oferecida": "S",
+      "CodDisc": "MAP205",
+      "Depen": "",
+      "Prerequisitos": [
+        "MAP 191",
+        "MAP 195",
+        "MAP 199"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "2",
+            "horarios": [
+              "2=10-12",
+              "5=08-10"
+            ],
+            "salas": [
+              "PVA106",
+              "PVA106"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "1",
+            "horarios": [
+              "3=19:00-20:40",
+              "5=21:00-22:40"
+            ],
+            "salas": [
+              "PVA212",
+              "PVA212"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 74.5
+    },
+    {
+      "CodDisciplina": "MAP 250",
+      "NomeDisciplina": "Cálculo III",
+      "Turma": "1",
+      "Horarios": "3=13-16\n5=16-18",
+      "Sala": "PVA102\nPVA102",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "5(5+)",
+      "CargaTotal": 75,
+      "Creditos": 5,
+      "Dependencias": "MAP 205 | MAP 298",
+      "Oferecida": "S",
+      "CodDisc": "MAP250",
+      "Depen": "",
+      "Prerequisitos": [
+        "MAP 205",
+        "MAP 298"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "3=13-16",
+              "5=16-18"
+            ],
+            "salas": [
+              "PVA102",
+              "PVA102"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 73
+    },
+    {
+      "CodDisciplina": "MAP 270",
+      "NomeDisciplina": "Cálculo Numérico",
+      "Turma": "1",
+      "Horarios": "2=13-16",
+      "Sala": "PVA214",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "3(3+0)",
+      "CargaTotal": 45,
+      "Creditos": 3,
+      "Dependencias": "MAP 298 | MAP 205",
+      "Oferecida": "S",
+      "CodDisc": "MAP270",
+      "Depen": "",
+      "Prerequisitos": [
+        "MAP 298",
+        "MAP 205"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=13-16"
+            ],
+            "salas": [
+              "PVA214"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 4.8
+    },
+    {
+      "CodDisciplina": "MAP 298",
+      "NomeDisciplina": "Geometria Analítica e Álgebra Linear",
+      "Turma": "1",
+      "Horarios": "2=19:00-20:40\n4=21:00-22:40",
+      "Sala": "PVA108\nPVA108",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "MAP 100 | MAP 191 | MAP 199 | MAP 195",
+      "Oferecida": "S",
+      "CodDisc": "MAP298",
+      "Depen": "",
+      "Prerequisitos": [
+        "MAP 100",
+        "MAP 191",
+        "MAP 199",
+        "MAP 195"
+      ],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "4",
+            "horarios": [
+              "2=19:00-20:40",
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA108",
+              "PVA108"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "1",
+            "horarios": [
+              "3=21:00-22:40",
+              "6=19:00-20:40"
+            ],
+            "salas": [
+              "PVA213",
+              "PVA213"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 48.1
+    },
+    {
+      "CodDisciplina": "NUR 285",
+      "NomeDisciplina": "Psicologia",
+      "Turma": "1",
+      "Horarios": "2=16-18\n5=14-16",
+      "Sala": "PVA101\nPVA101",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR285",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=16-18",
+              "5=14-16"
+            ],
+            "salas": [
+              "PVA101",
+              "PVA101"
+            ],
+            "professor": "",
+            "semestre": 2
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=21:00-22:40",
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA209",
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 2
+          }
+        ],
+        "praticas": []
+      },
+      "reprovaPercentual": 20
+    },
+    {
+      "CodDisciplina": "NUR 290",
+      "NomeDisciplina": "Dinâmica de Grupo",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(4+0)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR290",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "NUR 410",
+      "NomeDisciplina": "Alimentos Funcionais",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "2(2+0)",
+      "CargaTotal": 30,
+      "Creditos": 2,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR410",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": 2.6
+    },
+    {
+      "CodDisciplina": "NUR 454",
+      "NomeDisciplina": "Plantas Alimentícias Não Convencionais - PANC",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "NUR454",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    },
+    {
+      "CodDisciplina": "SIN 111",
+      "NomeDisciplina": "Fundamentos de Programação",
+      "Turma": "1",
+      "Horarios": "4=16-18",
+      "Sala": "PVA106",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "SIN111",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "4=16-18"
+            ],
+            "salas": [
+              "PVA106"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "2=21:00-22:40"
+            ],
+            "salas": [
+              "PVA103"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "3=19:00-20:40"
+            ],
+            "salas": [
+              "PVA209"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "4",
+            "horarios": [
+              "2=19:00-20:40"
+            ],
+            "salas": [
+              "PVA233"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ],
+        "praticas": [
+          {
+            "turma": "1",
+            "horarios": [
+              "2=14-16"
+            ],
+            "salas": [
+              "PVA226"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "2",
+            "horarios": [
+              "5=19:00-20:40"
+            ],
+            "salas": [
+              "PVA226"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "3",
+            "horarios": [
+              "5=21:00-22:40"
+            ],
+            "salas": [
+              "PVA226"
+            ],
+            "professor": "",
+            "semestre": 1
+          },
+          {
+            "turma": "4",
+            "horarios": [
+              "4=21:00-22:40"
+            ],
+            "salas": [
+              "PVA233"
+            ],
+            "professor": "",
+            "semestre": 1
+          }
+        ]
+      },
+      "reprovaPercentual": 42.3
+    },
+    {
+      "CodDisciplina": "SIN 292",
+      "NomeDisciplina": "Introdução à Informática",
+      "Turma": "1",
+      "Horarios": "",
+      "Sala": "",
+      "Periodo": 0,
+      "Tipo": "T",
+      "CargaSemanal": "4(2+2)",
+      "CargaTotal": 60,
+      "Creditos": 4,
+      "Dependencias": "",
+      "Oferecida": "S",
+      "CodDisc": "SIN292",
+      "Depen": "",
+      "Prerequisitos": [],
+      "Dependentes": [],
+      "TurmasDisponiveis": {
+        "teoricas": [],
+        "praticas": []
+      },
+      "reprovaPercentual": null
+    }
+  ]
+}
